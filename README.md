@@ -1,0 +1,306 @@
+# chile-compliance
+
+> A structured, AI-queryable knowledge base of Chilean fintech and personal-data law — built for use by AI agents, not humans.
+
+If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws:
+
+- **Ley 21.521** (*Ley Fintec*, 2023) — financial-services innovation, crowdfunding, investment advisory, open finance, custody, intermediation.
+- **Ley 19.628** as amended by **Ley 21.719** (*data protection*, in force **2026-12-01**) — consent, lawful basis, data-subject rights, sensitive data, breach notification, the new APDP regulator and sanctions framework.
+
+Both laws are published in Spanish. Without help, an AI session about Chilean compliance spends most of its tokens translating, re-translating, and searching the same legal text from scratch every time. This plugin makes that knowledge available as a structured corpus with topical indexes, a glossary, scenario checklists, and a query-decision-tree skill — so your AI agent can answer compliance questions in seconds, with verifiable citations.
+
+> [!IMPORTANT]
+> This skill is **not** legal advice. It's a structured citation aid for AI agents. For decisions with material risk, consult Chilean counsel.
+
+---
+
+## Status
+
+| Component | Status | Notes |
+|---|---|---|
+| Ley 21.521 — Títulos I-IV (Fintech provisions) | **Stable** | 29 articles fully translated |
+| Ley 21.521 — Título V (modifications to other statutes) | **Out of scope** | Documented as reference-only; see `corpus/21521-fintech/titulo-05-modificaciones.md` |
+| Ley 19.628 consolidated — Preliminar through Título V (Arts. 1-29) | **Stable** | Core data-protection regime |
+| Ley 19.628 consolidated — Títulos VI-VIII (Arts. 30-55, Agency + sanctions framework) | **Partial** | English structured summaries; Spanish verbatim; 44 REVIEW markers pending human review |
+| Ley 21.719 amendments changelog | **Stable** | Reference only — quote consolidated 19.628 as operative law |
+| Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 113 + 40 + 98 + 265 citations respectively |
+| Tooling + tests | **Stable** | 18/18 pytest passing |
+
+The `corpus_status` field in `plugin.json` is the canonical source of truth for an AI consumer.
+
+---
+
+## What this gives an AI
+
+A consuming AI gets four kinds of lookup:
+
+1. **Direct article retrieval** — *"What does Art. 8 bis of 19.628 say?"*
+2. **Definition lookup** — *"Define 'datos personales sensibles'."*
+3. **Scenario checklists** — *"What do I need to comply with if my feature aggregates bank statements?"*
+4. **Topical search** — *"What rules cover AI-based recommendations?"*
+
+Every answer cites a specific article in the corpus, so a human reviewer can click through and verify. Spanish original text is one hop away whenever a verbatim quote is needed.
+
+### What a session looks like
+
+```
+You:  We're building an investment tracker that aggregates user holdings
+      from Chilean brokers via Open Finance. Are we Fintec-regulated?
+
+AI:   [reads corpus/21521-fintech/titulo-02-servicios.md#article-2,
+        corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-16,
+        indexes/scenarios.md (Scenario 3)]
+
+      Read-only aggregation is unlikely to fall under Ley 21.521 Art. 2's
+      enumerated services (no custody, no order routing, no advisory).
+      But if you consume data through the Sistema de Finanzas Abiertas
+      (SFA), you become an "information-receiving institution" under
+      Ley 21.521 Art. 17 with corresponding registration and operating
+      requirements. Verify against the customer-consent rules in
+      Ley 21.521 Art. 23 — express, informed consent is required.
+
+      For the personal-data side, you're a data controller under
+      Ley 19.628 Art. 2(n). See the scenario checklist at
+      indexes/scenarios.md (Scenario 3) for the full obligations list.
+```
+
+The AI didn't translate anything from scratch. It read curated, vetted English with Spanish on demand.
+
+---
+
+## Quick start — Claude Code
+
+The plugin is designed for Claude Code first.
+
+### Per-project opt-in
+
+Add a reference to this plugin in the project where you want compliance help. In that project's `CLAUDE.md` (or a project-specific settings file):
+
+```markdown
+## Plugins
+
+- chile-compliance: <path-to-this-repo-clone>
+```
+
+Or, if you use a settings file (`.claude/settings.json` or similar plugin config):
+
+```json
+{
+  "plugins": ["<path-to-this-repo-clone>"]
+}
+```
+
+Then ask your usual compliance questions. The skill activates automatically when the AI sees fintech or data-protection contexts (see `skills/chile-compliance/SKILL.md` for triggers).
+
+### Global install
+
+If you'd rather have it available in every session, drop a clone in your global Claude Code plugins directory (typically `~/.claude/plugins/`).
+
+---
+
+## Quick start — other AI hosts
+
+The corpus is plain markdown — it doesn't depend on Claude Code. You can use it from:
+
+- **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — load relevant files at session start, or use a tool-call that reads `corpus/`, `indexes/`, and `plugin.json` paths.
+- **MCP server** — wrap the corpus with a thin MCP layer exposing `search`, `get_article`, `get_definition`, and `find_obligations` tools. The folder structure was designed to make this straightforward; no rework needed.
+- **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer).
+- **Manual reading** — yes, humans can read it too, though it wasn't optimized for that.
+
+The `SKILL.md` file documents the query decision tree the corpus expects — port it to your platform's agent prompt format.
+
+---
+
+## What's in the box
+
+```
+chile-compliance/
+├── plugin.json                         # manifest with corpus_status
+├── skills/chile-compliance/SKILL.md    # query decision tree for consuming AIs
+├── corpus/
+│   ├── _lexicon.md                     # Spanish ↔ English legal-term mapping
+│   ├── 21521-fintech/                  # Ley 21.521 by Título
+│   ├── 19628-data-protection-consolidated/  # Ley 19.628 (post-21.719) by Título
+│   └── 21719-amendments-changelog/     # Reference: which 21.719 item changed what
+├── indexes/
+│   ├── by-topic.md                     # Topical lookup, 113 citations
+│   ├── glossary.md                     # 40 defined terms (English + Spanish)
+│   ├── scenarios.md                    # 7 compliance scenarios with checklists
+│   └── cross-references.md             # 265 article-to-article edges
+├── sources/                            # Original PDF sources (BCN, public)
+└── tools/                              # Python QC scripts + pytest tests
+```
+
+### Corpus file format
+
+Each article in the corpus is a self-contained block:
+
+```markdown
+## Article N — <English short title>
+**Spanish anchor:** Art. N°
+**Tags:** consent, lawful-basis, ...
+
+### Plain-English text
+<Literal English translation, lexicon-conforming.>
+
+### Original Spanish
+> "<Verbatim Spanish from the PDF, preserved exactly.>"
+
+### Cross-references
+- Related articles, glossary pointers.
+
+> **Source:** Ley 19.628 Art. N as amended by Ley 21.719 Art. 1° item M (in force 2026-12-01).
+```
+
+Translation conventions live in `corpus/_lexicon.md`. When a translator deviated from the lexicon, an inline `> **TN:**` (translator's note) explains why. Articles pending review carry `<!-- REVIEW: ... -->` markers — consuming AIs surface these as caveats.
+
+---
+
+## What this does NOT cover
+
+Be explicit with your users about the corpus's limits:
+
+- **No CMF circulars or general regulations.** The Comisión para el Mercado Financiero issues binding sector regulations under Ley 21.521 Art. 4. Those are out of scope until added separately.
+- **No APDP guidance.** The Agencia de Protección de Datos Personales becomes operational with Ley 21.719 in force; its guidance and enforcement decisions are out of scope.
+- **No case law.** Chilean Supreme Court and Court of Appeals decisions interpreting these laws aren't in the corpus.
+- **No other laws.** Ley 21.521 amends Leyes 18.045 (capital markets), 18.046 (corporations), 18.840 (Central Bank), 19.220, 20.712, 20.950, and 21.000 — those amendments live in 21.521 Título V, which is documented as out-of-scope here. If your use case touches one of those statutes, you need a separate corpus.
+- **Not legal advice.** Consuming AIs must say so when asked.
+
+The skill body teaches the consuming AI to refuse questions about anything outside the corpus rather than guess.
+
+---
+
+## Effective-date discipline
+
+Ley 21.719 enters into force on **2026-12-01**. Before that date:
+- The operative data-protection law is the pre-21.719 Ley 19.628 (the 1999 baseline).
+- The new APDP regulator, sanctions framework, and many new data-subject rights are not yet in force.
+
+After 2026-12-01, the consolidated 19.628 in this corpus is the operative text. Every consolidated article carries a `> **Source:**` footer naming the amending 21.719 provision and the effective date. The skill teaches consuming AIs to surface this date when answering any 21.719-derived question.
+
+The pre-amendment baseline is in git history (search for the `19628-baseline/` directory in commits before `b35f9d6` if you need it).
+
+---
+
+## Architecture
+
+The build philosophy is **markdown-first, tooling-light**:
+
+- **Source of truth**: a small set of structured markdown files in `corpus/` and `indexes/`. Editable by humans, greppable by AIs.
+- **Tooling** (`tools/`): verification scripts only — no runtime servers, no embeddings, no databases. Each script is single-purpose with pytest coverage:
+  - `extract_articles.py` — parses Chilean BCN-formatted PDFs into article blocks.
+  - `check_extraction_parity.py` — verifies every article in a PDF appears once in the corpus.
+  - `check_glossary_completeness.py` — verifies every glossary term cites a real article.
+  - `check_roundtrip.py` — verifies corpus Spanish text matches the source PDF.
+  - `parse_21719_amendments.py` — one-off parser for Ley 21.719's amendment list.
+- **Distribution**: a Claude Code plugin manifest (`plugin.json`) + a skill (`skills/chile-compliance/SKILL.md`). The skill's frontmatter description triggers auto-activation when an AI sees fintech or data-protection contexts.
+
+The design spec (`docs/superpowers/specs/2026-05-27-chile-compliance-skill-design.md`) and the implementation plan (`docs/superpowers/plans/2026-05-27-chile-compliance-skill.md`) are committed for archaeology.
+
+---
+
+## Contributing
+
+Translations, scenario additions, and corpus expansions are welcome. The corpus is meant to be community-improvable.
+
+### High-priority gaps
+
+The most useful contribution right now is finishing the literal translations of Ley 19.628 consolidated Títulos VI, VII, and VIII (Arts. 30-55). The Spanish is verbatim in each article block; the English currently contains structured summaries with `<!-- REVIEW: ... -->` markers. To upgrade an article:
+
+1. Open the file (e.g., `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md`).
+2. Find an article with a `<!-- REVIEW: ... -->` marker.
+3. Replace the English summary with a literal translation, following `corpus/_lexicon.md` conventions.
+4. Remove the REVIEW marker.
+5. Run the gates (see below) to confirm nothing breaks.
+6. Open a PR.
+
+Priority order based on impact for consuming AIs:
+1. `titulo-07-sanciones.md` (24 markers) — sanctions framework, most consequential.
+2. `titulo-06-agencia.md` (12 markers) — APDP powers and procedures.
+3. `titulo-08-organos-constitucionales.md` (2 markers) — narrow applicability.
+
+### Adding a new scenario
+
+`indexes/scenarios.md` is a compliance checklist by use case. To add one:
+
+1. Identify the feature (e.g., "consumer credit scoring with ML").
+2. Walk through the laws and identify obligations.
+3. Add a `## Scenario N: <feature>` block following the existing template.
+4. Every checklist item must end with an article citation like `Ley 19.628 Art. 12` and a `(See corpus/...md#article-N)` link.
+5. Run the citation-resolution check (see below).
+
+### Adding new amendments or sources
+
+When the APDP issues guidance, when CMF publishes a circular, or when an amendment passes:
+
+1. Drop the source PDF in `sources/`.
+2. Add a new section under `corpus/` (e.g., `corpus/apdp-circular-001/`) — don't intermix.
+3. Update `plugin.json` to add the new section to `corpus_status`.
+4. Update `SKILL.md`'s "What this skill covers" section.
+
+### Adding a new law entirely
+
+If you want to add another Chilean statute (e.g., Ley 18.045 capital markets):
+
+1. Create `corpus/18045-capital-markets/` with the same per-Título file structure.
+2. Add the source PDF to `sources/`.
+3. Run `python -m tools.extract_articles <pdf>` to get a baseline article inventory.
+4. Translate each Título following the conventions used in `corpus/21521-fintech/`.
+5. Add the law to `plugin.json` `corpus_status`.
+
+The tooling is law-agnostic — the same scripts work on any Chilean BCN PDF following standard `Artículo N.-` / `TÍTULO N` structure.
+
+### Quality gates
+
+Before opening a PR, run:
+
+```bash
+python -m pytest tools/tests/ -v
+python -m tools.check_extraction_parity sources/Ley-21521_04-ENE-2023-1.pdf corpus/21521-fintech --exclude-titulo V
+python -m tools.check_extraction_parity sources/LEY-19628_28-AGO-1999.pdf corpus/19628-data-protection-consolidated --exclude-titulo Transitorio
+python -m tools.check_roundtrip sources/Ley-21521_04-ENE-2023-1.pdf corpus/21521-fintech --sample 0
+python -m tools.check_roundtrip sources/LEY-19628_28-AGO-1999.pdf corpus/19628-data-protection-consolidated --sample 0
+python -m tools.check_glossary_completeness indexes/glossary.md corpus/21521-fintech
+python -m tools.check_glossary_completeness indexes/glossary.md corpus/19628-data-protection-consolidated
+```
+
+All eight commands must exit `0` with their "OK" message.
+
+### Development setup
+
+```bash
+git clone <repo-url>
+cd chilean-compliance
+python -m pip install -r tools/requirements.txt
+python -m pytest tools/tests/ -v
+```
+
+Python 3.11+ required.
+
+---
+
+## Source materials
+
+Original Spanish source text is from the **Biblioteca del Congreso Nacional de Chile** (BCN, [leychile.cl](https://www.leychile.cl/)) and is public-domain Chilean government text. PDFs in `sources/` are unchanged from BCN; verbatim Spanish quoted in the corpus tracks them exactly (verified by the round-trip checker).
+
+| Law | Source PDF |
+|---|---|
+| Ley 21.521 | `sources/Ley-21521_04-ENE-2023-1.pdf` |
+| Ley 19.628 (1999 baseline) | `sources/LEY-19628_28-AGO-1999.pdf` |
+| Ley 21.719 | `sources/Ley-21719_13-DIC-2024.pdf` |
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+The English translations and structural commentary are original work, released under MIT. The verbatim Spanish text reproduced in the corpus is public-domain Chilean government work and remains as such.
+
+---
+
+## Disclaimer
+
+This corpus and the AI tooling around it are **not legal advice**. The translations are literal renderings made by humans assisted by AI; they may contain errors, omissions, or contextual nuances the lexicon cannot capture. Articles tagged with `<!-- REVIEW: ... -->` markers are explicitly flagged as pending review. For any decision with material legal or financial risk, consult a Chilean attorney.
+
+The maintainers make no warranty as to the accuracy, completeness, or currency of any content in this repository.

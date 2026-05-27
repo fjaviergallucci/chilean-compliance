@@ -1,0 +1,70 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: pytest + quality gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r tools/requirements.txt
+
+      - name: Run pytest
+        run: python -m pytest tools/tests/ -v
+
+      - name: Quality gate — extraction parity (Ley 21.521)
+        run: |
+          python -m tools.check_extraction_parity \
+            sources/Ley-21521_04-ENE-2023-1.pdf \
+            corpus/21521-fintech \
+            --exclude-titulo V
+
+      - name: Quality gate — extraction parity (Ley 19.628 consolidated)
+        run: |
+          python -m tools.check_extraction_parity \
+            sources/LEY-19628_28-AGO-1999.pdf \
+            corpus/19628-data-protection-consolidated \
+            --exclude-titulo Transitorio
+
+      - name: Quality gate — round-trip (Ley 21.521)
+        run: |
+          python -m tools.check_roundtrip \
+            sources/Ley-21521_04-ENE-2023-1.pdf \
+            corpus/21521-fintech \
+            --sample 0
+
+      - name: Quality gate — round-trip (Ley 19.628 consolidated)
+        run: |
+          python -m tools.check_roundtrip \
+            sources/LEY-19628_28-AGO-1999.pdf \
+            corpus/19628-data-protection-consolidated \
+            --sample 0
+
+      - name: Quality gate — glossary completeness (Ley 21.521)
+        run: |
+          python -m tools.check_glossary_completeness \
+            indexes/glossary.md \
+            corpus/21521-fintech
+
+      - name: Quality gate — glossary completeness (Ley 19.628 consolidated)
+        run: |
+          python -m tools.check_glossary_completeness \
+            indexes/glossary.md \
+            corpus/19628-data-protection-consolidated
