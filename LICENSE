@@ -19,17 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-NOTE on source materials:
-
-The Spanish-language legal text reproduced in this repository (in `sources/`
-PDFs and quoted verbatim in `corpus/`) is public-domain work of the
-Government of Chile, published by the Biblioteca del Congreso Nacional de
-Chile (BCN) at https://www.leychile.cl/. That content is not subject to the
-MIT license above; it remains in the public domain.
-
-The English translations, structural commentary, indexes, scenario
-checklists, and accompanying tooling are original work covered by the MIT
-license above.
