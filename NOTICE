@@ -1,0 +1,32 @@
+chile-compliance
+================
+
+This repository contains two distinct categories of content with different
+provenance and rights:
+
+1. **Original work** — covered by the [MIT License](LICENSE).
+
+   This includes:
+   - All English translations in `corpus/`.
+   - Structural commentary, headers, tags, and cross-references.
+   - Translator's notes (`> **TN:** ...`).
+   - The lexicon at `corpus/_lexicon.md`.
+   - All indexes under `indexes/`.
+   - The Claude Code skill at `skills/chile-compliance/SKILL.md`.
+   - Python tooling under `tools/`.
+   - Project documentation (README, CONTRIBUTING, CHANGELOG, this NOTICE).
+
+2. **Public-domain Chilean government text** — not subject to the MIT License.
+
+   This includes:
+   - The PDF source files in `sources/`, downloaded unchanged from the
+     Biblioteca del Congreso Nacional de Chile (BCN, https://www.leychile.cl/).
+   - All verbatim Spanish text quoted in the corpus's `### Original Spanish`
+     blocks, which is reproduced from those PDFs.
+
+   These materials are works of the Government of Chile and are in the public
+   domain. They are included here for direct comparison with the English
+   translations.
+
+If you redistribute or adapt this project, please preserve this NOTICE file
+so downstream users can distinguish the two categories.
