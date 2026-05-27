@@ -14,6 +14,40 @@ Both laws are published in Spanish. Without help, an AI session about Chilean co
 
 ---
 
+## En español
+
+**chile-compliance** es una base de conocimiento estructurada y consultable por agentes de inteligencia artificial sobre la regulación chilena de servicios financieros y protección de datos personales. Está pensada para asistentes y agentes de IA (no para uso humano directo) que necesitan razonar sobre el cumplimiento normativo aplicable a software desarrollado para usuarios en Chile.
+
+### Leyes incluidas
+
+- **Ley N° 21.521 (Ley Fintec)** — promueve la competencia e inclusión financiera mediante la innovación y tecnología en la prestación de servicios financieros. Cubre plataformas de financiamiento colectivo (*crowdfunding*), asesoría crediticia y de inversión, custodia de instrumentos financieros, enrutamiento de órdenes, intermediación, sistemas alternativos de transacción y el Sistema de Finanzas Abiertas (SFA). En vigor desde el **3 de febrero de 2023**.
+- **Ley N° 19.628 sobre Protección de Datos Personales** (consolidada con las modificaciones de la **Ley N° 21.719**) — regula el tratamiento de datos personales, el consentimiento del titular, los derechos del titular (acceso, rectificación, supresión, oposición, portabilidad), los datos personales sensibles, la transferencia internacional, las obligaciones del responsable y del mandatario, y crea la **Agencia de Protección de Datos Personales (APDP)** con su régimen sancionatorio. Entra en vigor el **1 de diciembre de 2026**.
+
+### ¿Qué hay en el repositorio?
+
+- Traducciones literales al inglés del articulado, con el texto original en español preservado verbatim en cada artículo.
+- Léxico jurídico bilingüe (`corpus/_lexicon.md`) que fija las equivalencias de términos clave.
+- Índices: por tema (`indexes/by-topic.md`), glosario de términos definidos (`indexes/glossary.md`), listas de verificación de cumplimiento por caso de uso (`indexes/scenarios.md`) y grafo de referencias cruzadas entre artículos (`indexes/cross-references.md`).
+- Skill para Claude Code con un árbol de decisión de consultas y convenciones de citación.
+- Herramientas Python de verificación con cobertura de pruebas (paridad de extracción, fidelidad del texto en español, completitud del glosario).
+
+### Estado actual
+
+El corpus principal está en inglés, ya que ese es el idioma operativo de los agentes de IA. Las citas verbatim del texto original en español siempre están disponibles dentro de cada artículo (bloque `### Original Spanish`). Los Títulos VI-VIII de la Ley 19.628 consolidada (Arts. 30-55, marco regulatorio del APDP y régimen sancionatorio) contienen actualmente resúmenes estructurados en inglés; las traducciones literales están pendientes de revisión humana (44 marcadores `<!-- REVIEW -->` señalan estos pasajes).
+
+### Documentación completa y contribuciones
+
+La documentación principal (instalación, uso desde Claude Code y otros hosts de IA, arquitectura, convenciones de contribución) está en inglés más abajo en este mismo archivo y en [CONTRIBUTING.md](CONTRIBUTING.md). Las contribuciones son bienvenidas, especialmente para finalizar las traducciones literales de los Títulos VI-VIII de la Ley 19.628 consolidada.
+
+### Licencia y procedencia
+
+El código fuente, las traducciones al inglés, los índices y la documentación se distribuyen bajo licencia [MIT](LICENSE). El texto en español de las leyes reproducido verbatim en este repositorio proviene de la **Biblioteca del Congreso Nacional de Chile (BCN)** ([leychile.cl](https://www.leychile.cl/)) y es de **dominio público** como obra del Estado de Chile. Ver [NOTICE](NOTICE) para más detalle.
+
+> [!IMPORTANT]
+> Este repositorio **no constituye asesoría legal**. Es una ayuda estructurada de citas para agentes de IA. Para decisiones con riesgo material legal o financiero, consulte a un abogado o abogada chileno/a habilitado/a.
+
+---
+
 ## Status
 
 | Component | Status | Notes |
