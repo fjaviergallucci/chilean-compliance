@@ -26,27 +26,11 @@ Ley 21.719 Art. 1° item 1 substituted, in the name of the law, the phrase "LA V
 - `titulo-final.md` — Título Final. **Repealed by item 15** (formerly contained Art. 24, an amendment to the Health Code).
 - `transitorios.md` — Disposiciones transitorias (Arts. 1°, 2°, 3° transitorios). Amended by item 16 (paragraphs 2 and 3 of Art. 1° transitorio eliminated).
 
-## Review markers
-This consolidated build was produced in Phase F2. The following articles carry `<!-- REVIEW: -->` markers for Phase H4 attention:
-- Art. 2 — interpretation of the renumbering caused by item 5.dos.
-- Titles VI, VII, VIII (Arts. 30 through 55) — English text in this build is structured headline-summary; verbatim Spanish is preserved per article. Phase H4 should produce fully literal lexicon-conformant English translations.
-- Transitorio 1° — interaction between the now-truncated transitional regime and Ley 21.719's own entry-into-force rules.
+## Translation status
+
+All articles in this consolidated corpus carry literal lexicon-conformant English translations of the verbatim Spanish. The Phase H4 review pass closed the 44 `<!-- REVIEW: -->` markers that the F2 consolidation pass had left in place; those resolutions landed in PRs #2 (Título VII), #3 (Título VI), and #4 (cleanup batch — Preliminar, III, VIII, transitorios).
+
+Translator's notes (`> **TN:** ...`) are present where the lexicon does not directly map a Chilean legal-drafting term, where a paragraph reflects a pre-21.719 amendment layer (Título III), or where the rendering preserves a constitutional-law or administrative-law nuance.
 
 ## Audit trail
 Each article in this corpus carries a "Source" footer naming the Ley 21.719 amendment item(s) that produced its current wording (where amended). The complete change index lives at `corpus/21719-amendments-changelog/changes.md`. The pre-21.719 baseline content is preserved in git history at the commits prior to the Phase F2 consolidation.
-
-## Known limitations
-
-The following sections currently contain English structured summaries rather
-than fully literal translations. The verbatim Spanish is preserved; the
-English-text section will be replaced during Phase H4 (human review).
-
-- **Título VI** (Arts. 30–32 bis) — Personal Data Protection Agency. 12 REVIEW markers.
-- **Título VII** (Arts. 33–53) — Sanctions, procedures, civil liability, prevention models. 24 REVIEW markers.
-- **Título VIII** (Arts. 54–55) — Congress, Judiciary, autonomous bodies. 2 REVIEW markers.
-
-For these articles, consuming AIs should surface the `<!-- REVIEW: ... -->`
-marker and recommend the user consult the Spanish original directly or wait
-for the H4 pass.
-
-Total REVIEW markers across the consolidated corpus: 44.
