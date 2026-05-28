@@ -15,9 +15,11 @@ _law:_ 19.628
 
 ### Plain-English text
 
-Creates the Personal Data Protection Agency (Agencia de Protección de Datos Personales) as an autonomous public-law corporation, technical, decentralized, with legal personality and own assets, relating to the President of the Republic through the Ministry of Economy, Development, and Tourism. The Agency's purpose is to ensure effective protection of the rights guaranteeing the private life of persons and their personal data, and to supervise compliance with this law's provisions. The domicile of the Agency shall be fixed by regulation.
+Personal Data Protection Agency. The Personal Data Protection Agency (Agencia de Protección de Datos Personales) is hereby created, as an autonomous public-law corporation, of a technical character, decentralized, with legal personality and its own assets (patrimonio propio), which shall relate to the President of the Republic through the Ministry of Economy, Development, and Tourism.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The Agency shall have as its purpose to ensure the effective protection of the rights that guarantee the private life of persons and their personal data, in conformity with what is established in this law, and to supervise (fiscalizar) compliance with its provisions.
+
+The domicile of the Agency shall be fixed in the regulation, without prejudice to the domiciles it may establish at other points in the country.
 
 ### Original Spanish
 
@@ -46,9 +48,37 @@ Creates the Personal Data Protection Agency (Agencia de Protección de Datos Per
 
 ### Plain-English text
 
-Lists the Agency's functions and powers, including: issuing instructions and general/binding rules to regulate personal-data processing operations consistent with the principles of this law, after public consultation; applying and interpreting administratively the legal and regulatory provisions on personal-data protection; supervising compliance; determining infringements; exercising sanctioning powers; resolving applications and claims; developing dissemination/education programs; issuing certifications; representing the Agency in court and out of court; carrying out international relations; and other functions established by law.
+Functions and powers of the Agency. The Agency shall have the following functions and powers (atribuciones):
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) To issue instructions and general and binding rules with the purpose of regulating the operations of processing of personal data in accordance with the principles established in this law. The instructions and general rules issued by the Agency must be emitted following a prior public consultation conducted through the institutional website, and must be related strictly to the regulation of processing of personal data and necessary for the faithful compliance with this law, the necessary mechanisms being provided so that interested parties may formulate observations thereon.
+
+b) To apply and interpret administratively the legal and regulatory provisions on the matter of protection of personal data and the instructions and general rules issued by the Agency.
+
+c) To supervise (fiscalizar) compliance with the provisions of this law, its regulations, and the instructions and general rules issued in respect of the processing of personal data. To that end, it may require those who carry out processing of personal data to deliver any document, book, or background record and all information necessary for compliance with its supervisory function.
+
+d) To determine the infringements and non-compliances incurred by those who carry out processing of personal data, in their data-processing operations, in respect of the principles and obligations established in this law, its regulations, and the instructions and general rules issued by the Agency. For such purposes, and in a reasoned manner, it may summon to declare, among others, the data subject (titular), the legal representatives, administrators, advisors, and employees of those who process personal data, as well as any person who has had participation or knowledge of any fact relevant to resolving a sanctioning proceeding. Likewise, it may take the respective declarations by other means that ensure their fidelity.
+
+e) To exercise the sanctioning power over the natural persons or legal persons who process personal data in infringement of this law, its regulations, and the instructions and general rules issued by the Agency, applying the sanctions established in this law.
+
+f) To resolve the applications and claims that data subjects formulate against those who process personal data in infringement of this law, its regulations, or the instructions and general rules issued by the Agency.
+
+g) To develop programs, projects, and actions of dissemination, promotion, and information to the citizenry, in relation to respect for the protection of their personal data.
+
+h) To propose to the President of the Republic and to the National Congress, as the case may be, the legal and regulatory rules to ensure persons the due protection of their personal data and to perfect the regulation on the processing and use of this information.
+
+i) To render technical assistance, when so required, to the National Congress, the Judiciary, the Comptroller General of the Republic, the Public Prosecutor's Office, the Constitutional Court, the Central Bank, the Electoral Service, the Electoral Justice, and the other special tribunals created by law, in the issuance and execution of the policies and internal rules of these bodies, with the purpose that their operations and activities of processing of personal data are carried out in conformity with the principles and obligations established in this law.
+
+j) To relate and collaborate with public bodies in the design and implementation of policies and actions aimed at safeguarding the protection of personal data and their correct processing.
+
+k) To enter into agreements of cooperation and collaboration with public or private entities, national, foreign, or international, that have competence or are related to the field of personal data. In the cases of entering into agreements with international public entities, prior consultation with the Ministry of Foreign Affairs shall be required, in conformity with what is established in Article 35 of Law No. 21.080.
+
+l) To participate in, receive cooperation from, and collaborate with international bodies on matters of protection of personal data.
+
+m) To certify, register, and supervise infringement-prevention models and compliance programs, and to administer the National Registry of Sanctions and Compliance.
+
+n) To exercise the other functions and powers entrusted to it by law.
+
+When a body of the Administration is required for the exercise of the functions or powers that this law confers on the Agency, it must comply with what is set forth in the second paragraph of Article 14 of Law No. 19.880.
 
 ### Original Spanish
 
@@ -156,9 +186,19 @@ Lists the Agency's functions and powers, including: issuing instructions and gen
 
 ### Plain-English text
 
-Senior direction of the Agency belongs to a Directive Council (Consejo Directivo) composed of three council members designated by the President of the Republic with the agreement of the Senate. The Council operates as a collegiate body and adopts decisions by majority. Designation procedures, term limits (six years, renewable once), and replacement rules are detailed.
+Direction of the Agency. Senior direction of the Agency shall correspond to the Governing Board of the Agency (Consejo Directivo), which shall have the following functions and powers (atribuciones):
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) To exercise the powers and fulfil the functions that the law entrusts to the Agency.
+
+b) To establish internal operating rules of the Agency for the fulfilment of the functions entrusted by law.
+
+c) To establish policies for the planning, organization, direction, supervision, coordination, and control of the operation of the Agency, as well as those for the administration, acquisition, and disposal of assets.
+
+d) To issue rules of general character, circulars, circular letters (oficios circulares), and other resolutions as may be required.
+
+e) To formulate to the President of the Republic or to the National Congress proposals for the reform of legal and regulatory rules.
+
+f) To prepare, within the first four months of each year, an annual public account detailing the work carried out by the Agency in the immediately preceding year.
 
 ### Original Spanish
 
@@ -193,9 +233,21 @@ Senior direction of the Agency belongs to a Directive Council (Consejo Directivo
 
 ### Plain-English text
 
-Establishes the requirements to be a council member: Chilean citizenship, professional title of at least eight semesters' duration, and proven specialty and experience of at least ten years in matters relating to this law. Council membership is incompatible with various public-sector positions and roles.
+Members of the Agency's Governing Board. The Governing Board of the Agency shall be composed of three Directors (consejeros), designated by the President of the Republic, with the agreement of the Senate, adopted by two-thirds of its members in office.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+For purposes of their designation, the President of the Republic shall make the proposal of the corresponding list, and the Senate must rule on the proposal.
+
+Candidates for Director must be persons of recognized professional or academic prestige in matters of personal data protection.
+
+The Governing Board of the Agency shall designate its president and vice-president, from among its members, in conformity with what is established in the Agency's statutes. The offices of president and vice-president shall last three years or the time remaining to them as Directors in each case.
+
+The Directors shall hold office for six years, may not be designated for a new term, and shall be renewed on an individual basis, every two years.
+
+The office of Director of the Governing Board of the Agency requires exclusive dedication.
+
+The Governing Board of the Agency shall adopt its decisions by the majority of its members and, in case of a tie, the president shall decide, or the vice-president in case of absence of the president. The minimum quorum to convene shall be two Directors. The regulation shall establish the other rules necessary for its operation.
+
+The Governing Board of the Agency must hold ordinary sessions at least once a week, and extraordinary sessions when its president specially summons them, on his own initiative or upon written request of two Directors, in the form and conditions determined by its internal operating rules. The president shall not refuse to make the indicated summons, the respective session having to take place within the two business days following the indicated request.
 
 ### Original Spanish
 
@@ -247,9 +299,25 @@ Establishes the requirements to be a council member: Chilean citizenship, profes
 
 ### Plain-English text
 
-Establishes the disqualifications and incompatibilities applicable to the office of council member, including holding other public positions, having direct or indirect interests in entities subject to the Agency's supervision, and other specific disqualifications.
+Disqualifications and incompatibilities. The office of Director is incompatible with the performance of any office or service, whether remunerated or not, that is rendered in the private sector. Likewise, it is incompatible with the status of member of the governing bodies of political parties, officials of the State Administration, and with any employment or service remunerated with fiscal or municipal funds, and with the functions, remunerated or not, of Director, board member, or worker of institutions, autonomous national or foreign bodies, State enterprises and, in general, of any public service created by law, as well as of enterprises, companies, or entities, public or private, in which the State, its enterprises, companies, or centralized or decentralized institutions hold a majority capital contribution or in equal proportion or, under the same conditions, representation or participation. Likewise, it is incompatible with any other remunerated or gratuitous service or employment in any branch of the State.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The office of Director is compatible with the performance of teaching positions in public or private institutions recognized by the State, up to a maximum of twelve hours per week.
+
+The spouse or civil partner of any of the Directors and their relatives up to the second degree of consanguinity inclusive, shall not be a director nor have participation in the ownership of an enterprise whose corporate purpose or commercial line of business deals with the collection, processing, or communication of personal data.
+
+Additionally, the following may not be designated as a Director:
+
+a) The person who has been convicted of a crime carrying an afflictive penalty or perpetual disqualification from holding public offices or positions, for crimes of malfeasance, bribery and those committed in the exercise of the public function, tax crimes, and crimes against the public faith.
+
+b) The person who has a dependency on illegal narcotic or psychotropic substances or drugs, unless they justify their consumption by medical treatment.
+
+c) The person who has been sanctioned, within the last five years, for a serious or very serious infringement of the rules that regulate the processing of personal data and their protection.
+
+d) Those who, within the last year, have been managers, data delegates, directors, or have had participation in the ownership of an enterprise whose corporate purpose or commercial line of business deals with the processing of personal data.
+
+In all matters not expressly regulated in this Article, the rules of Paragraph 2 of Title III of Decree with Force of Law No. 1-19.653, of 2000, of the Ministry General Secretariat of the Presidency, which fixes the consolidated, coordinated, and systematized text of Law No. 18.575, Constitutional Organic Law on General Bases of the State Administration, shall govern.
+
+> **TN:** "delegados de datos" in subparagraph d) is rendered literally as "data delegates"; the law uses this expression for in-house data-protection officers/representatives, but there is no standard lexicon term, so the literal form is preserved.
 
 ### Original Spanish
 
@@ -319,9 +387,21 @@ Establishes the disqualifications and incompatibilities applicable to the office
 
 ### Plain-English text
 
-Establishes the grounds for removing council members and causes for cessation of office, including incapacity, serious misconduct, breach of duties, and other specified circumstances.
+Removal of Directors and grounds for cessation. The Directors shall be removed by the Supreme Court, upon request of the President of the Republic or of the Chamber of Deputies by agreement adopted by simple majority, or upon petition of fifteen deputies, on grounds of incapacity, misconduct, or manifest negligence in the exercise of their functions. The Supreme Court shall hear the matter in plenary specially convened for this purpose, and in order to agree the removal it must obtain the affirmative vote of the majority of its members in office.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+In addition to removal, the following shall be grounds for cessation in the office of Director:
+
+a) Expiration of the term for which the Director was designated.
+
+b) Resignation before the President of the Republic.
+
+c) Standing for an office of popular election.
+
+d) Supervening disqualification or incompatibility, a circumstance that shall be assessed by the majority of the Directors with the exclusion of the affected one.
+
+In the event that one or more Directors cease for any cause, the designation of a new Director shall proceed, by means of a proposal of the President of the Republic, subject to the same procedure set forth in Article 30 quáter, for the remaining period.
+
+If the Director who ceases in office under this Article holds the status of president or vice-president of the Governing Board of the Agency, the replacement shall be designated in the form provided in Article 30 quáter, for the time remaining to the one who produced the vacancy.
 
 ### Original Spanish
 
@@ -365,9 +445,9 @@ Establishes the grounds for removing council members and causes for cessation of
 
 ### Plain-English text
 
-The president of the Directive Council shall receive a remuneration equivalent to that of an undersecretary; other council members receive a remuneration equivalent to two-thirds of that of the president.
+Remuneration. The president of the Governing Board of the Agency shall receive a gross monthly remuneration equivalent to that of an Undersecretary of State, and it shall correspond to him to exercise the functions set forth in Article 30 nonies and in the other pertinent legal provisions.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The other Directors shall receive a remuneration equivalent to 85% of the remuneration corresponding to the president of the Governing Board of the Agency.
 
 ### Original Spanish
 
@@ -390,9 +470,7 @@ The president of the Directive Council shall receive a remuneration equivalent t
 
 ### Plain-English text
 
-The Agency's statutes shall establish its operating rules. The statutes are approved by supreme decree of the Ministry of Economy, Development, and Tourism.
-
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+Agency statutes. The statutes of the Agency shall establish its operating rules. The statutes and their modifications shall be proposed by the Agency to the President of the Republic, and their approval shall be ordered by means of a supreme decree (decreto supremo) issued through the Ministry of Economy, Development, and Tourism.
 
 ### Original Spanish
 
@@ -412,9 +490,31 @@ The Agency's statutes shall establish its operating rules. The statutes are appr
 
 ### Plain-English text
 
-Specifies the functions and powers of the president of the Directive Council, including representing the Agency, calling and chairing council meetings, executing council decisions, and exercising functions delegated by the council.
+Functions and powers of the president of the Governing Board of the Agency. The president of the Governing Board of the Agency shall be the head of service (jefe de servicio) of the Agency and shall have its judicial and extrajudicial representation. He shall be in charge of the organization and administration of the Agency, and it shall correspond to him to exercise the supervision and hierarchical control of the conduct of the Agency's personnel.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+To the president of the Governing Board of the Agency, the following functions and powers shall especially correspond:
+
+a) To exercise the role of head of service.
+
+b) To execute and give compliance to the rules and resolutions adopted by the Governing Board of the Agency.
+
+c) To convene and chair the sessions of the Governing Board of the Agency, as well as to establish the agenda of matters to be addressed at each session.
+
+d) To represent the Agency legally, judicially, and extrajudicially.
+
+e) To issue the internal regulations necessary for the proper operation of the Governing Board of the Agency, with the prior agreement of the Governing Board of the Agency, ensuring compliance with the rules applicable to the Agency.
+
+f) To hire the personnel of the Agency and terminate their services, in conformity with the law.
+
+g) To execute the acts and enter into the conventions necessary for the fulfilment of the purposes of the Governing Board of the Agency.
+
+h) To delegate specific powers or faculties on officials of the Agency.
+
+i) To conduct the relations of the Agency with public bodies and other organs of the State and with the persons or entities subject to its supervision, as well as with international personal-data regulatory entities.
+
+j) To exercise the other functions delegated to him by the Governing Board of the Agency.
+
+The vice-president of the Governing Board of the Agency shall assume the functions and powers of the president of the Governing Board of the Agency in case of his absence.
 
 ### Original Spanish
 
@@ -469,9 +569,13 @@ Specifies the functions and powers of the president of the Directive Council, in
 
 ### Plain-English text
 
-When the Agency must issue a general regulation, instruction, or any other normative act of similar nature that affects the competence of the Council for Transparency (Consejo para la Transparencia), it must first request a report from said Council. The Council for Transparency shall issue the report within thirty calendar days. The opposite case applies to the Council for Transparency.
+Regulatory coordination with the Council for Transparency. When the Agency must issue an instruction or rule of general and binding character that may have effects in the areas of competence of the Council for Transparency (Consejo para la Transparencia), in accordance with the functions and powers set forth in Law No. 20.285, it shall transmit to the Council all background records and shall request from it a report, for the purposes of avoiding or preventing potential conflicts of rules and ensuring coordination, cooperation, and collaboration between the two bodies.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The Council for Transparency must deliver the requested report within the period of thirty calendar days, counted from the date on which it received the request referred to in the preceding paragraph.
+
+The Agency shall consider the content of the opinion of the Council for Transparency by expressing it in the reasoning of the instruction or rule it issues. Once the period has elapsed without the report having been received, the procedure shall continue in conformity with the second paragraph of Article 38 of Law No. 19.880.
+
+In turn, when the Council for Transparency must issue a general instruction that has clear effects in the areas of competence of the Agency, in accordance with the functions and powers set forth in this law, the Council for Transparency shall transmit the background records and request a report from the Agency, which must deliver it within the period of thirty calendar days, counted from the date on which it received the request. The Council for Transparency shall consider the content of the opinion of the Agency by expressing it in the reasoning of the general instruction it issues for the purpose. Once the period has elapsed without the report having been received, the procedure shall continue in conformity with the second paragraph of Article 38 of Law No. 19.880.
 
 ### Original Spanish
 
@@ -519,9 +623,21 @@ When the Agency must issue a general regulation, instruction, or any other norma
 
 ### Plain-English text
 
-Persons providing services to the Agency are governed by labour legislation (Labour Code). The Agency's personnel selection and recruitment shall be made through public competition. Personnel are subject to the rules on probity established in Law No. 18.575.
+Personnel of the Agency and supervision. The persons who render services to the Agency shall be governed by the Labour Code (Código del Trabajo).
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+Notwithstanding the foregoing, the rules on probity established in Law No. 20.880, on probity in the public function and prevention of conflicts of interest, and in Title III of Decree with Force of Law No. 1-19.653, of 2000, of the Ministry General Secretariat of the Presidency, which fixes the consolidated, coordinated, and systematized text of Law No. 18.575, Constitutional Organic Law on General Bases of the State Administration, shall be applicable to this personnel, a clause so providing having to be set out in the respective contracts.
+
+The persons who perform directive functions in the Agency shall be selected by means of a public competition (concurso público) conducted by the National Civil Service Directorate, on the basis of a shortlist (terna) formed by the Council of Senior Public Management for each case, in accordance with the rules governing the selection processes of the Senior Public Management under Law No. 19.882.
+
+In the event that third parties exercise, against the Directors or the personnel of the Agency, judicial actions for formal acts or for acts or omissions produced in the exercise of their offices, the Agency must provide them with legal defence. This defence shall extend to all those actions that are initiated against them even after they have ceased in office.
+
+The defence referred to in the preceding paragraph shall not be available in cases in which the formal acts, acts, or omissions in question have constituted a ground for cessation imputable to the conduct of the respective official.
+
+The Agency must comply with the rules established in Decree Law No. 1.263, of 1975, on Financial Administration of the State.
+
+Likewise, the Agency shall be subject to the supervision (fiscalización) of the Comptroller General of the Republic, in respect of its personnel and the examination and judgement of its accounts.
+
+The resolutions of the Agency shall be exempt from the procedure of taking of reason (toma de razón) by the Comptroller General of the Republic.
 
 ### Original Spanish
 
@@ -578,9 +694,17 @@ Persons providing services to the Agency are governed by labour legislation (Lab
 
 ### Plain-English text
 
-The Agency's assets are formed by: (a) annual budget contributions established in the public-sector budget law; (b) the proceeds of fines applied; (c) bequests and donations; (d) interest, profits, and other income obtained from the management of its resources; and (e) other goods and rights it acquires by any title.
+On the assets. The assets (patrimonio) of the Agency shall be formed by:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) The contribution annually contemplated in the Public Sector Budget Law.
+
+b) The movable and immovable assets transferred to it or that it acquires by any title and the fruits derived from them.
+
+c) The donations that the Agency accepts. The donations shall not require the procedure of judicial intimation referred to in Article 1401 of the Civil Code.
+
+d) The inheritances and legacies that the Agency accepts, which it must always do with benefit of inventory. Such assignments shall be exempt from any kind of taxes and from any tax or charge affecting them.
+
+e) The contributions from international cooperation.
 
 ### Original Spanish
 
