@@ -5,7 +5,7 @@
 **Single version in force from:** 2023-02-03
 **Issuing body:** Ministerio de Hacienda
 **Source PDF:** `sources/Ley-21521_04-ENE-2023-1.pdf`
-**Corpus status:** see `plugin.json` → `corpus_status.21521_fintech`
+**Corpus status:** see `.claude-plugin/plugin.json` → `corpus_status.21521_fintech`
 
 ## Scope (summary)
 Regulates the commercial provision of: crowdfunding platforms, alternative

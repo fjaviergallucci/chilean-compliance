@@ -4,23 +4,21 @@ Thanks for considering a contribution. This corpus is meant to be community-impr
 
 ## Where to start
 
-The single highest-impact contribution right now is finishing the literal translations of **Ley 19.628 consolidated, Títulos VI–VIII** (Arts. 30–55: APDP regulator, sanctions, constitutional bodies). The Spanish text is verbatim in each article block; the English currently contains structured summaries with `<!-- REVIEW: ... -->` markers.
+As of v1.0.0, every article in the corpus carries a literal lexicon-conformant translation. The most useful contributions now are:
 
-Priority order based on consuming-AI impact:
+- **Translation corrections.** If you find an English rendering that doesn't track the Spanish, open an issue (`Translation fix or improvement` template) or send a PR with the change plus a `> **TN:** ...` note explaining the rationale.
+- **New scenarios** in `indexes/scenarios.md` covering use cases that aren't yet on the list.
+- **CMF circulars and APDP guidance** as they are published. These are out of scope today but are valuable additions when issued.
+- **Coverage for other Chilean statutes** that fintech-adjacent products touch (Leyes 18.045, 18.046, 18.840, etc.). Each becomes its own corpus subdirectory.
 
-| Priority | File | REVIEW markers | Why |
-|---|---|---:|---|
-| 1 | `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md` | 24 | Sanctions / fines / procedures — every compliance answer involving risk needs literal text here |
-| 2 | `corpus/19628-data-protection-consolidated/titulo-06-agencia.md` | 12 | APDP powers — drives who-can-do-what answers |
-| 3 | `corpus/19628-data-protection-consolidated/titulo-03-datos-financieros.md` | 3 | Pre-21.719 amendment notes |
-| 4 | `corpus/19628-data-protection-consolidated/titulo-08-organos-constitucionales.md` | 2 | Narrow applicability |
+To propose any of the above, open an issue using the matching `.github/ISSUE_TEMPLATE/` so the discussion has the right shape, then send a PR.
 
-To upgrade an article:
+### Translation fix workflow (when applicable)
 
-1. Open the file and find an article with `<!-- REVIEW: ... -->`.
-2. Replace the English summary with a literal lexicon-conforming translation. Keep the verbatim Spanish unchanged.
-3. Remove the REVIEW marker.
-4. Add a `> **TN:** ...` note immediately after any phrase you rendered non-literally, explaining why.
+1. Open the affected file and locate the article.
+2. Update the English text to track the Spanish more precisely.
+3. Add a `> **TN:** ...` note immediately after any phrase you rendered non-literally, explaining why.
+4. Keep the `### Original Spanish` block unchanged.
 5. Run the quality gates (below).
 6. Open a PR.
 
@@ -49,7 +47,7 @@ When the APDP issues guidance, when CMF publishes a circular, or when a new amen
 
 1. Drop the source PDF in `sources/`.
 2. Add a new section under `corpus/` (e.g., `corpus/apdp-circular-001/`). Don't intermix with existing law files.
-3. Update `plugin.json` to add the new section to `corpus_status`.
+3. Update `.claude-plugin/plugin.json` to add the new section to `corpus_status`.
 4. Update `SKILL.md`'s "What this skill covers" section.
 5. Update the README status table.
 
@@ -59,7 +57,7 @@ For adding a new statute entirely (e.g., Ley 18.045):
 2. Add the source PDF to `sources/`.
 3. Run `python tools/extract_articles.py sources/<pdf>` to get an article inventory.
 4. Translate each Título following the same conventions.
-5. Add the law to `plugin.json` `corpus_status`.
+5. Add the law to `.claude-plugin/plugin.json` `corpus_status`.
 
 The tooling is law-agnostic — the same scripts work on any Chilean BCN PDF that follows standard `Artículo N.-` and `TÍTULO N` structure.
 

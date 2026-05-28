@@ -60,7 +60,7 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 113 + 40 + 98 + 265 citations respectively |
 | Tooling + tests | **Stable** | 18/18 pytest passing |
 
-The `corpus_status` field in `plugin.json` is the canonical source of truth for an AI consumer.
+The `corpus_status` field in `.claude-plugin/plugin.json` is the canonical source of truth for an AI consumer.
 
 ---
 
@@ -104,31 +104,39 @@ The AI didn't translate anything from scratch. It read curated, vetted English w
 
 ## Quick start — Claude Code
 
-The plugin is designed for Claude Code first.
+The plugin is published as a Claude Code plugin marketplace at this repository. Install it with two commands from any Claude Code session:
 
-### Per-project opt-in
-
-Add a reference to this plugin in the project where you want compliance help. In that project's `CLAUDE.md` (or a project-specific settings file):
-
-```markdown
-## Plugins
-
-- chile-compliance: <path-to-this-repo-clone>
+```text
+/plugin marketplace add fjaviergallucci/chilean-compliance
+/plugin install chile-compliance@chile-compliance
 ```
 
-Or, if you use a settings file (`.claude/settings.json` or similar plugin config):
+The first command registers this repo as a marketplace named `chile-compliance` (per `.claude-plugin/marketplace.json`). The second installs the `chile-compliance` plugin from that marketplace.
 
-```json
-{
-  "plugins": ["<path-to-this-repo-clone>"]
-}
+By default, plugins install at user scope (available across all your projects). To scope to one project instead:
+
+```text
+/plugin install chile-compliance@chile-compliance --scope project
 ```
 
-Then ask your usual compliance questions. The skill activates automatically when the AI sees fintech or data-protection contexts (see `skills/chile-compliance/SKILL.md` for triggers).
+After install, the skill activates automatically when Claude sees Chilean fintech or data-protection contexts (see `skills/chile-compliance/SKILL.md` for triggers). You can also invoke it explicitly with `/chile-compliance:chile-compliance`.
 
-### Global install
+To enable, disable, or uninstall later:
 
-If you'd rather have it available in every session, drop a clone in your global Claude Code plugins directory (typically `~/.claude/plugins/`).
+```text
+/plugin disable chile-compliance@chile-compliance
+/plugin enable chile-compliance@chile-compliance
+/plugin uninstall chile-compliance@chile-compliance
+```
+
+### Pin to a specific release
+
+To install at a tagged version rather than `main`:
+
+```text
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.0.0
+/plugin install chile-compliance@chile-compliance
+```
 
 ---
 
@@ -136,7 +144,7 @@ If you'd rather have it available in every session, drop a clone in your global 
 
 The corpus is plain markdown — it doesn't depend on Claude Code. You can use it from:
 
-- **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — load relevant files at session start, or use a tool-call that reads `corpus/`, `indexes/`, and `plugin.json` paths.
+- **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — load relevant files at session start, or use a tool-call that reads `corpus/`, `indexes/`, and `.claude-plugin/plugin.json` paths.
 - **MCP server** — wrap the corpus with a thin MCP layer exposing `search`, `get_article`, `get_definition`, and `find_obligations` tools. The folder structure was designed to make this straightforward; no rework needed.
 - **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer).
 - **Manual reading** — yes, humans can read it too, though it wasn't optimized for that.
@@ -149,8 +157,10 @@ The `SKILL.md` file documents the query decision tree the corpus expects — por
 
 ```
 chile-compliance/
-├── plugin.json                         # manifest with corpus_status
-├── skills/chile-compliance/SKILL.md    # query decision tree for consuming AIs
+├── .claude-plugin/
+│   ├── marketplace.json                # Marketplace catalog (this repo as marketplace)
+│   └── plugin.json                     # Plugin manifest with corpus_status
+├── skills/chile-compliance/SKILL.md    # Query decision tree for consuming AIs
 ├── corpus/
 │   ├── _lexicon.md                     # Spanish ↔ English legal-term mapping
 │   ├── 21521-fintech/                  # Ley 21.521 by Título
@@ -227,9 +237,7 @@ The build philosophy is **markdown-first, tooling-light**:
   - `check_glossary_completeness.py` — verifies every glossary term cites a real article.
   - `check_roundtrip.py` — verifies corpus Spanish text matches the source PDF.
   - `parse_21719_amendments.py` — one-off parser for Ley 21.719's amendment list.
-- **Distribution**: a Claude Code plugin manifest (`plugin.json`) + a skill (`skills/chile-compliance/SKILL.md`). The skill's frontmatter description triggers auto-activation when an AI sees fintech or data-protection contexts.
-
-The design spec (`docs/superpowers/specs/2026-05-27-chile-compliance-skill-design.md`) and the implementation plan (`docs/superpowers/plans/2026-05-27-chile-compliance-skill.md`) are committed for archaeology.
+- **Distribution**: a Claude Code plugin manifest (`.claude-plugin/plugin.json`) + a marketplace catalog (`.claude-plugin/marketplace.json`) + a skill (`skills/chile-compliance/SKILL.md`). The skill's frontmatter description triggers auto-activation when an AI sees fintech or data-protection contexts. The repo doubles as its own single-plugin marketplace, so a user installs it with `/plugin marketplace add` + `/plugin install`.
 
 ---
 
@@ -237,21 +245,14 @@ The design spec (`docs/superpowers/specs/2026-05-27-chile-compliance-skill-desig
 
 Translations, scenario additions, and corpus expansions are welcome. The corpus is meant to be community-improvable.
 
-### High-priority gaps
+### Where help is welcome
 
-The most useful contribution right now is finishing the literal translations of Ley 19.628 consolidated Títulos VI, VII, and VIII (Arts. 30-55). The Spanish is verbatim in each article block; the English currently contains structured summaries with `<!-- REVIEW: ... -->` markers. To upgrade an article:
+As of v1.0.0, all article-level REVIEW markers in the corpus are resolved. The most useful contributions now are:
 
-1. Open the file (e.g., `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md`).
-2. Find an article with a `<!-- REVIEW: ... -->` marker.
-3. Replace the English summary with a literal translation, following `corpus/_lexicon.md` conventions.
-4. Remove the REVIEW marker.
-5. Run the gates (see below) to confirm nothing breaks.
-6. Open a PR.
-
-Priority order based on impact for consuming AIs:
-1. `titulo-07-sanciones.md` (24 markers) — sanctions framework, most consequential.
-2. `titulo-06-agencia.md` (12 markers) — APDP powers and procedures.
-3. `titulo-08-organos-constitucionales.md` (2 markers) — narrow applicability.
+- **Translation corrections.** If you find an English rendering that doesn't track the Spanish, or a Chilean legal term that deserves a clearer treatment, open an issue (use the `Translation fix or improvement` template) or send a PR with the change plus a `> **TN:** ...` note explaining the rationale.
+- **New scenarios.** If your real-world use case isn't covered by the seven scenarios in `indexes/scenarios.md`, add one (see [Adding a new scenario](#adding-a-new-scenario) below).
+- **CMF circulars and APDP guidance.** These are out of scope today but valuable additions as they're published. See [Adding new amendments, circulars, or laws](#adding-new-amendments-circulars-or-laws) below.
+- **Coverage for other Chilean statutes** that fintech-adjacent products touch — Leyes 18.045, 18.046, 18.840, etc. Each becomes its own corpus subdirectory.
 
 ### Adding a new scenario
 
@@ -269,7 +270,7 @@ When the APDP issues guidance, when CMF publishes a circular, or when an amendme
 
 1. Drop the source PDF in `sources/`.
 2. Add a new section under `corpus/` (e.g., `corpus/apdp-circular-001/`) — don't intermix.
-3. Update `plugin.json` to add the new section to `corpus_status`.
+3. Update `.claude-plugin/plugin.json` to add the new section to `corpus_status`.
 4. Update `SKILL.md`'s "What this skill covers" section.
 
 ### Adding a new law entirely
@@ -280,7 +281,7 @@ If you want to add another Chilean statute (e.g., Ley 18.045 capital markets):
 2. Add the source PDF to `sources/`.
 3. Run `python -m tools.extract_articles <pdf>` to get a baseline article inventory.
 4. Translate each Título following the conventions used in `corpus/21521-fintech/`.
-5. Add the law to `plugin.json` `corpus_status`.
+5. Add the law to `.claude-plugin/plugin.json` `corpus_status`.
 
 The tooling is law-agnostic — the same scripts work on any Chilean BCN PDF following standard `Artículo N.-` / `TÍTULO N` structure.
 
