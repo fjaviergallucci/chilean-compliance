@@ -12,6 +12,26 @@ Planned for later releases:
 - Sample agent integrations for OpenAI SDK and LangChain.
 - Coverage for CMF circulars and APDP guidance once issued (separate corpus directories).
 
+## [1.0.2] — 2026-05-28
+
+### Fixed
+
+- **`plugin.json` `skills` field rejected during `/plugin install`.** The v1.0.1 manifest declared `"skills": ["skills/chile-compliance"]`, which Claude Code's installer rejected with `Validation errors: skills: Invalid input`. The field is removed entirely — Claude Code auto-discovers skills under the conventional `skills/` directory in Claude Code 2.1.142+, so the explicit declaration was redundant and incorrectly shaped.
+
+### Added
+
+- `author`, `homepage`, `repository`, `license`, and `keywords` fields in `.claude-plugin/plugin.json` to satisfy `claude plugin validate` cleanly (no missing-metadata warnings).
+- New CI job `validate-plugin` that runs `claude plugin validate` against both `plugin.json` and `marketplace.json` on every push/PR. This catches manifest-shape regressions before they reach a release.
+
+### Changed
+
+- Plugin version `1.0.1` → `1.0.2` in `plugin.json` and `marketplace.json` (both the marketplace `version` and the embedded plugin entry's `version`).
+
+### Validation
+
+- `claude plugin validate .claude-plugin/plugin.json` — passes with 2 expected warnings for our intentional custom fields (`corpus_status`, `sources`). Claude Code documents that unknown top-level fields are tolerated at load time.
+- `claude plugin validate .claude-plugin/marketplace.json` — passes clean (0 warnings).
+
 ## [1.0.1] — 2026-05-28
 
 ### Fixed
@@ -87,7 +107,8 @@ The literal-translation pass surfaced real corrections that the prior summaries 
 - CMF circulars, APDP guidance, and case law are not included. The skill instructs consuming AIs to say so when asked.
 - Pre-effective-date Ley 19.628 (1999 baseline) is not in the active corpus — for pre-2026-12-01 questions, consult the source PDF directly.
 
-[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.2
 [1.0.1]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.1
 [1.0.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.0
 [0.1.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v0.1.0
