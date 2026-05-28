@@ -13,9 +13,11 @@ _law:_ 19.628
 
 ### Plain-English text
 
-The data controller — whether a natural or legal person, public or private — is liable for the infringements of this law in which it incurs in the processing of personal data. Liability is administrative and is determined according to the provisions of this Title, without prejudice to civil liability provided in this law and to other applicable laws.
+Article 33.- General liability regime. The data controller (responsable de datos), whether a natural person (persona natural) or legal person (persona jurídica), of public or private law, that in its personal-data processing operations infringes the principles set out in Article 3° and the rights and obligations established in this law, shall be sanctioned in accordance with the rules of the present Title.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+Paragraph One
+
+On liability, infringements, and sanctions applicable to natural or private-law legal persons
 
 ### Original Spanish
 
@@ -40,9 +42,9 @@ The data controller — whether a natural or legal person, public or private —
 
 ### Plain-English text
 
-Infringements committed by data controllers shall be classified as minor (leves), serious (graves), or very serious (gravísimas), in accordance with the following articles.
+Article 34.- Minor, serious, and very serious infringements. Infringements committed by data controllers against the principles set out in Article 3° and against the rights and obligations established in this law are classified, attending to their gravity, as minor (leves), serious (graves), and very serious (gravísimas).
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The liabilities in which a natural or legal person incurs for the infringements established in this law are understood without prejudice to the other legal, civil, or criminal liabilities that may correspond.
 
 ### Original Spanish
 
@@ -67,9 +69,19 @@ Infringements committed by data controllers shall be classified as minor (leves)
 
 ### Plain-English text
 
-Lists the conducts considered minor infringements, generally relating to omissions in formal duties such as: not providing the data subject the information required by Article 14 ter; not maintaining updated the contact information; failing to respond timely to requests; and other formal compliance failures.
+Article 34 bis.- Minor infringements. The following shall be considered minor infringements:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) Failing to comply, in whole or in part, with the duty of information and transparency, established in Article 14 ter.
+
+b) Lacking the individualization of the postal address, electronic mail, or equivalent electronic medium that allows communication with the data controller or its legal representative, kept up to date and operative, through which data subjects can direct their communications or exercise their rights.
+
+c) Omitting to respond, responding incompletely, or responding outside the legal term, to the requests made by the data subject in accordance with this law.
+
+d) Omitting to send to the Agency (APDP) the communications mandatorily provided for in this law or its regulations.
+
+e) Failing to comply with the general instructions issued by the Agency in cases that are not sanctioned as a serious or very serious infringement.
+
+f) Committing any other infringement of the rights and obligations established in this law that is not classified as a serious or very serious infringement.
 
 ### Original Spanish
 
@@ -105,9 +117,35 @@ Lists the conducts considered minor infringements, generally relating to omissio
 
 ### Plain-English text
 
-Lists the conducts considered serious infringements, including: processing personal data without consent or other legal basis; processing data for purposes incompatible with those informed; lacking demonstrable security measures; not reporting security breaches to the Agency; failing to comply with the requirements for processor relationships; and other substantive infringements of this law.
+Article 34 ter.- Serious infringements. The following shall be considered serious infringements:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) Processing personal data without the consent of the data subject or without an antecedent or legal basis that grants lawfulness to the processing, or processing them for a purpose distinct from that for which they were collected.
+
+b) Communicating or assigning personal data, without the consent of the data subject, in cases where such consent is necessary, or communicating or assigning the data for a purpose distinct from the one authorized.
+
+c) Carrying out processing of personal data that is unnecessary in relation to the purposes of the processing, in violation of the provision of subparagraph c) of Article 3°.
+
+d) Processing inaccurate, incomplete, or out-of-date personal data in relation to the purposes of the processing, except where the updating of these data falls upon the data subject by virtue of the law or the contract.
+
+e) Impeding or obstructing the legitimate exercise of the data subject's rights of access, rectification, erasure, opposition, or portability.
+
+f) Omitting to respond, responding belatedly, or denying the petition without justified cause, in cases of well-founded requests for temporary blocking of the processing of a data subject's personal data.
+
+g) Carrying out processing of personal data of children and adolescents in infringement of the rules provided in this law.
+
+h) Carrying out processing of personal data without complying with the requirements established for private-law legal persons without profit purposes whose object is political, philosophical, religious, cultural, union, or trade-association, with respect to the data of their members.
+
+i) Violating the duty of secrecy or confidentiality established in Article 14 bis.
+
+j) Violating or infringing the security obligations on the processing of personal data established in Article 14 quinquies.
+
+k) Omitting the communications or registries in cases of breach of the security measures established in Article 14 quinquies.
+
+l) Adopting insufficient or unsuitable quality and security measures for the processing of personal data for historical, statistical, or scientific purposes, and for studies or research that pursue purposes of public interest.
+
+m) Carrying out international data-transfer operations in contravention of the rules provided in this law.
+
+n) Failing to comply with a resolution or specific and direct requirement issued by the Agency.
 
 ### Original Spanish
 
@@ -172,9 +210,29 @@ Lists the conducts considered serious infringements, including: processing perso
 
 ### Plain-English text
 
-Lists the conducts considered very serious infringements, including: processing of sensitive personal data without consent or legal basis; international transfers without an adequacy decision or adequate guarantees; deliberate concealment or destruction of records; processing of children's data in violation of Article 16 quáter; the mass processing of criminal-record data; and other gravely culpable infringements.
+Article 34 quáter.- Very serious infringements. The following shall be considered very serious infringements:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) Carrying out processing of personal data in a fraudulent manner.
+
+b) Maliciously destining personal data to a purpose distinct from that consented to by the data subject or provided for in the law that authorizes their processing.
+
+c) Communicating or assigning, knowingly, information that is untrue, incomplete, inaccurate, or out of date about the data subject.
+
+d) Violating the duty of secrecy or confidentiality with respect to sensitive personal data and personal data relating to the commission and sanction of criminal, civil, administrative, and disciplinary infringements.
+
+e) Processing, communicating, or assigning, knowingly, sensitive personal data or personal data of children and adolescents, in contravention of the rules of this law.
+
+f) Deliberately omitting the communication of breaches of security measures that may affect the confidentiality, availability, or integrity of personal data.
+
+g) Carrying out mass processing of personal data contained in electronic registries of criminal, civil, administrative, and disciplinary infringements kept by public bodies, without having legal authorization to do so.
+
+h) Carrying out, knowingly, international data-transfer operations in contravention of the rules provided in this law.
+
+i) Failing to comply with a resolution of the Agency that resolves a data subject's claim on the exercise of their rights of access, rectification, erasure, opposition, portability, or temporary blocking.
+
+j) Delivering, knowingly, false, incomplete, or manifestly erroneous information in the process of registration or certification of the infringement-prevention model.
+
+k) Failing to comply with the obligation established in Article 15 ter, in cases where applicable.
 
 ### Original Spanish
 
@@ -227,9 +285,19 @@ Lists the conducts considered very serious infringements, including: processing 
 
 ### Plain-English text
 
-Sanctions for infringements: (a) for minor infringements, a written warning or fine of up to 5,000 UTM; (b) for serious infringements, a fine of 5,001 to 10,000 UTM; (c) for very serious infringements, a fine of 10,001 to 20,000 UTM. The maximum fine for legal persons may not exceed 2% (minor), 4% (serious), or 5% (very serious) of the controller's annual sales of the prior fiscal year. Cumulative caps and special rules apply.
+Article 35.- Sanctions. The sanctions for the infringements in which data controllers incur shall be the following:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) Minor infringements shall be sanctioned with a written warning (amonestación escrita) or a fine of up to 5,000 monthly tax units (unidades tributarias mensuales — UTM).
+
+b) Serious infringements shall be sanctioned with a fine of up to 10,000 monthly tax units.
+
+c) Very serious infringements shall be sanctioned with a fine of up to 20,000 monthly tax units.
+
+In each case, the Agency shall indicate the measures tending to remedy the causes that gave rise to the sanction, which must be adopted within a term not greater than sixty days; otherwise a 50% surcharge on the fine imposed shall be applied, without prejudice to the provisions of Article 49.
+
+Where recurrence exists, in accordance with subparagraph a) of the second paragraph of Article 36, the Agency may apply a fine of up to three times the amount assigned to the infringement committed.
+
+Where the infringer is an enterprise distinct from those defined as smaller enterprises in the second article of Law No. 20.416, that incurs in recurrence in a serious or very serious infringement in the terms of subparagraph a) of the second paragraph of Article 36, the fine may reach the more onerous of that indicated in the preceding paragraph or up to the amount corresponding to 2% or 4% of the annual income from sales and services and other activities of the trade in the last calendar year, according to whether the infringements are serious or very serious, respectively.
 
 ### Original Spanish
 
@@ -274,9 +342,25 @@ Sanctions for infringements: (a) for minor infringements, a written warning or f
 
 ### Plain-English text
 
-Mitigating circumstances include: voluntary self-reporting prior to investigation; full and demonstrated diligence in addressing the infringement; reasonable prior efforts to comply. Aggravating circumstances include: previous sanctions; failure to cooperate with the Agency's investigations; bad faith; large number of affected data subjects; deliberate processing of sensitive data.
+Article 36.- Mitigating and aggravating circumstances of liability. The following shall be considered mitigating circumstances:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+1. The unilateral reparation actions taken by the controller and the reparatory agreements reached with the data subjects who were affected.
+
+2. The cooperation that the infringer provides in the administrative investigation conducted by the Agency.
+
+3. The absence of previous sanctions of the data controller.
+
+4. Self-reporting (autodenuncia) before the Agency. Together with the self-report, the infringer must communicate the measures adopted for the cessation of the facts that gave rise to the infringement or the mitigation measures implemented, as appropriate.
+
+5. Having diligently fulfilled its duties of direction and supervision for the protection of the personal data subject to processing, which shall be verified with the certificate issued in accordance with the provisions of Article 51.
+
+The following shall be considered aggravating circumstances:
+
+a) Recurrence (reincidencia). Recurrence exists when the controller has been sanctioned on two or more occasions, in the last thirty months, for infringement of this law. The resolutions imposing the respective sanctions must be final or enforceable.
+
+b) The continuous character of the infringement.
+
+c) Having put at risk the security of the rights and liberties of the data subjects in relation to their personal data.
 
 ### Original Spanish
 
@@ -320,9 +404,29 @@ Mitigating circumstances include: voluntary self-reporting prior to investigatio
 
 ### Plain-English text
 
-Fine amounts shall be determined by considering: the harm caused; the controller's economic capacity; the number of data subjects affected; the nature of the infringement; the duration of the infringement; the type of data affected; the controller's degree of cooperation; and the existence of a certified prevention model under Article 49.
+Article 37.- Determination of the amount of fines. For the determination of the amount of the fines indicated in this law, the Agency must prudentially apply the following criteria:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+1. The gravity of the conduct.
+
+2. Whether the conduct was carried out with lack of diligence or care, in those cases in which these elements are not considered in the configuration of the infringement.
+
+3. The harm produced by reason of the infringement, especially the number of data subjects who were affected.
+
+4. The economic benefit obtained by reason of the infringement, if any.
+
+5. Whether the processing carried out includes sensitive personal data or personal data of children and adolescents.
+
+6. The economic capacity of the infringer.
+
+7. The sanctions previously applied by the Agency in the same circumstances.
+
+8. The mitigating and aggravating circumstances that concur.
+
+Where one conduct gives rise to two or more infringements, or where one infringement is the means to commit another, a single fine shall be imposed, always considering the sanction of the most serious infringement. Where two or more infringing conducts are verified, independent of each other, the sanctions corresponding to each one of them shall be accumulated.
+
+Fines must be paid at the General Treasury of the Republic (Tesorería General de la República), through the in-person or digital means that it provides, within the term of ten business days counted from the date on which the Agency's resolution becomes final. The corresponding proof of payment must be submitted to the Agency within the term of ten business days counted from the date on which the payment was made.
+
+Where for the same facts and legal grounds, the infringer could be sanctioned in accordance with this law and with another or other laws, of the possible sanctions, that of greater gravity shall be imposed on him.
 
 ### Original Spanish
 
@@ -376,9 +480,15 @@ Fine amounts shall be determined by considering: the harm caused; the controller
 
 ### Plain-English text
 
-In case of repeated very serious infringements, in addition to fines, the Agency may impose accessory sanctions, including suspension of personal-data processing operations of up to thirty calendar days. During this suspension, the controller must maintain the data subjects' rights.
+Article 38.- Accessory sanctions. Where fines are imposed for repeated very serious infringements (infracciones gravísimas reiteradas) within a period of twenty-four months, the Agency may order the suspension of the data-processing operations and activities carried out by the data controller, for a term of up to thirty days. This suspension shall not affect the storage of data by the controller.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The suspension that the Agency orders as an accessory sanction may be partial or total, and shall not be decreed where it would affect the rights of the data subjects.
+
+During this period the controller must adopt the necessary measures with the purpose of adjusting its operations and activities to the requirements set out in the resolution that ordered the suspension.
+
+If the controller does not comply with the provisions of the temporary-suspension resolution, this measure may be extended indefinitely, for successive periods of a maximum of thirty days, until the controller complies with what has been ordered.
+
+Where the suspension affects an entity subject to supervision by a public body of a supervisory character, the Agency must previously bring the antecedents to the knowledge of the corresponding regulatory authority, for the effects of safeguarding the rights of the users of such entity.
 
 ### Original Spanish
 
@@ -418,9 +528,13 @@ In case of repeated very serious infringements, in addition to fines, the Agency
 
 ### Plain-English text
 
-Creates the National Registry of Sanctions and Compliance (Registro Nacional de Sanciones y Cumplimiento) administered by the Agency. The Registry is public and records: certified prevention models; data controllers that have adopted them; sanctions imposed on controllers that have infringed this law. The Agency shall make this registry accessible on its website.
+Article 39.- National Registry of Sanctions and Compliance. The National Registry of Sanctions and Compliance (Registro Nacional de Sanciones y Cumplimiento) is hereby created, administered by the Agency. The registry shall be public and free of access. It shall be consulted and kept in electronic form.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+In it there must be recorded the data controllers that have been sanctioned for infringing the rights and obligations established in this law. A distinction must be made according to the gravity of the infringement.
+
+Additionally, the conduct infringed, the mitigating and aggravating circumstances of liability, and the sanction imposed must be recorded. Likewise, the controllers that adopt certified infringement-prevention models, with current validity, must be recorded.
+
+The entries in the registry shall be of public access for a period of five years, counted from the date on which the entry was made.
 
 ### Original Spanish
 
@@ -451,9 +565,17 @@ Creates the National Registry of Sanctions and Compliance (Registro Nacional de 
 
 ### Plain-English text
 
-Actions to pursue liability for the infringements provided in this law shall prescribe in four years from the date on which the infringement was committed. The prescription is interrupted by the start of the administrative procedure for the determination of the infringement. The Agency's actions for execution of sanctions prescribe in two years from the date the sanctioning resolution becomes final.
+Article 40.- Prescription. The actions to pursue liability for the infringements provided in this law shall prescribe within the term of four years, counted from the occurrence of the fact that gave rise to the infringement.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+In the case of continuous infringements, the term of prescription of the referred actions shall be counted from the day on which the infringement has ceased.
+
+Prescription is interrupted by the notification of the commencement of the corresponding administrative procedure.
+
+The sanctions imposed for an infringement of the present law shall prescribe within the term of three years, counted from the date on which the resolution imposing the sanction becomes enforceable.
+
+Paragraph Two
+
+On administrative procedures
 
 ### Original Spanish
 
@@ -482,9 +604,29 @@ Actions to pursue liability for the infringements provided in this law shall pre
 
 ### Plain-English text
 
-The data subject may bring a claim before the Agency where the controller has rejected, totally or partially, a request to exercise rights of access, rectification, erasure, opposition, blocking, or portability; or has not responded within thirty days. The procedure includes: presentation of claim with specific minimum content; reception of antecedents from the controller within ten business days; investigation by the Agency; resolution within sixty business days. The Agency may order: (a) precautionary measures; (b) the controller to comply with the obligation; (c) sanctions where applicable.
+Article 41.- Administrative procedure for protection (tutela) of rights. The data subject may claim before the Agency where the controller has denied a request made in accordance with Article 11 of the present law, or has not given a response to such request within the legal term established in that article.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The claim presented shall be processed in accordance with the following rules:
+
+a) It must be submitted in writing, in physical or electronic format, within the term of thirty business days counted from the receipt of the negative response from the data controller or from the expiration of the term that the controller had to respond to the requirement made by the data subject. The claim must indicate the contested decision in case of rejection or omission of response, and accompany all the antecedents on which it is founded, and indicate a postal address or an electronic-mail address or other equivalent electronic medium where the notifications shall be carried out.
+
+b) Together with the filing of the claim, upon a well-founded petition of the data subject and only in justified cases, the Agency may suspend the processing of the personal data concerning the data subject which is the object of the claim, having previously heard the data controller.
+
+c) Upon receiving the claim, the Agency, within the following ten business days, must determine whether it complies with the requirements established in letter a) to be admitted to processing. Where the claim is not admitted to processing, the Agency's resolution must be founded and shall be notified to the data subject. In any event, the claim shall be deemed admitted to processing if the Agency does not issue a pronouncement within the term indicated above.
+
+d) Once the claim is admitted to processing, the Agency shall notify the data controller, who shall have a term of thirty consecutive days, extendable for the same term, to respond to the claim, accompanying all the antecedents that it deems pertinent. The notifications carried out on the controller shall be made at its postal address, electronic-mail address, or other equivalent electronic medium referred to in letter c) of Article 14 ter.
+
+e) Once this term has expired, whether or not the data controller has replied, and only if there are substantial, pertinent, and disputed facts, the Agency may open an evidentiary term of ten business days, in which the parties may bring forward all the means of proof they deem appropriate.
+
+f) The data controller may, in its response, acquiesce (allanarse) to the claim, in which case it must accompany the antecedents or testimonies that demonstrate this circumstance. Once the foregoing has been verified, the data subject shall be notified and shall have ten days to assert his rights. Once the term has been fulfilled, the Agency shall proceed to the filing of the antecedents, having previously applied the sanction or instruction to the data controller, where appropriate.
+
+g) The Agency shall have broad powers to request antecedents or reports that contribute to its resolution. It may convene the parties to a hearing and urge them to reach an agreement. The opinions that the officials of the Agency may express at this hearing shall not disqualify them from continuing to hear the matter in case an agreement is not reached. Once the agreement has been reached, the antecedents shall be filed.
+
+h) The resolution of the claim must be issued by the Agency and must be founded. The administrative procedure for protection of rights shall not exceed six months.
+
+i) The Agency's resolution that does not admit a claim to processing, and the resolution that resolves the claim, may be judicially contested within the term of fifteen business days counted from its notification, through the procedure established in Article 43.
+
+Claims and requests for suspension of processing made in the case of rejection of a request for temporary blocking must be resolved by the Agency within the maximum term of three business days, without the need to previously hear the parties.
 
 ### Original Spanish
 
@@ -578,9 +720,37 @@ The data subject may bring a claim before the Agency where the controller has re
 
 ### Plain-English text
 
-The determination of infringements of this law and the imposition of sanctions on data controllers shall be carried out by the Agency through an administrative procedure regulated by this article and supplementarily by Law No. 19.880. The procedure includes investigation, formulation of charges, defence by the controller, evidence, and resolution. The Agency may at any time adopt precautionary measures.
+Article 42.- Administrative procedure for infringement of law. The determination of the infringements that data controllers commit by failure to comply with or breach of the principles established in Article 3°, of the rights and obligations established in this law, and the application of the corresponding sanctions, shall be subject to the following special rules:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) The sanctioning procedure shall be instructed by the Agency.
+
+b) The Agency may initiate a sanctioning procedure, ex officio or upon petition of a party, as the result of a supervisory process or in consequence of a claim presented by a data subject, by virtue of the procedure established in Articles 23 and 41 of this law. In the latter case, the receipt of the claim must be certified. Together with the opening of the file, the Agency must designate an official responsible for the instruction of the procedure.
+
+c) The Agency must submit a formulation of charges against the data controller in which it describes the facts that configure the infringement, the principles and obligations failed or breached by the controller, the legal rules infringed, and any other antecedent that serves to support the formulation.
+
+d) The formulation of charges must be notified to the data controller at its postal address, electronic-mail address, or other equivalent electronic medium indicated in letter c) of Article 14 ter.
+
+e) The data controller shall have a term of fifteen business days to submit its discharge. On that opportunity, the data controller may accompany all the antecedents that it deems pertinent to refute the imputed facts. Together with the discharge, the controller must set an electronic-mail address through which all subsequent communications and notifications shall be carried out.
+
+f) Once the discharge is received or the term granted therefor has elapsed, the Agency may open an evidentiary term of ten days in case there exist substantial, pertinent, and disputed facts.
+
+g) The Agency shall give place to the evidentiary measures or proceedings that the controller requests in its discharge, provided they are pertinent and necessary. In case of rejection, it must found its resolution.
+
+h) The facts investigated and the responsibilities of the presumed infringers may be proven by any means of proof admissible in law, which shall be assessed according to the rules of sound criticism (sana crítica).
+
+i) The Agency shall have broad powers to request antecedents or reports that contribute to its resolution.
+
+j) The resolution that puts an end to the sanctioning procedure must be founded and resolve all the questions raised in the file, pronouncing on each one of the allegations and defences made by the data controller, and shall contain the declaration of having configured the failure or breach of the principles, rights, and obligations established in the law by the controller, or its absolution, as appropriate. Where the Agency considers that the infringement has been verified, in the same resolution it shall weigh the circumstances that aggravate or mitigate the infringer's liability, and shall impose the sanction, in accordance with the gravity of the infringement committed.
+
+k) The resolution that establishes the failure or breach of the principles, rights, and obligations of this law and that applies the corresponding sanction must be founded. This resolution must indicate the administrative and judicial remedies that proceed against it in accordance with this law, the bodies before which they must be presented, and the terms for their interposition. The Agency's resolution that resolves the procedure for infringement of law shall be judicially contestable in accordance with the following article.
+
+l) The administrative procedure for infringement of law shall not exceed six months. When more than six months have elapsed from the date of the certification indicated in letter b) of this article without the Agency having resolved the claim, the interested party may submit a claim of illegality (reclamo de ilegalidad) in the terms provided in the following article.
+
+> **TN:** "Reclamo de ilegalidad" is a Chilean administrative-law remedy lodged before the Court of Appeals against unlawful administrative acts; it has no direct one-to-one English equivalent.
+
+Paragraph Three
+
+On the judicial-claim procedure
 
 ### Original Spanish
 
@@ -676,9 +846,27 @@ The determination of infringements of this law and the imposition of sanctions o
 
 ### Plain-English text
 
-Natural or legal persons that consider themselves affected by an administrative resolution of the Agency may file a claim of illegality (reclamo de ilegalidad) before the Court of Appeals of Santiago within fifteen business days of the resolution's notification. The court hearing of the matter follows summary procedure rules.
+Article 43.- Judicial-claim procedure. Interested natural or legal persons that consider that an administrative act that paralyzes the procedure, or a final or terminative resolution issued by the Agency, is unlawful, may file a claim of illegality (reclamo de ilegalidad) before the Court of Appeals of Santiago or that of the place where the claimant is domiciled, at the latter's election. The claim must be filed within the fifteen business days following the notification of the contested resolution, according to the following rules:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) The claimant shall indicate in its written submission, with precision, the resolution that is the object of the claim, the legal rule or rules that are supposed to have been infringed, the form in which the infringement has been produced, and, where applicable, the reasons for which the act causes him grievance.
+
+b) The Court may declare the claim inadmissible if the submission does not comply with the conditions indicated in letter a) above. Likewise, it may decree an order of no innovation (orden de no innovar) when the execution of the contested act would produce irreparable damage to the appellant.
+
+c) Upon receiving the claim, the Court shall require a report from the Agency, granting it a term of ten days to that effect.
+
+d) Once the transfer has been evacuated, or it is deemed evacuated in default (rebeldía), the Court may open an evidentiary term, if it deems it necessary, which shall be governed by the rules on incidents contemplated by the Code of Civil Procedure (Código de Procedimiento Civil).
+
+e) Once the evidentiary term has expired, it shall be ordered that the records be brought for hearing (traer los autos en relación). The hearing of this case shall enjoy preference for its inclusion in the docket (tabla).
+
+f) If the Court gives place to the claim, in its judgment it shall decide whether grievance existed and shall order, as appropriate, the rectification of the contested act and the issuance of the respective resolution, as appropriate.
+
+g) In the case of claims against a resolution that resolves a sanctioning procedure, the Court may confirm or revoke the contested resolution, establish or dismiss the commission of the infringement, as appropriate, and maintain, render without effect, or modify the sanction imposed on the controller or its absolution, as the case may be.
+
+h) In everything not regulated by the present article, the rules established in the Code of Judicial Organization (Código Orgánico de Tribunales) and in the Code of Civil Procedure shall govern, as appropriate.
+
+Paragraph Four
+
+On the liability of public bodies, of the authority or superior head of the body, and of its officers
 
 ### Original Spanish
 
@@ -741,9 +929,23 @@ Natural or legal persons that consider themselves affected by an administrative 
 
 ### Plain-English text
 
-The head of a public body that incurs in infringements of this law is administratively liable in accordance with the disciplinary regime of the Administrative Statute (Estatuto Administrativo) or other rules applicable. The Agency may report infringements to the relevant administrative authority.
+Article 44.- Administrative liability of the superior head of the public body. The superior head of a public body must ensure that the respective body carries out its personal-data processing operations and activities in accordance with the principles, rights, and obligations established in Title IV of this law.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+Likewise, public bodies must submit to the measures tending to remedy or prevent infringements indicated by the Agency, or to the compliance or infringement-prevention programs of Article 49.
+
+The infringements of the principles established in Article 3°, and of the rights and obligations, in which public bodies may incur are typified in Articles 34 bis, 34 ter, and 34 quáter, and shall be sanctioned with a fine of twenty percent to fifty percent of the monthly remuneration of the superior head of the infringing public body. The amount of the fine shall be determined by considering the gravity of the infringement, the nature of the data processed, and the number of data subjects affected. In the determination of the sanction, the circumstances that mitigate the infringer's liability must also be considered.
+
+If the public body persists in the infringement, the doubling of the originally imposed sanction shall be applied to the superior head of the public body, and suspension from the position for a period of five days.
+
+In the case of sensitive personal data, the fine shall be fifty percent of the monthly remuneration of the superior head of the public body, and suspension from the position of up to thirty days shall proceed.
+
+The infringements in which a public body incurs in the processing of personal data shall be determined by the Agency in accordance with the procedure established in Article 42.
+
+Once the infringement has been configured, the administrative sanctions indicated in this article shall be applied by the Agency. Nevertheless, the General Comptrollership of the Republic (Contraloría General de la República), at the petition of the Agency, may, in accordance with the rules of its organic law, initiate the administrative procedures and propose the corresponding sanctions.
+
+Against the resolutions of the Agency, the claim of illegality established in Article 43 may be filed.
+
+The sanctions provided in this article must be published on the website of the Agency and of the respective body or service within the term of five business days counted from the date on which the respective resolution becomes final.
 
 ### Original Spanish
 
@@ -805,9 +1007,11 @@ The head of a public body that incurs in infringements of this law is administra
 
 ### Plain-English text
 
-Without prejudice to the provisions of the preceding article, the public officer who has incurred in conducts that constitute infringements of this law is administratively liable, with the same regime applicable to the head of the public body.
+Article 45.- Liability of the infringing officer. Without prejudice to the provisions of the preceding article, if in the corresponding administrative procedure it is determined that there are individual liabilities of one or more officers of the public body, the General Comptrollership of the Republic, at the petition of the Agency, shall initiate a summary investigation (investigación sumaria) to determine the liabilities of such officers, or shall do so within the administrative procedure already initiated, as appropriate. The sanctions on the infringing officers shall be determined in accordance with the provisions of the Administrative Statute (Estatuto Administrativo).
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+In the event that the corresponding administrative procedure determines that any of the officers involved is responsible for any of the very serious infringements indicated in Article 34 quáter of this law, this conduct shall be considered a serious contravention of administrative probity.
+
+> **TN:** "Investigación sumaria" is a Chilean expedited administrative disciplinary inquiry under the Estatuto Administrativo; no direct one-to-one English equivalent.
 
 ### Original Spanish
 
@@ -839,9 +1043,15 @@ Without prejudice to the provisions of the preceding article, the public officer
 
 ### Plain-English text
 
-Public-body officials who have access to personal data in the exercise of their functions must maintain reserve and confidentiality with respect to such data, in accordance with the provisions of this law and other applicable laws.
+Article 46.- Duty of officers of reserve and confidentiality. Officers of public bodies that process personal data, and especially when they refer to sensitive personal data or data relating to the commission and sanction of criminal, civil, administrative, and disciplinary infringements, must keep secret or confidentiality with respect to the information of which they take knowledge in the exercise of their positions, and refrain from using such information for a purpose distinct from that corresponding to the legal functions of the respective public body, or from using it for their own benefit or that of third parties.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+For the effects of the provisions of the second paragraph of Article 125 of the Administrative Statute, it shall be deemed that the facts that configure infringements of this provision seriously breach the principle of administrative probity, without prejudice to the other sanctions and liabilities that may proceed.
+
+When, in compliance with a legal obligation, a public body communicates or assigns to another public body data protected by rules of secrecy or confidentiality, the receiving public body and its officers must process them while maintaining the same obligation of secrecy or confidentiality.
+
+Paragraph Five
+
+On civil liability
 
 ### Original Spanish
 
@@ -880,9 +1090,11 @@ Public-body officials who have access to personal data in the exercise of their 
 
 ### Plain-English text
 
-The data controller must indemnify the patrimonial and extrapatrimonial damage caused by the unlawful processing of personal data. Civil liability for damages may be claimed before the courts of justice, applying the rules of the Civil Code and the Code of Civil Procedure.
+Article 47.- General rule. The data controller must indemnify the patrimonial and extrapatrimonial damage that it causes to the data subject or subjects, when in its data-processing operations it infringes the principles established in Article 3°, the rights and obligations established in this law, and causes them harm. The foregoing does not preclude the exercise of the other rights that this law grants to the data subject or subjects.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The indemnification action indicated in the preceding paragraph may be filed once the resolution that resolved the claim filed before the Agency favourably becomes enforceable, or the judgment becomes final and enforceable, in case a claim of illegality has been filed, and shall be processed in accordance with the rules of the summary procedure (procedimiento sumario) established in Articles 680 and following of the Code of Civil Procedure.
+
+The civil actions deriving from an infringement of the present law shall prescribe within the term of five years, counted from the date on which the administrative resolution or the judicial judgment, as the case may be, that imposes the respective fine, becomes enforceable.
 
 ### Original Spanish
 
@@ -917,9 +1129,7 @@ The data controller must indemnify the patrimonial and extrapatrimonial damage c
 
 ### Plain-English text
 
-Data controllers — whether natural or legal persons, public or private — must adopt the necessary measures to prevent the commission of infringements of this law. These measures may include the adoption of a certified prevention model under Article 49.
-
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+Article 48.- Prevention of infringements. Data controllers, whether natural or legal persons, public or private, must adopt actions destined to prevent the commission of the infringements established in Articles 34 bis, 34 ter, and 34 quáter.
 
 ### Original Spanish
 
@@ -938,9 +1148,25 @@ Data controllers — whether natural or legal persons, public or private — mus
 
 ### Plain-English text
 
-Data controllers may voluntarily adopt an infringement prevention model (modelo de prevención de infracciones) that includes: appointment of a delegate of data protection; identification of activities or operations that involve risk of infringement; establishment of protocols, rules, and procedures to mitigate such risks; reporting system for breaches; training program; and supervision mechanism. The model must be approved by the Agency.
+Article 49.- Infringement-prevention model. Data controllers may voluntarily adopt an infringement-prevention model (modelo de prevención de infracciones) consisting of a compliance program.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The compliance program must contain, at minimum, the following elements:
+
+a) The designation of a personal-data protection delegate (delegado de protección de datos personales).
+
+b) The definition of the means and powers of the data-protection delegate.
+
+c) The identification of the type of information that the entity processes, the territorial scope in which it operates, the category, class, or types of data or databases that it administers, and the characterization of the data subjects.
+
+d) The identification of the activities or processes of the entity, whether habitual or sporadic, in whose context the risk of commission of the infringements indicated in Articles 34 bis, 34 ter, and 34 quáter is generated or increased.
+
+e) The establishment of specific protocols, rules, and procedures that allow the persons who intervene in the activities or processes indicated in the preceding letter to program and execute their tasks or labours in a manner that prevents the commission of the said infringements.
+
+f) The mechanisms for internal reporting on compliance with the provisions of the present law, and the mechanisms for reporting to the data-protection authority for the case of Article 14 sexies.
+
+g) The existence of internal administrative sanctions, as well as procedures for complaint or sanction of liabilities of the persons who fail to comply with the infringement-prevention system.
+
+The internal regulation to which the implementation of the program may give rise must, where applicable, be expressly incorporated as an obligation in the employment or service-provision contracts of all the workers, employees, and service providers of the entities that act as data controllers or the third parties that carry out the processing, including their senior executives; or alternatively, as an obligation of the internal regulations dealt with in Articles 153 and following of the Labour Code (Código del Trabajo). In this latter case, the publicity measures established in Article 156 of the same Code must be carried out.
 
 ### Original Spanish
 
@@ -999,9 +1225,41 @@ Data controllers may voluntarily adopt an infringement prevention model (modelo 
 
 ### Plain-English text
 
-The data controller may designate a delegate of data protection (delegado de protección de datos) whose powers include: supervising compliance with this law; advising the controller on the establishment and operation of the prevention model; cooperating with the Agency on supervision; serving as point of contact for data subjects.
+Article 50.- Powers of the delegate. The data controller may designate a personal-data protection delegate (delegado de protección de datos personales).
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The data-protection delegate must be designated by the highest managerial or administrative authority of the data controller. The board of directors, an administering partner, or the highest authority of the enterprise or service, as appropriate, shall be considered the highest managerial or administrative authority.
+
+The data-protection delegate must have autonomy with respect to the administration, in matters related to this law. In micro, small, and medium-sized enterprises, the owner or its highest authorities may personally assume the tasks of data-protection delegate.
+
+The data-protection delegate may perform other functions and assignments, taking care to maintain independence in his function. The controller shall guarantee that such functions and assignments do not give rise to a conflict of interests.
+
+The companies or entities that belong to a same business group, related enterprises, or those subject to a same controller in the terms provided in the Securities-Market Law (Ley de Mercado de Valores), may designate a single data-protection delegate, provided all of them operate under the same standards and policies on personal-data processing, and the delegate is accessible to all the entities and establishments.
+
+The designation of the data-protection delegate must fall on a person who meets the requirements of suitability, capacity, and specific knowledge for the exercise of his functions.
+
+Data subjects may contact the data-protection delegate with respect to all questions relating to the processing of their personal data and the exercise of their rights under this law.
+
+The data-protection delegate shall be obliged to maintain strict secrecy or confidentiality of the personal data that he comes to know in the exercise of his position. Public officers who perform these functions and infringe this duty of secrecy or confidentiality shall be sanctioned in accordance with what is prescribed in Articles 246 to 247 bis of the Criminal Code (Código Penal). The controller shall be liable for the infringements of the duty of secrecy or confidentiality that should have been complied with by its prevention officer or protection delegate, without prejudice to the actions of recovery (acciones de repetición) that it may exercise against him.
+
+The data controller must ensure that the delegate has the means and powers sufficient for the performance of his functions, and must grant him the material resources necessary to adequately carry out his labours, in consideration of the size and economic capacity of the entity.
+
+Without prejudice to the other functions that may be assigned to him, the data-protection delegate shall have the following functions:
+
+a) To inform and advise the data controller, the third parties charged with processing or mandataries, and the dependents of the controller, with respect to the legal and regulatory provisions relating to the right to the protection of personal data and the regulation of their processing.
+
+b) To promote and participate in the policy that the data controller issues with respect to the protection and processing of personal data.
+
+c) To supervise compliance with the present law and with the policy that the controller issues, within the scope of his competence.
+
+d) To take care of the permanent training of the persons who participate in the data-processing operations.
+
+e) To assist the members of the organization in the identification of the risks associated with the processing activity and the measures to adopt to safeguard the rights of personal-data subjects.
+
+f) To develop an annual work plan and to render account of its results.
+
+g) To resolve the consultations and requests of data subjects.
+
+h) To cooperate and act as point of contact of the Agency.
 
 ### Original Spanish
 
@@ -1096,9 +1354,11 @@ The data controller may designate a delegate of data protection (delegado de pro
 
 ### Plain-English text
 
-The Agency shall certify, register, and supervise prevention models. A regulation will specify the requirements, procedures, and conditions for certification, including the minimum content of the model, the certifying entities, and the auditing and renewal procedures.
+Article 51.- Certification, registration, supervision of the infringement-prevention model, and regulation. The Agency shall be the entity charged with certifying that the infringement-prevention model meets the requirements and elements established in the law and its regulation, and with supervising them.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+The Agency shall incorporate in the National Registry of Sanctions and Compliance the entities that hold a certification in force.
+
+A regulation issued through the Ministry of Finance and signed by the Minister Secretary-General of the Presidency and by the Minister of Economy, Promotion, and Tourism shall establish the requirements, modalities, and procedures for the implementation, certification, registration, and supervision of the infringement-prevention models.
 
 ### Original Spanish
 
@@ -1128,9 +1388,19 @@ The Agency shall certify, register, and supervise prevention models. A regulatio
 
 ### Plain-English text
 
-Certificates issued by the Agency shall have a validity of three years from the date of their issuance. The Agency may renew them upon verifying the maintenance of the conditions for certification.
+Article 52.- Validity of certificates. The certificates issued by the Agency shall have a validity of three years. Without prejudice to the foregoing, they shall be rendered without effect in the following cases:
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+a) By revocation effected by the Agency.
+
+b) By death of the data controller in the case of natural persons.
+
+c) By dissolution of the legal person.
+
+d) By enforceable judicial resolution.
+
+e) By voluntary cessation of the activity of the data controller.
+
+The termination of the validity of a certificate by any of the causes indicated above shall not be opposable to third parties so long as it has not been eliminated from the registry.
 
 ### Original Spanish
 
@@ -1158,9 +1428,17 @@ Certificates issued by the Agency shall have a validity of three years from the 
 
 ### Plain-English text
 
-The Agency may revoke the certification indicated in the previous articles where: (a) the conditions for certification cease to be met; (b) the controller incurs in a very serious infringement; (c) the controller fails to maintain the prevention model; (d) other grounds established by regulation. Revocation gives rise to the obligation to register the revocation in the National Registry of Sanctions and Compliance.
+Article 53.- Revocation of certification. The Agency may revoke the certification indicated in the preceding articles, if the controller fails to comply with what is established in this Paragraph. For this purpose, the Agency may require all such information as is necessary for the exercise of its functions.
 
-<!-- REVIEW: Article inserted by Ley 21.719 Art. 1° item 14 — English text above is a structured summary. Phase H4 should verify against the verbatim Spanish below and provide a fully literal translation matching the lexicon. -->
+Controllers may except themselves from delivering the requested information when it is covered by an obligation of secrecy or confidentiality, having to demonstrate such circumstance.
+
+Failure to comply with the delivery of the required information, as well as the delivery of false, incomplete, or manifestly erroneous information, shall be sanctioned in accordance with this law.
+
+When a certificate has been revoked by the Agency, in order to apply for it again the data controller must reliably demonstrate that the cause that gave rise to its revocation has been remedied.
+
+Title VIII
+
+On the processing of personal data by the National Congress, the Judicial Branch, and public bodies endowed with constitutional autonomy
 
 ### Original Spanish
 
