@@ -81,11 +81,13 @@ When citing an article that carries any of these markers, surface the marker alo
 
 ## Corpus status awareness
 
-Read `plugin.json` → `corpus_status`. The current state (as of plan execution) is:
+Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.0.0:
 
-- `21521_fintech: stable` (after H4 review) — covers Títulos I-IV. Título V is out of scope.
-- `19628_consolidated: partial` — Títulos Preliminar through V are fully translated. Títulos VI (Agency), VII (Sanctions), VIII (Constitutional Bodies) currently contain English structured summaries with verbatim Spanish; full literal translations pending H4 review.
+- `21521_fintech: stable` — covers Títulos I-IV. Título V is out of scope.
+- `19628_consolidated: stable` — all Títulos fully translated (literal lexicon-conformant English with verbatim Spanish).
 - `21719_changelog: stable` — reference only.
+
+When citing from a law whose status is anything other than `stable`, prepend "Translation status: <status> — verify the Spanish original before relying on the English text."
 
 When citing from a `partial` or `draft` law, prepend: "Translation status: partial — verify the Spanish original before relying on the English text."
 

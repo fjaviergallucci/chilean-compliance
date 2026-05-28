@@ -12,6 +12,25 @@ Planned for later releases:
 - Sample agent integrations for OpenAI SDK and LangChain.
 - Coverage for CMF circulars and APDP guidance once issued (separate corpus directories).
 
+## [1.0.1] — 2026-05-28
+
+### Fixed
+
+- **Plugin installability.** The repo is now a properly-structured Claude Code plugin marketplace and can be installed with `/plugin marketplace add fjaviergallucci/chilean-compliance` followed by `/plugin install chile-compliance@chile-compliance`. The v1.0.0 release had `plugin.json` at the repo root and no `marketplace.json`, which prevented Claude Code from discovering it as a plugin.
+
+### Added
+
+- `.claude-plugin/marketplace.json` — single-plugin marketplace catalog. Validated with `claude plugin validate .`.
+
+### Changed
+
+- Moved `plugin.json` → `.claude-plugin/plugin.json` (preserves git history via `git mv`).
+- Updated references to `plugin.json` in README.md, CONTRIBUTING.md, SKILL.md, and `corpus/21521-fintech/README.md` to the new path.
+- README "Quick start — Claude Code" section rewritten with the proper `/plugin marketplace add` + `/plugin install` workflow, replacing the prior settings.json instructions. Added per-project / global scope guidance and a "pin to release" recipe using `#v1.0.1`.
+- README "Where help is welcome" section updated — H4 closed all REVIEW markers; the contribution priority list now reflects post-v1.0.0 reality (translation corrections, new scenarios, CMF/APDP additions, other statutes).
+- SKILL.md "Corpus status awareness" section updated — all three `corpus_status` entries are now `stable`; the body reflects v1.0.0+ reality.
+- Removed the broken reference to `docs/superpowers/specs/` and `docs/superpowers/plans/` (those files exist in the dev history but were intentionally excluded from the public repo).
+
 ## [1.0.0] — 2026-05-27
 
 First fully-stable release. All `corpus_status` entries are now `stable` and the consolidated 19.628 corpus carries literal lexicon-conformant translations across every article.
@@ -68,6 +87,7 @@ The literal-translation pass surfaced real corrections that the prior summaries 
 - CMF circulars, APDP guidance, and case law are not included. The skill instructs consuming AIs to say so when asked.
 - Pre-effective-date Ley 19.628 (1999 baseline) is not in the active corpus — for pre-2026-12-01 questions, consult the source PDF directly.
 
-[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.1
 [1.0.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.0
 [0.1.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v0.1.0
