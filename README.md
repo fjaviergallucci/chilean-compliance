@@ -33,7 +33,7 @@ Both laws are published in Spanish. Without help, an AI session about Chilean co
 
 ### Estado actual
 
-El corpus principal está en inglés, ya que ese es el idioma operativo de los agentes de IA. Las citas verbatim del texto original en español siempre están disponibles dentro de cada artículo (bloque `### Original Spanish`). Los Títulos VI-VIII de la Ley 19.628 consolidada (Arts. 30-55, marco regulatorio del APDP y régimen sancionatorio) contienen actualmente resúmenes estructurados en inglés; las traducciones literales están pendientes de revisión humana (44 marcadores `<!-- REVIEW -->` señalan estos pasajes).
+El corpus principal está en inglés, ya que ese es el idioma operativo de los agentes de IA. Las citas verbatim del texto original en español siempre están disponibles dentro de cada artículo (bloque `### Original Spanish`). Todo el articulado cuenta con traducciones literales lexicon-conformes; las notas del traductor (`> **TN:** ...`) explican los renderings que no calzan exactamente con el léxico (por ejemplo, instituciones procesales chilenas sin equivalente directo en inglés).
 
 ### Documentación completa y contribuciones
 
@@ -55,7 +55,7 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | Ley 21.521 — Títulos I-IV (Fintech provisions) | **Stable** | 29 articles fully translated |
 | Ley 21.521 — Título V (modifications to other statutes) | **Out of scope** | Documented as reference-only; see `corpus/21521-fintech/titulo-05-modificaciones.md` |
 | Ley 19.628 consolidated — Preliminar through Título V (Arts. 1-29) | **Stable** | Core data-protection regime |
-| Ley 19.628 consolidated — Títulos VI-VIII (Arts. 30-55, Agency + sanctions framework) | **Partial** | English structured summaries; Spanish verbatim; 44 REVIEW markers pending human review |
+| Ley 19.628 consolidated — Títulos VI-VIII (Arts. 30-55, Agency + sanctions framework) | **Stable** | Literal translations complete (Phase H4 closed all 44 REVIEW markers) |
 | Ley 21.719 amendments changelog | **Stable** | Reference only — quote consolidated 19.628 as operative law |
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 113 + 40 + 98 + 265 citations respectively |
 | Tooling + tests | **Stable** | 18/18 pytest passing |
