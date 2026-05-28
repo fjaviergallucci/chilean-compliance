@@ -134,7 +134,7 @@ To enable, disable, or uninstall later:
 To install at a tagged version rather than `main`:
 
 ```text
-/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.0.0
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.0.2
 /plugin install chile-compliance@chile-compliance
 ```
 
