@@ -14,8 +14,12 @@ Covered (Ley 21.521 Fintec implementing regulations):
   (02-dic-2024); the item→section map is in `524-amendments-changelog/changes.md`.
   See `502-psf-obligations-consolidated/`.
 
+- **NCG 514** — Sistema de Finanzas Abiertas (open finance) implementing
+  Ley 21.521 Título III: the SFA perimeter, participant registration, API
+  operation, consent, data sets, and security safeguards. Standalone norm.
+  See `514-open-finance/`.
+
 Planned (later phases):
-- NCG 514 — Sistema de Finanzas Abiertas (open finance), Ley 21.521 Título III.
 - NCG 530 — MSI Fintec reporting (FINTEC01–16 templates).
 - NCG 503 — fit-and-proper (idoneidad) requirements for PSF roles.
 

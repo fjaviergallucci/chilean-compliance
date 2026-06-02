@@ -84,6 +84,18 @@ jobs:
             --exclude I.A --exclude I.C.2 --exclude II.A --exclude II.F --exclude III.C \
             --exclude IV.C.6 --exclude IV.D.4 --exclude VIII --exclude Anexo
 
+      - name: Quality gate — NCG 514 section parity
+        run: |
+          python -m tools.check_ncg_parity \
+            corpus/ncg/514-open-finance/_toc.json \
+            corpus/ncg/514-open-finance
+
+      - name: Quality gate — NCG 514 round-trip
+        run: |
+          python -m tools.check_roundtrip \
+            sources/ncg_514_2024.pdf corpus/ncg/514-open-finance \
+            --mode ncg --threshold 0.80
+
   validate-plugin:
     name: claude plugin validate
     runs-on: ubuntu-latest
