@@ -12,6 +12,25 @@ Planned for later releases:
 - Sample agent integrations for OpenAI SDK and LangChain.
 - Coverage for CMF circulars and APDP guidance once issued (separate corpus directories).
 
+## [1.1.1] — 2026-06-02
+
+### Changed
+
+- **NCG 502 corpus consolidated with NCG 524** — all 116 amendments (02-dic-2024) applied; corpus directory renamed `502-psf-obligations/` → `502-psf-obligations-consolidated/`. The `corpus_status` key is renamed `ncg_502` → `ncg_502_consolidated` in `plugin.json`.
+- **Indexes and SKILL.md** updated to point at `502-psf-obligations-consolidated/`; NCG 502 operational query path now reads from the consolidated dir.
+- **CI** — NCG 502 quality gates updated: section-parity gate targets `502-psf-obligations-consolidated/`; round-trip gate switches from single-PDF (threshold 0.80) to dual-PDF (`--also-pdf sources/ncg_524_2024.pdf`, threshold 0.70) with 9 heavy-splice/table sections excluded (`I.A`, `I.C.2`, `II.A`, `II.F`, `III.C`, `IV.C.6`, `IV.D.4`, `VIII`, `Anexo`) — those sections were verified manually and are documented in the corpus TN notes.
+- **`check_roundtrip.py`** — added `--also-pdf` flag (dual-PDF mode), `--exclude` flag, and de-hyphenation normalizer to support consolidated NCG verification.
+- **`corpus/ncg/524-amendments-changelog/changes.md`** — consolidated amendment delta log built alongside the corpus.
+- **Glossary reconciled with NCG 524's Anexo N°1 changes** (H.1–H.4):
+  - *Renamed*: `institutional client (cliente institucional)` → `institutional investor (inversionista institucional)` with updated definition (simplified reference to Ley 18.045 Art. 4 bis(e) only; reference to NCG 410 removed per H.2).
+  - *Deleted*: `counterparty risk (riesgo de contraparte)`, `credit risk (riesgo de crédito)`, `issuer credit risk (riesgo crediticio del emisor)`, `market risk (riesgo de mercado)`, `operational risk (riesgo operacional)` — all five deleted from Anexo N°1 per NCG 524 item H.4.
+- **SKILL.md** — dropped the "NCG 524 amendments pending" caveat; updated citation note to reflect consolidated corpus; bumped corpus-status version to v1.1.1.
+
+### Notes
+
+- AI-applied consolidation; no legal review has been conducted. The Spanish original text is authoritative; the English corpus is a translation aid.
+- 9 sections excluded from the round-trip fidelity gate are documented with `> **TN:**` notes in the relevant corpus files explaining why they reach lower chunk-coverage (heavy table splicing, column-interleaved extraction by pdfplumber).
+
 ## [1.1.0] — 2026-06-02
 
 ### Added
@@ -127,7 +146,8 @@ The literal-translation pass surfaced real corrections that the prior summaries 
 - CMF circulars, APDP guidance, and case law are not included. The skill instructs consuming AIs to say so when asked.
 - Pre-effective-date Ley 19.628 (1999 baseline) is not in the active corpus — for pre-2026-12-01 questions, consult the source PDF directly.
 
-[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.1.0
 [1.0.2]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.2
 [1.0.1]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.1
