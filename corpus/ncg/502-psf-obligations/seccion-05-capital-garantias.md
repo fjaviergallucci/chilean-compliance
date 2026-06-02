@@ -657,7 +657,7 @@ c) The foregoing is expressed in the following formula. Where `Aᵢ` corresponds
 
 > **TN:** The formula is reproduced in the Original Spanish blockquote in pdfplumber's extraction order, in which the summation symbols, the body of the expression, and the subscript/limit characters extract on separate lines; the English text presents the same formula linearised.
 
-<!-- REVIEW: --mode ncg round-trip coverage for this block is 0.84 (just below the 0.85 threshold). The shortfall is a pdfplumber page-break artifact, not a fidelity gap: the prose "(en valor absoluto)." (end of item b, foot of p117) is immediately followed in the PDF extraction by the page-117/118 running header ("V. CAPITAL Y GARANTÍAS / D. METODOLOGÍA…") before item c) resumes, so the sliding-window chunks that straddle the b)→c) boundary fail to match even though every word is transcribed verbatim. The bold-math formula itself matches the PDF. Transcription left faithful rather than distorted to game the metric. -->
+> **TN:** This block's `--mode ncg` round-trip coverage is ~0.84 (the CI gate runs at 0.80). The shortfall is a pdfplumber page-break artifact, not a fidelity gap: at the foot of p.117 the running header ("V. CAPITAL Y GARANTÍAS / D. METODOLOGÍA…") is extracted between item b) and item c), so the sliding-window chunks straddling that boundary fail to match even though every word is transcribed verbatim. The Spanish is faithful to the PDF.
 
 
 ### Cross-references

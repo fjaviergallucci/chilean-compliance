@@ -203,6 +203,6 @@ This field will be included when the incident is closed. The date (DD/MM/YYYY) a
 - NCG 502 Anexo N°1 — definitions of incidente and riesgo operacional used in this template.
 - NCG 502 Anexo N°3 — companion operational-loss report; the CMF-assigned incident ID generated here is used there.
 
-> **TN:** The field heading "Dependencias o activos afectados" in the summary table is rendered "Affected branches or assets"; the field-instruction section heading is "DEPENDENCIAS AFECTADAS" only — both forms are preserved. "Colaboradores" (literally "collaborators") is rendered "Staff" in the incident-type list, tracking HR usage in Chilean entities. <!-- REVIEW: the table field "Productos o servicios afectados" does not have a standalone field-instruction paragraph in the PDF; the detailed instructions section uses "SERVICIOS AFECTADOS" only — the table header appears to be broader. Rendered as found. -->
+> **TN:** The field heading "Dependencias o activos afectados" in the summary table is rendered "Affected branches or assets"; the field-instruction section heading is "DEPENDENCIAS AFECTADAS" only — both forms are preserved. "Colaboradores" (literally "collaborators") is rendered "Staff" in the incident-type list, tracking HR usage in Chilean entities. The table field "Productos o servicios afectados" has no standalone field-instruction paragraph in the PDF; the detailed-instructions section uses "SERVICIOS AFECTADOS" only — the table header appears to be broader. Rendered as found.
 
 > **Source:** NCG 502 Anexo N°2 (12-ene-2024).

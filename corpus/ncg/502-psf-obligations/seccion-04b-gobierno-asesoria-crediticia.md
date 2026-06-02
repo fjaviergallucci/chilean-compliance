@@ -712,7 +712,7 @@ When a credit adviser reaches 100 active clients in Chile, it shall have a maxim
 
 > **TN:** Table 2 is a structured table in the PDF source. The English rendering above presents it as a Markdown table with equivalent informational content. The table's column-first extraction order in the Original Spanish blockquote preserves the PDF's PDF-extraction sequence (column-by-column). The introductory paragraph of B.4 refers to "asesoría de inversión" but this is a drafting error in the source — context and the table heading confirm this section applies to credit advisory (asesoría crediticia); the English rendering corrects accordingly with this note.
 
-<!-- REVIEW: The second paragraph of B.4 in the PDF states "deberán cumplir las entidades que presten el servicio de asesoría de inversión" — likely a copy-paste error from §IV.A.4; the section heading and table heading both confirm this is credit advisory. English translation corrects to "credit advisory service". -->
+> **TN:** The second paragraph of B.4 in the source PDF reads "deberán cumplir las entidades que presten el servicio de asesoría de inversión" — an apparent copy-paste error from §IV.A.4 (the section heading and Table 2 heading both confirm this is credit advisory). The verbatim Spanish is preserved as-published; the English renders it as "credit advisory service" to match the section's actual subject.
 
 ### Cross-references
 - Ley 21.521 Arts. 1 and 12 — proportionality and governance mandate this section implements.

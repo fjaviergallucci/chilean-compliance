@@ -16,7 +16,7 @@ Planned for later releases:
 
 ### Added
 
-- **NCG 502 baseline corpus** (`corpus/ncg/502-psf-obligations/`) — the CMF regulation implementing Ley 21.521 Título II (Ley 21.521 Finanzas Abiertas implementing regulation, baseline 12-ene-2024). 117 sections (I–IX + 3 Anexos), each with section-level literal English translation and verbatim Spanish, round-trip verified against the source PDF.
+- **NCG 502 baseline corpus** (`corpus/ncg/502-psf-obligations/`) — the CMF regulation implementing Ley 21.521 Título II (registration, authorization, and obligations of financial-service providers; baseline 12-ene-2024). 117 sections (I–IX + 3 Anexos), each with section-level literal English translation and verbatim Spanish, round-trip verified against the source PDF.
 - **NCG 524 amendments catalogue** (`corpus/ncg/524-amendments-changelog/`) — all 116 amendments issued in December 2024 catalogued for reference. Consolidation into the NCG 502 baseline is deferred to a future release.
 - **NCG tooling** (`tools/`):
   - `extract_ncg_sections.py` — ToC-driven extractor for CMF NCG-formatted PDFs.
