@@ -9,6 +9,8 @@ As of v1.0.0, every article in the corpus carries a literal lexicon-conformant t
 - **Translation corrections.** If you find an English rendering that doesn't track the Spanish, open an issue (`Translation fix or improvement` template) or send a PR with the change plus a `> **TN:** ...` note explaining the rationale.
 - **New scenarios** in `indexes/scenarios.md` covering use cases that aren't yet on the list.
 - **CMF circulars and APDP guidance** as they are published. These are out of scope today but are valuable additions when issued.
+- **NCG 524 consolidation** — the 116 amendments are catalogued in `corpus/ncg/524-amendments-changelog/_amendments.json`; applying them to the NCG 502 baseline corpus to produce a consolidated text is the next planned step (future v1.1.1).
+- **NCG phase 2** — NCG 514 (Open Finance), NCG 530 (reporting obligations), and NCG 503 (idoneidad) are natural next additions once NCG 502 is consolidated.
 - **Coverage for other Chilean statutes** that fintech-adjacent products touch (Leyes 18.045, 18.046, 18.840, etc.). Each becomes its own corpus subdirectory.
 
 To propose any of the above, open an issue using the matching `.github/ISSUE_TEMPLATE/` so the discussion has the right shape, then send a PR.
@@ -59,7 +61,7 @@ For adding a new statute entirely (e.g., Ley 18.045):
 4. Translate each Título following the same conventions.
 5. Add the law to `.claude-plugin/plugin.json` `corpus_status`.
 
-The tooling is law-agnostic — the same scripts work on any Chilean BCN PDF that follows standard `Artículo N.-` and `TÍTULO N` structure.
+The tooling is law-agnostic — the same scripts work on any Chilean BCN PDF that follows standard `Artículo N.-` and `TÍTULO N` structure. NCG-format (hierarchical ToC) regulations use `extract_ncg_sections.py` + `check_ncg_parity.py` instead; follow the NCG 502 corpus as the pattern.
 
 ## Quality gates
 
@@ -73,7 +75,11 @@ python -m tools.check_roundtrip sources/Ley-21521_04-ENE-2023-1.pdf corpus/21521
 python -m tools.check_roundtrip sources/LEY-19628_28-AGO-1999.pdf corpus/19628-data-protection-consolidated --sample 0
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/21521-fintech
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/19628-data-protection-consolidated
+python -m tools.check_ncg_parity corpus/ncg/502-psf-obligations/_toc.json corpus/ncg/502-psf-obligations
+python -m tools.check_roundtrip "sources/NCG 502.pdf" corpus/ncg/502-psf-obligations --mode ncg --threshold 0.80
 ```
+
+Note: the NCG round-trip runs at threshold 0.80 due to one known pdfplumber page-break artifact; the law round-trips above use the default threshold.
 
 CI runs these on every PR. Tests must be green to merge.
 

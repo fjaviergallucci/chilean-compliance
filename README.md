@@ -2,12 +2,13 @@
 
 > A structured, AI-queryable knowledge base of Chilean fintech and personal-data law — built for use by AI agents, not humans.
 
-If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws:
+If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws — and the CMF regulation that implements them:
 
 - **Ley 21.521** (*Ley Fintec*, 2023) — financial-services innovation, crowdfunding, investment advisory, open finance, custody, intermediation.
 - **Ley 19.628** as amended by **Ley 21.719** (*data protection*, in force **2026-12-01**) — consent, lawful basis, data-subject rights, sensitive data, breach notification, the new APDP regulator and sanctions framework.
+- **NCG 502** (CMF *Norma de Carácter General*, 2024) — the implementing regulation for Ley 21.521 Título II: how financial-service providers actually register, get authorized, govern risk, secure systems, hold capital, and report. The operational layer beneath the Fintech law.
 
-Both laws are published in Spanish. Without help, an AI session about Chilean compliance spends most of its tokens translating, re-translating, and searching the same legal text from scratch every time. This plugin makes that knowledge available as a structured corpus with topical indexes, a glossary, scenario checklists, and a query-decision-tree skill — so your AI agent can answer compliance questions in seconds, with verifiable citations.
+These texts are all published in Spanish. Without help, an AI session about Chilean compliance spends most of its tokens translating, re-translating, and searching the same legal text from scratch every time. This plugin makes that knowledge available as a structured corpus with topical indexes, a glossary, scenario checklists, and a query-decision-tree skill — so your AI agent can answer compliance questions in seconds, with verifiable citations.
 
 > [!IMPORTANT]
 > This skill is **not** legal advice. It's a structured citation aid for AI agents. For decisions with material risk, consult Chilean counsel.
@@ -22,6 +23,7 @@ Both laws are published in Spanish. Without help, an AI session about Chilean co
 
 - **Ley N° 21.521 (Ley Fintec)** — promueve la competencia e inclusión financiera mediante la innovación y tecnología en la prestación de servicios financieros. Cubre plataformas de financiamiento colectivo (*crowdfunding*), asesoría crediticia y de inversión, custodia de instrumentos financieros, enrutamiento de órdenes, intermediación, sistemas alternativos de transacción y el Sistema de Finanzas Abiertas (SFA). En vigor desde el **3 de febrero de 2023**.
 - **Ley N° 19.628 sobre Protección de Datos Personales** (consolidada con las modificaciones de la **Ley N° 21.719**) — regula el tratamiento de datos personales, el consentimiento del titular, los derechos del titular (acceso, rectificación, supresión, oposición, portabilidad), los datos personales sensibles, la transferencia internacional, las obligaciones del responsable y del mandatario, y crea la **Agencia de Protección de Datos Personales (APDP)** con su régimen sancionatorio. Entra en vigor el **1 de diciembre de 2026**.
+- **NCG N°502 (CMF)** — norma de carácter general que implementa el Título II de la Ley 21.521: registro, autorización, obligaciones de divulgación, gobierno corporativo y gestión de riesgos, capital y garantías, y reportes de los prestadores de servicios financieros. Es la capa operativa ("cómo cumplir en la práctica"). Texto base del 12-ene-2024; las 116 modificaciones de la NCG 524 están catalogadas, consolidación pendiente.
 
 ### ¿Qué hay en el repositorio?
 
@@ -32,6 +34,8 @@ Both laws are published in Spanish. Without help, an AI session about Chilean co
 - Herramientas Python de verificación con cobertura de pruebas (paridad de extracción, fidelidad del texto en español, completitud del glosario).
 
 ### Estado actual
+
+El corpus incluye el texto base de la NCG 502 (117 secciones, 12-ene-2024); las 116 modificaciones de la NCG 524 están catalogadas y la consolidación queda pendiente para v1.1.1.
 
 El corpus principal está en inglés, ya que ese es el idioma operativo de los agentes de IA. Las citas verbatim del texto original en español siempre están disponibles dentro de cada artículo (bloque `### Original Spanish`). Todo el articulado cuenta con traducciones literales lexicon-conformes; las notas del traductor (`> **TN:** ...`) explican los renderings que no calzan exactamente con el léxico (por ejemplo, instituciones procesales chilenas sin equivalente directo en inglés).
 
@@ -58,8 +62,8 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | Ley 19.628 consolidated — Títulos VI-VIII (Arts. 30-55, Agency + sanctions framework) | **Stable** | Literal translations complete (Phase H4 closed all 44 REVIEW markers) |
 | Ley 21.719 amendments changelog | **Stable** | Reference only — quote consolidated 19.628 as operative law |
 | NCG 502 — PSF obligations (Ley 21.521 implementing reg, baseline) | **Stable** | 117 sections; NCG 524's 116 amendments catalogued, consolidation pending |
-| Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 113 + 40 + 98 + 265 citations respectively |
-| Tooling + tests | **Stable** | 18/18 pytest passing |
+| Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 149 topical · 82 glossary · 7 scenarios/100 items · 338 cross-refs |
+| Tooling + tests | **Stable** | 32/32 pytest passing |
 
 The `corpus_status` field in `.claude-plugin/plugin.json` is the canonical source of truth for an AI consumer.
 
@@ -67,12 +71,13 @@ The `corpus_status` field in `.claude-plugin/plugin.json` is the canonical sourc
 
 ## What this gives an AI
 
-A consuming AI gets four kinds of lookup:
+A consuming AI gets five kinds of lookup:
 
 1. **Direct article retrieval** — *"What does Art. 8 bis of 19.628 say?"*
 2. **Definition lookup** — *"Define 'datos personales sensibles'."*
 3. **Scenario checklists** — *"What do I need to comply with if my feature aggregates bank statements?"*
 4. **Topical search** — *"What rules cover AI-based recommendations?"*
+5. **Operational/how-to lookup** — *"What does the CMF actually require us to do to register / report an incident / hold capital?"* — follows the law→regulation bridge into NCG 502.
 
 Every answer cites a specific article in the corpus, so a human reviewer can click through and verify. Spanish original text is one hop away whenever a verbatim quote is needed.
 
@@ -171,10 +176,10 @@ chile-compliance/
 │       ├── 502-psf-obligations/        # NCG 502 baseline (12-ene-2024), 117 sections
 │       └── 524-amendments-changelog/   # NCG 524 amendments catalogue (116 items)
 ├── indexes/
-│   ├── by-topic.md                     # Topical lookup, 113 citations
-│   ├── glossary.md                     # 40 defined terms (English + Spanish)
-│   ├── scenarios.md                    # 7 compliance scenarios with checklists
-│   └── cross-references.md             # 265 article-to-article edges
+│   ├── by-topic.md                     # Topical lookup, 149 citations
+│   ├── glossary.md                     # 82 defined terms (English + Spanish)
+│   ├── scenarios.md                    # 7 compliance scenarios, 100 checklist items
+│   └── cross-references.md             # 338 article-to-article edges
 ├── sources/                            # Original PDF sources (BCN, public)
 └── tools/                              # Python QC scripts + pytest tests
 ```
@@ -208,7 +213,7 @@ Translation conventions live in `corpus/_lexicon.md`. When a translator deviated
 
 Be explicit with your users about the corpus's limits:
 
-- **No CMF circulars or general regulations.** The Comisión para el Mercado Financiero issues binding sector regulations under Ley 21.521 Art. 4. Those are out of scope until added separately.
+- **CMF general regulations: NCG 502 only.** The corpus now includes NCG 502 (the core implementing regulation for Ley 21.521 Título II). Other CMF circulars and normas issued under Ley 21.521 Art. 4 remain out of scope until added separately.
 - **No APDP guidance.** The Agencia de Protección de Datos Personales becomes operational with Ley 21.719 in force; its guidance and enforcement decisions are out of scope.
 - **No case law.** Chilean Supreme Court and Court of Appeals decisions interpreting these laws aren't in the corpus.
 - **No other laws.** Ley 21.521 amends Leyes 18.045 (capital markets), 18.046 (corporations), 18.840 (Central Bank), 19.220, 20.712, 20.950, and 21.000 — those amendments live in 21.521 Título V, which is documented as out-of-scope here. If your use case touches one of those statutes, you need a separate corpus.
@@ -241,6 +246,9 @@ The build philosophy is **markdown-first, tooling-light**:
   - `check_glossary_completeness.py` — verifies every glossary term cites a real article.
   - `check_roundtrip.py` — verifies corpus Spanish text matches the source PDF.
   - `parse_21719_amendments.py` — one-off parser for Ley 21.719's amendment list.
+  - `extract_ncg_sections.py` — parses CMF NCG-format PDFs (hierarchical ToC) into section blocks.
+  - `check_ncg_parity.py` — verifies every NCG section in the ToC appears once in the corpus.
+  - `parse_524_amendments.py` — catalogues NCG 524's amendments to NCG 502.
 - **Distribution**: a Claude Code plugin manifest (`.claude-plugin/plugin.json`) + a marketplace catalog (`.claude-plugin/marketplace.json`) + a skill (`skills/chile-compliance/SKILL.md`). The skill's frontmatter description triggers auto-activation when an AI sees fintech or data-protection contexts. The repo doubles as its own single-plugin marketplace, so a user installs it with `/plugin marketplace add` + `/plugin install`.
 
 ---
@@ -287,7 +295,7 @@ If you want to add another Chilean statute (e.g., Ley 18.045 capital markets):
 4. Translate each Título following the conventions used in `corpus/21521-fintech/`.
 5. Add the law to `.claude-plugin/plugin.json` `corpus_status`.
 
-The tooling is law-agnostic — the same scripts work on any Chilean BCN PDF following standard `Artículo N.-` / `TÍTULO N` structure.
+The tooling is law-agnostic — the same scripts work on any Chilean BCN PDF following standard `Artículo N.-` / `TÍTULO N` structure. NCG-format (hierarchical, ToC-based) PDFs are handled by `extract_ncg_sections.py` instead, following the NCG 502 corpus as the pattern.
 
 ### Quality gates
 
@@ -327,6 +335,8 @@ Original Spanish source text is from the **Biblioteca del Congreso Nacional de C
 | Ley 21.521 | `sources/Ley-21521_04-ENE-2023-1.pdf` |
 | Ley 19.628 (1999 baseline) | `sources/LEY-19628_28-AGO-1999.pdf` |
 | Ley 21.719 | `sources/Ley-21719_13-DIC-2024.pdf` |
+| NCG 502 (PSF obligations, baseline) | `sources/NCG 502.pdf` |
+| NCG 524 (amends NCG 502) | `sources/ncg_524_2024.pdf` |
 
 ---
 
