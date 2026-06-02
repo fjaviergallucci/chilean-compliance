@@ -179,6 +179,26 @@ def check_ncg(pdf_path: Path, corpus_dir: Path, threshold: float) -> list[tuple[
     return failures
 
 
+def check_ncg_multi(pdf_paths, corpus_dir, threshold: float) -> list[tuple[str, float]]:
+    """NCG round-trip against multiple source PDFs.
+
+    A corpus section's Spanish block passes if its chunk-coverage is >=
+    threshold against ANY of the supplied PDFs.  For consolidated corpora
+    whose text comes from a baseline PDF plus amendment PDF(s).
+    Returns a list of (section_id, best_coverage) for blocks below threshold.
+    """
+    norms = [_normalize_ncg(_extract_pdf_full_text(Path(p))) for p in pdf_paths]
+    failures: list[tuple[str, float]] = []
+    for ident, spanish_text in _parse_ncg_corpus_blocks(Path(corpus_dir)):
+        bn = _normalize_ncg(spanish_text)
+        if len(bn) < _TRIVIAL_THRESHOLD:
+            continue
+        best = max((_chunk_coverage(bn, n) for n in norms), default=0.0)
+        if best < threshold:
+            failures.append((ident, best))
+    return failures
+
+
 def check(pdf_path: Path, corpus_dir: Path, sample: int, threshold: float) -> list[tuple[str, float]]:
     pdf_blocks = {b["article_num"]: b["spanish_text"] for b in extract_articles(pdf_path)}
     corpus_blocks: dict[str, str] = {}
@@ -206,16 +226,30 @@ if __name__ == "__main__":
     ap.add_argument("--threshold", type=float, default=0.85)
     ap.add_argument("--mode", choices=["law", "ncg"], default="law",
                     help="'law' (default): per-article similarity check; 'ncg': full-text containment check")
+    ap.add_argument("--also-pdf", action="append", default=[],
+                    metavar="PDF",
+                    help="(ncg mode) additional source PDF(s); when supplied, a section passes if it "
+                         "matches ANY of the given PDFs (the primary pdf plus all --also-pdf paths)")
     args = ap.parse_args()
 
     if args.mode == "ncg":
-        failures = check_ncg(Path(args.pdf), Path(args.corpus_dir), args.threshold)
-        if not failures:
-            print("OK: NCG sections match source PDF within threshold")
-            sys.exit(0)
-        for identifier, coverage in failures:
-            print(f"  {identifier}: coverage {coverage:.2f} < {args.threshold}")
-        sys.exit(1)
+        if args.also_pdf:
+            pdf_paths = [args.pdf] + args.also_pdf
+            failures = check_ncg_multi(pdf_paths, Path(args.corpus_dir), args.threshold)
+            if not failures:
+                print("OK: NCG sections match source PDFs within threshold")
+                sys.exit(0)
+            for identifier, coverage in failures:
+                print(f"  {identifier}: coverage {coverage:.2f} < {args.threshold}")
+            sys.exit(1)
+        else:
+            failures = check_ncg(Path(args.pdf), Path(args.corpus_dir), args.threshold)
+            if not failures:
+                print("OK: NCG sections match source PDF within threshold")
+                sys.exit(0)
+            for identifier, coverage in failures:
+                print(f"  {identifier}: coverage {coverage:.2f} < {args.threshold}")
+            sys.exit(1)
     else:
         failures = check(Path(args.pdf), Path(args.corpus_dir), args.sample, args.threshold)
         if not failures:
