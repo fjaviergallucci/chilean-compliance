@@ -317,3 +317,98 @@ with a parenthesized one-line reason.
 21.521:Art.23 -> 19.628:Art.12 (Open Finance customer consent is parallel but distinct from personal-data consent)
 21.521:Art.24 -> 19.628:Art.14 (personal data processing obligations applicable to all Open Finance participants)
 21.521:Art.27 -> 19.628:Art.14 (personal data protection — para.1 cross-reference in CMF supervision)
+
+---
+
+## Between Ley 21.521 and NCG 502
+
+### Title I — Registration
+
+21521:Art.5 -> NCG502:§I (registration obligation → Registry of Financial-Service Providers framework)
+21521:Art.5 -> NCG502:§I.A (registration obligation → registration-application requirements and eligibility)
+21521:Art.6 -> NCG502:§I.A (eligibility and ineligibility grounds → registration-application requirements)
+21521:Art.5 -> NCG502:§I.B (registration obligation → cancellation-of-registration procedure)
+21521:Art.13 -> NCG502:§I.B (cancellation of registration → cancellation-of-registration procedure)
+21521:Art.4 -> NCG502:§I.C (CMF exception power → exception-granting framework)
+21521:Art.6 -> NCG502:§I.C (requirements subject to exception → exception-granting framework)
+21521:Art.4 -> NCG502:§I.C.1 (CMF exception → legal-person requirement exception)
+21521:Art.4 -> NCG502:§I.C.2 (CMF exception → exclusive-corporate-purpose exception)
+21521:Art.7 -> NCG502:§I.C.2 (per-service authorization → service-authorization exception scope)
+21521:Art.4 -> NCG502:§I.C.3 (CMF exception → Chile-domicile exception)
+21521:Art.7 -> NCG502:§I.C.3 (per-service authorization → service-authorization exception scope)
+
+### Title II — Per-Service Authorization
+
+21521:Art.7 -> NCG502:§II (per-service authorization requirement → authorization framework)
+21521:Art.7 -> NCG502:§II.A (per-service authorization → investment-advisory authorization requirements)
+21521:Art.7 -> NCG502:§II.B (per-service authorization → credit-advisory authorization requirements)
+21521:Art.7 -> NCG502:§II.C (per-service authorization → crowdfunding-platform authorization requirements)
+21521:Art.7 -> NCG502:§II.D (per-service authorization → alternative-trading-system authorization requirements)
+21521:Art.7 -> NCG502:§II.E (per-service authorization → order-routing authorization requirements)
+21521:Art.7 -> NCG502:§II.F (per-service authorization → intermediation-and-custody authorization requirements)
+
+### Title III — Disclosure Obligations
+
+21521:Art.12 -> NCG502:§III (disclosure mandate → disclosure and information-delivery framework)
+21521:Art.12 -> NCG502:§III.A (disclosure mandate → investment-advisory disclosure obligations)
+21521:Art.12 -> NCG502:§III.B (disclosure mandate → credit-advisory disclosure obligations)
+21521:Art.12 -> NCG502:§III.C (disclosure mandate → crowdfunding-platform disclosure obligations)
+21521:Art.12 -> NCG502:§III.D (disclosure mandate → alternative-trading-system disclosure obligations)
+21521:Art.12 -> NCG502:§III.E (disclosure mandate → order-routing disclosure obligations)
+21521:Art.12 -> NCG502:§III.F (disclosure mandate → intermediation disclosure obligations)
+21521:Art.12 -> NCG502:§III.G (disclosure mandate → custody disclosure obligations)
+
+### Title IV — Governance and Risk Management
+
+21521:Art.8 -> NCG502:§IV (governance & risk-management mandate → corporate-governance framework)
+21521:Art.8 -> NCG502:§IV.A (governance mandate → investment-advisory governance & risk)
+21521:Art.8 -> NCG502:§IV.A.1 (governance mandate → investment-advisory board responsibility)
+21521:Art.8 -> NCG502:§IV.A.2.2 (governance mandate → investment-advisory information-security & cybersecurity policies)
+21521:Art.8 -> NCG502:§IV.A.3.1 (governance mandate → investment-advisory risk-management function)
+21521:Art.8 -> NCG502:§IV.A.3.2 (governance mandate → investment-advisory risk-management plan)
+21521:Art.1 -> NCG502:§IV.A.4 (proportionality principle → investment-advisory proportionality rule)
+21521:Art.12 -> NCG502:§IV.A.4 (disclosure proportionality → investment-advisory proportionality rule)
+21521:Art.8 -> NCG502:§IV.A.5 (governance mandate → investment-advisory operational-incident reporting)
+21521:Art.8 -> NCG502:§IV.B (governance mandate → credit-advisory governance & risk)
+21521:Art.8 -> NCG502:§IV.B.2.2 (governance mandate → credit-advisory operational-risk policies)
+21521:Art.8 -> NCG502:§IV.B.3.1 (governance mandate → credit-advisory risk-management function)
+21521:Art.1 -> NCG502:§IV.B.4 (proportionality principle → credit-advisory proportionality rule)
+21521:Art.12 -> NCG502:§IV.B.4 (disclosure proportionality → credit-advisory proportionality rule)
+21521:Art.8 -> NCG502:§IV.C (governance mandate → crowdfunding-platform & ATS governance & risk)
+21521:Art.8 -> NCG502:§IV.C.1 (governance mandate → crowdfunding-platform board role)
+21521:Art.8 -> NCG502:§IV.C.3.1 (cybersecurity mandate → information-security & cybersecurity procedures)
+21521:Art.8 -> NCG502:§IV.C.3.2 (governance mandate → business-continuity procedures)
+21521:Art.8 -> NCG502:§IV.C.3.3 (governance mandate → outsourcing-risk management)
+21521:Art.8 -> NCG502:§IV.C.4 (governance mandate → crowdfunding-platform risk-management function)
+21521:Art.8 -> NCG502:§IV.C.5 (governance mandate → crowdfunding-platform internal-audit function)
+21521:Art.1 -> NCG502:§IV.C.6 (proportionality principle → crowdfunding-platform proportionality rule)
+21521:Art.12 -> NCG502:§IV.C.6 (disclosure proportionality → crowdfunding-platform proportionality rule)
+21521:Art.8 -> NCG502:§IV.C.7 (governance mandate → crowdfunding-platform incident & loss reporting)
+21521:Art.8 -> NCG502:§IV.D (governance mandate → order-routing governance & risk)
+21521:Art.1 -> NCG502:§IV.D.4 (proportionality principle → order-routing proportionality rule)
+21521:Art.12 -> NCG502:§IV.D.4 (disclosure proportionality → order-routing proportionality rule)
+21521:Art.8 -> NCG502:§IV.E (governance mandate → intermediation & custody governance & risk)
+21521:Art.8 -> NCG502:§IV.E.4.1 (cybersecurity mandate → intermediation & custody information-security & cybersecurity)
+21521:Art.8 -> NCG502:§IV.E.4.2 (governance mandate → intermediation & custody business-continuity)
+21521:Art.8 -> NCG502:§IV.E.4.3 (governance mandate → intermediation & custody outsourcing risk)
+21521:Art.1 -> NCG502:§IV.E.6 (proportionality principle → intermediation & custody proportionality rule)
+21521:Art.12 -> NCG502:§IV.E.6 (disclosure proportionality → intermediation & custody proportionality rule)
+21521:Art.8 -> NCG502:§IV.E.8 (governance mandate → intermediation & custody incident & loss reporting)
+
+### Title V — Capital and Guarantee Requirements
+
+21521:Art.11 -> NCG502:§V (capital/guarantee requirement → capital and guarantee framework)
+21521:Art.11 -> NCG502:§V.A (capital/guarantee requirement → business-volume classification)
+21521:Art.11 -> NCG502:§V.B (capital/guarantee requirement → minimum-equity & guarantee rules)
+21521:Art.11 -> NCG502:§V.C (capital/guarantee requirement → adjusted-equity computation)
+21521:Art.11 -> NCG502:§V.D (capital/guarantee requirement → risk-weighted-assets methodology)
+21521:Art.11 -> NCG502:§V.D.1 (capital/guarantee requirement → operational-risk capital charge)
+21521:Art.11 -> NCG502:§V.D.2 (capital/guarantee requirement → market-risk capital charge)
+21521:Art.11 -> NCG502:§V.D.3 (capital/guarantee requirement → credit-risk capital charge)
+21521:Art.11 -> NCG502:§V.D.5 (capital/guarantee requirement → general capital-computation provisions)
+
+### Titles VI–VII — Operational Capacity and Inherent Activities
+
+21521:Art.5 -> NCG502:§VI (registration obligation → operational-readiness requirements)
+21521:Art.7 -> NCG502:§VI (per-service authorization → operational-capacity requirements)
+21521:Art.5 -> NCG502:§VII (registration scope → inherent permitted activities)
