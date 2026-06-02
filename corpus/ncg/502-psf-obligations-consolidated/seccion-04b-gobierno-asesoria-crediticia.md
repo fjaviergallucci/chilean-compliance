@@ -177,7 +177,7 @@ e) Operational risk-management policies and procedures must form part of the ent
 - NCG 502 §IV.B.2.2 — specific requirements for operational risk, information security, and cybersecurity.
 - NCG 502 §IV.B.3.1 — risk-management function responsible for ensuring policy accuracy and currency.
 
-<!-- REVIEW: NCG 524 item 25 (literal y) restates verbatim the same instruction as item 8 (literal h): insert "u órgano equivalente" in B.2 literal c) between "por el directorio" and "incorporando, al menos". The insertion is applied once; item 25 is a redundant no-op in the consolidated text. -->
+> **TN:** NCG 524 item 25 (literal y) restates verbatim the same instruction as item 8 (literal h): insert "u órgano equivalente" in B.2 literal c) between "por el directorio" and "incorporando, al menos". The insertion is applied once (see literal c) above, "aprobadas por el directorio u órgano equivalente, incorporando, al menos"); item 25 is therefore a redundant duplicate amendment and is a no-op in the consolidated text. Both items are listed in the Source footer for traceability.
 
 > **Source:** NCG 502 §IV.B.2 (12-ene-2024), as amended by NCG 524 items 8 and 25 (02-dic-2024).
 

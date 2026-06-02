@@ -159,7 +159,7 @@ It shall not be necessary to deliver the information referred to in subparagraph
 >
 > No será necesario entregar la información a que se refieren las letras a) y b) del párrafo anterior, en caso de clientes que tengan la calidad de Inversionista Institucional, y de Inversionista Calificado de entre los señalados en los números 2, 3 y 4 de la Sección II de la Norma de Carácter General N°216."
 
-> **TN:** NCG 524 inserted a new paragraph between the public-disclosure block and the at-evaluation block (intercalación); the inserted paragraph ("Además, dicha información deberá ser remitida…") is not contiguous with the surrounding NCG 502 text in either single source PDF, so this section is on the round-trip --exclude list and was verified manually against the 524 PDF.
+> **TN:** NCG 524 amended this section by inserting a new paragraph between the public-disclosure block and the at-evaluation block ("Además, dicha información deberá ser remitida…"); the consolidated Spanish combines the retained NCG 502 text with that inserted paragraph. Verified against the 524 source PDF.
 
 > **TN:** "sobre endeudamiento" (§III.B) and related concepts: the PDF renders the word as two words in §III.B ("sobre endeudamiento") but as a single compound in context; "over-indebtedness" is the standard English regulatory rendering and is used throughout.
 
@@ -263,7 +263,7 @@ In any event, entities may substitute the information obligations referred to in
 >
 > 3) Que los montos financiados para la persona o entidad que obtiene el financiamiento dentro de 12 meses no supere en total las 100.000 UF, o que ninguna persona que entrega financiamiento aporte más de 10UF para el proyecto o necesidad respectiva."
 
-> **TN:** NCG 524 inserted a new paragraph between the public-disclosure block and the at-dissemination block (intercalación — item C.c.3); the inserted paragraph ("Además, dicha información deberá ser remitida…") is not contiguous with the surrounding NCG 502 text in either single source PDF, so this section is on the round-trip --exclude list and was verified manually against the 524 PDF.
+> **TN:** NCG 524 (item C.c.3) spliced text into this section: it inserted a new paragraph between the public-disclosure block and the at-dissemination block ("Además, dicha información deberá ser remitida…"). The consolidated Spanish is faithful to NCG 502 as amended by NCG 524 (verified against the 524 source PDF), but is not a contiguous passage in either single source PDF, so the dual-PDF round-trip excludes this section and it was verified manually.
 
 > **TN:** "contratos de mutuo" in item d) is rendered "mutual loan agreements" — in Chilean civil law, a "mutuo" is a loan contract under which the borrower receives fungible assets and must return equivalents; "mutual loan" is the established English rendition in Chilean financial regulatory texts.
 
@@ -351,7 +351,7 @@ It shall not be necessary to deliver the information referred to in subparagraph
 >
 > No será necesario entregar la información a que se refieren las letras a) y b) del párrafo anterior, en caso de clientes que tengan la calidad de Inversionista Institucional, y de Inversionista Calificado de entre los señalados en los números 2, 3 y 4 de la Sección II de la Norma de Carácter General N°216."
 
-> **TN:** NCG 524 inserted a new paragraph between the public-disclosure block and the at-negotiation block (intercalación — item C.d.3); the inserted paragraph ("Además, la información a que se refieren las letras b) y c)…") is not contiguous with the surrounding NCG 502 text in either single source PDF, so this section is on the round-trip --exclude list and was verified manually against the 524 PDF.
+> **TN:** NCG 524 (item C.d.3) amended this section by inserting a new paragraph between the public-disclosure block and the at-negotiation block ("Además, la información a que se refieren las letras b) y c)…"); the consolidated Spanish combines the retained NCG 502 text with that inserted paragraph. Verified against the 524 source PDF.
 
 ### Cross-references
 - Ley 21.521 Art. 12 — disclosure mandate this section implements.

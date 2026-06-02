@@ -141,7 +141,7 @@ a) Identification of the channels through which it will interact with clients or
 
 4. The URL address or mechanism through which the information referred to in subparagraphs a) and b) of the first paragraph of Section III.B of this regulation can be accessed.
 
-> **TN:** NCG 524 added new numeral 4) to literal a) and replaced literal d) with substantively different text; the consolidated Spanish faithfully joins text from NCG 502 (numerals 1–3 and literals b–c) with NCG 524 amendments (numeral 4 and literal d). The 100-character sliding-window chunks that straddle the NCG 502/NCG 524 text boundaries are not contiguous passages in either single source PDF. This section is on the round-trip --exclude list and was verified manually.
+> **TN:** NCG 524 amended this section: it added new numeral 4) to literal a) and replaced literal d) with substantively different text; the consolidated Spanish faithfully joins NCG 502 retained text (numerals 1–3 and literals b–c) with the NCG 524 amendments (numeral 4 and literal d). Verified against the 524 source PDF.
 
 b) Document containing the policies referred to in subparagraph B of Section IV of this regulation that are applicable to it in accordance with what is established in subparagraph B.4 of that section. To rely on any of the exceptions referred to in subparagraph B.4, the applicant must declare the conditions that justify the exception.
 
@@ -205,7 +205,7 @@ e) Document with the description of the procedures that will be carried out, in 
 
 f) Document with the description of the mechanisms established to limit or adjust the degree of risk exposure that those who provide financing on the platform have in the projects, in accordance with the expectations or needs expressed by them.
 
-> **TN:** NCG 524 deleted literal e)'s trailing sentence and deleted literal g) entirely (renumbering old g to f); the consolidated Spanish faithfully joins NCG 502 retained text with the new final paragraph from NCG 524. The 100-character sliding-window chunks that straddle those NCG 502/NCG 524 text boundaries are not contiguous passages in either single source PDF. This section is on the round-trip --exclude list and was verified manually.
+> **TN:** NCG 524 amended this section: it deleted literal e)'s trailing sentence and deleted literal g) entirely (renumbering old g to f); the consolidated Spanish faithfully joins NCG 502 retained text with the new final paragraph from NCG 524. Verified against the 524 source PDF.
 
 By virtue of the provisions of Article 5 second paragraph numeral 8 of Ley N° 21.521, stock exchanges (bolsas de valores) under Ley N° 18.045 may provide the crowdfunding platform service and operate such platforms without being registered in the Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros), provided that, prior to commencing the provision of such service, they communicate that fact to this Commission (CMF), together with the supporting documents required under subparagraphs d) to f) of this section.
 

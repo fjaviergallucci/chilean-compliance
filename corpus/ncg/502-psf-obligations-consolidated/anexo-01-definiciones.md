@@ -155,9 +155,7 @@ _law:_ NCG-502
 
 **Riesgo residual (residual risk):** the risk that persists after the entity adopts control and mitigation measures.
 
-<!-- REVIEW: NCG 524 item H.4 — definitions of "Riesgo de crédito," "Riesgo de contraparte," "Riesgo crediticio del emisor," "Riesgo de mercado," and "Riesgo operacional" deleted from Anexo N°1 per NCG 524 (02-dic-2024). -->
-
-> **TN:** NCG 524 item H.4 deleted the Anexo N°1 definitions of Riesgo de crédito, Riesgo de contraparte, Riesgo crediticio del emisor, Riesgo de mercado, and Riesgo operacional. The cross-references below to §V.D.2 (Riesgo de mercado), §V.D.3 (Riesgo de crédito), and §IV (Riesgo operacional) are retained for navigation, but those terms are no longer defined in this Anexo following the deletion.
+> **TN:** NCG 524 item H.4 deleted the Anexo N°1 definitions of Riesgo de crédito, Riesgo de contraparte, Riesgo crediticio del emisor, Riesgo de mercado, and Riesgo operacional (verified against the 524 source PDF — those five risk definitions no longer appear in Anexo N°1; the risk-category descriptions instead now live in the body of §IV). The cross-references below to §V.D.2 (Riesgo de mercado), §V.D.3 (Riesgo de crédito), and §IV (Riesgo operacional) are retained for navigation, but those terms are no longer defined in this Anexo following the deletion.
 
 ### Original Spanish
 
