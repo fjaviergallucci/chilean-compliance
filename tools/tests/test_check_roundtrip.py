@@ -108,6 +108,24 @@ def test_ncg_multi_flags_text_in_no_pdf(tmp_path):
     assert any(f[0] == "I.A" for f in failures), f"expected I.A to fail, got {failures}"
 
 
+def test_ncg_multi_exclude_skips_section(tmp_path):
+    from tools.check_roundtrip import check_ncg_multi
+    from pathlib import Path
+    FIXTURE = Path(__file__).parent / "fixtures" / "mini_ncg.pdf"
+    d = tmp_path / "cex"; d.mkdir()
+    # Text is intentionally absent from the PDF and long enough (>40 chars) to
+    # exceed _TRIVIAL_THRESHOLD, so it will be flagged without --exclude.
+    (d / "s.md").write_text(
+        '## I.A — X\n\n### Original Spanish\n'
+        '> "Este texto deliberadamente no existe en el documento fuente original."\n\n'
+        '> **Source:** x\n',
+        encoding="utf-8")
+    # Without exclude, I.A fails:
+    assert any(f[0] == "I.A" for f in check_ncg_multi([FIXTURE], d, threshold=0.85))
+    # With exclude, I.A is skipped:
+    assert check_ncg_multi([FIXTURE], d, threshold=0.85, exclude=["I.A"]) == []
+
+
 # ---------------------------------------------------------------------------
 # De-hyphenation tests for NCG 524 line-break split normalisation
 # ---------------------------------------------------------------------------

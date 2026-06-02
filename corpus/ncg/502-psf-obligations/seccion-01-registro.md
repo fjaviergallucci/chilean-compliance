@@ -95,6 +95,8 @@ In the event that changes are made to the applicant's identification information
 
 In accordance with the provisions of Article 6 of Ley N° 21.521, only the registration of legal persons whose exclusive corporate purpose (giro exclusivo) is the provision of one or more of the services regulated by Ley N° 21.521 and those activities that the Commission (CMF) has authorized by regulation shall proceed, which is why those who apply for their registration must have that sole corporate purpose (objeto social). The foregoing, with the exception of those who are in the circumstances and conditions established in subparagraph C of this section, for which they must accompany their registration application with the supporting documents required in that section.
 
+> **TN:** NCG 524 inserted text mid-sentence here (an intercalación). The consolidated Spanish is faithful to NCG 502 as amended by NCG 524 (verified against the 524 source PDF), but its spliced wording does not appear as a contiguous passage in either single source PDF, so the automated dual-PDF round-trip cannot score it above threshold. This section is on the round-trip `--exclude` list and was verified manually.
+
 ### Original Spanish
 
 > "A. SOLICITUD DE INSCRIPCIÓN
@@ -288,6 +290,8 @@ b) That the provision of the services regulated by this regulation be provided o
 To rely on this exception, the applicant must make a declaration regarding the fact that it will comply with the circumstances described above. Such declaration must be made through the electronic mechanism provided for the submission of the registration application, on the Commission (CMF)'s website. In addition, such declaration must be updated annually through the mechanism established for that purpose on the Commission (CMF)'s website.
 
 Likewise, those who have availed themselves of the Chilean-domicile exception referred to in subparagraph C.3 below shall also be exempt from the exclusive-corporate-purpose requirement.
+
+> **TN:** NCG 524 inserted text mid-sentence here (an intercalación). The consolidated Spanish is faithful to NCG 502 as amended by NCG 524 (verified against the 524 source PDF), but its spliced wording does not appear as a contiguous passage in either single source PDF, so the automated dual-PDF round-trip cannot score it above threshold. This section is on the round-trip `--exclude` list and was verified manually.
 
 ### Original Spanish
 
