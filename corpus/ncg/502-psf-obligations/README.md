@@ -1,20 +1,19 @@
-# NCG 502 — Registration, Authorization & Obligations of PSF (consolidated)
+# NCG 502 — Registration, Authorization & Obligations of PSF (baseline)
 
 **Issued:** 2024-01-12 by the Comisión para el Mercado Financiero (CMF).
-**Consolidated with:** NCG 524 (2024-12-02), which amends NCG 502.
 **Implements:** Ley 21.521 (Ley Fintec) Título II, arts. 4–13.
-**Source PDFs:** `sources/NCG 502.pdf`, `sources/ncg_524_2024.pdf`.
+**Source PDF:** `sources/NCG 502.pdf`.
 
 This is the core CMF regulation for every Financial-Service Provider (PSF)
 under Ley 21.521 Título II. It governs the registration process, per-service
 authorization requirements, disclosure obligations, corporate governance and
 risk management, capital and guarantees, operational capacity, and reporting.
 
-## Consolidation
-NCG 524's amendments are merged into the section text below; each amended
-section's `> **Source:**` footer names the 524 item. NCG 524 itself is kept
-as a reference changelog at `../524-amendments-changelog/`. Cite the
-consolidated text here, never the bare NCG 524 amendment instructions.
+This corpus is the **baseline NCG 502 as published on 12-ene-2024**. NCG 524
+(02-dic-2024) later amended NCG 502 with 116 modifications; those amendments
+are catalogued in `../524-amendments-changelog/` and are **pending
+consolidation** (planned for a future release). Until then, cite this baseline
+text and check the 524 changelog for any section that NCG 524 modified.
 
 ## Section layout
 - `seccion-01-registro.md` — I. Registro de Prestadores de Servicios Financieros

@@ -1,6 +1,6 @@
 # NCG 502 — Sección IV.E: Corporate Governance & Risk Management — Intermediation & Custody of Financial Instruments (Gobierno Corporativo y Gestión de Riesgos — Intermediación y Custodia de Instrumentos Financieros)
 
-**Regulation:** NCG 502 (consolidated with NCG 524, in force per §IX).
+**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
 _law:_ NCG-502
 
 ---

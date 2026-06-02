@@ -1,6 +1,6 @@
 # NCG 502 — Sección IV.A: Corporate Governance & Risk Management — Investment Advisory (Gobierno Corporativo y Gestión de Riesgos — Asesoría de Inversión)
 
-**Regulation:** NCG 502 (consolidated with NCG 524, in force per §IX).
+**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
 _law:_ NCG-502
 
 ## IV — Corporate Governance and Risk Management

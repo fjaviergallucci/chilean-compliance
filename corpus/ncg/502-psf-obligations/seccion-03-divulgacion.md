@@ -1,6 +1,6 @@
 # NCG 502 — Sección III: Disclosure and Information-Delivery Obligations (Obligaciones de Divulgación y Entrega de Información)
 
-**Regulation:** NCG 502 (consolidated with NCG 524, in force per §IX).
+**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
 _law:_ NCG-502
 
 ## III — Disclosure and Information-Delivery Obligations
