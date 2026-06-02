@@ -1,6 +1,6 @@
 # NCG 502 — Sección IV.C: Corporate Governance & Risk Management — Crowdfunding Platforms & Alternative Trading Systems (Gobierno Corporativo y Gestión de Riesgos — Plataformas de Financiamiento Colectivo y Sistemas Alternativos de Transacción)
 
-**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
+**Regulation:** NCG 502 consolidated — baseline 12-ene-2024 as amended by NCG 524 (02-dic-2024). Amended sections carry a `> **Source:**` footer naming the 524 item(s); see `../524-amendments-changelog/changes.md`.
 _law:_ NCG-502
 
 ---

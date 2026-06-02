@@ -1,6 +1,6 @@
 # NCG 502 — Anexo N°3: Operational-Loss Report (Reporte de Pérdidas Operacionales)
 
-**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
+**Regulation:** NCG 502 consolidated — baseline 12-ene-2024 as amended by NCG 524 (02-dic-2024). Amended sections carry a `> **Source:**` footer naming the 524 item(s); see `../524-amendments-changelog/changes.md`.
 _law:_ NCG-502
 
 ## Anexo N°3 — Operational-Loss Report
