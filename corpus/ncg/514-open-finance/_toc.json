@@ -1,0 +1,402 @@
+[
+  {
+    "number": "I",
+    "title": "Perímetro Del Sistema De Finanzas Abiertas",
+    "page": 5
+  },
+  {
+    "number": "I.A",
+    "title": "DEFINICIONES Y NOMENCLATURA",
+    "page": 5
+  },
+  {
+    "number": "I.B",
+    "title": "ENTIDADES PARTICIPANTES",
+    "page": 8
+  },
+  {
+    "number": "I.C",
+    "title": "REGISTRO DE PRESTADORES DE SERVICIOS BASADOS EN INFORMACIÓN",
+    "page": 8
+  },
+  {
+    "number": "I.C.1",
+    "title": "Inscripción en el Registro",
+    "page": 8
+  },
+  {
+    "number": "I.C.1.1",
+    "title": "Contenido de la solicitud",
+    "page": 9
+  },
+  {
+    "number": "I.C.1.2",
+    "title": "Antecedentes adjuntos",
+    "page": 10
+  },
+  {
+    "number": "I.C.2",
+    "title": "Modificación del Registro",
+    "page": 14
+  },
+  {
+    "number": "I.C.3",
+    "title": "Cancelación de la inscripción",
+    "page": 14
+  },
+  {
+    "number": "I.D",
+    "title": "REGISTRO DE PROVEEDORES DE SERVICIOS DE INICIACIÓN DE PAGOS",
+    "page": 15
+  },
+  {
+    "number": "I.D.1",
+    "title": "Inscripción en el Registro",
+    "page": 15
+  },
+  {
+    "number": "I.D.1.1",
+    "title": "Contenido de la solicitud",
+    "page": 15
+  },
+  {
+    "number": "I.D.1.2",
+    "title": "Antecedentes adjuntos",
+    "page": 16
+  },
+  {
+    "number": "I.D.2",
+    "title": "Requisitos del BCCh conforme con inc. cuarto del art. 20 de la Ley Fintec",
+    "page": 20
+  },
+  {
+    "number": "I.D.3",
+    "title": "Inscripción conjunta en el Registro de PSBI y en el Registro de PSIP",
+    "page": 20
+  },
+  {
+    "number": "I.D.4",
+    "title": "Garantías asociadas",
+    "page": 21
+  },
+  {
+    "number": "I.D.5",
+    "title": "Condiciones específicas de la Iniciación de Pagos",
+    "page": 23
+  },
+  {
+    "number": "I.D.6",
+    "title": "Modificación del Registro",
+    "page": 24
+  },
+  {
+    "number": "I.D.7",
+    "title": "Cancelación de la Inscripción",
+    "page": 24
+  },
+  {
+    "number": "I.E",
+    "title": "NÓMINA DE INSTITUCIONES PROVEEDORAS DE INFORMACIÓN Y PROVEEDORAS DE CUENTAS",
+    "page": 25
+  },
+  {
+    "number": "I.E.1",
+    "title": "Incorporación a la Nómina",
+    "page": 25
+  },
+  {
+    "number": "I.E.2",
+    "title": "Plazos de incorporación a las Nóminas IPI e IPC",
+    "page": 26
+  },
+  {
+    "number": "I.F",
+    "title": "NÓMINA DE PROVEEDORES DE SERVICIOS BASADOS EN INFORMACIÓN",
+    "page": 27
+  },
+  {
+    "number": "I.F.1",
+    "title": "Cancelación de la Nómina",
+    "page": 28
+  },
+  {
+    "number": "II",
+    "title": "Funcionamiento Del Sistema",
+    "page": 29
+  },
+  {
+    "number": "II.A",
+    "title": "MEDIOS DE INTERCAMBIO DE INFORMACIÓN",
+    "page": 29
+  },
+  {
+    "number": "II.A.1",
+    "title": "Mecanismo principal",
+    "page": 29
+  },
+  {
+    "number": "II.A.2",
+    "title": "Estándares de las APIs",
+    "page": 29
+  },
+  {
+    "number": "II.A.3",
+    "title": "Disponibilidad y rendimiento",
+    "page": 31
+  },
+  {
+    "number": "II.B",
+    "title": "MECANISMO ALTERNATIVO",
+    "page": 33
+  },
+  {
+    "number": "II.C",
+    "title": "DIRECTORIO DE PARTICIPANTES",
+    "page": 34
+  },
+  {
+    "number": "II.D",
+    "title": "CALIDAD DE INFORMACIÓN",
+    "page": 35
+  },
+  {
+    "number": "II.E",
+    "title": "MECANISMOS DE COMUNICACIÓN ANTE CONTINGENCIAS",
+    "page": 36
+  },
+  {
+    "number": "II.F",
+    "title": "TERCERIZACIÓN DE SERVICIOS",
+    "page": 37
+  },
+  {
+    "number": "III",
+    "title": "Seguridad Y Resguardos Del Sistema",
+    "page": 38
+  },
+  {
+    "number": "III.A",
+    "title": "GESTIÓN DE RIESGOS Y CONTROL INTERNO",
+    "page": 38
+  },
+  {
+    "number": "III.A.1",
+    "title": "Responsabilidad del Directorio",
+    "page": 38
+  },
+  {
+    "number": "III.A.2",
+    "title": "Función de gestión de riesgos",
+    "page": 39
+  },
+  {
+    "number": "III.A.3",
+    "title": "Plan de gestión de riesgos",
+    "page": 40
+  },
+  {
+    "number": "III.A.4",
+    "title": "Riesgo Operacional",
+    "page": 40
+  },
+  {
+    "number": "III.A.5",
+    "title": "Externalización de servicios",
+    "page": 41
+  },
+  {
+    "number": "III.B",
+    "title": "SEGURIDAD DE LA INFORMACIÓN, CIBERSEGURIDAD Y CONTINUIDAD DEL NEGOCIO",
+    "page": 42
+  },
+  {
+    "number": "III.B.1",
+    "title": "Gestión de Seguridad de la Información y Ciberseguridad",
+    "page": 42
+  },
+  {
+    "number": "III.B.2",
+    "title": "Información de incidentes",
+    "page": 46
+  },
+  {
+    "number": "III.B.2.1",
+    "title": "Reportes incidentes operacionales",
+    "page": 46
+  },
+  {
+    "number": "III.B.2.2",
+    "title": "Reportes incidentes de ciberseguridad",
+    "page": 47
+  },
+  {
+    "number": "III.B.2.3",
+    "title": "Continuidad del negocio",
+    "page": 48
+  },
+  {
+    "number": "III.B.3",
+    "title": "Estándares de seguridad de la información y de contingencia de las APIs",
+    "page": 50
+  },
+  {
+    "number": "III.C",
+    "title": "AUTENTICACIÓN Y VERIFICACIÓN",
+    "page": 51
+  },
+  {
+    "number": "III.C.1",
+    "title": "Estándares mínimos de autenticación y confirmación de clientes",
+    "page": 51
+  },
+  {
+    "number": "III.C.2",
+    "title": "Autenticación del cliente financiero por parte de la IPI e IPC",
+    "page": 51
+  },
+  {
+    "number": "III.C.3",
+    "title": "Estándares de verificación del PSBI y PSIP por parte del IPI e IPC",
+    "page": 52
+  },
+  {
+    "number": "III.D",
+    "title": "CONSENTIMIENTO",
+    "page": 52
+  },
+  {
+    "number": "III.D.1",
+    "title": "Otorgamiento del consentimiento",
+    "page": 52
+  },
+  {
+    "number": "III.D.2",
+    "title": "Gestión del consentimiento y obligaciones de información",
+    "page": 54
+  },
+  {
+    "number": "III.E",
+    "title": "OTROS ESTÁNDARES",
+    "page": 56
+  },
+  {
+    "number": "III.E.1",
+    "title": "Estándares de interoperabilidad",
+    "page": 56
+  },
+  {
+    "number": "III.E.2",
+    "title": "Distribución de costos",
+    "page": 57
+  },
+  {
+    "number": "IV",
+    "title": "Información Del Sistema",
+    "page": 60
+  },
+  {
+    "number": "IV.A",
+    "title": "DATOS PARA COMPARTIR EN EL SFA",
+    "page": 60
+  },
+  {
+    "number": "IV.B",
+    "title": "PLAZOS PARA LA DISPONIBILIDAD DE LOS CONJUNTOS DE DATOS",
+    "page": 63
+  },
+  {
+    "number": "IV.C",
+    "title": "VARIABLES PARA COMPARTIR EN EL SFA",
+    "page": 63
+  },
+  {
+    "number": "IV.D",
+    "title": "PROTECCIÓN DE DATOS",
+    "page": 63
+  },
+  {
+    "number": "V",
+    "title": "Otras Disposiciones",
+    "page": 65
+  },
+  {
+    "number": "V.A",
+    "title": "SUSPENSIONES TEMPORALES",
+    "page": 65
+  },
+  {
+    "number": "V.B",
+    "title": "SANCIONES",
+    "page": 66
+  },
+  {
+    "number": "V.C",
+    "title": "PLAZOS DE IMPLEMENTACIÓN DEL SISTEMA",
+    "page": 66
+  },
+  {
+    "number": "V.D",
+    "title": "REQUERIMIENTOS DE INFORMACIÓN",
+    "page": 67
+  },
+  {
+    "number": "V.E",
+    "title": "ENTRADA EN VIGENCIA",
+    "page": 67
+  },
+  {
+    "number": "VI",
+    "title": "Anexos Normativos",
+    "page": 68
+  },
+  {
+    "number": "VI.1",
+    "title": "Términos y condiciones",
+    "page": 68
+  },
+  {
+    "number": "VI.2",
+    "title": "Canales de atención y ATM",
+    "page": 69
+  },
+  {
+    "number": "VI.3",
+    "title": "Enrolamiento",
+    "page": 71
+  },
+  {
+    "number": "VI.4",
+    "title": "Posiciones financieras históricas",
+    "page": 72
+  },
+  {
+    "number": "VI.5",
+    "title": "Información transaccional",
+    "page": 76
+  },
+  {
+    "number": "VI.6",
+    "title": "Productos Vigentes",
+    "page": 80
+  },
+  {
+    "number": "VI.7",
+    "title": "Iniciación de Pagos",
+    "page": 84
+  },
+  {
+    "number": "VI.A2",
+    "title": "Anexo N°2: Productos del SFA",
+    "page": 85
+  },
+  {
+    "number": "VI.A3",
+    "title": "Anexo N°3: Anexo Técnico",
+    "page": 90
+  },
+  {
+    "number": "VI.A4",
+    "title": "Anexo N°4: Especificaciones técnicas para la distribución de costos",
+    "page": 91
+  }
+]
