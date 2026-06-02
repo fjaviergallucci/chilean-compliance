@@ -12,6 +12,26 @@ Planned for later releases:
 - Sample agent integrations for OpenAI SDK and LangChain.
 - Coverage for CMF circulars and APDP guidance once issued (separate corpus directories).
 
+## [1.1.0] — 2026-06-02
+
+### Added
+
+- **NCG 502 baseline corpus** (`corpus/ncg/502-psf-obligations/`) — the CMF regulation implementing Ley 21.521 Título II (Ley 21.521 Finanzas Abiertas implementing regulation, baseline 12-ene-2024). 117 sections (I–IX + 3 Anexos), each with section-level literal English translation and verbatim Spanish, round-trip verified against the source PDF.
+- **NCG 524 amendments catalogue** (`corpus/ncg/524-amendments-changelog/`) — all 116 amendments issued in December 2024 catalogued for reference. Consolidation into the NCG 502 baseline is deferred to a future release.
+- **NCG tooling** (`tools/`):
+  - `extract_ncg_sections.py` — ToC-driven extractor for CMF NCG-formatted PDFs.
+  - `check_ncg_parity.py` — verifies every ToC entry in `_toc.json` has a corresponding section file in the corpus.
+  - `parse_524_amendments.py` — parser for NCG 524's amendment list.
+  - NCG mode in `check_roundtrip.py` (`--mode ncg`) — verifies corpus Spanish text matches the NCG 502 source PDF; threshold configurable via `--threshold`.
+  - All new tools have pytest coverage and two new CI gates (section parity + round-trip at threshold 0.80).
+- **NCG 502 citations integrated into indexes** — `indexes/by-topic.md`, `indexes/scenarios.md`, and `indexes/cross-references.md` now include 73 law↔NCG edges mapping Ley 21.521 articles to their NCG 502 implementing sections. `indexes/glossary.md` adds ~37 NCG-defined terms.
+- **SKILL.md** teaches the law↔regulation query path: for operational "how to comply" questions, look up the governing Ley 21.521 article, then follow the `-> NCG502` edges in `indexes/cross-references.md` to the relevant NCG 502 section.
+
+### Notes
+
+- NCG 502 is the 12-ene-2024 baseline text. NCG 524's 116 amendments are catalogued in `corpus/ncg/524-amendments-changelog/`; consolidation is pending a future release. When citing NCG 502 sections, check that changelog for any NCG 524 amendment to the cited section.
+- NCG 514 (Open Finance), NCG 530 (Reporting), and NCG 503 (Idoneidad) are planned for later phases.
+
 ## [1.0.2] — 2026-05-28
 
 ### Fixed
@@ -107,7 +127,8 @@ The literal-translation pass surfaced real corrections that the prior summaries 
 - CMF circulars, APDP guidance, and case law are not included. The skill instructs consuming AIs to say so when asked.
 - Pre-effective-date Ley 19.628 (1999 baseline) is not in the active corpus — for pre-2026-12-01 questions, consult the source PDF directly.
 
-[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.1.0
 [1.0.2]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.2
 [1.0.1]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.1
 [1.0.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.0

@@ -57,6 +57,7 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | Ley 19.628 consolidated — Preliminar through Título V (Arts. 1-29) | **Stable** | Core data-protection regime |
 | Ley 19.628 consolidated — Títulos VI-VIII (Arts. 30-55, Agency + sanctions framework) | **Stable** | Literal translations complete (Phase H4 closed all 44 REVIEW markers) |
 | Ley 21.719 amendments changelog | **Stable** | Reference only — quote consolidated 19.628 as operative law |
+| NCG 502 — PSF obligations (Ley 21.521 implementing reg, baseline) | **Stable** | 117 sections; NCG 524's 116 amendments catalogued, consolidation pending |
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 113 + 40 + 98 + 265 citations respectively |
 | Tooling + tests | **Stable** | 18/18 pytest passing |
 
@@ -134,7 +135,7 @@ To enable, disable, or uninstall later:
 To install at a tagged version rather than `main`:
 
 ```text
-/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.0.2
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.1.0
 /plugin install chile-compliance@chile-compliance
 ```
 
@@ -165,7 +166,10 @@ chile-compliance/
 │   ├── _lexicon.md                     # Spanish ↔ English legal-term mapping
 │   ├── 21521-fintech/                  # Ley 21.521 by Título
 │   ├── 19628-data-protection-consolidated/  # Ley 19.628 (post-21.719) by Título
-│   └── 21719-amendments-changelog/     # Reference: which 21.719 item changed what
+│   ├── 21719-amendments-changelog/     # Reference: which 21.719 item changed what
+│   └── ncg/                            # CMF NCG regulations
+│       ├── 502-psf-obligations/        # NCG 502 baseline (12-ene-2024), 117 sections
+│       └── 524-amendments-changelog/   # NCG 524 amendments catalogue (116 items)
 ├── indexes/
 │   ├── by-topic.md                     # Topical lookup, 113 citations
 │   ├── glossary.md                     # 40 defined terms (English + Spanish)

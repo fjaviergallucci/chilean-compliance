@@ -89,7 +89,7 @@ When citing an article that carries any of these markers, surface the marker alo
 
 ## Corpus status awareness
 
-Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.0.0:
+Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.1.0:
 
 - `21521_fintech: stable` — covers Títulos I-IV. Título V is out of scope.
 - `19628_consolidated: stable` — all Títulos fully translated (literal lexicon-conformant English with verbatim Spanish).
