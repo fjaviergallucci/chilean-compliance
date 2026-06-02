@@ -16,7 +16,10 @@ from pathlib import Path
 from tools.extract_articles import extract_articles
 
 ANCHOR_BLOCK_RE = re.compile(
-    r"##\s+Article\s+(\d+(?:\s+bis|\s+ter|\s+quater)?)\b.*?### Original Spanish\s*\n>\s*\"(.+?)\"",
+    r"##\s+(?:Article\s+)?"
+    r"(\d+(?:\s+bis|\s+ter|\s+qu[áa]ter|\s+quinquies|\s+sexies|\s+septies|\s+octies|\s+nonies)?"
+    r"|[IVXLC]+(?:\.[A-Z0-9]+)*)"
+    r"\b.*?### Original Spanish\s*\n>\s*\"(.+?)\"",
     re.DOTALL | re.IGNORECASE,
 )
 
