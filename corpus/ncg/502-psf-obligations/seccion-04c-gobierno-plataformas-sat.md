@@ -55,7 +55,7 @@ c) Establish an adequate organisational structure for the entity's risk manageme
 
 4) That the board of directors or equivalent body oversees compliance with the segregation of functions and the independence of the risk-management and internal-audit functions.
 
-5) Have a Risk Management Committee or a similar body. Without prejudice thereto, the board of directors or equivalent body must evaluate the appropriateness of forming other committees or similar bodies that allow it to address and monitor relevant business matters and risk management, relating to matters such as, for example: Internal Audit; Prevention of Money Laundering, Financing of Terrorism, and Financing of Weapons of Mass Destruction; Investments; New Services or Products; Business Continuity; Information Security and Cybersecurity. The board of directors or equivalent body must establish the procedures for the formation and operation of the committees or similar bodies, which must be duly documented, as must their actions, which must be reported to the board on a continuous basis. Without prejudice to the foregoing, the Risk Management and Internal Audit Committees (the latter, if constituted) must be composed of at least one member of the board of directors or equivalent body. No director (or member of the equivalent body) may be a member of both the Risk Management Committee and the Internal Audit Committee at the same time. The actions of the committees constituted, in the matters mentioned above, must be recorded in writing in minutes, which must clearly reflect the matters addressed.
+5) Have a Risk Management Committee or a similar body. Without prejudice thereto, the board of directors or equivalent body must evaluate the appropriateness of forming other committees or similar bodies that allow it to address and monitor relevant business matters and risk management, relating to matters such as, for example: Internal Audit; Prevention of Money Laundering, Financing of Terrorism, and Financing of Weapons of Mass Destruction; Investments; New Services or Products; Business Continuity; Information Security and Cybersecurity. The board of directors or equivalent body must establish the procedures for the formation and operation of the committees or similar bodies, which must be duly documented, as must their actions, which must be reported to the board on a continuous basis. Without prejudice to the foregoing, the Risk Management and Internal Audit Committees (the latter, if constituted) must be composed of at least one member of the board of directors or equivalent body. In the case of entities whose direction lies with a collegiate body, no director (or member of the equivalent body) may be a member of both the Risk Management Committee and the Internal Audit Committee at the same time. The actions of the committees constituted, in the matters mentioned above, must be recorded in writing in minutes, which must clearly reflect the matters addressed.
 
 d) Approve the annual plans of the risk-management and internal-audit functions and be aware, in a timely manner, of their compliance and of the reports they produce.
 
@@ -105,7 +105,7 @@ i) Ensure that the minutes or equivalent documentation reflect the principal mat
 >
 > 4) Que el directorio u órgano equivalente vele por el cumplimiento de la segregación de funciones y la independencia de las funciones de gestión de riesgos y de auditoría interna.
 >
-> 5) Contar con un Comité de Gestión de Riesgos o una instancia similar. Sin perjuicio de ello, el directorio u órgano equivalente deberá evaluar la pertinencia de conformar otros comités o instancias similares que le permitan tratar y monitorear aspectos relevantes de los negocios y la gestión de los riesgos, referidos a materias tales como, por ejemplo: Auditoría Interna; Prevención del Lavado de Activos, Financiamiento del Terrorismo y Financiamiento de Armas de Destrucción Masiva; Inversiones; Nuevos Servicios o Productos; Continuidad del Negocio; Seguridad de la Información y Ciberseguridad. El directorio u órgano equivalente deberá establecer los procedimientos para la conformación y funcionamiento de los comités o instancias similares, los cuales deberán quedar debidamente documentados, como también sus actuaciones, las que deberán ser reportadas al directorio en forma continua. Sin perjuicio de lo anterior, los Comités de Gestión de Riesgos y de Auditoría Interna (éste último, en caso de ser constituido) deberán estar integrados al menos por un miembro del directorio u órgano equivalente. Ningún director (o miembro del órgano equivalente) podrá ser parte del Comité de Gestión de Riesgos y del Comité de Auditoría Interna al mismo tiempo. La actuación de los comités que se conformen, en las materias antes mencionadas, deberá constar por escrito en actas, las que deberán reflejar con claridad los asuntos tratados.
+> 5) Contar con un Comité de Gestión de Riesgos o una instancia similar. Sin perjuicio de ello, el directorio u órgano equivalente deberá evaluar la pertinencia de conformar otros comités o instancias similares que le permitan tratar y monitorear aspectos relevantes de los negocios y la gestión de los riesgos, referidos a materias tales como, por ejemplo: Auditoría Interna; Prevención del Lavado de Activos, Financiamiento del Terrorismo y Financiamiento de Armas de Destrucción Masiva; Inversiones; Nuevos Servicios o Productos; Continuidad del Negocio; Seguridad de la Información y Ciberseguridad. El directorio u órgano equivalente deberá establecer los procedimientos para la conformación y funcionamiento de los comités o instancias similares, los cuales deberán quedar debidamente documentados, como también sus actuaciones, las que deberán ser reportadas al directorio en forma continua. Sin perjuicio de lo anterior, los Comités de Gestión de Riesgos y de Auditoría Interna (éste último, en caso de ser constituido) deberán estar integrados al menos por un miembro del directorio u órgano equivalente. Tratándose de entidades cuya dirección recae en un órgano colegiado, ningún director (o miembro del órgano equivalente) podrá ser parte del Comité de Gestión de Riesgos y del Comité de Auditoría Interna al mismo tiempo. La actuación de los comités que se conformen, en las materias antes mencionadas, deberá constar por escrito en actas, las que deberán reflejar con claridad los asuntos tratados.
 >
 > d) Aprobar los planes anuales de las funciones de gestión de riesgos y de auditoría interna y estar en conocimiento, en forma oportuna, de su cumplimiento y de los informes que elabore.
 >
@@ -135,7 +135,7 @@ i) Ensure that the minutes or equivalent documentation reflect the principal mat
 - NCG 502 §IV.C.4 and §IV.C.6 — risk-management function and proportionality whose implementation the board must establish under item c)(2).
 - NCG 502 §IV.C.5 and §IV.C.6 — internal-audit function and proportionality whose implementation the board must establish under item c)(3).
 
-> **Source:** NCG 502 §IV.C.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.1 (12-ene-2024), as amended by NCG 524 item 29 (02-dic-2024).
 
 ---
 
@@ -170,11 +170,11 @@ This subsection establishes the general principles applicable to the entity's po
 
 The entity's policies, procedures, and control mechanisms must take into account the following principles:
 
-a) Establish effective operating policies, procedures, and controls that relate to the number or type of participants; volume of transactions; investment projects, financing needs, or financial instruments traded, quoted, or offered; and in respect of each of the businesses or activities developed.
+a) Effective operating policies, procedures, and controls must be established that relate to the number or type of participants; volume of transactions; investment projects, financing needs, or financial instruments traded, quoted, or offered; and in respect of each of the businesses or activities developed.
 
 b) Policies must set out the general principles and guidelines established by the board of directors or equivalent body to guide the activities of the organisation.
 
-c) Procedures must define how to carry out a process, with the aim of ensuring compliance with the policies approved by the board of directors. For that purpose, they must define how to carry out a process, incorporating, at a minimum: the description of the principal activities that compose it and the identification of those responsible; the determination of those responsible for supervising and controlling the outcome of the activities carried out; documentation evidencing the execution of the activities that make up the procedures; the definition and description of the controls associated with those activities. In the case of outsourced activities, there must always be a person responsible within the organisation for the control of those activities.
+c) With the aim of ensuring compliance with the policies approved by the board of directors or equivalent body, a procedure must be defined that incorporates at a minimum: the description of the principal activities that compose it and the identification of those responsible; the determination of those responsible for supervising and controlling the outcome of the activities carried out; documentation evidencing the execution of the activities that make up the procedures; the definition and description of the controls associated with those activities. In the case of outsourced activities, there must always be a person responsible within the organisation for the control of those activities.
 
 d) Policies, procedures, and control mechanisms must be formally established and documented, being consistent with the risk-appetite levels defined by the entity.
 
@@ -184,21 +184,19 @@ d) Policies, procedures, and control mechanisms must be formally established and
 >
 > Las políticas, procedimientos y mecanismos de control de la entidad, deberán tener en cuenta los siguientes principios:
 >
-> a) Establecer políticas, procedimientos y controles operativos efectivos que guarden relación con el número o tipo de participantes; volumen de operaciones; proyectos de inversión, necesidades de financiamiento o instrumentos financieros negociados, cotizados u ofertados; y respecto de cada uno de los negocios o actividades que se desarrolle.
+> a) Se deberán establecer políticas, procedimientos y controles operativos efectivos que guarden relación con el número o tipo de participantes; volumen de operaciones; proyectos de inversión, necesidades de financiamiento o instrumentos financieros negociados, cotizados u ofertados; y respecto de cada uno de los negocios o actividades que se desarrolle.
 >
 > b) Las políticas deberán exponer los principios generales y directrices establecidas por el directorio u órgano equivalente para orientar las actividades de la organización.
 >
-> c) Los procedimientos definir cómo llevar a cabo un proceso, con el fin de asegurar el cumplimiento de las políticas aprobadas por el directorio. Para ello deben definir cómo llevar a cabo un proceso, incorporando, al menos: la descripción de las actividades principales que lo componen y la identificación de sus responsables; determinación de los responsables de supervisar y controlar el resultado de las actividades ejecutadas; documentación que evidencia la ejecución de las actividades que conforman los procedimientos; definición y descripción de los controles asociados a dichas actividades. En el caso de actividades externalizadas, siempre deberá existir una persona responsable dentro de la organización respecto al control de estas.
+> c) Con el fin de asegurar el cumplimiento de las políticas aprobadas por el directorio u órgano equivalente, se deberá definir un procedimiento que incorpore al menos: la descripción de las actividades principales que lo componen y la identificación de sus responsables; determinación de los responsables de supervisar y controlar el resultado de las actividades ejecutadas; documentación que evidencia la ejecución de las actividades que conforman los procedimientos; definición y descripción de los controles asociados a dichas actividades. En el caso de actividades externalizadas, siempre deberá existir una persona responsable dentro de la organización respecto al control de estas.
 >
 > d) Las políticas, procedimientos y mecanismos de control deberán estar formalmente establecidos y documentados, siendo consistentes con los niveles de apetito por riesgo que haya definido la entidad."
-
-> **TN:** Item c) opens with "Los procedimientos definir cómo llevar a cabo un proceso" — the source omits the verb ("deberán definir"); rendered idiomatically in English as "Procedures must define how to carry out a process" consistent with the parallel provision in §IV.B.2.c).
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.C.2.2 — minimum policies and procedures supplementing these general aspects.
 
-> **Source:** NCG 502 §IV.C.2.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.2.1 (12-ene-2024), as amended by NCG 524 item 30 (02-dic-2024).
 
 ---
 
@@ -251,17 +249,15 @@ Entities must define policies and procedures that enable them to manage and reso
 
 2) Procedures that enable the confidentiality of the person who makes the claim or complaint to be safeguarded.
 
-3) The board of directors or equivalent body must be kept informed of relevant claims and complaints.
+3) Clearly defining how the seriousness or relevance of the complaint or claim will be rated, and how it will be communicated to the appropriate bodies, including the board of directors or equivalent body in the case of the most relevant ones.
 
-4) Clearly defining how the seriousness or relevance of the complaint or claim will be rated, and how it will be communicated to the appropriate bodies, including the board of directors or equivalent body in the case of the most relevant ones.
+4) The bodies that will participate in the management of the queries, complaints, or claims according to the relevance or seriousness defined for each case. In any event, the management of claims must be carried out by a unit independent of the area in which they originated.
 
-5) The bodies that will participate in the management of the queries, complaints, or claims according to the relevance or seriousness defined for each case. In any event, the management of claims must be carried out by a unit independent of the area in which they originated.
+5) The maximum times established for managing and responding to each query, complaint, or claim according to its seriousness or relevance.
 
-6) The maximum times established for managing and responding to each query, complaint, or claim according to its seriousness or relevance.
+6) A register of the queries, complaints, and claims together with the seriousness or relevance assigned and the solution implemented.
 
-7) A register of the queries, complaints, and claims together with the seriousness or relevance assigned and the solution implemented.
-
-8) Defining a body responsible for analysing, monitoring, and proposing measures to prevent the situations that gave rise to the queries, complaints, or claims from recurring.
+7) Defining a body responsible for analysing, monitoring, and proposing measures to prevent the situations that gave rise to the queries, complaints, or claims from recurring.
 
 ### Original Spanish
 
@@ -309,17 +305,15 @@ Entities must define policies and procedures that enable them to manage and reso
 >
 > 2) Procedimientos que permitan resguardar la reserva de quien formula el reclamo o denuncia.
 >
-> 3) El directorio u órgano equivalente deberá mantenerse informado de los reclamos y denuncias relevantes.
+> 3) Definir claramente cómo se calificará la gravedad o relevancia de la denuncia o reclamo, y cómo se comunicará a las instancias que corresponda, incluyendo al directorio u órgano equivalente en el caso de aquellas más relevantes.
 >
-> 4) Definir claramente cómo se calificará la gravedad o relevancia de la denuncia o reclamo, y cómo se comunicará a las instancias que corresponda, incluyendo al directorio u órgano equivalente en el caso de aquellas más relevantes.
+> 4) Las instancias que participarán en la gestión de las consultas, denuncias o reclamos de acuerdo con la relevancia o la gravedad que se hubiere definido para cada caso. Con todo, la gestión de los reclamos deberá ser efectuada por una unidad independiente del área donde se originaron los mismos.
 >
-> 5) Las instancias que participarán en la gestión de las consultas, denuncias o reclamos de acuerdo con la relevancia o la gravedad que se hubiere definido para cada caso. Con todo, la gestión de los reclamos deberá ser efectuada por una unidad independiente del área donde se originaron los mismos.
+> 5) Los tiempos máximos establecidos para gestionar y responder cada consulta, denuncia o reclamo de acuerdo con su gravedad o relevancia.
 >
-> 6) Los tiempos máximos establecidos para gestionar y responder cada consulta, denuncia o reclamo de acuerdo con su gravedad o relevancia.
+> 6) Un registro de las consultas, denuncias y reclamos junto con la gravedad o relevancia asignada y la solución implementada.
 >
-> 7) Un registro de las consultas, denuncias y reclamos junto con la gravedad o relevancia asignada y la solución implementada.
->
-> 8) Definir una instancia encargada de analizar, monitorear y proponer medidas para evitar que las situaciones que generaron las consultas, denuncias o reclamos se repitan."
+> 7) Definir una instancia encargada de analizar, monitorear y proponer medidas para evitar que las situaciones que generaron las consultas, denuncias o reclamos se repitan."
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
@@ -330,7 +324,7 @@ Entities must define policies and procedures that enable them to manage and reso
 - NCG 502 §III — investor-information obligations the policies under item e) must reference.
 - NCG 502 §IV.C.2.1 — general aspects framework of which this is a minimum-content specification.
 
-> **Source:** NCG 502 §IV.C.2.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.2.2 (12-ene-2024), as amended by NCG 524 item 31 (02-dic-2024).
 
 ---
 
@@ -343,9 +337,11 @@ Entities must define policies and procedures that enable them to manage and reso
 
 Crowdfunding platforms and alternative trading systems, in order for the entity to develop adequate operational-risk management, must consider the elements set out below, adapting them on the basis of their business model, volume of transactions, and number and type of clients:
 
-a) Operational risk-management policies and procedures must include, at a minimum, the following areas, described in the following sections: information security and cybersecurity; business continuity; and outsourcing of services. The areas mentioned must be considered by the entity in the reports produced by the bodies responsible for risk management and internal audit, as applicable. The foregoing is without prejudice to compliance with the regulations applicable to the entity that require the management of its operational risks. The operational risk-management policies and procedures must be designed to provide reasonable assurance that the entity can carry out the business operations in a continuous and efficient manner, even in the presence of disruptive events, safeguarding its services, processes, and information assets. These policies and procedures must be established and approved by the board of directors or equivalent body, and disseminated to all personnel within the organisation. In addition, those policies and procedures must establish the risk-appetite levels defined by the board of directors or equivalent body, which will determine the need to avoid, reduce, transfer, or accept risks, and accordingly, design mitigating controls.
+a) Establish operational risk-management policies and procedures, which must include, at a minimum, the following areas, described in the following sections: information security and cybersecurity; business continuity; and outsourcing of services. The areas mentioned must be considered by the entity in the reports produced by the bodies responsible for risk management and internal audit, as applicable. The operational risk-management policies and procedures must be designed to provide reasonable assurance that the entity can carry out the business operations in a continuous and efficient manner, even in the presence of disruptive events, safeguarding its services, processes, and information assets. These policies and procedures must be established and approved by the board of directors or equivalent body, and disseminated to all personnel within the organisation. In addition, those policies and procedures must establish the risk-appetite levels defined by the board of directors or equivalent body, which will determine the need to avoid, reduce, transfer, or accept risks, and accordingly, design mitigating controls.
 
 b) Have key operational-risk measurement indicators consistent with the entity's comprehensive risk evaluation and monitoring methodology, while at the same time enabling alert levels to be established and the effectiveness of the controls adopted to be evaluated. The detail of the calculation of these indicators must be expressly included in the entity's operational risk-management policies and procedures.
+
+Where the entity belongs to a business group, the operational risk-management may be carried out by a person of that group, provided that such person maintains independence from the group's internal audit.
 
 ### Original Spanish
 
@@ -353,9 +349,11 @@ b) Have key operational-risk measurement indicators consistent with the entity's
 >
 > Las plataformas de financiamiento colectivo y los sistemas alternativos de transacción, con el objeto de que la entidad desarrolle una adecuada gestión de riesgo operacional, deberán dar considerar los elementos que se señalan a continuación, adaptándolos de acuerdo con su modelo de negocios, volumen de operaciones, y número y tipo de clientes:
 >
-> a) Las políticas y procedimientos de gestión de riesgo operacional deberán incluir, al menos, los siguientes ámbitos relacionados, descritos en las próximas secciones: seguridad de la información y ciberseguridad; continuidad de negocio; y externalización de servicios. Los ámbitos mencionados deberán ser considerados por la entidad en los informes que realicen las instancias encargadas de la gestión de riesgos y la auditoría interna, según corresponda. Lo anterior, sin perjuicio del cumplimiento de las normativas aplicables a la entidad que requieren la gestión de sus riesgos operacionales. Las políticas y procedimientos de gestión de riesgo operacional deben estar diseñadas para brindar una seguridad razonable que la entidad pueda desarrollar las operaciones del negocio en forma continua y eficiente, incluso ante la presencia de eventos disruptivos, salvaguardando sus servicios, procesos y activos de información. Estas políticas y procedimientos deben ser establecidas y aprobadas por el directorio, u órgano equivalente, y ser difundidas a todo el personal dentro de la organización. Además, dichas políticas y procedimientos deben establecer los niveles de apetito por riesgo definidos por el directorio u órgano equivalente, que determinará la necesidad de evitar, reducir, transferir o aceptar los riesgos, y acorde con ello, diseñar controles mitigantes.
+> a) Establecer políticas y procedimientos de gestión de riesgo operacional, las que deberán incluir, al menos, los siguientes ámbitos relacionados, descritos en las próximas secciones: seguridad de la información y ciberseguridad; continuidad de negocio; y externalización de servicios. Los ámbitos mencionados deberán ser considerados por la entidad en los informes que realicen las instancias encargadas de la gestión de riesgos y la auditoría interna, según corresponda. Las políticas y procedimientos de gestión de riesgo operacional deben estar diseñadas para brindar una seguridad razonable que la entidad pueda desarrollar las operaciones del negocio en forma continua y eficiente, incluso ante la presencia de eventos disruptivos, salvaguardando sus servicios, procesos y activos de información. Estas políticas y procedimientos deben ser establecidas y aprobadas por el directorio u órgano equivalente, y ser difundidas a todo el personal dentro de la organización. Además, dichas políticas y procedimientos deben establecer los niveles de apetito por riesgo definidos por el directorio u órgano equivalente, que determinará la necesidad de evitar, reducir, transferir o aceptar los riesgos, y acorde con ello, diseñar controles mitigantes.
 >
-> b) Contar con indicadores claves de medición del riesgo operacional consistentes con la metodología de evaluación y monitoreo de riesgos integrales de la entidad, permitiendo al mismo tiempo establecer niveles de alerta y evaluar la eficacia de los controles adoptados. El detalle de cálculo de estos indicadores deberá ser incluido expresamente en las políticas y procedimientos de gestión de riesgo operacional de misma la entidad."
+> b) Contar con indicadores claves de medición del riesgo operacional consistentes con la metodología de evaluación y monitoreo de riesgos integrales de la entidad, permitiendo al mismo tiempo establecer niveles de alerta y evaluar la eficacia de los controles adoptados. El detalle de cálculo de estos indicadores deberá ser incluido expresamente en las políticas y procedimientos de gestión de riesgo operacional de misma la entidad.
+>
+> En el caso que la entidad pertenezca a un grupo empresarial, la gestión de riesgo operacional podrá ser desempeñada por una persona de dicho grupo, siempre que mantenga su independencia de la auditoría interna del grupo."
 
 > **TN:** Item a) reads "deberán dar considerar los elementos" in the source — an apparent drafting slip ("dar" interpolated before "considerar"); rendered idiomatically as "must consider the elements". Item b) closes with "de misma la entidad" (word order inversion of "de la misma entidad"); rendered as "the entity's" without replicating the inversion.
 
@@ -365,7 +363,7 @@ b) Have key operational-risk measurement indicators consistent with the entity's
 - NCG 502 §IV.C.3.2 — business continuity area.
 - NCG 502 §IV.C.3.3 — outsourcing of services area.
 
-> **Source:** NCG 502 §IV.C.3 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.3 (12-ene-2024), as amended by NCG 524 item 32 (02-dic-2024).
 
 ---
 
@@ -428,9 +426,9 @@ d) Tools and procedures so that information that the entity decides to store or 
 
 i) A high-level body defined by the board of directors or equivalent body responsible for the management of information-security and cybersecurity incidents.
 
-ii) Incident response and recovery procedures, approved by the board of directors or equivalent body, that consider the timely recovery of critical functions, backup and support processes, critical information assets, and interdependencies with third parties in the event of incidents. Those procedures must consider the provisions relating to the recording, reporting, and communication of incidents of section IV.C of this regulation. Likewise, depending on the severity of the incident, the situation must be escalated to the board of directors or equivalent body for decision-making. The incident response and recovery procedures must be updated at least annually, whenever changes are recorded in information assets or incidents occur that threaten their security.
+ii) Incident response and recovery procedures, approved by the board of directors or equivalent body, that consider the timely recovery of critical functions, backup and support processes, critical information assets, and interdependencies with third parties in the event of incidents. Those procedures must consider the provisions relating to the recording, reporting, and communication of incidents of section IV.C.7 of this regulation. Likewise, depending on the severity of the incident, the situation must be escalated to the board of directors or equivalent body for decision-making. The incident response and recovery procedures must be updated at least annually, whenever changes are recorded in information assets or incidents occur that threaten their security.
 
-iii) Communication procedures to keep the board of directors or equivalent body, other interested parties (both internal and external), the relevant authorities on information-security and cybersecurity matters, and this Commission informed in a timely manner about the occurrence of an incident and the measures adopted to resolve it. Those procedures must consider the provisions relating to the recording, reporting, and communication of incidents of section IV.C of this regulation. Likewise, in the case of incidents affecting the quality or continuity of services to clients or a publicly known event, the institution will be responsible for informing users in a timely manner about the occurrence of that event, and must update the available information until the conclusions on the causes of the incident and the measures adopted to resolve it are known, including compliance with the regulations safeguarding the protection of personal data and the rights of investors.
+iii) Communication procedures to keep the board of directors or equivalent body, other interested parties (both internal and external), the relevant authorities on information-security and cybersecurity matters, and this Commission informed in a timely manner about the occurrence of an incident and the measures adopted to resolve it. Those procedures must consider the provisions relating to the recording, reporting, and communication of incidents of section IV.C.7 of this regulation. Likewise, in the case of incidents affecting the quality or continuity of services to clients or a publicly known event, the institution will be responsible for informing users in a timely manner about the occurrence of that event, and must update the available information until the conclusions on the causes of the incident and the measures adopted to resolve it are known, including compliance with the regulations safeguarding the protection of personal data and the rights of investors.
 
 2) Procedures for the development, acquisition, and updating of the entity's technological infrastructure, that consider:
 
@@ -514,9 +512,9 @@ b) The results of the tests carried out must be reported to the board of directo
 >
 > i) Una instancia de alto nivel definida por el directorio u órgano equivalente encargada de la gestión de incidentes de seguridad de la información y ciberseguridad.
 >
-> ii) Procedimientos de respuesta y recuperación ante incidentes, aprobados por el directorio u órgano equivalente, que consideren la recuperación oportuna de las funciones críticas, los procesos de respaldo y soporte, los activos de información críticos y las interdependencias con terceros en caso de incidentes. Dichos procedimientos deberán considerar las disposiciones relativas al registro, reporte y comunicación de incidentes de la sección IV.C de esta norma. Asimismo, dependiendo de la severidad del incidente, corresponderá escalar la situación al directorio u órgano equivalente para la toma de decisiones. Los procedimientos de respuesta y recuperación ante incidentes deberán actualizarse al menos anualmente, cada vez que se registran cambios en los activos de información o se produzcan incidentes que amenacen la seguridad de estos.
+> ii) Procedimientos de respuesta y recuperación ante incidentes, aprobados por el directorio u órgano equivalente, que consideren la recuperación oportuna de las funciones críticas, los procesos de respaldo y soporte, los activos de información críticos y las interdependencias con terceros en caso de incidentes. Dichos procedimientos deberán considerar las disposiciones relativas al registro, reporte y comunicación de incidentes de la sección IV.C.7. de esta normativa. Asimismo, dependiendo de la severidad del incidente, corresponderá escalar la situación al directorio u órgano equivalente para la toma de decisiones. Los procedimientos de respuesta y recuperación ante incidentes deberán actualizarse al menos anualmente, cada vez que se registran cambios en los activos de información o se produzcan incidentes que amenacen la seguridad de estos.
 >
-> iii) Procedimientos de comunicaciones para mantener informado en forma oportuna al directorio u órgano equivalente, a otras partes interesadas (tanto internas como externas), a las autoridades pertinentes en materia de seguridad de la información y ciberseguridad, y a esta Comisión, de la ocurrencia de un incidente y las medidas adoptadas para resolverlo. Estos procedimientos deberán considerar las disposiciones relativas al registro, reporte y comunicación de incidentes de la sección IV.C de esta norma. Asimismo, tratándose de incidentes que afecten la calidad o continuidad de los servicios a los clientes o de un hecho de público conocimiento, la institución será responsable de informar oportunamente a los usuarios sobre la ocurrencia de dicho evento, debiendo actualizar la información disponible hasta que se conozcan las conclusiones sobre las causas del incidente y las medidas adoptadas para resolverlo, incluyendo el cumplimiento de las normas que resguardan la protección de datos personales y los derechos de los inversionistas.
+> iii) Procedimientos de comunicaciones para mantener informado en forma oportuna al directorio u órgano equivalente, a otras partes interesadas (tanto internas como externas), a las autoridades pertinentes en materia de seguridad de la información y ciberseguridad, y a esta Comisión, de la ocurrencia de un incidente y las medidas adoptadas para resolverlo. Estos procedimientos deberán considerar las disposiciones relativas al registro, reporte y comunicación de incidentes de la sección IV.C.7. de esta normativa. Asimismo, tratándose de incidentes que afecten la calidad o continuidad de los servicios a los clientes o de un hecho de público conocimiento, la institución será responsable de informar oportunamente a los usuarios sobre la ocurrencia de dicho evento, debiendo actualizar la información disponible hasta que se conozcan las conclusiones sobre las causas del incidente y las medidas adoptadas para resolverlo, incluyendo el cumplimiento de las normas que resguardan la protección de datos personales y los derechos de los inversionistas.
 >
 > 2) Procedimientos para el desarrollo, adquisición y actualización de la infraestructura tecnológica de la entidad, que consideren:
 >
@@ -552,7 +550,7 @@ b) The results of the tests carried out must be reported to the board of directo
 - NCG 502 §IV.C.3.2.2 — business-continuity procedures with which backup management must be consistent (item b)(7)(iii)(b)).
 - NCG 502 §IV.C.7 — recording, reporting, and communication of incidents referenced in the response and recovery procedures.
 
-> **Source:** NCG 502 §IV.C.3.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.3.1 (12-ene-2024), as amended by NCG 524 item 34 (02-dic-2024).
 
 ---
 
@@ -563,7 +561,7 @@ b) The results of the tests carried out must be reported to the board of directo
 
 ### Plain-English text
 
-In the area of information security and cybersecurity, operational-risk management must include the following elements applicable to all entities, adapting them on the basis of their business model, volume of transactions, and number and type of clients:
+In the area of information security and cybersecurity, operational-risk management must include the following elements, adapting them on the basis of their business model, volume of transactions, and number and type of clients:
 
 a) Have an information-security and cybersecurity policy that considers at least the following:
 
@@ -585,7 +583,7 @@ b) Have an information and communication technology (ICT) policy that considers 
 
 3) Definition of the procedures that must be followed for the adequate management of ICT processes.
 
-c) Definition of the profile and necessary number of persons with verifiable knowledge or experience in information-security and cybersecurity standards.
+c) Definition of the necessary number of persons with verifiable knowledge or experience in information-security and cybersecurity standards.
 
 d) Establishment of the procedures so that the entity's personnel, including the board of directors or equivalent body, contribute to an adequate management of information-security and cybersecurity risks, in accordance with their roles and responsibilities, through the implementation of:
 
@@ -597,13 +595,13 @@ e) Generation of contractual agreements for the revocation of information-access
 
 f) Audit of the information-security and cybersecurity management processes, with the depth and scope necessary, that considers aspects such as compliance with the policies and the effectiveness of the procedures and controls defined on these matters.
 
-g) Provision of procedures that enable the board of directors or equivalent body to be kept informed in a timely and periodic manner about the information-security and cybersecurity management system. The reporting of information on these matters must be recorded in the respective minutes of the board of directors or equivalent body and the committees constituted to review these matters.
+g) Provision of procedures that enable the board of directors or equivalent body to be kept informed in a timely and periodic manner about the information-security and cybersecurity management system. The reporting of information on these matters must be recorded.
 
 ### Original Spanish
 
 > "C.3.1.1 DISPOSICIONES GENERALES
 >
-> En el ámbito de seguridad de la información y ciberseguridad, la gestión de riesgo operacional deberá incluir los siguientes elementos aplicables a todas las entidades, adaptándolos de acuerdo a su modelo de negocios, volumen de operaciones, y número y tipo de clientes:
+> En el ámbito de seguridad de la información y ciberseguridad, la gestión de riesgo operacional deberá incluir los siguientes elementos, adaptándolos de acuerdo a su modelo de negocios, volumen de operaciones, y número y tipo de clientes:
 >
 > a) Contar con una política de seguridad de la información y ciberseguridad que considere al menos lo siguiente:
 >
@@ -625,7 +623,7 @@ g) Provision of procedures that enable the board of directors or equivalent body
 >
 > 3) Definición de los procedimientos que se deberán seguir para la adecuada gestión de los procesos TIC.
 >
-> c) Definición del perfil y número necesario de personas con conocimientos o experiencia comprobables en estándares de seguridad de la información y ciberseguridad.
+> c) Definición del número necesario de personas con conocimientos o experiencia comprobables en estándares de seguridad de la información y ciberseguridad.
 >
 > d) Establecimiento de los procedimientos para que el personal de la entidad, incluyendo el directorio u órgano equivalente, contribuya a una adecuada gestión de los riesgos de seguridad de la información y ciberseguridad, de conformidad con sus roles y responsabilidades, mediante la implementación de:
 >
@@ -637,13 +635,13 @@ g) Provision of procedures that enable the board of directors or equivalent body
 >
 > f) Auditoría de los procesos de gestión de la seguridad de la información y ciberseguridad, con la profundidad y alcance necesario, que considere aspectos tales como el cumplimiento de las políticas y la eficacia de los procedimientos y controles definidos en estas materias.
 >
-> g) Disposición de procedimientos que le permitan al directorio u órgano equivalente mantenerse informado en forma oportuna y periódica sobre el sistema de gestión de la seguridad de la información y ciberseguridad. Deberá dejarse constancia del reporte de la información de estas materias en las respectivas actas del directorio u órgano equivalente y los comités que se conformen para revisar estas materias."
+> g) Disposición de procedimientos que le permitan al directorio u órgano equivalente mantenerse informado en forma oportuna y periódica sobre el sistema de gestión de la seguridad de la información y ciberseguridad. Deberá dejarse constancia del reporte de la información de estas materias."
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.C.3.1 — information-security and cybersecurity subsection of which these are the general provisions (and which reproduces the C.3.1.2 procedures).
 
-> **Source:** NCG 502 §IV.C.3.1.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.3.1.1 (12-ene-2024), as amended by NCG 524 item 33 (02-dic-2024).
 
 ---
 
@@ -680,15 +678,15 @@ In the area of business continuity, operational-risk management must take into a
 
 a) Have a business-continuity policy that considers at least the following:
 
-1) Response procedures upon the occurrence of internal or external events that could create an interruption in the continuity of business operations. For entities classified in Block 3, these procedures must relate at least to the carrying out of a business impact analysis (BIA, by its initials in English) and a Risk Impact Analysis (RIA, by its initials in English).
+1) Response procedures upon the occurrence of internal or external events that could create an interruption in the continuity of business operations. For entities classified in Block 3, these procedures must relate at least to the carrying out of a Business Impact Analysis (BIA, by its initials in English) and a Risk Impact Analysis (RIA, by its initials in English).
 
 2) Establish the principal functions and responsibilities on the matter, in particular which bodies will be responsible for defining, designing, executing, and improving the procedures and methodologies for business-continuity management. The business-continuity policies will form part of the entity's risk-management policies, and must be updated and approved at least annually by the board of directors or equivalent body or with a lesser frequency in the event of significant changes.
 
-b) Have persons with verifiable knowledge or experience in business-continuity standards and experience in the management of the associated risks, whose principal activities will be the development and improvement of the policies, procedures, and controls for business-continuity management.
+b) For entities belonging to Block 3, have persons with verifiable knowledge or experience in business-continuity standards and experience in the management of the associated risks, whose principal activities will be the development and improvement of the policies, procedures, and controls for business-continuity management. In the case of Block 1 and Block 2 entities, the person in charge of those matters must at least have completed an academic programme related to them.
 
-c) Training and awareness policies and procedures to ensure that the entity's personnel are duly prepared to face the contingency scenarios defined and that they understand their responsibilities in the management of the risks of the business-continuity system.
+c) Establish training and awareness policies and procedures to ensure that the entity's personnel are duly prepared to face the contingency scenarios defined and that they understand their responsibilities in the management of the risks of the business-continuity system.
 
-d) The board of directors or equivalent body must be kept informed about business-continuity management, for which purpose it must have procedures that enable it to be informed in a timely and periodic manner. The reporting of information on these matters must be recorded in the respective minutes of the board of directors or equivalent body and in the committees constituted to review these matters.
+d) The board of directors or equivalent body must be kept informed about business-continuity management, for which purpose it must have procedures that enable it to be informed in a timely and periodic manner. The reporting of information on these matters must be recorded.
 
 ### Original Spanish
 
@@ -698,15 +696,15 @@ d) The board of directors or equivalent body must be kept informed about busines
 >
 > a) Contar con una política de continuidad de negocio que considere a lo menos lo siguiente:
 >
-> 1) Procedimientos de respuesta ante la ocurrencia de eventos internos o externos que pudieran crear una interrupción en la continuidad de las operaciones del negocio. Para las entidades clasificadas en el Bloque 3, estos procedimientos se deberán referir al menos a la ejecución de un análisis de impacto de negocio (BIA, por su sigla en inglés) y un Análisis de Impacto de Riesgo (RIA, por su sigla en inglés).
+> 1) Procedimientos de respuesta ante la ocurrencia de eventos internos o externos que pudieran crear una interrupción en la continuidad de las operaciones del negocio. Para las entidades clasificadas en el Bloque 3, estos procedimientos se deberán referir al menos a la ejecución de un Análisis de Impacto del Negocio (BIA, por su sigla en inglés) y un Análisis de Impacto de Riesgo (RIA, por su sigla en inglés).
 >
 > 2) Establecer las principales funciones y responsabilidades sobre la materia, en especial, cuáles serán las instancias encargadas de definir, diseñar, ejecutar y mejorar los procedimientos y metodologías para la gestión de continuidad de negocio. Las políticas de continuidad del negocio formarán parte de las políticas de gestión de riesgos de la entidad, debiendo ser actualizada y aprobada al menos anualmente por el directorio u órgano equivalente o con una periodicidad menor en caso de cambios significativos.
 >
-> b) Contar con personas con conocimientos o experiencia comprobables en estándares de continuidad de negocio y experiencia en la gestión de los riesgos asociados, cuyas actividades principales serán el desarrollo y mejora de las políticas, procedimientos y controles para la gestión de continuidad de negocio.
+> b) Para las entidades pertenecientes al Bloque 3, contar con personas con conocimientos o experiencia comprobables en estándares de continuidad de negocio y experiencia en la gestión de los riesgos asociados, cuyas actividades principales serán el desarrollo y mejora de las políticas, procedimientos y controles para la gestión de continuidad de negocio. En caso de entidades del Bloque 1 y Bloque 2, la persona a cargo de esas materias deberá al menos haber cursado un programa académico relacionado a éstas.
 >
-> c) Políticas y procedimientos de capacitación y concientización para garantizar que el personal de la entidad esté debidamente preparado para enfrentar los escenarios de contingencia definidos y que comprendan sus responsabilidades en la gestión de los riesgos del sistema de continuidad de negocio.
+> c) Establecer políticas y procedimientos de capacitación y concientización para garantizar que el personal de la entidad esté debidamente preparado para enfrentar los escenarios de contingencia definidos y que comprendan sus responsabilidades en la gestión de los riesgos del sistema de continuidad de negocio.
 >
-> d) El directorio u órgano equivalente deberá mantenerse informado sobre la gestión de continuidad de negocio, para lo cual deberá disponer de procedimientos que le permitan informarse de manera oportuna y periódica. Deberá dejarse constancia del reporte de la información en estas materias en las respectivas actas del directorio u órgano equivalente y en los comités que se conformen para revisar estas materias."
+> d) El directorio u órgano equivalente deberá mantenerse informado sobre la gestión de continuidad de negocio, para lo cual deberá disponer de procedimientos que le permitan informarse de manera oportuna y periódica. Deberá dejarse constancia del reporte de la información en estas materias."
 
 > **TN:** Item a)(2) states the business-continuity policies must be updated and approved "al menos anualmente ... o con una periodicidad menor en caso de cambios significativos" (literally "at least annually ... or with a lesser frequency in the event of significant changes"). In context "periodicidad menor" denotes a shorter interval (i.e., more frequent updates) when significant changes occur; rendered literally as "with a lesser frequency" to preserve the source wording, noting the intended meaning is more-frequent updating. The parallel C.3.1.1.a)(5) uses "periodicidad mayor" for the same notion.
 
@@ -715,7 +713,7 @@ d) The board of directors or equivalent body must be kept informed about busines
 - NCG 502 §IV.C.3.2.2 — procedures for the management of business continuity supplementing these general provisions.
 - NCG 502 §IV.C.6 — proportionality classification defining Block 3 entities subject to BIA and RIA obligations.
 
-> **Source:** NCG 502 §IV.C.3.2.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.3.2.1 (12-ene-2024), as amended by NCG 524 item 35 (02-dic-2024).
 
 ---
 
@@ -758,17 +756,17 @@ d) Entities classified in Block 3 must carry out or update, at least annually, a
 
 e) Entities classified in Block 3, in consideration of the results of the BIA and the RIA, must define a business-continuity strategy that has as its objective maintaining the continuity of the most relevant processes, considering preventive measures to reduce the probability of materialisation of damage, minimise the recovery time, and limit the impact on the entity's business operations.
 
-f) A Crisis Plan must be implemented in which the escalation, communication, management, and reporting procedures for operational-continuity events are determined, in order to keep the board of directors or equivalent body, all interested parties, and this Commission informed in a timely manner about relevant information regarding the continuity event, the measures adopted to resolve it, and to coordinate an adequate response within the recovery point and time objectives provided for in the BIA (entities classified in Block 3 referred to in the preceding sections).
+f) The Crisis Plan must be tested annually, in which the escalation, communication, management, and reporting procedures for operational-continuity events are determined, in order to keep the board of directors or equivalent body, all interested parties, and this Commission informed in a timely manner about relevant information regarding the continuity event, the measures adopted to resolve it, and to coordinate an adequate response within the recovery point and time objectives provided for in the BIA (entities classified in Block 3 referred to in the preceding sections).
 
 g) Have a procedure for the continuous improvement of the policies, plans, and procedures of business continuity with the aim of reducing the response times when an identical or similar incident recurs; identifying possible improvements in the processes; facilitating the exchange of knowledge; and having information available that enables decision-making to be supported in the event of new incidents materialising.
 
-h) The Business Continuity and Disaster Recovery Plan must be tested annually, so as to ensure that it is adequate and effective, without prejudice to the fact that this Commission may request a different frequency for entities classified in Block 3. These tests must consider at least the following:
+h) Test annually the Business Continuity and Disaster Recovery Plan, so as to ensure that it is adequate and effective, without prejudice to the fact that this Commission may request a different frequency for entities classified in Block 3. These tests must consider at least the following:
 
 1) They must be supervised by the body responsible for the entity's Risk Management.
 
 2) Being based on risk scenarios that resemble real events, including severe but plausible scenarios. The foregoing, in order to demonstrate that the business-continuity procedures will function if necessary, including cyberattacks, natural disasters, and health contingencies.
 
-3) Block 1 and 2 entities, defined in the preceding sections, may use business-continuity indicators different from those established in Section B.2.c.
+3) Block 1 and 2 entities may use business-continuity indicators different from those established in preceding item b).
 
 Reports of the results of the tests carried out must be issued to the board of directors or equivalent body, containing recommendations and actions to implement improvements to the Business Continuity and Disaster Recovery Plan.
 
@@ -808,21 +806,19 @@ Reports of the results of the tests carried out must be issued to the board of d
 >
 > e) Las entidades clasificadas en el Bloque 3, en consideración de los resultados del BIA y el RIA, deberán definir una estrategia de continuidad de negocio que tenga por objetivo mantener la continuidad de los procesos de mayor relevancia, considerando medidas preventivas para reducir la probabilidad de materialización de daños, minimizar el tiempo de recuperación y limitar el impacto en las operaciones del negocio de la entidad.
 >
-> f) Se deberá implementar un Plan de Crisis en el que se determine los procedimientos de escalamiento, comunicaciones, gestión y reporte de eventos de continuidad operacional para mantener informado en forma oportuna al directorio u órgano equivalente, a todas las partes interesadas y a esta Comisión, respecto de información relevante respecto del evento de continuidad, las medidas adoptadas para resolverlo y para coordinar una respuesta adecuada dentro de los puntos objetivos y tiempos objetivos de recuperación previstos en el BIA (entidades clasificadas en el Bloque 3 al que se refieren las secciones anteriores).
+> f) Probar anualmente el Plan de Crisis en el que se determine los procedimientos de escalamiento, comunicaciones, gestión y reporte de eventos de continuidad operacional para mantener informado en forma oportuna al directorio u órgano equivalente, a todas las partes interesadas y a esta Comisión, respecto de información relevante respecto del evento de continuidad, las medidas adoptadas para resolverlo y para coordinar una respuesta adecuada dentro de los puntos objetivos y tiempos objetivos de recuperación previstos en el BIA (entidades clasificadas en el Bloque 3 al que se refieren las secciones anteriores).
 >
 > g) Contar con un procedimiento para el mejoramiento continuo de las políticas, planes y procedimientos de continuidad del negocio con el objeto de disminuir los tiempos de respuesta cuando se repita un incidente igual o similar; identificar posibles mejoras en los procesos; facilitar el intercambio de conocimientos; y disponer de información que permita apoyar la toma de decisiones en caso de materializarse nuevos incidentes.
 >
-> h) El Plan de Continuidad de Negocio y Recuperación de Desastres deberá ser probado anualmente, de forma de asegurar que es adecuado y efectivo, sin perjuicio de que esta Comisión pueda solicitar una periodicidad diferente para las entidades clasificadas en el Bloque 3. Estas pruebas deberán considerar a lo menos lo siguiente:
+> h) Probar anualmente el Plan de Continuidad de Negocio y Recuperación de Desastres, de forma de asegurar que es adecuado y efectivo, sin perjuicio de que esta Comisión pueda solicitar una periodicidad diferente para las entidades clasificadas en el Bloque 3. Estas pruebas deberán considerar a lo menos lo siguiente:
 >
 > 1) Deberán ser supervisadas por la instancia responsable de la Gestión de Riesgos de la entidad.
 >
 > 2) Estar basadas en escenarios de riesgo que se asimilen a eventos reales incluyendo escenarios severos pero plausibles. Lo anterior, para demostrar que los procedimientos de continuidad de negocio funcionarán en caso de ser necesarios, incluyendo ataques cibernéticos, desastres naturales y contingencias sanitarias.
 >
-> 3) Las entidades del Bloque 1 y 2, definidas en las secciones anteriores, podrán utilizar indicadores de continuidad del negocio distintos de los establecidos en la Sección B.2.c.
+> 3) Las entidades del Bloque 1 y 2, podrán utilizar indicadores de continuidad del negocio distintos de los establecidos en el literal b) precedente.
 >
 > Se deberán emitir reportes de los resultados de las pruebas realizadas al directorio u órgano equivalente, que contengan recomendaciones y acciones para implementar mejoras al Plan de Continuidad de Negocio y Recuperación ante Desastres."
-
-> **TN:** Item h)(3) cross-refers to "la Sección B.2.c" — a reference to the parallel provision in Section IV.B (or the corresponding item within this regulation's continuity framework); reproduced verbatim, as the source so cites.
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
@@ -830,7 +826,7 @@ Reports of the results of the tests carried out must be issued to the board of d
 - NCG 502 §IV.C.6 — proportionality classification defining the Block 1, 2, and 3 thresholds referenced throughout.
 - NCG 502 §IV.C.3.1 — backup management (§IV.C.3.1.2.b)(7)(iii)(b)) that must be consistent with this continuity analysis.
 
-> **Source:** NCG 502 §IV.C.3.2.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.3.2.2 (12-ene-2024), as amended by NCG 524 item 36 (02-dic-2024).
 
 ---
 
@@ -871,7 +867,7 @@ The services provided by suppliers, relating to regulatory compliance, business 
 
 3) Subcontracting risk: the possibility that the supplier in turn subcontracts all or part of the service, reducing the entity's capacity to supervise the subcontracted function.
 
-4) Risk associated with the possibility that an entity contracts one or several services with the same supplier that is difficult to substitute, increasing the possibility of prolonged failures or interruptions.
+4) Concentration risk: the possibility that an entity contracts one or several services with the same supplier that is difficult to substitute, increasing the possibility of prolonged failures or interruptions.
 
 ### Original Spanish
 
@@ -885,13 +881,13 @@ The services provided by suppliers, relating to regulatory compliance, business 
 >
 > 3) Riesgo de subcontratación: la posibilidad de que el proveedor subcontrate a su vez todo o parte del servicio, reduciendo la capacidad de la entidad de supervisar la función subcontratada.
 >
-> 4) Riesgo asociado a la posibilidad que una entidad contrate uno o varios servicios en un mismo proveedor que sea difícil de sustituir, incrementando la posibilidad de fallas o interrupciones prolongadas."
+> 4) Riesgo de concentración: la posibilidad que una entidad contrate uno o varios servicios a un mismo proveedor que sea difícil de sustituir, incrementando la posibilidad de fallas o interrupciones prolongadas."
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.C.3.3.2 — procedures for the management of outsourced services that address these risks.
 
-> **Source:** NCG 502 §IV.C.3.3.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.3.3.1 (12-ene-2024), as amended by NCG 524 item 37 (02-dic-2024).
 
 ---
 
@@ -984,7 +980,7 @@ g) Evaluate that the supplier of the contracted services possesses adequate know
 
 h) Maintain personnel with the due knowledge and experience to carry out the control of the provision of services performed by its suppliers. Likewise, it must also oversee due compliance with those regulatory and legal aspects that could affect the provision of the contracted services.
 
-The board of directors or equivalent body must be kept informed about the matters relating to the outsourcing of services, for which purpose it must have procedures that enable it to be informed in a timely and periodic manner. The reporting of information on these matters must be recorded in the respective minutes of the board of directors or equivalent body and in the committees constituted to review these matters.
+The board of directors or equivalent body must be kept informed about the matters relating to the outsourcing of services, for which purpose it must have procedures that enable it to be informed in a timely and periodic manner. The reporting of information on these matters must be recorded.
 
 ### Original Spanish
 
@@ -1072,14 +1068,14 @@ The board of directors or equivalent body must be kept informed about the matter
 >
 > h) Mantener personal con el debido conocimiento y experiencia para efectuar el control de la prestación de servicios efectuada por sus proveedores. Asimismo, también deberá vigilar el debido cumplimiento de aquellos aspectos regulatorios y legales que pudiesen afectar la provisión de los servicios contratados.
 >
-> El directorio u órgano equivalente deberá mantenerse informado sobre las materias referidas a la externalización de servicios, para lo cual deberá disponer de procedimientos que le permitan informarse de manera oportuna y periódica. Deberá dejarse constancia del reporte de la información en estas materias en las respectivas actas del directorio u órgano equivalente y en los comités que se conformen para revisar estas materias."
+> El directorio u órgano equivalente deberá mantenerse informado sobre las materias referidas a la externalización de servicios, para lo cual deberá disponer de procedimientos que le permitan informarse de manera oportuna y periódica. Deberá dejarse constancia del reporte de la información en estas materias."
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.C.3.3.1 — outsourcing risks (substitution, intervention, subcontracting, concentration) referenced in items a)(10).
 - NCG 502 §IV.C.3.2.2 — Business Continuity and Disaster Recovery Plan referenced in item c)(7).
 
-> **Source:** NCG 502 §IV.C.3.3.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.3.3.2 (12-ene-2024), as amended by NCG 524 item 38 (02-dic-2024).
 
 ---
 
@@ -1114,7 +1110,7 @@ This subsection establishes the requirements for the risk-management function ap
 
 The body responsible for the risk-management function has the purpose of ensuring that the activities of the risk-management process are adequately developed in the entity (risk-management framework), in accordance with the policies and procedures established for that purpose.
 
-The risk-management function may be carried out by a natural person or internal unit, in accordance with Section C.6 below. That function must be independent of the operational and business areas of the entity and of the body responsible for the internal-audit function, with direct reporting to the board of directors or equivalent body.
+The risk-management function may be carried out by a natural person or internal unit, in accordance with Section C.6 below. That function, in the case of Blocks 2 and 3, must be independent of the operational and business areas of the entity and of the body responsible for the internal-audit function, with direct reporting to the board of directors or equivalent body.
 
 Where the entity belongs to a business group, the risk-management function of the entity may be exercised by the corporate risk-management unit, to the extent that it has thorough knowledge of the entity's risk-management framework and control environment and complies with the requirements established in this regulation, which must be agreed by the board of directors or equivalent body. The appropriateness of the respective unit of the business group that will exercise the risk-management function must be considered, in relation to compliance with the requirements established in this regulation and any conflicts of interest that may arise and, if applicable, their mitigation and/or elimination. For all purposes, if the function is exercised by a corporate risk-management unit in the case where the entity belongs to a business group, it shall be considered as carried out by an internal unit.
 
@@ -1142,7 +1138,7 @@ The risk-management function must promote a responsible organisational culture i
 >
 > La instancia encargada de la función de gestión de riesgos tiene por objeto que las actividades del proceso de gestión de riesgos sean desarrolladas adecuadamente en la entidad (marco de gestión de riesgo), conforme a las políticas y procedimientos establecidos para dicho efecto.
 >
-> La función de gestión de riesgos podrá ser realizada por una persona o unidad interna, de acuerdo con la Sección C.6 siguiente. Dicha función deberá ser independiente de las áreas operativas y de negocios de la entidad y de la instancia encargada de la función de auditoría interna, con reporte directo al directorio u órgano equivalente.
+> La función de gestión de riesgos podrá ser realizada por una persona o unidad interna, de acuerdo con la Sección C.6 siguiente. Dicha función, para el caso de los Bloques 2 y 3, deberá ser independiente de las áreas operativas y de negocios de la entidad y de la instancia encargada de la función de auditoría interna, con reporte directo al directorio u órgano equivalente.
 >
 > En el caso que la entidad pertenezca a un grupo empresarial, la función de gestión de riesgos de la entidad podrá ser ejercida por la unidad de riesgos corporativa, en la medida que ésta tenga un conocimiento acabado del marco de gestión de riesgos y ambiente de control de la entidad y que cumpla con los requisitos establecidos en la presente normativa, lo cual deberá ser acordado por el directorio u órgano equivalente. Se deberá considerar la pertinencia respecto a la idoneidad de la unidad respectiva del grupo empresarial que ejercerá la función de riesgos, en relación con el cumplimiento de los requisitos establecidos en esta norma y los conflictos de intereses que pudieran generarse y, de ser el caso, su mitigación y/o eliminación. Para todos los efectos, si la función es ejercida por una unidad de gestión de riesgos corporativa, en el caso de que la entidad pertenezca a un grupo empresarial se considerará realizada por una unidad interna.
 >
@@ -1170,7 +1166,7 @@ The risk-management function must promote a responsible organisational culture i
 - NCG 502 §IV.C.6 — proportionality provisions governing how the function may be exercised.
 - NCG 502 §IV.C.5 — internal-audit function whose independence from the risk-management function is required.
 
-> **Source:** NCG 502 §IV.C.4.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.4.1 (12-ene-2024), as amended by NCG 524 item 39 (02-dic-2024).
 
 ---
 
@@ -1402,25 +1398,27 @@ The report must be submitted to the board of directors or equivalent body within
 
 In accordance with the provisions of Articles 1 and 12 of Ley N° 21.521, in addition to the proportionality considerations based on the size, volume, and nature of the entity's businesses and risks in Section IV.C, the following blocks will be defined, according to the following classification:
 
-1) **Block 1**: entities that have a number of active clients in Chile of fewer than 500, and do not meet any of the business-volume metrics of Block 2 or 3 entities. Active clients shall be considered to be those that meet the conditions defined in Annex N° 1 of this regulation.
+1) **Block 1**: entities that do not meet any of the business-volume metrics of Block 2 or 3 entities. Active clients shall be considered to be those that meet the conditions defined in Annex N° 1 of this regulation.
 
 2) **Block 2**: entities that meet any of the following conditions:
 
-i) Have a number of active clients in Chile between 500 and 5,000.
+i) Have a number of active clients in Chile, for the crowdfunding platform service or alternative trading system service as applicable, between 500 and 5,000.
 
-ii) Average daily transactions in the last three months (moving average) between UF 100,000 and UF 500,000.
+ii) Average daily transactions carried out in Chile in the last 12 months between UF 100,000 and UF 500,000 in the case of alternative trading systems, or amounts financed through the crowdfunding platform in the last 12 months of between UF 300,000 and UF 1,000,000 monthly average.
 
-iii) Income in the last 12 months (moving average) between UF 25,000 and UF 50,000.
+iii) Income from the crowdfunding platform service or alternative trading system service in Chile, as applicable, in the last 12 months between UF 25,000 and UF 50,000.
 
 3) **Block 3**: entities that meet any of the following conditions:
 
-i) More than 5,000 active clients in Chile.
+i) More than 5,000 active clients in Chile for the crowdfunding platform service or alternative trading system service, as applicable.
 
-ii) More than UF 500,000 in average daily transactions in the last three months (moving average).
+ii) More than UF 500,000 in average daily transactions carried out in Chile in the last 12 months in the case of alternative trading systems, or amounts financed through the crowdfunding platform in the last 12 months over UF 1,000,000 monthly average.
 
-iii) Income in the last 12 months (moving average) over UF 50,000.
+iii) Income in the last 12 months over UF 50,000, from the crowdfunding platform service or alternative trading system service in Chile, as applicable.
 
-In the event that an entity is reclassified to a higher block, it shall have a maximum period of 6 months to comply with the corporate-governance and comprehensive risk-management requirements corresponding to that block. Entities may be reclassified to lower blocks after a minimum of 6 months and with the authorisation of the Commission.
+When an entity meets one of the conditions that classifies it in a different block for more than 6 months, it must notify this fact to the Commission within the 5 business days following the occurrence of the event and shall have a maximum period of 9 months to comply with the corporate-governance and comprehensive risk-management requirements corresponding to that block. Entities may be reclassified to lower blocks after ceasing to meet the respective conditions of the higher block for a minimum of 6 months and with the authorisation of the Commission.
+
+Entities that classify within Block 3 may not outsource the internal-audit function.
 
 Entities that classify within Blocks 1 or 2 may develop the internal-audit function through a natural person or internal unit or through an external third party, always ensuring compliance with segregation from, and independence of, the risk-management function.
 
@@ -1453,25 +1451,27 @@ Where:
 >
 > De acuerdo con lo establecido en los artículos 1 y 12 de la ley N°21.521, además de las consideraciones de proporcionalidad, conforme al tamaño, volumen y naturaleza de los negocios y riesgos de la entidad en la Sección IV.C, se definirán los siguientes bloques, de acuerdo con la siguiente clasificación:
 >
-> 1) Bloque 1: entidades que tengan un número de clientes activos en Chile menor a 500, y no cumplan ninguna de las métricas de volumen de negocio de las entidades Bloque 2 o 3. Se considerarán clientes activos aquellos que cumplan con las condiciones definidas en el Anexo N°1 de esta normativa.
+> 1) Bloque 1: entidades que no cumplan ninguna de las métricas de volumen de negocio de las entidades de los Bloques 2 o 3. Se considerarán clientes activos aquellos que cumplan con las condiciones definidas en el Anexo N°1 de esta normativa.
 >
 > 2) Bloque 2: entidades que cumplan alguna de las siguientes condiciones:
 >
-> i) Tengan un número de clientes activos en Chile entre 500 y 5.000.
+> i) Tengan un número de clientes activos en Chile por el servicio de plataforma de financiamiento colectivo o sistema alternativo de transacción, según corresponda, entre 500 y 5.000.
 >
-> ii) Transacciones promedio diarias en los últimos tres meses (media móvil) entre UF 100.000 y UF 500.000.
+> ii) Transacciones promedio diarias efectuadas en Chile en los últimos 12 meses entre UF 100.000 y UF 500.000 en caso de sistemas alternativos de transacción, o montos financiados a través de la plataforma de financiamiento colectivo en los últimos 12 meses de entre UF 300.000 y UF 1.000.000 promedio mensual.
 >
-> iii) Ingresos en los últimos 12 meses (media móvil) entre UF 25.000 y UF 50.000.
+> iii) Ingresos por el servicio de plataforma de financiamiento colectivo o sistema alternativo de transacción en Chile, según corresponda, en los últimos 12 meses entre UF 25.000 y UF 50.000.
 >
 > 3) Bloque 3: entidades que cumplan alguna de las siguientes condiciones:
 >
-> i) Más de 5.000 clientes activos en Chile.
+> i) Más de 5.000 clientes activos en Chile por el servicio de plataforma de financiamiento colectivo o sistema alternativo de transacción, según corresponda.
 >
-> ii) Más de UF 500.000 en transacciones promedio diarias en los últimos tres meses (media móvil).
+> ii) Más de UF 500.000 en transacciones promedio diarias efectuadas en Chile en los últimos 12 meses en caso de sistemas alternativos de transacción, o montos financiados a través de la plataforma de financiamiento colectivo en los últimos 12 meses superiores a las UF 1.000.000 promedio mensual.
 >
-> iii) Ingresos en los últimos 12 meses (media móvil) sobre UF 50.000.
+> iii) Ingresos en los últimos 12 meses sobre UF 50.000, por el servicio de plataforma de financiamiento colectivo o sistema alternativo de transacción en Chile, según corresponda.
 >
-> En caso de que una entidad sea reclasificada a un bloque superior, dispondrá de un plazo máximo de 6 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes a dicho bloque. Las entidades podrán ser reclasificadas a bloques inferiores después de un mínimo de 6 meses y con autorización de la Comisión.
+> Cuando una entidad alcance una de las condiciones que lo clasifique en un bloque diferente por más de 6 meses, deberá avisar este hecho a la Comisión dentro de los 5 días hábiles siguientes de ocurrido el hecho y dispondrá de un plazo máximo de 9 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes a dicho bloque. Las entidades podrán ser reclasificadas a bloques inferiores después de dejar de cumplir las condiciones respectivas al bloque superior por un mínimo de 6 meses y con autorización de la Comisión.
+>
+> Las entidades que clasifiquen dentro del Bloque 3 no podrán externalizar la función de auditoría interna.
 >
 > Las entidades que clasifiquen dentro de los Bloques 1 o 2 podrán desarrollar la función de auditoría interna por una persona o unidad interna o por un tercero externo, velando siempre por el cumplimiento de la segregación e independencia con la función de gestión de riesgos.
 >
@@ -1503,6 +1503,8 @@ Where:
 
 > **TN:** Table 3 is a structured table in the PDF source. The English rendering above presents it as a Markdown table with equivalent informational content (the "Risk-management function" column is merged across all three blocks in the PDF — "Persona o unidad interna" — and the "Internal-audit function" column is merged across Blocks 1 and 2). The Original Spanish blockquote reproduces the PDF's column-first extraction sequence for the table chunk.
 
+> **TN:** NCG 524 item 40 replaced the first three paragraphs of this section (the block-classification chapeau and the Block 1/2/3 definitions and reclassification rule), while the proportionality Table 3 and its key remain from the NCG 502 baseline. The consolidated Spanish is therefore faithful (the replaced paragraphs verified against the NCG 524 source PDF, coverage 0.97; the table and key verified against the NCG 502 source PDF) but is not contiguous in either single source PDF — best single-PDF coverage of the combined block is 0.59.
+
 ### Cross-references
 - Ley 21.521 Arts. 1 and 12 — proportionality and governance mandate this section implements.
 - NCG 502 Annex N° 1 — conditions defining "active clients" referenced in the Block 1 definition.
@@ -1510,7 +1512,7 @@ Where:
 - NCG 502 §IV.C.3 — operational risk (RO) referenced in the table key.
 - NCG 502 §IV.C.4 and §IV.C.5 — risk-management and internal-audit functions subject to the block thresholds.
 
-> **Source:** NCG 502 §IV.C.6 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.6 (12-ene-2024), as amended by NCG 524 item 40 (02-dic-2024).
 
 ---
 
@@ -1547,7 +1549,7 @@ This subsection establishes the obligations relating to the recording and commun
 
 a) Crowdfunding platforms and alternative trading systems belonging to Block 3 must communicate to this Commission the operational incidents that affect the continuity of the business, the resources and information of the entity or its clients, and the quality of the services. By way of example, and without being exhaustive or limiting, the following must be reported: failures in services important for business operations; technological problems affecting information security; cyberspace attacks; viruses or malware detected in critical information assets; events of unavailability or interruption of any service or product affecting clients, on any channel; losses or leakage of information of the entity or of clients; incidents affecting the entity's assets resulting from internal or external fraud; problems affecting the continuity of critical service suppliers; among others. This information must be maintained by the entity in an incident database and another operational-loss database for the continuous improvement of the operational risk-management process.
 
-b) The occurrence of an operational incident of those mentioned in the preceding numeral must be reported to this Commission within a maximum period of 2 hours from the time the entity became aware. The period indicated is solely for the purpose of notifying the Commission of the occurrence of the incident with the information available at that time and does not imply that the entity must have resolved the problem, taken specific actions, or clarified the causes of the incident, which may be the subject of follow-up reports on the incident sent to the CMF subsequently. The instructions for reporting operational incidents to this Commission are found in Annex N° 2 of this regulation.
+b) The occurrence of an operational incident of those mentioned in the preceding numeral must be reported to this Commission within a maximum period of 2 hours elapsed from the time the entity became aware of the event. The period indicated is solely for the purpose of notifying the Commission of the occurrence of the incident with the information available at that time and does not imply that the entity must have resolved the problem, taken specific actions, or clarified the causes of the incident, which may be the subject of follow-up reports on the incident sent to the CMF subsequently. The instructions for reporting operational incidents to this Commission are found in Annex N° 2 of this regulation.
 
 c) For these purposes, the board of directors or equivalent body must designate an officer in charge and an alternate for the preparation of reports and the sending of information in accordance with what is indicated in this section. Both persons must have an executive level and be designated by the entity, both for this purpose and to respond to any queries on the part of this Commission.
 
@@ -1561,7 +1563,7 @@ e) Without prejudice to the foregoing, the entity must keep the board of directo
 >
 > a) Las plataformas de financiamiento colectivo y los sistemas alternativos de transacción, pertenecientes al Bloque 3, deberán comunicar a esta Comisión los incidentes operacionales que afecten la continuidad del negocio, los recursos e información de la entidad o de sus clientes y la calidad de los servicios. A modo de ejemplo, y sin el objeto de ser exhaustivos ni taxativos, deberán ser reportadas las fallas en servicios importantes para las operaciones del negocio; problemas tecnológicos que afecten la seguridad de la información; ataques del ciberespacio; virus o malware detectados en los activos de información críticos; eventos de indisponibilidad o interrupción de algún servicio o producto que afecte a los clientes, en cualquier canal; pérdidas o fugas de información de la entidad o de clientes; los incidentes que afecten el patrimonio de la entidad producto de fraudes internos o externos; problemas que afecten la continuidad de proveedores de servicios críticos; entre otros. Esta información deberá ser mantenida por la entidad en una base de datos de incidentes y otra base de datos de pérdidas operacionales para el mejoramiento continuo del proceso de gestión de riesgo operacional.
 >
-> b) La ocurrencia de un incidente operacional de aquéllos mencionados en el numeral anterior deberá ser informada a esta Comisión en un plazo máximo de 2 horas desde que la entidad tomó. El plazo señalado es solo para efectos de notificar a la Comisión de la ocurrencia del incidente con la información disponible en ese momento y no implica que la entidad deba tener resuelto el problema, haber tomado determinadas acciones o tener aclarada las causas del incidente, lo que podría ser materia de reportes de seguimiento del incidente enviados la CMF, posteriormente. Las instrucciones para reportar los incidentes operacionales a esta Comisión se encuentran en el Anexo N° 2 de esta normativa.
+> b) La ocurrencia de un incidente operacional de aquéllos mencionados en el numeral anterior deberá ser informada a esta Comisión en un plazo máximo de 2 horas transcurridas desde que la entidad tomó conocimiento del hecho. El plazo señalado es solo para efectos de notificar a la Comisión de la ocurrencia del incidente con la información disponible en ese momento y no implica que la entidad deba tener resuelto el problema, haber tomado determinadas acciones o tener aclarada las causas del incidente, lo que podría ser materia de reportes de seguimiento del incidente enviados la CMF, posteriormente. Las instrucciones para reportar los incidentes operacionales a esta Comisión se encuentran en el Anexo N° 2 de esta normativa.
 >
 > c) Para estos efectos, el directorio u órgano equivalente deberá definir un funcionario encargado y un suplente para la realización de reportes y envío de información según lo indicado en esta sección. Ambas personas deberán tener un nivel ejecutivo y ser designados por la entidad, tanto para este efecto como para responder eventuales consultas por parte de esta Comisión.
 >
@@ -1569,7 +1571,7 @@ e) Without prejudice to the foregoing, the entity must keep the board of directo
 >
 > e) Sin perjuicio de lo anterior, la entidad deberá mantener informado en forma oportuna al directorio u órgano equivalente sobre las actualizaciones de todos los incidentes operacionales relevantes y las medidas adoptadas para resolverlo."
 
-> **TN:** Item b) reads "en un plazo máximo de 2 horas desde que la entidad tomó" — the source omits the object of "tomó" (i.e., "tomó conocimiento del hecho", "became aware of the event"); rendered as "from the time the entity became aware" consistent with the parallel provision in §IV.B.5. The 2-hour reporting obligation here is mandatory ("deberá ser informada"), unlike the optional RIO-format wording in §IV.B.5.
+> **TN:** As amended by NCG 524 item 41, the deadline now reads "2 horas transcurridas desde que la entidad tomó conocimiento del hecho" (the pre-amendment baseline truncated the clause at "la entidad tomó"). The 2-hour reporting obligation here is mandatory ("deberá ser informada"), unlike the optional RIO-format wording in §IV.B.5.
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate; operational incident reporting is part of the entity's risk-management obligations.
@@ -1577,7 +1579,7 @@ e) Without prejudice to the foregoing, the entity must keep the board of directo
 - NCG 502 §IV.C.6 — proportionality classification defining the Block 3 entities subject to this reporting obligation.
 - NCG 502 §IV.C.3.1 — information-security and cybersecurity guidelines whose breach events are typical triggers for reporting.
 
-> **Source:** NCG 502 §IV.C.7.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.C.7.1 (12-ene-2024), as amended by NCG 524 item 41 (02-dic-2024).
 
 ---
 
