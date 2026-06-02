@@ -36,8 +36,7 @@ def _read_pages(pdf_path: Path) -> list[str]:
         return [p.extract_text() or "" for p in pdf.pages]
 
 
-def parse_toc(pdf_path: Path) -> list[TocEntry]:
-    full = "\n".join(_read_pages(pdf_path))
+def _parse_toc_from_text(full: str) -> list[TocEntry]:
     start = INDICE_RE.search(full)
     region = full[start.end():] if start else full
     entries: list[TocEntry] = []
@@ -50,12 +49,19 @@ def parse_toc(pdf_path: Path) -> list[TocEntry]:
             continue
         entries.append(
             TocEntry(
-                number=m.group("number").strip().rstrip("."),
+                # M-2: TOC_LINE_RE's \.?? is outside the number group so the
+                # capture never contains a trailing dot — .strip() suffices.
+                number=m.group("number").strip(),
                 title=m.group("title").strip(),
                 page=int(m.group("page")),
             )
         )
     return entries
+
+
+def parse_toc(pdf_path: Path) -> list[TocEntry]:
+    full = "\n".join(_read_pages(pdf_path))
+    return _parse_toc_from_text(full)
 
 
 def _heading_regex(number: str, title: str) -> re.Pattern:
@@ -88,9 +94,8 @@ def _find_body_start(full: str, toc_region_start: int) -> int:
     return toc_lines_end
 
 
-def extract_sections(pdf_path: Path) -> list[SectionBlock]:
-    toc = parse_toc(pdf_path)
-    full = "\n".join(_read_pages(pdf_path))
+def _extract_sections_from_text(full: str) -> list[SectionBlock]:
+    toc = _parse_toc_from_text(full)
     indice = INDICE_RE.search(full)
     toc_region_start = indice.end() if indice else 0
     body_start = _find_body_start(full, toc_region_start)
@@ -102,6 +107,9 @@ def extract_sections(pdf_path: Path) -> list[SectionBlock]:
         if m:
             positions.append((m.start(), entry))
             search_from = m.end()
+    # M-1: Defensive sort — guards against ToC entries whose body heading is
+    # located out of document order; normally a no-op since search_from
+    # advances linearly through the text.
     positions.sort(key=lambda x: x[0])
     blocks: list[SectionBlock] = []
     for i, (pos, entry) in enumerate(positions):
@@ -116,6 +124,11 @@ def extract_sections(pdf_path: Path) -> list[SectionBlock]:
     return blocks
 
 
+def extract_sections(pdf_path: Path) -> list[SectionBlock]:
+    full = "\n".join(_read_pages(pdf_path))
+    return _extract_sections_from_text(full)
+
+
 if __name__ == "__main__":
     import json
     import sys
@@ -123,11 +136,13 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("usage: extract_ncg_sections.py <pdf>", file=sys.stderr)
         sys.exit(2)
+    # Read the PDF once; derive both toc and sections from the same text.
+    _full = "\n".join(_read_pages(Path(sys.argv[1])))
     out = {
-        "toc": parse_toc(Path(sys.argv[1])),
+        "toc": _parse_toc_from_text(_full),
         "sections": [
             {"number": s["number"], "title": s["title"]}
-            for s in extract_sections(Path(sys.argv[1]))
+            for s in _extract_sections_from_text(_full)
         ],
     }
     json.dump(out, sys.stdout, ensure_ascii=False, indent=2)
