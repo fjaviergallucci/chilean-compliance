@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from tools.check_roundtrip import ANCHOR_BLOCK_RE, check_ncg, check_ncg_multi
+from tools.check_roundtrip import ANCHOR_BLOCK_RE, _normalize_ncg, check_ncg, check_ncg_multi
 
 FIXTURE_NCG = Path(__file__).parent / "fixtures" / "mini_ncg.pdf"
 
@@ -106,3 +106,24 @@ def test_ncg_multi_flags_text_in_no_pdf(tmp_path):
     corpus = _write_multi(tmp_path, body)
     failures = check_ncg_multi([FIXTURE_NCG, FIXTURE_NCG], corpus, threshold=0.85)
     assert any(f[0] == "I.A" for f in failures), f"expected I.A to fail, got {failures}"
+
+
+# ---------------------------------------------------------------------------
+# De-hyphenation tests for NCG 524 line-break split normalisation
+# ---------------------------------------------------------------------------
+
+def test_normalize_dehyphenates_linebreak_splits():
+    # PDF extraction splits words at line breaks with a hyphen + space.
+    raw = "el instru- mento financiero y la representa- cion legal"
+    out = _normalize_ncg(raw)
+    assert "instrumento" in out, f"got: {out}"
+    assert "representacion" in out or "representación" in out, f"got: {out}"
+    # must NOT merge a genuine hyphenated compound that isn't a line break?
+    # (line-break splits are hyphen + whitespace; inline hyphens like "no-financiero" have no space)
+
+
+def test_normalize_keeps_inline_hyphen_compounds():
+    # A hyphen with NO following space is a real compound, not a line break — keep joined or hyphen, just be consistent.
+    raw = "riesgo no-financiero"
+    out = _normalize_ncg(raw)
+    assert "financiero" in out

@@ -44,7 +44,19 @@ def _normalize_ncg(s: str) -> str:
     NCG PDFs often extract accented characters as replacement characters
     (U+FFFD or similar), so normalizing both corpus and PDF text to their
     accent-free equivalents enables reliable substring matching.
+
+    NCG 524 uses a narrow two-column justified layout whose pdfplumber
+    extraction yields hard-hyphenated line breaks: a word is split across
+    lines with a trailing hyphen (regular U+002D or soft-hyphen U+00AD)
+    followed by a newline or other whitespace, then the remainder in
+    lowercase.  De-hyphenate these splits BEFORE whitespace collapse so
+    that clean corpus text ("instrumento") matches the PDF fragment
+    ("instru-\\nsable").  Only join when the character resuming after the
+    hyphen+whitespace is lowercase — line-break continuations always are,
+    while genuine "- Word" list/dash patterns start with a capital.
     """
+    # De-hyphenate line-break splits: letter + hyphen + whitespace + lowercase letter
+    s = re.sub(r"([A-Za-zÁÉÍÓÚáéíóúÑñ])[­\-]\s+([a-záéíóúñ])", r"\1\2", s)
     s = re.sub(r"\s+", " ", s).strip().lower()
     s = unicodedata.normalize("NFKD", s)
     return "".join(c for c in s if unicodedata.category(c) != "Mn")
