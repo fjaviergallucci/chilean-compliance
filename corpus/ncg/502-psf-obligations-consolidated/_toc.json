@@ -220,6 +220,11 @@
     "page": 48
   },
   {
+    "number": "IV.C",
+    "title": "Plataformas de Financiamiento Colectivo y Sistemas Alternativos de Transacción",
+    "page": 49
+  },
+  {
     "number": "IV.C.1",
     "title": "Rol del Directorio u Órgano Equivalente",
     "page": 49
@@ -500,6 +505,11 @@
     "page": 114
   },
   {
+    "number": "V.D",
+    "title": "Metodología de Cómputo de los Activos Ponderados por Riesgo Financiero y Operacional",
+    "page": 115
+  },
+  {
     "number": "V.D.1",
     "title": "Requisito de Patrimonio (o Garantías) por Riesgo Operacional",
     "page": 115
@@ -538,6 +548,11 @@
     "number": "V.D.3.1",
     "title": "Requisito de Patrimonio por Riesgo de Contraparte",
     "page": 120
+  },
+  {
+    "number": "V.D.4",
+    "title": "Requisito de Patrimonio de Riesgo de Crédito y Mercado para Criptoactivos",
+    "page": 122
   },
   {
     "number": "V.D.4.1",
