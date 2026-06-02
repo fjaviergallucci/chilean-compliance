@@ -197,6 +197,25 @@ the special financial-data rules of Título III.
 - [ ] Maintain an operational-loss register and submit periodic loss reports to CMF using the Anexo N°3 form — NCG 502 Anexo N°3.
   (See `corpus/ncg/502-psf-obligations-consolidated/anexo-03-reporte-perdidas.md`.)
 
+- [ ] Determine your SFA participant role (consuming account data makes you a PSBI — Information-Based Service Provider) and register in the corresponding CMF SFA registry before requesting any data — NCG 514 §I.C / §I.E.
+  (See `corpus/ncg/514-open-finance/seccion-01-perimetro.md`.)
+
+- [ ] Connect through the SFA APIs and meet the API/information-exchange standards (principal mechanism, technical/data standards, availability and performance) before querying bank data — NCG 514 §II.A.
+  (See `corpus/ncg/514-open-finance/seccion-02-funcionamiento.md`.)
+
+- [ ] Implement open-finance consent management per the SFA operational rules: granting of consent and ongoing consent management/information obligations — NCG 514 §III.D (+ Ley 19.628 Art. 12).
+  (See `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.)
+  (See `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-12`.)
+
+- [ ] Satisfy the SFA security, cybersecurity, business-continuity, and authentication standards (information-security management, incident reporting, API contingency standards, and customer/participant authentication) — NCG 514 §III.B / §III.C.
+  (See `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.)
+
+- [ ] Meet the SFA data-protection obligations for shared information, tying participant duties to Ley 19.628 — NCG 514 §IV.D (+ Ley 19.628).
+  (See `corpus/ncg/514-open-finance/seccion-04-informacion.md`.)
+
+- [ ] Identify the data sets and variables you must consume (data sets, variables, availability deadlines) and the exact field specifications in the annexes (terms and conditions, service channels/ATM, enrollment, historical financial positions, transactional information) — NCG 514 §IV.A / §VI annexes.
+  (See `corpus/ncg/514-open-finance/seccion-04-informacion.md` and `corpus/ncg/514-open-finance/seccion-06-anexos.md`.)
+
 ### Watch-outs
 
 - **Read-only does not exempt from SFA registration.** Even if you only display
@@ -304,6 +323,25 @@ personal data and processing it triggers full Ley 19.628 obligations.
 
 - [ ] Maintain an operational-loss register and submit periodic loss reports to CMF using the Anexo N°3 form — NCG 502 Anexo N°3.
   (See `corpus/ncg/502-psf-obligations-consolidated/anexo-03-reporte-perdidas.md`.)
+
+- [ ] Determine your SFA participant role (an investment tracker that consumes account/holdings data is a PSBI — Information-Based Service Provider) and register in the corresponding CMF SFA registry — NCG 514 §I.C / §I.E.
+  (See `corpus/ncg/514-open-finance/seccion-01-perimetro.md`.)
+
+- [ ] Connect through the SFA APIs and meet the API/information-exchange standards (principal mechanism, technical/data standards, availability and performance) before querying investment or savings data — NCG 514 §II.A.
+  (See `corpus/ncg/514-open-finance/seccion-02-funcionamiento.md`.)
+
+- [ ] Implement open-finance consent management per the SFA operational rules: granting of consent and ongoing consent management/information obligations — NCG 514 §III.D (+ Ley 19.628 Art. 12).
+  (See `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.)
+  (See `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-12`.)
+
+- [ ] Satisfy the SFA security, cybersecurity, business-continuity, and authentication standards (information-security management, incident reporting, API contingency standards, and customer/participant authentication) — NCG 514 §III.B / §III.C.
+  (See `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.)
+
+- [ ] Meet the SFA data-protection obligations for shared information, tying participant duties to Ley 19.628 — NCG 514 §IV.D (+ Ley 19.628).
+  (See `corpus/ncg/514-open-finance/seccion-04-informacion.md`.)
+
+- [ ] Identify the data sets and variables you must consume (data sets, variables, availability deadlines) and the exact field specifications in the annexes (historical financial positions, transactional information, terms and conditions, enrollment) — NCG 514 §IV.A / §VI annexes.
+  (See `corpus/ncg/514-open-finance/seccion-04-informacion.md` and `corpus/ncg/514-open-finance/seccion-06-anexos.md`.)
 
 ### Watch-outs
 
@@ -437,6 +475,25 @@ rules.
 
 - [ ] Deliver pre-contractual key-information sheets, fee schedules, and conflict-of-interest disclosures per NCG 502 §III disclosure obligations for the applicable service type — NCG 502 §III.
   (See `corpus/ncg/502-psf-obligations-consolidated/seccion-03-divulgacion.md`.)
+
+- [ ] If the application also consumes customer account/holdings data through the Open Finance System, determine your SFA participant role (PSBI; PSIP if you also initiate payments) and register in the corresponding CMF SFA registry — NCG 514 §I.C / §I.D / §I.E.
+  (See `corpus/ncg/514-open-finance/seccion-01-perimetro.md`.)
+
+- [ ] Connect through the SFA APIs and meet the API/information-exchange standards before querying any SFA data — NCG 514 §II.A.
+  (See `corpus/ncg/514-open-finance/seccion-02-funcionamiento.md`.)
+
+- [ ] Implement open-finance consent management per the SFA operational rules (granting and ongoing management of consent, information obligations) — NCG 514 §III.D (+ Ley 19.628 Art. 12).
+  (See `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.)
+  (See `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-12`.)
+
+- [ ] Satisfy the SFA security, cybersecurity, continuity, and authentication standards for SFA participants — NCG 514 §III.B / §III.C.
+  (See `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.)
+
+- [ ] Meet the SFA data-protection obligations for shared information — NCG 514 §IV.D (+ Ley 19.628).
+  (See `corpus/ncg/514-open-finance/seccion-04-informacion.md`.)
+
+- [ ] Identify the SFA data sets, variables, and the exact field specifications in the annexes that your application must consume — NCG 514 §IV.A / §VI annexes.
+  (See `corpus/ncg/514-open-finance/seccion-04-informacion.md` and `corpus/ncg/514-open-finance/seccion-06-anexos.md`.)
 
 ### Watch-outs
 

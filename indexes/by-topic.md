@@ -176,6 +176,9 @@ are flagged inline.
 - *Consent in the Open Finance System* — SFA financial-data sharing requires prior explicit customer consent specifying data type, purpose, and maximum validity period; revocable at any time. **See:**
   - `corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-23` — Ley 21.521 Art. 23 (SFA consent: free, informed, explicit, specific as to type, purpose, validity; revocable; CMF sets implementation rules).
 
+- *SFA consent management (in practice)* — NCG 514 §III.D operationalises open-finance consent: §III.D.1 governs the granting of consent and §III.D.2 the management of consent and information obligations, ties into Ley 19.628 Art. 12.
+  NCG 514 §III.D — see `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.
+
 - *Right of erasure upon consent withdrawal* — When the data subject withdraws consent and no other legal basis exists, erasure must be granted on request. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-01-utilizacion.md#article-7` — Ley 19.628 Art. 7(b) (withdrawal of consent without other legal basis is a ground for erasure).
 
@@ -382,6 +385,30 @@ are flagged inline.
 - *Liability of SFA participants* — All SFA participants are responsible for integrity, availability, security, and confidentiality of data in each transaction and for compliance with Ley 19.628. **See:**
   - `corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-24` — Ley 21.521 Art. 24 (participant liability; purpose limitation; breach response; complaint handling).
 
+- *SFA perimeter and participant roles (in practice)* — NCG 514 §I defines the operational perimeter of the Sistema de Finanzas Abiertas and the participant roles: Information-Based Service Providers (PSBI), Payment-Initiation Service Providers (PSIP), Information-Providing Institutions (IPI), and Account-Providing Institutions (IPC), plus the definitions and nomenclature governing the system.
+  NCG 514 §I — see `corpus/ncg/514-open-finance/seccion-01-perimetro.md`.
+
+- *SFA operation: interfaces, directory, data quality (in practice)* — NCG 514 §II operationalises how the system runs: the principal API mechanism, the alternative mechanism, the participant directory, data-quality duties, and outsourcing rules for SFA participants.
+  NCG 514 §II — see `corpus/ncg/514-open-finance/seccion-02-funcionamiento.md`.
+
+- *APIs and information-exchange standards (in practice)* — NCG 514 §II.A sets the exchange mechanisms and API standards: the principal API mechanism, API technical/data standards, and availability and performance requirements for SFA data exchange.
+  NCG 514 §II.A — see `corpus/ncg/514-open-finance/seccion-02-funcionamiento.md`.
+
+- *Registration as a PSBI / PSIP (in practice)* — NCG 514 §I.C governs registration in the Registry of Information-Based Service Providers (PSBI), and §I.D the Registry of Payment-Initiation Service Providers (PSIP), including application content, amendment, and cancellation; §I.D.3 covers joint PSBI/PSIP registration.
+  NCG 514 §I.C / §I.D — see `corpus/ncg/514-open-finance/seccion-01-perimetro.md`.
+
+- *Rosters of IPI / IPC / PSBI participants (in practice)* — NCG 514 §I.E maintains the rosters of Information-Providing Institutions (IPI) and Account-Providing Institutions (IPC) and the periods for incorporation; §I.F maintains the roster of Information-Based Service Providers (PSBI).
+  NCG 514 §I.E / §I.F — see `corpus/ncg/514-open-finance/seccion-01-perimetro.md`.
+
+- *Outsourcing by SFA participants (in practice)* — NCG 514 §II.F sets the outsourcing rules applicable to SFA participants relying on third-party service providers for system functions.
+  NCG 514 §II.F — see `corpus/ncg/514-open-finance/seccion-02-funcionamiento.md`.
+
+- *Data sets and variables to share in the SFA (in practice)* — NCG 514 §IV.A defines the data sets that must be shared, §IV.C the variables, and §IV.B the availability deadlines; the actual data-field specifications live in the §VI annexes (terms and conditions, service channels/ATM, enrollment, historical financial positions, transactional information).
+  NCG 514 §IV.A / §IV.C / §VI — see `corpus/ncg/514-open-finance/seccion-04-informacion.md` and `corpus/ncg/514-open-finance/seccion-06-anexos.md`.
+
+- *Data protection within the SFA (in practice)* — NCG 514 §IV.D sets the data-protection obligations applicable to information shared in the Sistema de Finanzas Abiertas, tying participant duties to Ley 19.628.
+  NCG 514 §IV.D — see `corpus/ncg/514-open-finance/seccion-04-informacion.md`.
+
 ---
 
 ## Topic: Registration with CMF
@@ -442,6 +469,9 @@ are flagged inline.
 - *Outsourcing controls for intermediation/custody (in practice)* — Intermediation and custody PSFs face equivalent outsourcing requirements, with additional rules for custody-chain sub-delegation.
   NCG 502 §IV.E.4.3 — see `corpus/ncg/502-psf-obligations-consolidated/seccion-04e-gobierno-intermediacion-custodia.md`.
 
+- *Outsourcing by SFA participants (in practice)* — NCG 514 §II.F sets the outsourcing rules for SFA participants that rely on third parties to perform system functions, complementing the Ley 19.628 processor rules above.
+  NCG 514 §II.F — see `corpus/ncg/514-open-finance/seccion-02-funcionamiento.md`.
+
 ---
 
 ## Topic: Cybersecurity
@@ -460,6 +490,12 @@ are flagged inline.
 
 - *Cybersecurity procedures for intermediation/custody PSFs (in practice)* — Intermediation and custody PSFs must apply cybersecurity controls aligned with the risks of their activity, including network segmentation and endpoint protection.
   NCG 502 §IV.E.4.1 — see `corpus/ncg/502-psf-obligations-consolidated/seccion-04e-gobierno-intermediacion-custodia.md`.
+
+- *Security, cybersecurity, and continuity for SFA participants (in practice)* — NCG 514 §III.B sets the information-security and cybersecurity management requirements, cybersecurity-incident reporting, business-continuity obligations, and the information-security/contingency standards of the APIs for SFA participants.
+  NCG 514 §III.B — see `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.
+
+- *Authentication and verification in the SFA (in practice)* — NCG 514 §III.C sets the minimum authentication and customer-confirmation standards, authentication of the financial customer by the IPI/IPC, and verification of PSBI/PSIP by the IPI/IPC.
+  NCG 514 §III.C — see `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.
 
 ---
 
@@ -482,6 +518,9 @@ are flagged inline.
 
 - *Governance for intermediation and custody PSFs (in practice)* — Intermediation and custody PSFs face the most extensive governance requirements: segregation of client assets, custody controls, transaction-monitoring policies, and an independent internal audit function.
   NCG 502 §IV.E — see `corpus/ncg/502-psf-obligations-consolidated/seccion-04e-gobierno-intermediacion-custodia.md`.
+
+- *Risk management and internal control for SFA participants (in practice)* — NCG 514 §III.A sets the board responsibility, the risk-management function, the risk-management plan, and operational-risk requirements applicable to participants in the Sistema de Finanzas Abiertas.
+  NCG 514 §III.A — see `corpus/ncg/514-open-finance/seccion-03-seguridad-resguardos.md`.
 
 ---
 
