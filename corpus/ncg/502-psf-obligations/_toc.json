@@ -567,21 +567,31 @@
   {
     "number": "VI",
     "title": "Capacidad Operacional",
-    "page": 124
+    "page": 135
   },
   {
     "number": "VII",
     "title": "Actividades Inherentes",
-    "page": 125
+    "page": 136
   },
   {
     "number": "VIII",
-    "title": "Derogación",
-    "page": 126
+    "title": "Registros",
+    "page": 137
   },
   {
     "number": "IX",
+    "title": "Disposiciones Adicionales",
+    "page": 141
+  },
+  {
+    "number": "X",
+    "title": "Derogación",
+    "page": 142
+  },
+  {
+    "number": "XI",
     "title": "Vigencia",
-    "page": 126
+    "page": 142
   }
 ]

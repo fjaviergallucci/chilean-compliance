@@ -22,26 +22,20 @@ _law:_ NCG-502
 
 **Ciberseguridad (cybersecurity):** corresponds to the set of actions carried out by the entity to mitigate risks and protect information and the infrastructure that supports it from cyberspace events, cyberspace being the resulting environment of the interaction of persons, software, and services on the Internet through technological devices connected to that network.
 
-**Cliente activo (active client):** every client who is not considered inactive shall be considered active, depending on the type of service provided:
+**Cliente activo (active client):** every person or entity that meets any of the following conditions and that does not have the status of qualified investor under subparagraph f) of Article 4° bis of Ley N° 18.045:
 
 | Service type (Tipo de servicio) | Active clients (Clientes activos) |
 |---|---|
-| Investment advisory or credit advisory (Asesoría de inversión o crediticia) | Those who have received or requested a specific advisory service during the last 3 months. |
+| Investment advisory or credit advisory (Asesoría de inversión o crediticia) | Those who have received or requested a personalized advisory service during the last 3 months, that is, in the case of investment advisory, an evaluation or recommendation regarding the advisability of making a particular investment or transaction in publicly offered securities, financial instruments, or investment projects that responds to the particular request made by the person to the advisor; or, in the case of credit advisory, an evaluation or recommendation regarding the capacity or probability of payment, or of identity, for the purposes of obtaining, modifying, or renegotiating a credit or financing. |
 | Order routing (Enrutamiento de órdenes) | Those who have submitted orders to be routed by the order router during the last 3 months. |
 | Crowdfunding platform (Plataforma de financiamiento colectiva) | Those who have participated in the financing of an investment project or financing need during the last 3 months. |
 | Alternative trading systems (Sistemas alternativos de transacción) | Those who have made a quotation, offer, or transaction on the alternative trading system during the last 3 months. |
-| Intermediation of financial instruments (Intermediación de instrumentos financieros) | Those who have made a transaction through the intermediary during the last 3 months. |
+| Intermediation of financial instruments (Intermediación de instrumentos financieros) | Those who have given a purchase-sale order to the intermediary during the last 3 months. Also, those who have acted as counterparty to the intermediary in transactions with financial instruments. |
 | Custody of financial instruments (Custodia de instrumentos financieros) | Those who hold balances in custody of at least 100,000 pesos. |
 
-**Cliente inactivo (inactive client):** an inactive client is defined as one who has not used in any way the services of credit advisory, investment advisory, order routing, alternative trading system, intermediation of financial instruments, custody of financial instruments, and/or crowdfunding platform in the last 3 months. Also, any client who does not have a current contract with the service provider. Clients must be considered for each of these services separately, a single client being able to contract more than one service provided by the entity.
+**Cliente inactivo (inactive client):** an inactive client is defined as one who does not meet the conditions to be considered an active client.
 
-An inactive client is also defined as one who meets the following conditions jointly:
-
-- They carry out no type of transaction and have not received or requested any type of advisory in the last 3 months.
-- They hold no balances (assets or liabilities) in accounts provided by the entity.
-- They hold no current positions in financial instruments, investment projects, or financing needs offered through the entity.
-
-**Cliente institucional (institutional client):** institutional investors in accordance with subparagraph e) of Article 4 bis of Ley N° 18.045 on the Securities Market and General Regulation N° 410 of this Commission (CMF).
+**Inversionista institucional (institutional investor):** those referred to in subparagraph e) of Article 4 bis of Ley N° 18.045 on the Securities Market.
 
 **Confidencialidad de la información (confidentiality of information):** protection of data against unauthorised access and disclosure, as defined by the board of directors or equivalent body. It includes the means to protect personal privacy and reserved information, especially that of the entity's clients.
 
@@ -61,30 +55,25 @@ An inactive client is also defined as one who meets the following conditions joi
 >
 > Ciberseguridad: corresponde al conjunto de acciones que realiza la entidad para mitigar los riesgos y proteger la información e infraestructura que la soporta, de eventos del ciberespacio, siendo este último el entorno resultante de la interacción de personas, software y servicios en Internet a través de dispositivos tecnológicos conectados a dicha red.
 >
-> Cliente activo: todo cliente que no se considera inactivo será considerado como activo, dependiendo del tipo de servicio prestado: tipo de servicio clientes activos asesoría de inversión o crediticia quienes hayan recibido o solicitado un servicio de asesoría determinada durante los últimos 3 meses. enrutamiento de órdenes quienes hayan ingresado órdenes para ser canalizadas por el enrutador durante los últimos 3 meses. plataforma de financiamiento colectiva quienes hayan participado en el financiamiento de un proyecto de inversión o necesidad de financiamiento durante los últimos 3 meses. sistemas alternativos de transacción quienes hayan realizado una cotización, oferta o transacción en el sistema alternativo de transacción en los últimos 3 meses. intermediación de instrumentos financieros quienes hayan realizado una transacción a través del intermediario durante los últimos 3 meses custodia de instrumentos financieros quienes posean saldos en custodia por un monto de, al menos, 100.000 pesos.
+> Cliente activo: toda persona o entidad que cumpla con alguna de las siguientes condiciones y que no tenga la calidad de inversionista calificado de la letra f) del artículo 4°bis de la Ley N°18.045: Asesoría de inversión o crediticia: Quienes hayan recibido o solicitado un servicio de asesoría personalizada durante los últimos 3 meses, esto es, en el caso de asesoría de inversión, una evaluación o recomendación respecto de la conveniencia de realizar una determinada inversión u operación en valores de oferta pública, instrumentos financieros o proyectos de inversión que responde a la petición particular efectuada por la persona al asesor; o, en el caso de asesoría crediticia, una evaluación o recomendación respecto de la capacidad o probabilidad de pago, o de la identidad, para fines de la obtención, modificación o renegociación de un crédito o financiamiento. Enrutamiento de órdenes: Quienes hayan ingresado órdenes para ser canalizadas por el enrutador durante los últimos 3 meses. Plataforma de financiamiento colectiva: Quienes hayan participado en el financiamiento de un proyecto de inversión o necesidad de financiamiento durante los últimos 3 meses. Sistemas alternativos de transacción: Quienes hayan realizado una cotización, oferta o transacción en el sistema alternativo de transacción en los últimos 3 meses. Intermediación de instrumentos financieros: Quienes hayan otorgado una orden de compraventa al intermediario durante los últimos 3 meses. Además, quienes hayan actuado como contraparte del intermediario en operaciones con instrumentos financieros. Custodia de instrumentos financieros: Quienes posean saldos en custodia por un monto de, al menos, 100.000 pesos.
 >
-> Cliente inactivo: se define como cliente inactivo aquel que no ha utilizado en ninguna forma los servicios de asesoría crediticia, asesoría de inversión, enrutamiento de órdenes, sistema alternativo de transacción, intermediación de instrumentos financieros, custodia de instrumentos financieros y/o plataforma de financiamiento colectivo en los último 3 meses. También, aquel cliente que no tiene un contrato vigente con el prestador de servicios. Los clientes deberán ser considerados para cada uno de estos servicios por separado, pudiendo un mismo cliente contratar más de un servicio prestado por la entidad.
+> Cliente inactivo: se define como cliente inactivo aquel que no cumple con las condiciones para ser considerado cliente activo.
 >
-> Se define como cliente inactivo aquellos que cumplan con las siguientes condiciones de forma conjunta:
->
-> • No realizan ningún tipo de transacción ni han recibido o solicitado ningún tipo de asesoría en los últimos 3 meses.
->
-> • No disponen de saldos (activos o pasivo) en cuentas provistas por la entidad.
->
-> • No tienen posiciones vigentes en instrumentos financieros, proyectos de inversión o necesidades de financiamiento ofertados a través de la entidad.
->
-> Cliente institucional: inversionistas institucionales de acuerdo con la letra e) del artículo 4 bis de la Ley N°18.045 de Mercado de Valores y la Norma de Carácter General N°410 de esta Comisión
+> Inversionista institucional: aquellos de la letra e) del artículo 4 bis de la Ley N°18.045 de Mercado de Valores.
 >
 > Confidencialidad de la información: protección de los datos contra el acceso y la divulgación no autorizados, definido por el directorio u órgano equivalente. Incluye los medios para proteger la privacidad personal y la información reservada, en especial de los clientes de la entidad."
 
 ### Cross-references
 - NCG 502 §IV (Gobierno Corporativo y Gestión de Riesgos) — primary consumer of these definitions.
 - NCG 502 §IV.A.5, §IV.B.5, §IV.C.7, §IV.D, §IV.E.8 — Información de Incidentes Operacionales sections use the definitions of incidente and riesgo operacional.
-- Ley 18.045 Art. 4 bis(e) — definition of institutional investor referenced in Cliente institucional.
+- Ley 18.045 Art. 4 bis(e) — definition of institutional investor referenced in Inversionista institucional.
+- Ley 18.045 Art. 4 bis(f) — qualified-investor status excluded from Cliente activo.
 - NCG 502 Anexo N°2 — operational-incident report that relies on the defined terms above.
 - NCG 502 Anexo N°3 — operational-loss report that relies on the defined terms above.
 
-> **Source:** NCG 502 Anexo N°1 (12-ene-2024).
+> **TN:** NCG 524 spliced text into an existing sentence here; consolidated Spanish is faithful (verified against the 524 source PDF) but is not contiguous in either single source PDF. The amended "Cliente activo" definition is a two-column table in the 524 PDF that pdfplumber extracts in a column-interleaved order breaking the cell descriptions mid-sentence; it is transcribed here as flat prose. Individual cell passages match the 524 PDF, but this aggregated A–C definitions block reaches only ~0.51 chunk-coverage against either source PDF.
+
+> **Source:** NCG 502 Anexo N°1 (12-ene-2024), as amended by NCG 524 items H.1, H.2, and H.3 (02-dic-2024).
 
 ---
 
@@ -162,18 +151,13 @@ An inactive client is also defined as one who meets the following conditions joi
 
 **Riesgo aceptado (accepted risk):** corresponds to the level of risk that the entity is willing to accept in accordance with its risk management policy and its responsibilities established in the legal framework that governs it.
 
-**Riesgo de crédito (credit risk):** potential exposure to financial losses due to non-compliance by a third party with the terms and conditions stipulated in the respective contract, agreement, or legal act. This risk is divided into the following subcategories:
-
-- **Riesgo de contraparte (counterparty risk):** exposure to potential losses as a result of a failure of a contract for differences or derivative or of the failure of a counterparty in a transaction within a settlement and clearing process.
-- **Riesgo crediticio del emisor (issuer credit risk):** exposure to potential insolvencies or deterioration of solvency in an entity's financial instruments.
-
-**Riesgo de mercado (market risk):** potential loss caused by changes in market prices, which could generate adverse effects on the entity's own portfolio or the balance sheet of financial-instrument intermediation service providers. It covers interest-rate risk, exchange-rate risk, and price risk in relation to financial instruments.
-
 **Riesgo inherente (inherent risk):** corresponds to the risk that by its nature cannot be separated from the process or sub-process in which it occurs. It corresponds to the risk that each entity must assume in accordance with the scope of development of its activities established by law.
 
-**Riesgo operacional (operational risk):** operational risk corresponds to the risk that deficiencies in information systems, internal processes, or personnel, or disturbances caused by external events, may reduce, deteriorate, or interrupt the services provided by the entity and eventually cause it financial losses. It includes the risk of losses arising from regulatory changes that affect the entity's operations, as well as losses derived from non-compliance with or failure to adhere to the applicable regulation.
-
 **Riesgo residual (residual risk):** the risk that persists after the entity adopts control and mitigation measures.
+
+<!-- REVIEW: NCG 524 item H.4 — definitions of "Riesgo de crédito," "Riesgo de contraparte," "Riesgo crediticio del emisor," "Riesgo de mercado," and "Riesgo operacional" deleted from Anexo N°1 per NCG 524 (02-dic-2024). -->
+
+> **TN:** NCG 524 item H.4 deleted the Anexo N°1 definitions of Riesgo de crédito, Riesgo de contraparte, Riesgo crediticio del emisor, Riesgo de mercado, and Riesgo operacional. The cross-references below to §V.D.2 (Riesgo de mercado), §V.D.3 (Riesgo de crédito), and §IV (Riesgo operacional) are retained for navigation, but those terms are no longer defined in this Anexo following the deletion.
 
 ### Original Spanish
 
@@ -189,17 +173,7 @@ An inactive client is also defined as one who meets the following conditions joi
 >
 > Riesgo aceptado: corresponde al nivel de riesgo que la entidad está dispuesta a aceptar en concordancia con la política de gestión de riesgos y sus responsabilidades establecidas en el marco legal que las rige.
 >
-> Riesgo de crédito: potencial exposición a pérdidas económicas debido al incumplimiento por parte de un tercero de los términos y las condiciones estipuladas en el respectivo contrato, convención o acto jurídico. Este riesgo se divide en las siguientes subcategorías:
->
-> Riesgo de contraparte: exposición a potenciales pérdidas como resultado de un incumplimiento de contrato por diferencias o derivado o del incumplimiento de una contraparte en una transacción dentro de un proceso de compensación y liquidación.
->
-> Riesgo crediticio del emisor: exposición a potenciales quiebras o deterioro de solvencia en los instrumentos financieros de una entidad.
->
-> Riesgo de mercado: potencial pérdida causada por cambios en los precios del mercado, que podría generar efectos adversos en la cartera propia o el balance del prestador de servicios de intermediación de instrumentos financieros. Abarca el riesgo de tasas de interés, el riesgo cambiario y de precios en relación con los instrumentos financieros.
->
 > Riesgo inherente: corresponde a aquel riesgo que por su naturaleza no puede ser separado del proceso o subproceso en que éste se presenta. Corresponde al riesgo que debe asumir cada entidad de acuerdo con el ámbito de desarrollo de sus actividades establecido por ley.
->
-> Riesgo operacional: el riesgo operacional corresponde al riesgo de que las deficiencias que puedan producirse en los sistemas de información, los procesos internos o el personal, o las perturbaciones ocasionadas por acontecimientos externos provoquen la reducción, el deterioro o la interrupción de los servicios que presta la entidad y eventualmente le originen pérdidas financieras. Incluye el riesgo de pérdidas ante cambios regulatorios que afecten las operaciones de la entidad, como también pérdidas derivadas de incumplimiento o falta de apego a la regulación vigente.
 >
 > Riesgo residual: aquel riesgo que persiste luego de adoptar las medidas de control y mitigación por parte de la entidad."
 
@@ -208,7 +182,7 @@ An inactive client is also defined as one who meets the following conditions joi
 - NCG 502 §V.D.3 — credit risk capital requirement uses the Riesgo de crédito definition.
 - NCG 502 §IV (all subsections) — operational risk governance uses the Riesgo operacional definition.
 
-> **Source:** NCG 502 Anexo N°1 (12-ene-2024).
+> **Source:** NCG 502 Anexo N°1 (12-ene-2024), as amended by NCG 524 item H.4 (02-dic-2024).
 
 ---
 
