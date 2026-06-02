@@ -144,7 +144,7 @@ a) They must relate to the number or type of clients, and to the volume of trans
 
 b) Policies must set out the general principles and guidelines established by the board of directors or equivalent body to guide the activities of the organisation.
 
-c) Procedures must define how to carry out a process, with the aim of ensuring compliance with the policies approved by the board of directors, incorporating at least: the description of the principal activities that compose it and the identification of those responsible; the determination of those responsible for supervising and controlling the outcome of the activities carried out; documentation evidencing the execution of the activities that make up the procedures; the definition and description of the controls associated with those activities. In the case of outsourced activities, there must always be a person responsible within the organisation for the control of those activities.
+c) Procedures must define how to carry out a process, with the aim of ensuring compliance with the policies approved by the board of directors or equivalent body, incorporating at least: the description of the principal activities that compose it and the identification of those responsible; the determination of those responsible for supervising and controlling the outcome of the activities carried out; documentation evidencing the execution of the activities that make up the procedures; the definition and description of the controls associated with those activities. In the case of outsourced activities, there must always be a person responsible within the organisation for the control of those activities.
 
 d) Policies, procedures, and control mechanisms must be formally established and documented.
 
@@ -162,17 +162,17 @@ d) Policies, procedures, and control mechanisms must be formally established and
 >
 > b) Las políticas deberán exponer los principios generales y directrices establecidas por el directorio u órgano equivalente para orientar las actividades de la organización.
 >
-> c) Los procedimientos deberán definir cómo llevar a cabo un proceso, con el fin de asegurar el cumplimiento de las políticas aprobadas por el directorio incorporando, al menos: la descripción de las actividades principales que lo componen y la identificación de sus responsables; determinación de los responsables de supervisar y controlar el resultado de las actividades ejecutadas; documentación que evidencie la ejecución de las actividades que conforman los procedimientos; definición y descripción de los controles asociados a dichas actividades. En el caso de actividades externalizadas, siempre deberá existir una persona responsable dentro de la organización respecto al control de estas.
+> c) Los procedimientos deberán definir cómo llevar a cabo un proceso, con el fin de asegurar el cumplimiento de las políticas aprobadas por el directorio u órgano equivalente incorporando, al menos: la descripción de las actividades principales que lo componen y la identificación de sus responsables; determinación de los responsables de supervisar y controlar el resultado de las actividades ejecutadas; documentación que evidencie la ejecución de las actividades que conforman los procedimientos; definición y descripción de los controles asociados a dichas actividades. En el caso de actividades externalizadas, siempre deberá existir una persona responsable dentro de la organización respecto al control de estas.
 >
 > d) Las políticas, procedimientos y mecanismos de control deberán estar formalmente establecidos y documentados."
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.A.2.1 — specific minimum content requirements for risk-management and internal-control policies and procedures.
-- NCG 502 §IV.A.2.2 — specific requirements for operational risk, information security, and cybersecurity.
+- NCG 502 §IV.A.2.2 — specific requirements for operational risk.
 - NCG 502 §IV.A.3 — risk-management function responsible for ensuring policy accuracy and currency.
 
-> **Source:** NCG 502 §IV.A.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.A.2 (12-ene-2024), as amended by NCG 524 item 1 (02-dic-2024).
 
 ---
 
@@ -278,7 +278,7 @@ In addition, procedures must be defined for the event of non-compliance with the
 
 ---
 
-## IV.A.2.2 — Operational Risk, Information Security, and Cybersecurity
+## IV.A.2.2 — Operational Risk
 **NCG anchor:** N° 502, Sección IV, A.2.2
 **Implements:** Ley 21.521 Art. 8 (governance & risk management)
 **Tags:** governance, risk-management, operational-risk, information-security, cybersecurity, investment-advisory
@@ -307,7 +307,7 @@ e) Procedures for the identification of cybersecurity threats such as phishing, 
 
 ### Original Spanish
 
-> "A.2.2. RIESGO OPERACIONAL: SEGURIDAD DE LA INFORMACIÓN Y CIBERSEGURIDAD
+> "A.2.2. RIESGO OPERACIONAL
 >
 > Sin perjuicio de las políticas y procedimientos mínimos que deban implementar las entidades en virtud de la sección anterior, éstas deberán observar los siguientes lineamientos en términos de seguridad de la información y ciberseguridad. Resulta relevante destacar que las entidades deberán adaptar estas exigencias considerando especialmente su modelo de negocios, volumen de operaciones, y número y tipo de clientes:
 >
@@ -336,7 +336,7 @@ e) Procedures for the identification of cybersecurity threats such as phishing, 
 - NCG 502 §IV.A.2 — general policies-and-procedures framework of which this is a supplementary specification.
 - NCG 502 §IV.A.5 — operational-incident reporting obligation triggered when incidents affecting information security or client personal data occur.
 
-> **Source:** NCG 502 §IV.A.2.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.A.2.2 (12-ene-2024), as amended by NCG 524 item 2 (02-dic-2024).
 
 ---
 
@@ -371,7 +371,7 @@ This subsection establishes the requirements for the risk-management function an
 
 The risk-management function is the body responsible for monitoring the controls defined in the entity's risk-management and internal-control policies and procedures. This function must report directly to the board of directors or equivalent body.
 
-In accordance with subparagraph A.4 of this Section, the risk-management function may be carried out by a natural person or internal unit or, in certain cases, by the senior management (alta gerencia) of the entity. If the function is exercised by a corporate risk-management unit in the case where the entity belongs to a business group, it shall be considered as carried out by an internal unit.
+In accordance with subparagraph A.4 of this Section, the risk-management function may be carried out by a person, an internal unit, or by the senior management (alta administración) of the entity. If the function is exercised by a corporate risk-management unit in the case where the entity belongs to a business group, it shall be considered as carried out by an internal unit.
 
 Without prejudice to the foregoing, the entity shall always be responsible for the risk-management function even when it is carried out by a body belonging to the business group, and must review and approve the reports produced in that regard, for which it must retain all relevant documentation.
 
@@ -393,7 +393,7 @@ d) Prepare an annual plan addressing the nature, scope, and timing of the activi
 >
 > La función de gestión de riesgos es la instancia responsable del monitoreo de los controles definidos en las políticas y los procedimientos de gestión de riesgos y control interno de la entidad. Esta función deberá reportar directamente al directorio u órgano equivalente.
 >
-> De acuerdo con el literal A.4. de esta Sección, la función de gestión de riesgos podrá ser realizada por una persona o unidad interna o, en ciertos casos, por la alta administración de la entidad. Si la función es ejercida por una unidad de gestión de riesgos corporativa en caso de que la entidad pertenezca a un grupo empresarial, se considerará realizada por una unidad interna.
+> De acuerdo con el literal A.4. de esta Sección, la función de gestión de riesgos podrá ser realizada por una persona, unidad interna o por la alta administración de la entidad. Si la función es ejercida por una unidad de gestión de riesgos corporativa en caso de que la entidad pertenezca a un grupo empresarial, se considerará realizada por una unidad interna.
 >
 > Sin perjuicio de lo anterior, la entidad será siempre responsable de la función de gestión de riesgos aun cuando ésta sea realizada por una instancia perteneciente al grupo empresarial, debiendo revisar y aprobar los informes realizados al respecto, para lo cual deberá hacerse de toda la documentación relevante.
 >
@@ -416,7 +416,7 @@ d) Prepare an annual plan addressing the nature, scope, and timing of the activi
 - NCG 502 §IV.A.4 — proportionality provisions that determine whether the risk-management function may be exercised by senior management or must be specialised.
 - NCG 502 §IV.A.2 — minimum policies and procedures the risk-management function must verify.
 
-> **Source:** NCG 502 §IV.A.3.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.A.3.1 (12-ene-2024), as amended by NCG 524 item 3 (02-dic-2024).
 
 ---
 
@@ -449,6 +449,8 @@ d) Information and communication procedures for risk management that ensure that
 
 e) A continuous risk-management improvement programme, with the aim of evaluating the need to make changes in response to new economic and financial scenarios facing the entity, changes in the risk profile, and as a result of the implementation or changes in international standards or best practices.
 
+f) Where the entity belongs to a business group, operational-risk management may be performed by a person of that group, provided that such person maintains its independence from the group's internal-audit areas.
+
 ### Original Spanish
 
 > "A.3.2. PLAN DE GESTIÓN DE RIESGOS
@@ -475,14 +477,16 @@ e) A continuous risk-management improvement programme, with the aim of evaluatin
 >
 > d) Procedimientos de información y comunicación de la gestión de riesgos que asegure que la información relevante acerca de la efectividad de los controles mitigantes y el cumplimiento de los niveles de apetito por riesgo llegue al directorio u órgano equivalente y a todas las partes interesadas.
 >
-> e) Programa de mejoramiento continuo de la gestión de riesgos, con el objeto de evaluar la necesidad de realizar cambios frente a nuevos escenarios económicos y financieros que vaya enfrentando la entidad, cambios del perfil de riesgo y producto de la implementación o cambios en los estándares o mejores prácticas internacionales."
+> e) Programa de mejoramiento continuo de la gestión de riesgos, con el objeto de evaluar la necesidad de realizar cambios frente a nuevos escenarios económicos y financieros que vaya enfrentando la entidad, cambios del perfil de riesgo y producto de la implementación o cambios en los estándares o mejores prácticas internacionales.
+>
+> f) En el caso que la entidad pertenezca a un grupo empresarial, la gestión de riesgo operacional podrá ser desempeñada por una persona de dicho grupo, siempre que aquella mantenga su independencia de las áreas de auditoría interna del grupo."
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.A.3.1 — risk-management function responsible for preparing and monitoring the plan.
 - NCG 502 §IV.A.2.1 — conflict-of-interest and information-security policies that the plan's risk-mitigation strategies must at minimum address.
 
-> **Source:** NCG 502 §IV.A.3.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.A.3.2 (12-ene-2024), as amended by NCG 524 item 4 (02-dic-2024).
 
 ---
 
@@ -497,19 +501,14 @@ In line with the provisions of Articles 1 and 12 of Ley N° 21.521, entities may
 
 Without prejudice to the foregoing, Table 1 describes the proportional requirements that entities providing the investment advisory service must comply with.
 
-Proportionality shall be applied depending on whether the investment advisers are natural persons or legal persons; whether they process information that qualifies as personal data under Ley N° 19.628 for investment recommendations; and depending on whether they have fewer or more than 100 active clients in Chile.
+Proportionality shall be applied depending on whether the investment advisers have fewer or more than 100 active clients in Chile or 100,000 followers:
 
 **Table 1. Proportionality for the provision of the investment advisory service**
 
-| Characteristics of the investment advisory provider | | Policies | Risk-management function |
-|---|---|---|---|
-| Natural persons | Does not process personal data | — | Exempt from all requirements of this Section IV.A |
-| Natural persons | Processes personal data — fewer than 100 active clients | — | Exempt from all requirements of this Section IV.A |
-| Natural persons | Processes personal data — 100 or more active clients | CI, CINF, OP, II | Non-specialised |
-| Legal persons | Does not process personal data — fewer than 100 active clients | — | Exempt from all requirements of this Section IV.A |
-| Legal persons | Does not process personal data — 100 or more active clients | CI, OP, II | Non-specialised |
-| Legal persons | Processes personal data — fewer than 100 active clients | — | Exempt from all requirements of this Section IV.A |
-| Legal persons | Processes personal data — 100 or more active clients | CI, CINF, OP, II, ALG, RLN, RO | Specialised |
+| Characteristics of the investment advisory provider | Policies | Risk-management function |
+|---|---|---|
+| Fewer than 100 active clients in Chile or fewer than 100,000 followers | Exempt | Exempt |
+| More than 100 active clients in Chile or 100,000 followers | CI, CINF, OP, II, RLN, ALG, RO | Non-specialised |
 
 Where:
 
@@ -521,11 +520,8 @@ e) ALG: Algorithm approval, evaluation, and control methodology.
 f) RLN: Compliance with legal and regulatory operating requirements.
 g) RO: Operational risk.
 h) Non-specialised: The risk-management function may be exercised by a member of the senior management of the entity.
-i) Personal data processing: Personal data within the meaning of Ley N° 19.628 and used to make investment recommendations.
 
-In the case of entities whose requirement is that the risk-management function be specialised, this function shall not be exercised by the senior management, and must report directly to the board of directors or equivalent body.
-
-When an entity reaches 100 active clients in Chile, it shall have a maximum period of 6 months to comply with the corresponding corporate-governance and comprehensive risk-management requirements. Once that number is reached, entities must comply with the corporate-governance and comprehensive risk-management requirements. To revert to being exempt from the requirements, entities must remain below the client threshold indicated for more than 6 months and request authorisation from the Commission (CMF).
+When an entity reaches 100 active clients in Chile or 100,000 followers on social media, it shall have a maximum period of 9 months to comply with the corresponding corporate-governance and comprehensive risk-management requirements. Once that number of clients is reached, they must report that fact to the Commission within the 5 business days following the occurrence of the event. To revert to being exempt from the requirements, entities must remain below the client threshold indicated for more than 6 months and request authorisation from the Commission (CMF).
 
 ### Original Spanish
 
@@ -535,9 +531,9 @@ When an entity reaches 100 active clients in Chile, it shall have a maximum peri
 >
 > Sin perjuicio de lo anterior, la Tabla 1 describe los requisitos proporcionales que deberán cumplir las entidades que presten el servicio de asesoría de inversión.
 >
-> La proporcionalidad se aplicará dependiendo de si los asesores de inversión son personas naturales o jurídicas; si hacen uso de información que califique como datos de carácter personal, en conformidad a la ley N°19.628, para las recomendaciones de inversión; y en función de si tienen menos o más de 100 clientes activos en Chile.
+> La proporcionalidad se aplicará dependiendo de si los asesores de inversión tienen menos o más de 100 clientes activos en Chile o 100.000 seguidores:
 >
-> Tabla 1. Proporcionalidad para la prestación del servicio de asesoría de inversión Función de Características del prestador de asesoría de Políticas gestión de inversión riesgos No realiza tratamiento de datos Se exime de todos los requisitos personales de esta Sección IV.A Personas Menos de 100 clientes Se exime de todos los requisitos realiza naturales activos de esta Sección IV.A tratamiento de datos 100 o más clientes No personales CI, CINF, OP, II activos especializada Menos de 100 clientes Se exime de todos los requisitos No realiza activos de esta Sección IV.A tratamiento de datos 100 o más clientes No personales CI, OP, II activos especializada Personas jurídicas Menos de 100 clientes Se exime de todos los requisitos realiza activos de esta Sección IV.A tratamiento de datos 100 o más clientes CI, CINF, OP, II, personales Especializada activos ALG, RLN, RO.
+> Tabla 1. Proporcionalidad para la prestación del servicio de asesoría de inversión Características del prestador de asesoría de inversión Políticas Función de gestión de riesgos Menos de 100 clientes activos en Chile o menos de 100.000 seguidores Se exime Se exime Más de 100 clientes activos en Chile o 100.000 seguidores CI, CINF, OP, II, RLN, ALG, RO No especializada
 >
 > Donde,
 >
@@ -557,20 +553,15 @@ When an entity reaches 100 active clients in Chile, it shall have a maximum peri
 >
 > h) No especializada: La función de gestión de riesgos podrá ser ejercida por algún integrante de la alta administración de la entidad.
 >
-> i) Tratamiento de datos personales: Datos personales en el sentido de la ley N°19.628 y utilizados para efectuar las recomendaciones de inversión.
->
-> En el caso de entidades cuyo requisito sea que la función de gestión de riesgos sea especializada, esta función no podrá ser ejercida por la alta administración, debiendo reportar directamente al directorio u órgano equivalente.
->
-> Cuando una entidad alcance los 100 clientes activos en Chile, dispondrá de un plazo máximo de 6 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes. Una vez alcanzado ese número, las entidades deberán cumplir con las exigencias de gobierno corporativo y gestión integral de riesgos. Para volver a estar exentas de los requerimientos, las entidades deberán mantenerse por más de 6 meses bajo el umbral de clientes señalado y solicitar autorización de la Comisión."
+> Cuando una entidad alcance los 100 clientes activos en Chile o 100.000 seguidores en redes sociales, dispondrá de un plazo máximo de 9 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes. Una vez alcanzado ese número de clientes, deberán avisar ese hecho a la Comisión dentro de los 5 días hábiles siguientes de ocurrido el hecho. Para volver a estar exentas de los requerimientos, las entidades deberán mantenerse por más de 6 meses bajo el umbral de clientes señalado y solicitar autorización de la Comisión."
 
-> **TN:** Table 1 is a structured table in the PDF source. The English rendering above presents it as a Markdown table with equivalent informational content. The table's structure (rows combining entity-type, data-processing status, and client-count thresholds) is preserved faithfully.
+> **TN:** Table 1 is a structured table in the PDF source. The Original Spanish above transcribes the table cells in the PDF's column-first reading order; the English rendering presents the same content as a row-first Markdown table. The amended threshold combines active-client count (100) and follower count (100,000) and removes the prior natural-/legal-person and personal-data distinctions.
 
 ### Cross-references
 - Ley 21.521 Arts. 1 and 12 — proportionality and governance mandate this section implements.
-- Ley N° 19.628 — personal data protection law defining the data-processing threshold that triggers higher obligations.
 - NCG 502 §IV.A.3.1 — risk-management function requirements, including the specialised vs. non-specialised distinction.
 
-> **Source:** NCG 502 §IV.A.4 (12-ene-2024).
+> **Source:** NCG 502 §IV.A.4 (12-ene-2024), as amended by NCG 524 item 5 (02-dic-2024).
 
 ---
 
@@ -581,7 +572,7 @@ When an entity reaches 100 active clients in Chile, it shall have a maximum peri
 
 ### Plain-English text
 
-Investment advisory entities that process personal data in the terms indicated, and that have more than 100 active clients in Chile, must notify the Commission (CMF) of operational incidents affecting the entity's information or the personal data of their clients, such as technology problems affecting information security; viruses or malware detected in critical information assets; loss or leakage of information belonging to the entity or its clients; among others.
+Investment advisory entities that have more than 100 active clients in Chile or more than 100,000 followers must notify the Commission (CMF) of operational incidents affecting the entity's information or the personal data of their clients, such as technology problems affecting information security; viruses or malware detected in critical information assets; loss or leakage of information belonging to the entity or its clients; among others.
 
 For these purposes, entities must use the format of the Operational Incident Report (Reporte de Incidentes Operacionales — RIO) in Annex N° 2 of this regulation, and shall have a period of 2 hours from the time the entity became aware of the event. The period indicated is solely for the purpose of notifying the Commission (CMF) of the occurrence of the incident with the information available at that time and does not imply that the entity must have resolved the problem, taken specific actions, or clarified the causes of the incident, which may be the subject of follow-up reports on the incident sent to the CMF subsequently.
 
@@ -591,7 +582,7 @@ The board of directors or equivalent body must designate an officer in charge an
 
 > "A.5. INFORMACIÓN DE INCIDENTES OPERACIONALES
 >
-> Las entidades de asesoría de inversión que realicen tratamiento de datos personales en los términos señalados, y tengan más de 100 clientes activos en Chile deberán comunicar a esta Comisión los incidentes operacionales que afecten la información de la entidad o los datos personales de sus clientes, tales como, problemas tecnológicos que afecten la seguridad de la información; virus o malware detectados en los activos de información críticos; pérdidas o fugas de información de la entidad o sus clientes, entre otros.
+> Las entidades de asesoría de inversión que tengan más de 100 clientes activos en Chile o más de 100.000 seguidores deberán comunicar a esta Comisión los incidentes operacionales que afecten la información de la entidad o los datos personales de sus clientes, tales como, problemas tecnológicos que afecten la seguridad de la información; virus o malware detectados en los activos de información críticos; pérdidas o fugas de información de la entidad o sus clientes, entre otros.
 >
 > Para estos efectos, las entidades deberán usar el formato del Reporte de Incidentes Operacionales (RIO) del Anexo N°2 de esta normativa, y dispondrán de un plazo de 2 horas transcurridas desde que la entidad tomó conocimiento del hecho. El plazo señalado es solo para efectos de notificar a la Comisión de la ocurrencia del incidente con la información disponible en ese momento y no implica que la entidad deba tener resuelto el problema, haber tomado determinadas acciones o tener aclarada las causas del incidente, lo que podría ser materia de reportes de seguimiento del incidente enviados la CMF, posteriormente.
 >
@@ -600,7 +591,7 @@ The board of directors or equivalent body must designate an officer in charge an
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate; operational incident reporting is part of the entity's risk-management obligations.
 - NCG 502 Annex N° 2 — Operational Incident Report (RIO) form required for incident notifications.
-- NCG 502 §IV.A.4 — proportionality table establishing the 100-active-client and personal-data-processing thresholds that trigger the reporting obligation.
+- NCG 502 §IV.A.4 — proportionality table establishing the 100-active-client and 100,000-follower thresholds that trigger the reporting obligation.
 - NCG 502 §IV.A.2.2 — cybersecurity guidelines whose breach events (malware, phishing, etc.) are typical triggers for reporting under this section.
 
-> **Source:** NCG 502 §IV.A.5 (12-ene-2024).
+> **Source:** NCG 502 §IV.A.5 (12-ene-2024), as amended by NCG 524 item 6 (02-dic-2024).
