@@ -92,6 +92,12 @@ are flagged inline.
 - *Guarantees for intermediation and custody services* — Once business-volume thresholds are reached, intermediation and order routing services must constitute bank guarantees or insurance policies. **See:**
   - `corpus/21521-fintech/titulo-02-servicios.md#article-10` — Ley 21.521 Art. 10 (guarantee requirements for intermediation, order routing, and custody services).
 
+- *Governance and risk management for investment advisory PSFs (in practice)* — Board must approve and periodically review risk-management, internal-control, and compliance policies. NCG 502 §IV.A covers the board responsibility matrix, mandatory policies, dedicated risk and compliance functions, and internal audit requirements.
+  NCG 502 §IV.A — see `corpus/ncg/502-psf-obligations/seccion-04a-gobierno-asesoria-inversion.md`.
+
+- *Disclosure obligations for investment advisory (in practice)* — NCG 502 §III sets out per-service disclosure rules: pre-contractual information sheets, fee schedules, conflict-of-interest disclosures, and ongoing reporting to customers.
+  NCG 502 §III — see `corpus/ncg/502-psf-obligations/seccion-03-divulgacion.md`.
+
 ---
 
 ## Topic: AI-Based Recommendations
@@ -276,6 +282,18 @@ are flagged inline.
 - *Omitting breach notification is a serious infringement* — currently summarized; await H4 for literal translation: **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34-ter` — Ley 19.628 Art. 34 ter(k) (serious infringement: omitting communications or records required for security breaches under Art. 14 quinquies).
 
+- *Operational incident reporting to CMF for investment advisers (in practice)* — Investment advisory PSFs must report operational incidents to CMF using the standard Anexo N°2 form; escalation thresholds and deadlines are set out in §IV.A.5.
+  NCG 502 §IV.A.5 / Anexo N°2 — see `corpus/ncg/502-psf-obligations/seccion-04a-gobierno-asesoria-inversion.md` and `corpus/ncg/502-psf-obligations/anexo-02-reporte-incidentes.md`.
+
+- *Operational incident reporting for platforms/ATS (in practice)* — Crowdfunding platform and ATS PSFs must notify CMF of operational incidents within prescribed deadlines; the reporting template is Anexo N°2.
+  NCG 502 §IV.C.7 / Anexo N°2 — see `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md` and `corpus/ncg/502-psf-obligations/anexo-02-reporte-incidentes.md`.
+
+- *Operational incident reporting for intermediation/custody (in practice)* — Intermediation and custody PSFs follow the same CMF incident-report framework; §IV.E.8 specifies the applicable deadlines and severity thresholds.
+  NCG 502 §IV.E.8 / Anexo N°2 — see `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md` and `corpus/ncg/502-psf-obligations/anexo-02-reporte-incidentes.md`.
+
+- *Operational loss reporting (in practice)* — All PSFs must maintain an operational-loss register and report aggregate losses to CMF periodically using the Anexo N°3 form.
+  NCG 502 Anexo N°3 — see `corpus/ncg/502-psf-obligations/anexo-03-reporte-perdidas.md`.
+
 ---
 
 ## Topic: Automated Decision-Making
@@ -384,6 +402,18 @@ are flagged inline.
 - *SFA information-based service providers: separate CMF registry* — Providers wishing to access SFA data register in a separate CMF registry (distinct from the Financial-Service Providers Registry). **See:**
   - `corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-19` — Ley 21.521 Art. 19 (Information-Based Service Provider registry; CMF approval within 6 months).
 
+- *Registration application requirements (in practice)* — NCG 502 §I.A specifies the full set of antecedents a PSF must submit: completed CMF form, corporate and shareholder documents, evidence of exclusive purpose, and a conformity declaration.
+  NCG 502 §I.A — see `corpus/ncg/502-psf-obligations/seccion-01-registro.md`.
+
+- *Cancellation of registration (in practice)* — NCG 502 §I.B details the grounds and procedures by which CMF may cancel a PSF's registration, including remediation periods and winding-down obligations.
+  NCG 502 §I.B — see `corpus/ncg/502-psf-obligations/seccion-01-registro.md`.
+
+- *Exceptions to registration (in practice)* — NCG 502 §I.C sets out the specific activities and thresholds that fall outside the mandatory registration requirement.
+  NCG 502 §I.C — see `corpus/ncg/502-psf-obligations/seccion-01-registro.md`.
+
+- *Authorisation requirements by service type (in practice)* — NCG 502 §II sets out the pre-conditions CMF evaluates (governance documentation, systems evidence, capital) before granting authorisation, distinguishing investment advisory, credit advisory, platforms/ATS, order routing, and intermediation/custody.
+  NCG 502 §II — see `corpus/ncg/502-psf-obligations/seccion-02-autorizacion.md`.
+
 ---
 
 ## Topic: Data Processor / Outsourcing
@@ -405,3 +435,100 @@ are flagged inline.
 
 - *Cession vs. processor relationship* — Cession of personal data (transferring data to another controller) is distinct from the processor relationship; cession requires its own consent or legal basis and makes the transferee a controller. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-15` — Ley 19.628 Art. 15 (cession of personal data: lawful bases, written form, consent where required; null-and-void cession without required consent).
+
+- *Outsourcing controls for platforms/ATS (in practice)* — PSFs operating crowdfunding platforms or alternative trading systems must apply specific outsourcing-management procedures: provider due diligence, written contracts with continuity clauses, right of audit, and concentration-risk limits.
+  NCG 502 §IV.C.3.3 — see `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.
+
+- *Outsourcing controls for intermediation/custody (in practice)* — Intermediation and custody PSFs face equivalent outsourcing requirements, with additional rules for custody-chain sub-delegation.
+  NCG 502 §IV.E.4.3 — see `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.
+
+---
+
+## Topic: Cybersecurity
+
+- *Security standards for SFA platform access* — Platforms accessing SFA data must comply with CMF-set information-security, cybersecurity, and risk-management standards. **See:**
+  - `corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-22` — Ley 21.521 Art. 22 (minimum security, cybersecurity, and risk-management standards; sensitive data classification under Ley 19.628 must be considered).
+
+- *Security measures as data-protection prerequisite* — Controllers must adopt and maintain security measures (pseudonymization, encryption, resilience, restoration, regular testing) before a breach occurs. **See:**
+  - `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-14-quinquies` — Ley 19.628 Art. 14 quinquies (security measures: confidentiality, integrity, availability, resilience; burden of proof on controller).
+
+- *Cybersecurity procedures for platforms/ATS (in practice)* — PSFs operating crowdfunding platforms or ATS must implement documented information-security and cybersecurity procedures covering access controls, vulnerability management, penetration testing, and security-event monitoring.
+  NCG 502 §IV.C.3.1 — see `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.
+
+- *Cybersecurity procedures for investment advisory PSFs (in practice)* — Investment advisory PSFs must maintain equivalent information-security controls; §IV.A.2.2 specifies the minimum policy requirements applicable to their governance framework.
+  NCG 502 §IV.A.2.2 — see `corpus/ncg/502-psf-obligations/seccion-04a-gobierno-asesoria-inversion.md`.
+
+- *Cybersecurity procedures for intermediation/custody PSFs (in practice)* — Intermediation and custody PSFs must apply cybersecurity controls aligned with the risks of their activity, including network segmentation and endpoint protection.
+  NCG 502 §IV.E.4.1 — see `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.
+
+---
+
+## Topic: Risk Management / Governance
+
+- *Governance and risk management (law requirement)* — CMF may require governance structures and risk-management processes as a condition of authorisation. **See:**
+  - `corpus/21521-fintech/titulo-02-servicios.md#article-12` — Ley 21.521 Art. 12 (governance and risk-management requirements set by CMF regulation).
+
+- *Board responsibility and policies for investment advisory PSFs (in practice)* — The board must formally approve the risk-management framework, internal-control policies, compliance function charter, and conflict-of-interest policy. The risk and compliance functions must report directly to the board or a board committee.
+  NCG 502 §IV.A — see `corpus/ncg/502-psf-obligations/seccion-04a-gobierno-asesoria-inversion.md`.
+
+- *Governance for credit advisory PSFs (in practice)* — Parallel board-responsibility and policy-approval requirements apply to credit advisory PSFs, with additional rules for model governance and fair-lending policies.
+  NCG 502 §IV.B — see `corpus/ncg/502-psf-obligations/seccion-04b-gobierno-asesoria-crediticia.md`.
+
+- *Governance for crowdfunding platforms and ATS (in practice)* — Platforms and ATS must adopt board-approved operational, risk-management, and technology policies; §IV.C addresses project-vetting controls, investor eligibility procedures, and platform-integrity rules.
+  NCG 502 §IV.C — see `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.
+
+- *Governance for order-routing PSFs (in practice)* — Order-routing providers must maintain best-execution policies, conflict-of-interest controls, and operational-resilience frameworks approved by their board.
+  NCG 502 §IV.D — see `corpus/ncg/502-psf-obligations/seccion-04d-gobierno-enrutamiento.md`.
+
+- *Governance for intermediation and custody PSFs (in practice)* — Intermediation and custody PSFs face the most extensive governance requirements: segregation of client assets, custody controls, transaction-monitoring policies, and an independent internal audit function.
+  NCG 502 §IV.E — see `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.
+
+---
+
+## Topic: Business Continuity
+
+- *Business continuity for platforms/ATS (in practice)* — Crowdfunding platforms and ATS must maintain a documented business continuity plan (BCP) and disaster recovery plan (DRP), tested at least annually, covering critical systems and customer-data recovery.
+  NCG 502 §IV.C.3.2 — see `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.
+
+- *Business continuity for intermediation/custody PSFs (in practice)* — Intermediation and custody PSFs must maintain equivalent BCP/DRP arrangements, with additional requirements for post-recovery reconciliation of custody records.
+  NCG 502 §IV.E.4.2 — see `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.
+
+---
+
+## Topic: Capital Requirements
+
+- *Minimum equity (law requirement)* — CMF sets minimum equity thresholds per service type; providers must maintain compliance throughout operation. **See:**
+  - `corpus/21521-fintech/titulo-02-servicios.md#article-11` — Ley 21.521 Art. 11 (minimum equity requirements; CMF may adjust by regulation).
+
+- *Capital classification (in practice)* — NCG 502 §V.A classifies eligible capital components (paid-in capital, retained earnings, reserves) and sets the deductions that reduce regulatory capital.
+  NCG 502 §V.A — see `corpus/ncg/502-psf-obligations/seccion-05-capital-garantias.md`.
+
+- *Minimum equity by service type (in practice)* — NCG 502 §V.B specifies the absolute minimum-equity floor for each PSF service category; providers below the threshold must remediate within the prescribed period or cease operations.
+  NCG 502 §V.B — see `corpus/ncg/502-psf-obligations/seccion-05-capital-garantias.md`.
+
+- *Risk-weighted assets and capital charge (in practice)* — NCG 502 §V.D sets out the risk-weighting framework: credit risk, operational risk, market risk, and specific charges by asset class; §V.D.4 covers capital charges for crypto-asset exposures.
+  NCG 502 §V.D — see `corpus/ncg/502-psf-obligations/seccion-05-capital-garantias.md`.
+
+- *Crypto-asset capital charge (in practice)* — PSFs holding or intermediating crypto-assets must apply the highest risk-weight tier under §V.D.4; §V.D.4.1 lists Type-A crypto-assets (those qualifying for a lower charge if certain criteria are met).
+  NCG 502 §V.D.4 / §V.D.4.1 — see `corpus/ncg/502-psf-obligations/seccion-05-capital-garantias.md`.
+
+---
+
+## Topic: Disclosure Obligations (PSF)
+
+- *Disclosure obligations for each PSF service type (in practice)* — NCG 502 §III operationalises the information-delivery requirements of Ley 21.521: pre-contractual key-information sheets, tariff schedules, risk warnings, conflict-of-interest disclosures, and post-trade or periodic reporting vary by service.
+  NCG 502 §III — see `corpus/ncg/502-psf-obligations/seccion-03-divulgacion.md`.
+
+---
+
+## Topic: Crypto-Assets
+
+- *Crypto-asset capital charge (in practice)* — PSFs with crypto-asset exposures must hold capital calculated under the highest risk-weight tier; §V.D.4.1 defines the Type-A crypto-asset list eligible for a reduced charge if specific custody and valuation conditions are satisfied.
+  NCG 502 §V.D.4 / §V.D.4.1 — see `corpus/ncg/502-psf-obligations/seccion-05-capital-garantias.md`.
+
+---
+
+## Topic: Operational Capacity
+
+- *Operational capacity and final provisions (in practice)* — NCG 502 §VI–IX cover the operational-capacity self-assessment obligations PSFs must perform before commencing services, the CMF's ongoing reporting requirements, transitional provisions, and the entry-into-force rules.
+  NCG 502 §VI–IX — see `corpus/ncg/502-psf-obligations/seccion-06-09-disposiciones-finales.md`.

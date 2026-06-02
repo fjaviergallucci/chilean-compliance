@@ -69,6 +69,19 @@ jobs:
             indexes/glossary.md \
             corpus/19628-data-protection-consolidated
 
+      - name: Quality gate — NCG 502 section parity
+        run: |
+          python -m tools.check_ncg_parity \
+            corpus/ncg/502-psf-obligations/_toc.json \
+            corpus/ncg/502-psf-obligations
+
+      - name: Quality gate — NCG 502 round-trip (baseline fidelity)
+        run: |
+          python -m tools.check_roundtrip \
+            "sources/NCG 502.pdf" \
+            corpus/ncg/502-psf-obligations \
+            --mode ncg --threshold 0.80
+
   validate-plugin:
     name: claude plugin validate
     runs-on: ubuntu-latest

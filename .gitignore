@@ -16,3 +16,6 @@ desktop.ini
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Internal planning docs (specs/plans) — kept local, not published
+docs/superpowers/

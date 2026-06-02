@@ -1,0 +1,587 @@
+[
+  {
+    "number": "I",
+    "title": "Registro de Prestadores de Servicios Financieros",
+    "page": 5
+  },
+  {
+    "number": "I.A",
+    "title": "Solicitud de Inscripción",
+    "page": 5
+  },
+  {
+    "number": "I.B",
+    "title": "Cancelación de la Inscripción",
+    "page": 8
+  },
+  {
+    "number": "I.C",
+    "title": "Excepciones",
+    "page": 9
+  },
+  {
+    "number": "I.C.1",
+    "title": "Del Requisito de Persona Jurídica",
+    "page": 9
+  },
+  {
+    "number": "I.C.2",
+    "title": "Del Giro Exclusivo y Autorización de Servicios",
+    "page": 9
+  },
+  {
+    "number": "I.C.3",
+    "title": "Del Domicilio en Chile y la Autorización de Servicios",
+    "page": 10
+  },
+  {
+    "number": "II",
+    "title": "Autorización para la Prestación de Servicios",
+    "page": 11
+  },
+  {
+    "number": "II.A",
+    "title": "Asesoría de Inversión",
+    "page": 11
+  },
+  {
+    "number": "II.B",
+    "title": "Asesoría Crediticia",
+    "page": 13
+  },
+  {
+    "number": "II.C",
+    "title": "Plataforma de Financiamiento Colectivo",
+    "page": 14
+  },
+  {
+    "number": "II.D",
+    "title": "Sistema Alternativo de Transacción",
+    "page": 15
+  },
+  {
+    "number": "II.E",
+    "title": "Enrutamiento de Órdenes",
+    "page": 17
+  },
+  {
+    "number": "II.F",
+    "title": "Intermediación y Custodia de Instrumentos Financieros",
+    "page": 18
+  },
+  {
+    "number": "III",
+    "title": "Obligaciones de Divulgación y Entrega de Información",
+    "page": 19
+  },
+  {
+    "number": "III.A",
+    "title": "Asesoría de Inversión",
+    "page": 20
+  },
+  {
+    "number": "III.B",
+    "title": "Asesoría Crediticia",
+    "page": 21
+  },
+  {
+    "number": "III.C",
+    "title": "Plataforma de Financiamiento Colectivo",
+    "page": 22
+  },
+  {
+    "number": "III.D",
+    "title": "Sistema Alternativo de Transacción",
+    "page": 24
+  },
+  {
+    "number": "III.E",
+    "title": "Enrutamiento de Órdenes",
+    "page": 26
+  },
+  {
+    "number": "III.F",
+    "title": "Intermediación de Instrumentos Financieros",
+    "page": 27
+  },
+  {
+    "number": "III.G",
+    "title": "Custodia de Instrumentos Financieros",
+    "page": 28
+  },
+  {
+    "number": "IV",
+    "title": "Gobierno Corporativo y Gestión de Riesgos",
+    "page": 29
+  },
+  {
+    "number": "IV.A",
+    "title": "Asesoría de Inversión",
+    "page": 29
+  },
+  {
+    "number": "IV.A.1",
+    "title": "Responsabilidad del Directorio u Órgano Equivalente",
+    "page": 29
+  },
+  {
+    "number": "IV.A.2",
+    "title": "Políticas y Procedimientos",
+    "page": 30
+  },
+  {
+    "number": "IV.A.2.1",
+    "title": "Políticas y Procedimientos de Gestión de Riesgos y Control Interno",
+    "page": 31
+  },
+  {
+    "number": "IV.A.2.2",
+    "title": "Riesgo Operacional, Seguridad de la Información y Ciberseguridad",
+    "page": 33
+  },
+  {
+    "number": "IV.A.3",
+    "title": "Gestión de Riesgos",
+    "page": 34
+  },
+  {
+    "number": "IV.A.3.1",
+    "title": "Función de Gestión de Riesgos",
+    "page": 34
+  },
+  {
+    "number": "IV.A.3.2",
+    "title": "Plan de Gestión de Riesgos",
+    "page": 34
+  },
+  {
+    "number": "IV.A.4",
+    "title": "Proporcionalidad",
+    "page": 35
+  },
+  {
+    "number": "IV.A.5",
+    "title": "Información de Incidentes Operacionales",
+    "page": 37
+  },
+  {
+    "number": "IV.B",
+    "title": "Asesoría Crediticia",
+    "page": 38
+  },
+  {
+    "number": "IV.B.1",
+    "title": "Responsabilidad del Directorio u Órgano Equivalente",
+    "page": 38
+  },
+  {
+    "number": "IV.B.2",
+    "title": "Políticas, Procedimientos y Mecanismos de Control",
+    "page": 39
+  },
+  {
+    "number": "IV.B.2.1",
+    "title": "Políticas y Procedimientos de Gestión de Riesgos y Control Interno",
+    "page": 40
+  },
+  {
+    "number": "IV.B.2.2",
+    "title": "Riesgo Operacional",
+    "page": 42
+  },
+  {
+    "number": "IV.B.3",
+    "title": "Programa de Gestión de Riesgos, Control y Auditoría Interna",
+    "page": 43
+  },
+  {
+    "number": "IV.B.3.1",
+    "title": "Función de Gestión de Riesgos",
+    "page": 43
+  },
+  {
+    "number": "IV.B.3.2",
+    "title": "Plan de Gestión de Riesgos",
+    "page": 44
+  },
+  {
+    "number": "IV.B.3.3",
+    "title": "Función de Auditoría Interna",
+    "page": 45
+  },
+  {
+    "number": "IV.B.4",
+    "title": "Proporcionalidad",
+    "page": 46
+  },
+  {
+    "number": "IV.B.5",
+    "title": "Información de Incidentes Operacionales",
+    "page": 48
+  },
+  {
+    "number": "IV.C",
+    "title": "Plataformas de Financiamiento Colectivo y Sistemas Alternativos de Transacción",
+    "page": 49
+  },
+  {
+    "number": "IV.C.1",
+    "title": "Rol del Directorio u Órgano Equivalente",
+    "page": 49
+  },
+  {
+    "number": "IV.C.2",
+    "title": "Políticas, Procedimientos y Mecanismos de Control",
+    "page": 51
+  },
+  {
+    "number": "IV.C.2.1",
+    "title": "Aspectos Generales",
+    "page": 51
+  },
+  {
+    "number": "IV.C.2.2",
+    "title": "Políticas y Procedimientos Mínimos a Implementar",
+    "page": 51
+  },
+  {
+    "number": "IV.C.3",
+    "title": "Riesgo Operacional",
+    "page": 54
+  },
+  {
+    "number": "IV.C.3.1",
+    "title": "Seguridad de la Información y Ciberseguridad",
+    "page": 55
+  },
+  {
+    "number": "IV.C.3.1.1",
+    "title": "Disposiciones Generales",
+    "page": 55
+  },
+  {
+    "number": "IV.C.3.2",
+    "title": "Continuidad del Negocio",
+    "page": 60
+  },
+  {
+    "number": "IV.C.3.2.1",
+    "title": "Disposiciones Generales",
+    "page": 60
+  },
+  {
+    "number": "IV.C.3.2.2",
+    "title": "Procedimientos para la Gestión de la Continuidad de Negocios",
+    "page": 60
+  },
+  {
+    "number": "IV.C.3.3",
+    "title": "Externalización de Servicios",
+    "page": 63
+  },
+  {
+    "number": "IV.C.3.3.1",
+    "title": "Riesgos de Externalización",
+    "page": 63
+  },
+  {
+    "number": "IV.C.3.3.2",
+    "title": "Procedimientos para la Gestión de Servicios Externalizados",
+    "page": 63
+  },
+  {
+    "number": "IV.C.4",
+    "title": "Función de Gestión de Riesgos",
+    "page": 67
+  },
+  {
+    "number": "IV.C.4.1",
+    "title": "Disposiciones Generales",
+    "page": 67
+  },
+  {
+    "number": "IV.C.4.2",
+    "title": "Proceso de Gestión de Riesgos",
+    "page": 68
+  },
+  {
+    "number": "IV.C.5",
+    "title": "Función de Auditoría Interna",
+    "page": 69
+  },
+  {
+    "number": "IV.C.6",
+    "title": "Proporcionalidad",
+    "page": 71
+  },
+  {
+    "number": "IV.C.7",
+    "title": "Información de Incidentes Operacionales",
+    "page": 73
+  },
+  {
+    "number": "IV.C.7.1",
+    "title": "Registro y Comunicación de Incidentes Operacionales",
+    "page": 73
+  },
+  {
+    "number": "IV.C.7.2",
+    "title": "Registro y Comunicación de Pérdidas Operacionales",
+    "page": 74
+  },
+  {
+    "number": "IV.D",
+    "title": "Enrutamiento de Órdenes",
+    "page": 76
+  },
+  {
+    "number": "IV.D.1",
+    "title": "Responsabilidad del Directorio u Órgano Equivalente",
+    "page": 76
+  },
+  {
+    "number": "IV.D.2",
+    "title": "Políticas y Procedimientos",
+    "page": 77
+  },
+  {
+    "number": "IV.D.2.1",
+    "title": "Políticas y Procedimientos de Gestión de Riesgos y Control Interno",
+    "page": 78
+  },
+  {
+    "number": "IV.D.2.2",
+    "title": "Riesgo Operacional",
+    "page": 79
+  },
+  {
+    "number": "IV.D.3",
+    "title": "Gestión de Riesgos",
+    "page": 79
+  },
+  {
+    "number": "IV.D.3.1",
+    "title": "Función de Gestión de Riesgos",
+    "page": 79
+  },
+  {
+    "number": "IV.D.3.2",
+    "title": "Plan de Gestión de Riesgos",
+    "page": 80
+  },
+  {
+    "number": "IV.D.4",
+    "title": "Proporcionalidad",
+    "page": 81
+  },
+  {
+    "number": "IV.E",
+    "title": "Intermediación y Custodia de Instrumentos Financieros",
+    "page": 83
+  },
+  {
+    "number": "IV.E.1",
+    "title": "Responsabilidad del Directorio u Órgano Equivalente",
+    "page": 83
+  },
+  {
+    "number": "IV.E.2",
+    "title": "Gestión de Riesgos",
+    "page": 85
+  },
+  {
+    "number": "IV.E.2.1",
+    "title": "Función de Gestión de Riesgos",
+    "page": 86
+  },
+  {
+    "number": "IV.E.2.2",
+    "title": "Políticas y Procedimientos de Gestión de Riesgos",
+    "page": 87
+  },
+  {
+    "number": "IV.E.3",
+    "title": "Organización y Control Interno",
+    "page": 88
+  },
+  {
+    "number": "IV.E.3.1",
+    "title": "Políticas y Procedimientos",
+    "page": 88
+  },
+  {
+    "number": "IV.E.4",
+    "title": "Riesgo Operacional",
+    "page": 91
+  },
+  {
+    "number": "IV.E.4.1",
+    "title": "Seguridad de la Información y Ciberseguridad",
+    "page": 92
+  },
+  {
+    "number": "IV.E.4.1.1",
+    "title": "Disposiciones Generales",
+    "page": 92
+  },
+  {
+    "number": "IV.E.4.2",
+    "title": "Continuidad del Negocio",
+    "page": 97
+  },
+  {
+    "number": "IV.E.4.2.1",
+    "title": "Disposiciones Generales",
+    "page": 97
+  },
+  {
+    "number": "IV.E.4.2.2",
+    "title": "Procedimientos para la Gestión de la Continuidad de Negocios",
+    "page": 98
+  },
+  {
+    "number": "IV.E.4.3",
+    "title": "Externalización de Servicios",
+    "page": 100
+  },
+  {
+    "number": "IV.E.4.3.1",
+    "title": "Riesgos de Externalización",
+    "page": 100
+  },
+  {
+    "number": "IV.E.4.3.2",
+    "title": "Procedimientos para la Gestión de Servicios Externalizados",
+    "page": 100
+  },
+  {
+    "number": "IV.E.5",
+    "title": "Función de Auditoría Interna",
+    "page": 104
+  },
+  {
+    "number": "IV.E.6",
+    "title": "Proporcionalidad",
+    "page": 105
+  },
+  {
+    "number": "IV.E.7",
+    "title": "Otras Disposiciones",
+    "page": 107
+  },
+  {
+    "number": "IV.E.8",
+    "title": "Información de Incidentes Operacionales",
+    "page": 107
+  },
+  {
+    "number": "IV.E.8.1",
+    "title": "Registro y Comunicación de Incidentes Operacionales",
+    "page": 107
+  },
+  {
+    "number": "IV.E.8.2",
+    "title": "Registro y Comunicación de Pérdidas Operacionales",
+    "page": 108
+  },
+  {
+    "number": "V",
+    "title": "Capital y Garantías",
+    "page": 110
+  },
+  {
+    "number": "V.A",
+    "title": "Clasificación de Acuerdo con el Volumen de Negocios",
+    "page": 110
+  },
+  {
+    "number": "V.B",
+    "title": "Requisito de Patrimonio Mínimo y Garantías",
+    "page": 111
+  },
+  {
+    "number": "V.C",
+    "title": "Patrimonio Ajustado",
+    "page": 114
+  },
+  {
+    "number": "V.D",
+    "title": "Metodología de Cómputo de los Activos Ponderados por Riesgo Financiero y Operacional",
+    "page": 115
+  },
+  {
+    "number": "V.D.1",
+    "title": "Requisito de Patrimonio (o Garantías) por Riesgo Operacional",
+    "page": 115
+  },
+  {
+    "number": "V.D.2",
+    "title": "Requisito de Patrimonio por Riesgo de Mercado",
+    "page": 116
+  },
+  {
+    "number": "V.D.2.1",
+    "title": "Tasa de Interés",
+    "page": 116
+  },
+  {
+    "number": "V.D.2.2",
+    "title": "Materias Primas",
+    "page": 117
+  },
+  {
+    "number": "V.D.2.3",
+    "title": "Moneda Extranjera",
+    "page": 118
+  },
+  {
+    "number": "V.D.2.4",
+    "title": "Acciones e Índices Accionarios.",
+    "page": 119
+  },
+  {
+    "number": "V.D.3",
+    "title": "Requisito de Patrimonio por Riesgo de Crédito",
+    "page": 119
+  },
+  {
+    "number": "V.D.3.1",
+    "title": "Requisito de Patrimonio por Riesgo de Contraparte",
+    "page": 120
+  },
+  {
+    "number": "V.D.4",
+    "title": "Requisito de Patrimonio de Riesgo de Crédito y Mercado para Criptoactivos",
+    "page": 122
+  },
+  {
+    "number": "V.D.4.1",
+    "title": "Listado de Criptoactivos Tipo A",
+    "page": 123
+  },
+  {
+    "number": "V.D.5",
+    "title": "Disposiciones Generales",
+    "page": 123
+  },
+  {
+    "number": "VI",
+    "title": "Capacidad Operacional",
+    "page": 124
+  },
+  {
+    "number": "VII",
+    "title": "Actividades Inherentes",
+    "page": 125
+  },
+  {
+    "number": "VIII",
+    "title": "Derogación",
+    "page": 126
+  },
+  {
+    "number": "IX",
+    "title": "Vigencia",
+    "page": 126
+  }
+]
