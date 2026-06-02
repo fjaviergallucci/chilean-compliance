@@ -1,6 +1,6 @@
 # NCG 502 — Sección IV.B: Corporate Governance & Risk Management — Credit Advisory (Gobierno Corporativo y Gestión de Riesgos — Asesoría Crediticia)
 
-**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
+**Regulation:** NCG 502 consolidated — baseline 12-ene-2024 as amended by NCG 524 (02-dic-2024). Amended sections carry a `> **Source:**` footer naming the 524 item(s); see `../524-amendments-changelog/changes.md`.
 _law:_ NCG-502
 
 ---
@@ -69,7 +69,7 @@ k) Implement remuneration and compensation policies for those who provide servic
 
 l) The board of directors or equivalent body must evaluate the appropriateness of forming a Risk Management Committee or a similar body that allows it to address and monitor relevant business matters, relating to matters such as audit, information security, among others. The grounds considered by the board of directors or equivalent body for evaluating the formation of committees or similar bodies must be duly documented.
 
-Without prejudice to the foregoing, the following committees, if constituted, must be composed of at least one member of the board of directors or equivalent body: the Risk Management Committee and the Audit Committee. No director (or member of the equivalent body) may be a member of both the Risk Management Committee and the Audit Committee at the same time.
+Without prejudice to the foregoing, the following committees, if constituted, must be composed of at least one member of the board of directors or equivalent body: the Risk Management Committee and the Audit Committee. In the case of entities whose direction rests with a collegiate body, no director may be a member of both the Risk Management Committee and the Audit Committee at the same time.
 
 m) Ensure that the minutes or equivalent documentation reflect the principal matters addressed in the sessions of the board of directors or equivalent body and the committees. All material prepared or presented to the board of directors or equivalent body or the committees must be duly documented and archived in accordance with the applicable general regulations on the matter, and must be permanently available for examination at the request of the Commission (CMF).
 
@@ -113,7 +113,7 @@ m) Ensure that the minutes or equivalent documentation reflect the principal mat
 >
 > l) El directorio u órgano equivalente deberá evaluar la pertinencia de conformar un Comité de Gestión de Riesgos o una instancia similar que le permitan tratar y monitorear aspectos relevantes de los negocios, referidos a materias tales como auditoría, seguridad de la información, entre otros. Los fundamentos considerados por el directorio u órgano equivalente para evaluar la conformación de comités o instancias similares deberán están debidamente documentados.
 >
-> Sin perjuicio de ello, los siguientes comités, en caso de ser constituidos, deberán estar integrados al menos por un integrante del directorio u órgano equivalente: Comité de Gestión de Riesgos y Comité de Auditoría. Ningún director (o miembro del órgano equivalente) podrá ser parte del Comité de Gestión de Riesgos y de Auditoría al mismo tiempo.
+> Sin perjuicio de ello, los siguientes comités, en caso de ser constituidos, deberán estar integrados al menos por un integrante del directorio u órgano equivalente: Comité de Gestión de Riesgos y Comité de Auditoría. Tratándose de entidades cuya dirección recae en un órgano colegiado, ningún director (o miembro del órgano equivalente) podrá ser parte del Comité de Gestión de Riesgos y de Auditoría al mismo tiempo.
 >
 > m) Asegurar que las actas o documentación equivalente den cuenta de las principales temáticas tratadas en las sesiones del directorio u órgano equivalente y los comités. Todo el material que se elabore o presente al directorio u órgano equivalente o los comités, deberá estar debidamente documentado y archivado de conformidad a las normas generales aplicables en la materia, y estar permanentemente disponible para su examen a solicitud de esta Comisión."
 
@@ -124,7 +124,7 @@ m) Ensure that the minutes or equivalent documentation reflect the principal mat
 - NCG 502 §IV.B.3.1 — risk-management function whose implementation the board must establish under item i)(3).
 - NCG 502 §IV.B.3.3 — internal-audit function whose implementation the board must establish under item i)(4).
 
-> **Source:** NCG 502 §IV.B.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.B.1 (12-ene-2024), as amended by NCG 524 item 7 (02-dic-2024).
 
 ---
 
@@ -145,7 +145,7 @@ a) They must relate to the number or type of clients, and to the volume of trans
 
 b) Policies must set out the general principles and guidelines established by the board of directors or equivalent body to guide the activities of the organisation.
 
-c) Procedures must define how to carry out a process, with the aim of ensuring compliance with the policies approved by the board of directors, incorporating at least: the description of the principal activities that compose it and the identification of those responsible; the determination of those responsible for supervising and controlling the outcome of the activities carried out; documentation evidencing the execution of the activities that make up the procedures; the definition and description of the controls associated with those activities. In the case of outsourced activities, there must always be a person responsible within the organisation for the control of those activities.
+c) Procedures must define how to carry out a process, with the aim of ensuring compliance with the policies approved by the board of directors or equivalent body, incorporating at least: the description of the principal activities that compose it and the identification of those responsible; the determination of those responsible for supervising and controlling the outcome of the activities carried out; documentation evidencing the execution of the activities that make up the procedures; the definition and description of the controls associated with those activities. In the case of outsourced activities, there must always be a person responsible within the organisation for the control of those activities.
 
 d) Policies, procedures, and control mechanisms must be formally established and documented, being consistent with the risk-appetite levels defined by the entity.
 
@@ -165,7 +165,7 @@ e) Operational risk-management policies and procedures must form part of the ent
 >
 > b) Las políticas deberán exponer los principios generales y directrices establecidas por el directorio u órgano equivalente para orientar las actividades de la organización.
 >
-> c) Los procedimientos deberán definir cómo llevar a cabo un proceso, con el fin de asegurar el cumplimiento de las políticas aprobadas por el directorio, incorporando, al menos: la descripción de las actividades principales que lo componen y la identificación de sus responsables; determinación de los responsables de supervisar y controlar el resultado de las actividades ejecutadas; documentación que evidencie la ejecución de las actividades que conforman los procedimientos; definición y descripción de los controles asociados a dichas actividades. En el caso de actividades externalizadas, siempre deberá existir una persona responsable dentro de la organización respecto al control de estas.
+> c) Los procedimientos deberán definir cómo llevar a cabo un proceso, con el fin de asegurar el cumplimiento de las políticas aprobadas por el directorio u órgano equivalente, incorporando, al menos: la descripción de las actividades principales que lo componen y la identificación de sus responsables; determinación de los responsables de supervisar y controlar el resultado de las actividades ejecutadas; documentación que evidencie la ejecución de las actividades que conforman los procedimientos; definición y descripción de los controles asociados a dichas actividades. En el caso de actividades externalizadas, siempre deberá existir una persona responsable dentro de la organización respecto al control de estas.
 >
 > d) Las políticas, procedimientos y mecanismos de control deberán estar formalmente establecidos y documentados, siendo consistentes con los niveles de apetito por riesgo que haya definido la entidad.
 >
@@ -177,7 +177,9 @@ e) Operational risk-management policies and procedures must form part of the ent
 - NCG 502 §IV.B.2.2 — specific requirements for operational risk, information security, and cybersecurity.
 - NCG 502 §IV.B.3.1 — risk-management function responsible for ensuring policy accuracy and currency.
 
-> **Source:** NCG 502 §IV.B.2 (12-ene-2024).
+> **TN:** NCG 524 item 25 (literal y) restates verbatim the same instruction as item 8 (literal h): insert "u órgano equivalente" in B.2 literal c) between "por el directorio" and "incorporando, al menos". The insertion is applied once (see literal c) above, "aprobadas por el directorio u órgano equivalente, incorporando, al menos"); item 25 is therefore a redundant duplicate amendment and is a no-op in the consolidated text. Both items are listed in the Source footer for traceability.
+
+> **Source:** NCG 502 §IV.B.2 (12-ene-2024), as amended by NCG 524 items 8 and 25 (02-dic-2024).
 
 ---
 
@@ -467,7 +469,7 @@ c) Definition of the control mechanisms to mitigate the inherent risks identifie
 
 d) Information and communication procedures for risk management that ensure that relevant information about the effectiveness of the mitigating controls and compliance with risk-appetite levels reaches the board of directors or equivalent body and all interested parties.
 
-e) A continuous risk-management improvement programme, with the aim of evaluating the need to make changes in response to new economic and financial scenarios facing the entity, changes in the risk profile, and as a result of the implementation or changes in international standards or best practices.
+e) A continuous risk-management improvement programme, with the aim of evaluating the need to make changes in response to new economic and financial scenarios facing the entity, changes in the risk profile, and as a result of the implementation or changes in international standards or best practices. Where the entity belongs to a business group, operational-risk management may be performed by a person of that group, provided that such person maintains its independence from the group's internal-audit areas.
 
 ### Original Spanish
 
@@ -495,13 +497,13 @@ e) A continuous risk-management improvement programme, with the aim of evaluatin
 >
 > d) Procedimientos de información y comunicación de la gestión de riesgos que asegure que la información relevante acerca de la efectividad de los controles mitigantes y el cumplimiento de los niveles de apetito por riesgo llegue al directorio u órgano equivalente y a todas las partes interesadas.
 >
-> e) Programa de mejoramiento continuo de la gestión de riesgos, con el objeto de evaluar la necesidad de realizar cambios frente a nuevos escenarios económicos y financieros que vaya enfrentando la entidad, cambios del perfil de riesgo y producto de la implementación o cambios en los estándares o mejores prácticas internacionales."
+> e) Programa de mejoramiento continuo de la gestión de riesgos, con el objeto de evaluar la necesidad de realizar cambios frente a nuevos escenarios económicos y financieros que vaya enfrentando la entidad, cambios del perfil de riesgo y producto de la implementación o cambios en los estándares o mejores prácticas internacionales. En el caso que la entidad pertenezca a un grupo empresarial, la gestión de riesgo operacional podrá ser desempeñada por una persona de dicho grupo, siempre que aquella mantenga su independencia de las áreas de auditoría interna del grupo."
 
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.B.3.1 — risk-management function responsible for preparing and monitoring the plan.
 
-> **Source:** NCG 502 §IV.B.3.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.B.3.2 (12-ene-2024), as amended by NCG 524 item 9 (02-dic-2024).
 
 ---
 
@@ -636,18 +638,14 @@ In line with the provisions of Articles 1 and 12 of Ley N° 21.521, entities may
 
 Without prejudice to the foregoing, Table 2 describes the proportional requirements that entities providing the credit advisory service must comply with.
 
-Proportionality for credit advisers shall be applied depending on whether they process information that qualifies as personal data under Ley N° 19.628, and depending on whether they have fewer or more than 100 active clients in Chile.
-
-Where the internal-audit function is non-specialised and the function is carried out by a third party, in no case may that third party exercise the external audit function for the entity, and the entity must ensure the adequate segregation of both functions.
+Proportionality for credit advisers shall be applied depending on whether they have fewer or more than 100 active clients in Chile.
 
 **Table 2. Proportionality for the provision of the credit advisory service**
 
-| Characteristics of the credit advisory provider | | Policies | Risk-management and internal-audit function |
+| Characteristics of the credit advisory provider | Policies | Risk-management function | Internal-audit function |
 |---|---|---|---|
-| Does not process personal data | Fewer than 100 active clients | Exempt from all requirements of this Section IV.B | — |
-| Does not process personal data | 100 or more active clients | CI, CINF, GCR, CP, IC, ALG | Non-specialised |
-| Processes personal data | Fewer than 100 active clients | Exempt from all requirements of this Section IV.B | — |
-| Processes personal data | 100 or more active clients | CI, CINF, GCR, CP, IC, ALG, RLN, RO | Specialised |
+| Fewer than 100 active clients in Chile | Exempt from all requirements of this Section IV.B | Exempt | Exempt |
+| 100 or more active clients in Chile | CI, CINF, GCR, CP, IC, ALG, RLN, RO | Non-specialised | Specialised |
 
 Where:
 
@@ -660,13 +658,12 @@ f) ALG: Algorithm approval, evaluation, and control methodology.
 g) RLN: Compliance with legal and regulatory operating requirements.
 h) RO: Operational risk.
 i) Non-specialised: The risk-management function may be exercised by a member of the senior management of the entity.
-j) Personal data processing: Personal data within the meaning of Ley N° 19.628, relevant for making recommendations regarding the payment capacity or probability of natural or legal persons.
 
 In the case of entities providing the credit advisory service whose requirement is that the risk-management and internal-audit function be specialised, this function shall not be exercised by the senior management (alta administración), and must report directly to the board of directors or equivalent body.
 
-When an internal-audit function is non-specialised and is carried out by a third party, in no case may that third party exercise the external audit function for the entity, and the entity must ensure the adequate segregation of both functions.
+Where the internal-audit function is carried out by an external third party, in no case may that third party exercise the external audit function for the entity, and the entity must ensure the adequate segregation of both functions.
 
-When a credit adviser reaches 100 active clients in Chile, it shall have a maximum period of 6 months to comply with the corresponding corporate-governance and comprehensive risk-management requirements. Once that number is reached, credit advisers must comply with the corporate-governance and comprehensive risk-management requirements. To revert to being exempt from the requirements, entities must remain below the indicated client threshold for more than 6 months and request authorisation from the Commission (CMF).
+When a credit adviser reaches 100 active clients in Chile, it shall have a maximum period of 9 months to comply with the corresponding corporate-governance and comprehensive risk-management requirements. Once that number of clients is reached, credit advisers must report that fact to the Commission within the 5 business days following the occurrence of the event. To revert to being exempt from the requirements, entities must remain below the indicated client threshold for more than 6 months and request authorisation from the Commission (CMF).
 
 ### Original Spanish
 
@@ -674,13 +671,11 @@ When a credit adviser reaches 100 active clients in Chile, it shall have a maxim
 >
 > En línea con lo establecido en los artículos 1 y 12 de la ley N°21.521, las entidades podrán adaptar las disposiciones de esta Sección IV.B, conforme a su tamaño, volumen y naturaleza de sus negocios y riesgos.
 >
-> Sin perjuicio de lo anterior, la Tabla 2 describe los requisitos proporcionales que deberán cumplir las entidades que presten el servicio de asesoría de inversión
+> Sin perjuicio de lo anterior, la Tabla 2 describe los requisitos proporcionales que deberán cumplir las entidades que presten el servicio de asesoría crediticia.
 >
-> La proporcionalidad para asesores crediticios se aplicará dependiendo si hacen uso de información que califique como datos de carácter personal, en conformidad a la ley N°19.628, y en función de si tienen menos o más de 100 clientes activos en Chile.
+> La proporcionalidad para asesores crediticios se aplicará dependiendo si tienen menos o más de 100 clientes activos en Chile.
 >
-> En caso de que la función de auditoría interna sea no especializada y la función sea realizada por un tercero, en ningún caso dicho tercero podrá ejercer la función de auditoría externa en la entidad, debiendo la entidad velar por la adecuada segregación de ambas funciones.
->
-> Tabla 2. Proporcionalidad para la prestación del servicio de asesoría crediticia Función de gestión de Características del prestador de Políticas riesgos y auditoría asesoría crediticia interna Menos de 100 clientes Se exime de todos los requisitos de esta No realiza activos Sección IV.B tratamiento de datos 100 o más clientes CI, CINF, GCR, personales No especializada activos CP, IC, ALG Menos de 100 clientes Se exime de todos los requisitos de esta Realiza activos Sección IV.B tratamiento de datos CI, CINF, GCR, 100 o más clientes personales CP, IC, ALG, RLN, Especializada activos RO
+> Tabla 2. Proporcionalidad para la prestación del servicio de asesoría crediticia Características del prestador de asesoría crediticia Políticas Función de gestión de riesgos Función de auditoría interna Menos de 100 clientes activos en Chile 100 o más clientes activos en Chile Se exime de todos los requisitos de esta Sección IV.B CI, CINF, GCR, CP, IC, ALG, RLN, RO Se exime No especializada Se exime Especializada
 >
 > Donde,
 >
@@ -702,25 +697,20 @@ When a credit adviser reaches 100 active clients in Chile, it shall have a maxim
 >
 > i) No especializada: La función de gestión de riesgos podrá ser ejercida por algún integrante de la alta administración de la entidad.
 >
-> j) Tratamiento de datos personales: Datos de carácter personal, en conformidad a la ley N°19.628, relevantes para efectuar recomendaciones respecto de la capacidad o probabilidad de pago de personas naturales o jurídicas.
+> En el caso de las entidades que presten el servicio de asesoría crediticia y cuyo requisito sea que la función de gestión de riesgos y auditoría interna sea especializada, esta función no podrá ser ejercida por la alta administración, debiendo reportar directamente al directorio u órgano equivalente.
 >
-> En el caso de las entidades que presten el servicio de asesoría crediticia y cuyo requisito sea que la función de gestión de riesgos y auditoría interna sea especializada, esta función no podrá ser ejercida por la alta administración, debiendo reportar directamente al directorio u órgano equivalente
+> En caso de que la función de auditoría interna sea realizada por un tercero externo, en ningún caso dicho tercero podrá ejercer la función de auditoría externa en la entidad, debiendo la entidad velar por la adecuada segregación de ambas funciones.
 >
-> Cuando la función de auditoría interna sea no especializada y sea realizada por un tercero, en ningún caso dicho tercero podrá ejercer la función de auditoría externa en la entidad, debiendo la entidad velar por la adecuada segregación de ambas funciones
->
-> En caso de que un asesor crediticio alcance los 100 clientes activos en Chile, dispondrá de un plazo máximo de 6 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes. Una vez alcanzado ese número, los asesores crediticios deberán cumplir con las exigencias de gobierno corporativo y gestión integral de riesgos. Para volver a estar exentas de los requerimientos, las entidades deberán mantenerse por más de 6 meses bajo el umbral de clientes señalado y solicitar autorización de la Comisión."
+> En caso de que un asesor crediticio alcance los 100 clientes activos en Chile, dispondrá de un plazo máximo de 9 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes. Una vez alcanzado ese número de clientes, los asesores crediticios deberán avisar ese hecho a la Comisión dentro de los 5 días hábiles siguientes de ocurrido el hecho. Para volver a estar exentas de los requerimientos, las entidades deberán mantenerse por más de 6 meses bajo el umbral de clientes señalado y solicitar autorización de la Comisión."
 
-> **TN:** Table 2 is a structured table in the PDF source. The English rendering above presents it as a Markdown table with equivalent informational content. The table's column-first extraction order in the Original Spanish blockquote preserves the PDF's PDF-extraction sequence (column-by-column). The introductory paragraph of B.4 refers to "asesoría de inversión" but this is a drafting error in the source — context and the table heading confirm this section applies to credit advisory (asesoría crediticia); the English rendering corrects accordingly with this note.
-
-> **TN:** The second paragraph of B.4 in the source PDF reads "deberán cumplir las entidades que presten el servicio de asesoría de inversión" — an apparent copy-paste error from §IV.A.4 (the section heading and Table 2 heading both confirm this is credit advisory). The verbatim Spanish is preserved as-published; the English renders it as "credit advisory service" to match the section's actual subject.
+> **TN:** Table 2 is a structured table in the PDF source. The Original Spanish above transcribes the table cells in the PDF's column-first reading order (header labels, then the two client-threshold rows, then the Políticas column, then the Función de gestión de riesgos column, then the Función de auditoría interna column); the English rendering presents the same content as a row-first Markdown table. As amended by NCG 524, Table 2 removes the prior personal-data-processing dimension entirely and splits the former combined "risk-management and internal-audit function" column into two separate columns (risk-management function and internal-audit function).
 
 ### Cross-references
 - Ley 21.521 Arts. 1 and 12 — proportionality and governance mandate this section implements.
-- Ley N° 19.628 — personal data protection law defining the data-processing threshold that triggers higher obligations.
 - NCG 502 §IV.B.3.1 — risk-management function requirements, including the specialised vs. non-specialised distinction.
 - NCG 502 §IV.B.3.3 — internal-audit function requirements subject to the same specialised/non-specialised threshold.
 
-> **Source:** NCG 502 §IV.B.4 (12-ene-2024).
+> **Source:** NCG 502 §IV.B.4 (12-ene-2024), as amended by NCG 524 item 10 (02-dic-2024).
 
 ---
 
@@ -731,7 +721,7 @@ When a credit adviser reaches 100 active clients in Chile, it shall have a maxim
 
 ### Plain-English text
 
-Credit advisory entities that process personal data and have more than 100 active clients in Chile must notify the Commission (CMF) of operational incidents affecting the entity's information or the personal data of their clients, such as technology problems affecting information security; viruses or malware detected in critical information assets; loss or leakage of information belonging to the entity or its clients, among others.
+Credit advisory entities that have more than 100 active clients in Chile must notify the Commission (CMF) of operational incidents affecting the entity's information or the personal data of their clients, such as technology problems affecting information security; viruses or malware detected in critical information assets; loss or leakage of information belonging to the entity or its clients, among others.
 
 For these purposes, entities may use the format of the Operational Incident Report (Reporte de Incidentes Operacionales — RIO) in Annex N° 2 of this regulation, and shall have a period of 2 hours from the time the entity became aware of the event. The period indicated is solely for the purpose of notifying the Commission (CMF) of the occurrence of the incident with the information available at that time and does not imply that the entity must have resolved the problem, taken specific actions, or clarified the causes of the incident, which may be the subject of follow-up reports on the incident sent to the CMF subsequently.
 
@@ -741,7 +731,7 @@ The board of directors or equivalent body must designate an officer in charge an
 
 > "B.5. INFORMACIÓN DE INCIDENTES OPERACIONALES
 >
-> Las entidades asesoras de crédito que realicen tratamiento de datos personales y tengan más de 100 clientes activos en Chile deberán comunicar a esta Comisión los incidentes operacionales que afecten la información de la entidad o los datos personales de sus clientes, tales como, problemas tecnológicos que afecten la seguridad de la información; virus o malware detectados en los activos de información críticos; pérdidas o fugas de información de la entidad o sus clientes, entre otros.
+> Las entidades de asesoría crediticia que tengan más de 100 clientes activos en Chile deberán comunicar a esta Comisión los incidentes operacionales que afecten la información de la entidad o los datos personales de sus clientes, tales como, problemas tecnológicos que afecten la seguridad de la información; virus o malware detectados en los activos de información críticos; pérdidas o fugas de información de la entidad o sus clientes, entre otros.
 >
 > Para estos efectos, las entidades podrán usar el formato del Reporte de Incidentes Operacionales (RIO) del Anexo N°2 de esta normativa, y dispondrán de un plazo de 2 horas transcurridas desde que la entidad tomó conocimiento del hecho. El plazo señalado es solo para efectos de notificar a la Comisión de la ocurrencia del incidente con la información disponible en ese momento y no implica que la entidad deba tener resuelto el problema, haber tomado determinadas acciones o tener aclarada las causas del incidente, lo que podría ser materia de reportes de seguimiento del incidente enviados la CMF, posteriormente.
 >
@@ -752,7 +742,7 @@ The board of directors or equivalent body must designate an officer in charge an
 ### Cross-references
 - Ley 21.521 Art. 8 — governance and risk-management mandate; operational incident reporting is part of the entity's risk-management obligations.
 - NCG 502 Annex N° 2 — Operational Incident Report (RIO) form available for incident notifications.
-- NCG 502 §IV.B.4 — proportionality table establishing the 100-active-client and personal-data-processing thresholds that trigger the reporting obligation.
+- NCG 502 §IV.B.4 — proportionality table establishing the 100-active-client threshold that triggers the reporting obligation.
 - NCG 502 §IV.B.2.2 — cybersecurity guidelines whose breach events (malware, phishing, etc.) are typical triggers for reporting under this section.
 
-> **Source:** NCG 502 §IV.B.5 (12-ene-2024).
+> **Source:** NCG 502 §IV.B.5 (12-ene-2024), as amended by NCG 524 item 11 (02-dic-2024).

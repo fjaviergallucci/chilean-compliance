@@ -1,6 +1,6 @@
 # NCG 502 — Sección IV.D: Corporate Governance & Risk Management — Order Routing (Gobierno Corporativo y Gestión de Riesgos — Enrutamiento de Órdenes)
 
-**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
+**Regulation:** NCG 502 consolidated — baseline 12-ene-2024 as amended by NCG 524 (02-dic-2024). Amended sections carry a `> **Source:**` footer naming the 524 item(s); see `../524-amendments-changelog/changes.md`.
 _law:_ NCG-502
 
 ---
@@ -231,7 +231,7 @@ Without prejudice to the minimum policies and procedures that entities must impl
 
 a) Training of personnel on the matter, so that they are aware of information security and cybersecurity risks and contribute to their adequate management.
 
-b) Safeguarding of client information:
+b) The safeguarding of the information of its clients, for which it must:
 
 1) Implement an inventory of those information assets, including a classification of these. This classification must take into account dimensions such as the availability, confidentiality, and integrity of information assets.
 
@@ -257,7 +257,7 @@ f) Procedures for response and recovery in the face of operational incidents, wh
 >
 > a) La capacitación del personal en la materia, de manera que sea consciente de los riesgos de seguridad de la información y ciberseguridad y contribuya a una adecuada gestión de éstos.
 >
-> b) Resguardo de la información de sus clientes:
+> b) El resguardo de la información de sus clientes, para lo cual se deberá:
 >
 > 1) Implementar un inventario de esos activos de información, incluyendo una clasificación de estos. Esta clasificación deberá considerar dimensiones tales como disponibilidad, confidencialidad e integridad de los activos de información.
 >
@@ -281,7 +281,7 @@ f) Procedures for response and recovery in the face of operational incidents, wh
 - Ley 21.521 Art. 8 — governance and risk-management mandate this section implements.
 - NCG 502 §IV.D.2 — general policies-and-procedures framework of which this is a supplementary specification.
 
-> **Source:** NCG 502 §IV.D.2.2 (12-ene-2024).
+> **Source:** NCG 502 §IV.D.2.2 (12-ene-2024), as amended by NCG 524 item 2 (02-dic-2024).
 
 ---
 
@@ -316,7 +316,7 @@ This subsection establishes the requirements for the risk-management function an
 
 The risk-management function is the body responsible for monitoring the controls defined in the entity's risk-management and internal-control policies and procedures. This function must report directly to the board of directors or equivalent body.
 
-In accordance with subparagraph D.4 of this Section, the risk-management function may be carried out by a natural person or internal unit or, in certain cases, by the senior management (alta administración) of the entity. It may also be exercised by a corporate risk-management unit in the event that the entity belongs to a business group. For all purposes, if the function is exercised by a corporate risk-management unit in the case where the entity belongs to a business group, it shall be considered as carried out by an internal unit.
+In accordance with subparagraph D.4 of this Section, the risk-management function may be carried out by a natural person or internal unit or by the senior management (alta administración) of the entity. It may also be exercised by a corporate risk-management unit in the event that the entity belongs to a business group. For all purposes, if the function is exercised by a corporate risk-management unit in the case where the entity belongs to a business group, it shall be considered as carried out by an internal unit.
 
 Without prejudice to the foregoing, the entity shall always be responsible for the risk-management function even when it is carried out by a body belonging to the business group, and must review and approve the reports produced in that regard, for which it must retain all relevant documentation.
 
@@ -340,7 +340,7 @@ d) Prepare an annual plan setting out the nature, scope, and timing of the activ
 >
 > La función de gestión de riesgos es la instancia responsable del monitoreo de los controles definidos en las políticas y los procedimientos de gestión de riesgos y control interno de la entidad. Esta función deberá reportar directamente al directorio u órgano equivalente.
 >
-> De acuerdo con el literal D.4. de esta Sección, la función de gestión de riesgos podrá ser realizada por una persona o unidad interna o, en ciertos casos, por la alta administración de la entidad. También podrá ser ejercida por una unidad de gestión de riesgos corporativa en caso de que la entidad pertenezca a un grupo empresarial. Para todos los efectos, si la función es ejercida por una unidad de gestión de riesgos corporativa, en caso de que la entidad pertenezca a un grupo empresarial, se considerará realizada por una unidad interna.
+> De acuerdo con el literal D.4. de esta Sección, la función de gestión de riesgos podrá ser realizada por una persona o unidad interna o por la alta administración de la entidad. También podrá ser ejercida por una unidad de gestión de riesgos corporativa en caso de que la entidad pertenezca a un grupo empresarial. Para todos los efectos, si la función es ejercida por una unidad de gestión de riesgos corporativa, en caso de que la entidad pertenezca a un grupo empresarial, se considerará realizada por una unidad interna.
 >
 > Sin perjuicio de lo anterior, la entidad será siempre responsable de la función de gestión de riesgos aun cuando ésta sea realizada por una instancia perteneciente al grupo empresarial, debiendo revisar y aprobar los informes realizados al respecto, para lo cual deberá hacerse de toda la documentación relevante.
 >
@@ -365,7 +365,7 @@ d) Prepare an annual plan setting out the nature, scope, and timing of the activ
 - NCG 502 §IV.D.4 — proportionality provisions that determine whether the risk-management function may be exercised by senior management or must be independent.
 - NCG 502 §IV.D.2 — minimum policies and procedures the risk-management function must verify.
 
-> **Source:** NCG 502 §IV.D.3.1 (12-ene-2024).
+> **Source:** NCG 502 §IV.D.3.1 (12-ene-2024), as amended by NCG 524 item 1 (02-dic-2024).
 
 ---
 
@@ -451,10 +451,10 @@ Proportionality shall be applied depending on whether entities have fewer or mor
 
 **Table 4. Proportionality for the provision of the order routing service**
 
-| Characteristics of the order routing provider | Policies | Risk-management function |
-|---|---|---|
-| Fewer than 100 active clients | Exempt from all requirements of this Section IV.D | — |
-| 100 or more active clients | CI, CINF, II, RLN | Non-specialised |
+| Block | Characteristics of the order routing provider | Policies | Risk-management function |
+|---|---|---|---|
+| 1 | Fewer than 100 active clients in Chile | Exempt from all requirements of this Section IV.D | — |
+| 2 | 100 or more active clients in Chile | CI, CINF, II, RLN, RO | Non-specialised |
 
 Where:
 
@@ -462,11 +462,12 @@ a) CI: Conflicts of interest.
 b) CINF: Confidentiality of information.
 c) II: Information to the investor.
 d) RLN: Compliance with legal and regulatory operating requirements.
-e) Non-specialised: The risk-management function may be exercised by a member of the senior management of the entity.
+e) RO: Operational risk.
+f) Non-specialised: The risk-management function may be exercised by a member of the senior management of the entity.
 
 The risk-management function may be non-specialised — that is, it may be exercised by the senior management, and must report directly to the board of directors or equivalent body.
 
-When an entity reaches 100 active clients in Chile, it shall have a maximum period of 6 months to comply with the corresponding corporate-governance and comprehensive risk-management requirements.
+When an entity reaches 100 active clients in Chile, it shall have a maximum period of 9 months to comply with the corresponding corporate-governance and comprehensive risk-management requirements. In turn, it must notify that fact to the Commission within the 5 business days following its occurrence.
 
 Once that number is reached, entities must comply with the corporate-governance and comprehensive risk-management requirements. To revert to being exempt from the requirements, entities must remain below the indicated client threshold for more than 6 months and request authorisation from the Commission (CMF).
 
@@ -483,14 +484,19 @@ Once that number is reached, entities must comply with the corporate-governance 
 > Tabla 4. Proporcionalidad para la prestación del servicio de enrutamiento de
 > órdenes
 >
-> Características del Políticas Función de
-> prestador de gestión de
-> enrutamiento de órdenes riesgos
->
-> Menos de 100 clientes Se exime de todos los requisitos de esta
-> activos Sección IV.D
->
-> 100 o más clientes activos CI, CINF, II, RLN. No especializada
+> Características del
+> prestador de
+> Bloque Políticas
+> enrutamiento de órde- Función de ges-
+> nes tión de riesgos
+> Se exime de todos los requisitos de
+> Menos de 100 clientes ac-
+> 1 esta
+> tivos en Chile
+> Sección IV.D
+> 100 o más clientes acti- CI, CINF, II, RLN,
+> 2
+> vos en Chile RO. No especializada
 >
 > Donde,
 >
@@ -502,18 +508,22 @@ Once that number is reached, entities must comply with the corporate-governance 
 >
 > d) RLN: Cumplimiento de requisitos legales y normativos de funcionamiento.
 >
-> e) No especializada: La función de gestión de riesgos podrá ser ejercida por algún integrante de la alta administración de la entidad.
+> e) RO: Riesgo operacional.
+>
+> f) No especializada: La función de gestión de riesgos podrá ser ejercida por algún integrante de la alta administración de la entidad.
 >
 > La función de gestión de riesgos podrá ser no especializada, es decir, podrá ser ejercida por la alta administración, debiendo reportar directamente al directorio u órgano equivalente
 >
-> Cuando una entidad alcance los 100 clientes activos en Chile, dispondrá de un plazo máximo de 6 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes.
+> Cuando una entidad alcance los 100 clientes activos en Chile, dispondrá de un plazo máximo de 9 meses para dar cumplimiento a los requisitos de gobierno corporativo y gestión integral de riesgos correspondientes. A su vez, deberá avisar ese hecho a la Comisión dentro de los 5 días hábiles siguientes de ocurrido el mismo.
 >
 > Una vez alcanzado ese número, las entidades deberán cumplir con las exigencias de gobierno corporativo y gestión integral de riesgos. Para volver a estar exentas de los requerimientos, las entidades deberán mantenerse por más de 6 meses bajo el umbral de clientes señalado y solicitar autorización de la Comisión."
 
-> **TN:** Table 4 is a structured table in the PDF source. The English rendering above presents it as a Markdown table with equivalent informational content. The table's column-first extraction order in the Original Spanish blockquote preserves the PDF's extraction sequence (column-by-column), consistent with the convention established for §IV.B.4 and §IV.A.4. Unlike the proportionality tables in §IV.A.4 and §IV.B.4, Table 4 has only two rows (a single active-client threshold, with no personal-data-processing dimension), reflecting the simpler proportionality regime applicable to order routing providers.
+> **TN:** Table 4 is a structured table in the PDF source. The English rendering above presents it as a Markdown table with equivalent informational content. As amended by NCG 524 (item 1), Table 4 now carries an explicit "Bloque"/"Block" column (Block 1 = fewer than 100 active clients in Chile; Block 2 = 100 or more active clients in Chile) and adds "RO" (operational risk) to the policies applicable to Block 2 (NCG 524 items 1–2), with a corresponding new defined term "e) RO: Riesgo operacional" and the renumbering of the former letter e) to f) (NCG 524 item 3). The table's extraction order in the Original Spanish blockquote preserves the NCG 524 PDF's extraction sequence, consistent with the convention established for §IV.B.4 and §IV.A.4. Table 4 still has only two data rows (a single active-client threshold, with no personal-data-processing dimension), reflecting the simpler proportionality regime applicable to order routing providers.
+
+> **TN:** NCG 524 spliced text into an existing sentence here; consolidated Spanish is faithful (verified against the 524 source PDF) but is not contiguous in either single source PDF.
 
 ### Cross-references
 - Ley 21.521 Arts. 1 and 12 — proportionality and governance mandate this section implements.
 - NCG 502 §IV.D.3.1 — risk-management function requirements, including the non-specialised option available under the proportionality threshold.
 
-> **Source:** NCG 502 §IV.D.4 (12-ene-2024).
+> **Source:** NCG 502 §IV.D.4 (12-ene-2024), as amended by NCG 524 items 1–4 (02-dic-2024).

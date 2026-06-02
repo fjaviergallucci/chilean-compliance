@@ -8,10 +8,11 @@ in practice — registration, governance, risk, cybersecurity, reporting.
 
 Covered (Ley 21.521 Fintec implementing regulations):
 
-- **NCG 502** (baseline, 12-ene-2024) — registration, authorization, and
-  obligations of Financial-Service Providers (PSF). Ley 21.521 Título II.
-  NCG 524's 116 amendments are catalogued in `524-amendments-changelog/`,
-  pending consolidation. See `502-psf-obligations/`.
+- **NCG 502** (consolidated with NCG 524, 116 amendments applied) —
+  registration, authorization, and obligations of Financial-Service Providers
+  (PSF). Ley 21.521 Título II. Baseline 12-ene-2024 as amended by NCG 524
+  (02-dic-2024); the item→section map is in `524-amendments-changelog/changes.md`.
+  See `502-psf-obligations-consolidated/`.
 
 Planned (later phases):
 - NCG 514 — Sistema de Finanzas Abiertas (open finance), Ley 21.521 Título III.
@@ -24,9 +25,10 @@ disclosure), NCG 461 (listed-company annual reports).
 ## Citation convention
 
 `NCG 502 §IV.C.3.2` — NCG number, section symbol, hierarchical section number.
-Each section's `> **Source:**` footer cites the baseline publication date.
-For NCG 502, check `524-amendments-changelog/` to identify sections pending
-amendment by NCG 524.
+Each section's `> **Source:**` footer cites its provenance; sections amended by
+NCG 524 name the 524 item(s). For NCG 502, cite the consolidated text in
+`502-psf-obligations-consolidated/`; see `524-amendments-changelog/changes.md`
+for the amendment→section map.
 
 ## Status
 

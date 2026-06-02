@@ -1,6 +1,6 @@
 {
   "name": "chile-compliance",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Structured access to Chilean fintech and personal-data laws for AI consumers. Covers Ley 21.521 (Fintec) and Ley 19.628 as amended by Ley 21.719 (in force 2026-12-01).",
   "author": {
     "name": "Francisco Gallucci",
@@ -23,7 +23,7 @@
     "21521_fintech": "stable",
     "19628_consolidated": "stable",
     "21719_changelog": "stable",
-    "ncg_502": "stable",
+    "ncg_502_consolidated": "stable",
     "ncg_514_open_finance": "planned",
     "ncg_530_reporting": "planned",
     "ncg_503_idoneidad": "planned"

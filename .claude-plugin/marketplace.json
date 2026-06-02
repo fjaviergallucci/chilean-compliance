@@ -1,7 +1,7 @@
 {
   "name": "chile-compliance",
   "description": "Single-plugin marketplace exposing chile-compliance: a structured AI-queryable knowledge base of Chilean fintech (Ley 21.521) and personal-data (Ley 19.628 + Ley 21.719) law.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "owner": {
     "name": "Francisco Gallucci"
   },
@@ -10,7 +10,7 @@
       "name": "chile-compliance",
       "source": "./",
       "description": "Structured access to Chilean fintech (Ley 21.521) and personal-data (Ley 19.628 as amended by Ley 21.719, in force 2026-12-01) for AI agents. Includes lexicon, topical index, glossary of defined terms, scenario checklists, and article-to-article cross-references.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "keywords": [
         "chile",
         "chilean-law",

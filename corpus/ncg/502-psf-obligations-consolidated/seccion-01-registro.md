@@ -1,6 +1,6 @@
 # NCG 502 — Sección I: Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros)
 
-**Regulation:** NCG 502 (baseline, published 12-ene-2024; NCG 524 amendments pending — see `../524-amendments-changelog/`).
+**Regulation:** NCG 502 consolidated — baseline 12-ene-2024 as amended by NCG 524 (02-dic-2024). Amended sections carry a `> **Source:**` footer naming the 524 item(s); see `../524-amendments-changelog/changes.md`.
 _law:_ NCG-502
 
 ## I — Registry of Financial-Service Providers
@@ -33,13 +33,15 @@ This section governs the Registry of Financial-Service Providers (Registro de Pr
 
 To provide the services regulated by Ley N° 21.521 in Chile, prior registration must be applied for in the Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros) referred to in Article 5 of Ley N° 21.521. Those who materially carry out such services in the country — through the enabling or contracting of physical or electronic means to provide their services in the country — shall be understood to provide services in Chile, as shall those who employ any means of communication to direct the offering of their services to persons resident in Chile, regardless of the country of origin of those means.
 
-For the purpose of applying for registration in the Registry, an application must be submitted through the Commission (CMF)'s website, which must be presented by the legal or conventional representative (representante legal o convencional) of the applicant, who shall be responsible for the truthfulness and integrity of all the information provided to the Commission (CMF).
+For the purpose of applying for registration in the Registry, an application must be submitted through the specially enabled application (aplicación especialmente habilitada) on the Commission (CMF)'s website, which must be presented by the legal or conventional representative (representante legal o convencional) of the applicant, who shall be responsible for the truthfulness and integrity of all the information provided to the Commission (CMF).
+
+Natural persons who carry out investment-advisory (asesoría de inversión) activity on behalf of and in representation of (i) a legal person registered in the Registry of Financial-Service Providers and authorized to provide the investment-advisory service, (ii) a bank, (iii) an insurance company, (iv) a securities broker-dealer (intermediario de valores), (v) a produce-exchange broker (corredor de bolsa de productos) under Ley N° 19.220, or (vi) a general fund manager (administradora general de fondos) or portfolio manager (administrador de carteras) under Ley N° 20.712, do not require registration or authorization for the provision of the investment-advisory service. The same applies to legal persons that carry out that activity on behalf of and in representation of those entities, provided that the natural persons from whom the recommendations issued by those legal persons emanate comply with the conditions established in NCG N° 503.
 
 The said registration application must contain the following information:
 
-a) Name or corporate name (razón social) of the person or entity and trade or commercial name (nombre de fantasía o comercial), where it has one. In the case of foreign entities that intend to provide the services of Title II of Ley N° 21.521 without incorporating a company in Chile, this information shall refer to the agency (agencia) in Chile.
+a) Name or corporate name (razón social) of the person or entity and trade or commercial name (nombre de fantasía o comercial), where it has one.
 
-b) National identity card (cédula de identidad) or passport number, or Unique Tax Roll (Rol Único Tributario) or Legal Entity Identifier, if any, in the case of foreign entities.
+b) National identity card (cédula de identidad) or passport number, or Unique Tax Roll (Rol Único Tributario).
 
 c) Identification of the natural person (persona natural) empowered to act in conventional or legal representation in Chile of the person or entity: full name and national identity card or passport.
 
@@ -47,19 +49,21 @@ d) Telephone number.
 
 e) Email address for the purposes of the notifications and communications made by this Commission (CMF).
 
-f) URL of the website referred to in the first paragraph (inciso primero) of Article 5 of Ley N° 21.521.
+f) Domicile (domicilio) in Chile, unless excepted from that requirement pursuant to this regulation.
+
+g) URL of the website referred to in the first paragraph (inciso primero) of Article 5 of Ley N° 21.521.
 
 In addition, the following supporting documents must accompany the application:
 
 1. In the case of legal persons (personas jurídicas) incorporated in Chile (whether or not foreign-owned):
 
-i. In the case of companies that are not subject to the simplified regime established in Ley N° 20.659 and registered in the Registry of Enterprises and Companies (Registro de Empresas y Sociedades) of the Ministry of Economy, Development and Tourism: a copy of the deed of incorporation and of the amending deeds of the last 10 years, of the registrations of the abstracts (extractos) of each of these, and of their publication in the Official Gazette (Diario Oficial), together with the company's certificate of good standing (certificado de vigencia) and a copy of the corporate registration evidencing the marginal annotations made, both no more than 15 days old counted from the date of the application.
+i. In the case of companies that are not subject to the simplified regime established in Ley N° 20.659 and registered in the Registry of Enterprises and Companies (Registro de Empresas y Sociedades) of the Ministry of Economy, Development and Tourism: a copy of the deed of incorporation and of the amending deeds of the last 10 years, of the registrations of the abstracts (extractos) of each of these, and of their publication in the Official Gazette (Diario Oficial), together with the company's certificate of good standing (certificado de vigencia) and a copy of the corporate registration evidencing the marginal annotations made, both no more than 15 days old counted from the date of the application. Where the company was incorporated less than 5 years ago and its founding shareholders are legal persons, the background documents evidencing their legal existence, corporate purpose, and capacity to form that company must be submitted. If any such document was granted abroad and is in a language other than Spanish, the applicant must accompany a translation duly certified by the legal or conventional representative. Where the applicant company was incorporated by virtue of a mandate granted by the founding shareholders, a copy of the public or private instrument evidencing the powers of the mandatary or mandataries to act in representation of those shareholders must be attached; if that instrument was granted abroad in a language other than Spanish, a duly certified translation must also be provided.
 
-ii. In the case of companies subject to the simplified regime of Ley N° 20.659, it shall not be necessary to provide other supporting documents.
+ii. In the case of companies subject to the simplified regime of Ley N° 20.659, it shall not be necessary to provide other supporting documents. Notwithstanding, where the company was incorporated less than 5 years ago and its founding shareholders are legal persons, the background documents evidencing their legal existence, corporate purpose, and capacity to form that company must be submitted. If any such document was granted abroad and is in a language other than Spanish, the applicant must accompany a translation duly certified by the legal or conventional representative. Where the applicant company was incorporated by virtue of a mandate granted by the founding shareholders, a copy of the public or private instrument evidencing the powers of the mandatary or mandataries to act in representation of those shareholders must be attached; if that instrument was granted abroad in a language other than Spanish, a duly certified translation must also be provided.
 
-2. Entities incorporated abroad that will provide the services of Ley N° 21.521 without incorporating a company in Chile must establish an agency (agencia) and attach to the application a copy of the abstract (extracto) referred to in Article 123 of Ley N° 18.046 or Article 449 of the Commercial Code (Código de Comercio), as applicable. Notwithstanding, where the exception contained in subparagraph C.3 below is relied upon, the declaration referred to in that subparagraph shall suffice.
+2. Entities incorporated abroad that will provide the services of Ley N° 21.521 without incorporating a company in Chile must establish an agency (agencia) and attach to the application a copy of the legalization, declaration, and abstract (extracto) referred to in Articles 121, 122, and 123 of Ley N° 18.046 or Articles 447, 448, and 449 of the Commercial Code (Código de Comercio), as applicable. Notwithstanding, where the exception contained in subparagraph C.3 below is relied upon, the declaration referred to in that subparagraph shall suffice.
 
-3. Where the application is presented by a natural person (persona natural) acting as conventional representative of the person or entity giving rise to the application, a copy of the public or private document evidencing the corresponding power of attorney must accompany it.
+3. Where the application is presented by a natural person (persona natural) acting as conventional representative of the person or entity giving rise to the application, a copy of the public or private document evidencing the corresponding power of attorney must accompany it. If that document was granted abroad and is in a language other than Spanish, the applicant must accompany a translation duly certified by the legal or conventional representative.
 
 4. Declaration of not being subject to the disqualifications (inhabilidades) referred to in the second paragraph (inciso segundo) of Article 6 of Ley N° 21.521:
 
@@ -75,7 +79,9 @@ i. Identification of each principal partner, director, or administrator: full na
 
 ii. Ownership structure of the business group (grupo empresarial) to which it belongs, indicating the principal businesses carried out by the companies of that group. For these purposes, the provisions of Article 96 of Ley N° 18.045 shall apply.
 
-7. Summary of the strategic plan (mission, vision, and objectives) and of the business plan, indicating the principal lines of business, the activities it intends to carry out — expressly referring to the services of Title II of Ley N° 21.521 that it will perform — the expected income and expenditure, the type of clients to whom the services it will provide are directed, and the organizational chart with a description of the principal functions of its areas, key positions, committees, and structure of responsibilities.
+7. Summary of the business plan, expressly referring to the services of Title II of Ley N° 21.521, the inherent activities and the activities authorized by Commission (CMF) regulation that it intends to carry out, the expected income and expenditure, and the type of clients to whom the services it will provide are directed.
+
+8. Organizational chart (organigrama), accompanied by a description of the principal functions of its areas, key positions, committees, and structure of responsibilities.
 
 Once the application has been submitted and the completeness of the supporting documents required in this section has been verified, the entity will be registered in the Registry, subject to prior payment by the applicant of the fees established in Article 33 of D.L. N° 3.538. It should be noted that the foregoing does not entitle the entities to accompany graphic material owned by the Commission (CMF) in the dissemination of information, propaganda, or advertising that they carry out by any means, since this Commission (CMF) has registered the corresponding trademark and has the protection of Ley N° 19.039, in particular the provisions of Article 19 bis D, which empowers it to oppose the use that third parties may make of the said trademark.
 
@@ -85,9 +91,11 @@ In the event that an application is incomplete or presented in such a way as to 
 
 In the event that, due to the applicant's inactivity, the procedure is halted for more than thirty days and action is taken in accordance with the provisions of Article 43 of Ley N° 19.880, which Establishes the Bases of the Administrative Procedures governing the acts of the organs of the State Administration, the registration application shall be deemed not to have been presented.
 
-Once the registration application has been made, and while the person remains registered in the Registry, any modification to the information provided in connection with the application must be reported, through the official channel for communication and submission of information between the Commission (CMF) and its supervised entities, within five business days of the relevant fact occurring or of becoming aware of it. The foregoing is without prejudice that, in the case of changes to the applicant's identification information referred to in subparagraphs a) and b) above, such communication must be accompanied by an application for annotation in the Registry, the fees established in Article 33 of D.L. N° 3.538 being payable. Consequently, together with registration in the Registry, the Commission (CMF) will grant the representative a username and password for the access and use of the system implemented by the Commission (CMF) for these purposes.
+In the event that changes are made to the applicant's identification information referred to in subparagraphs a) and b) above, the communication through which such changes are reported to the Commission (CMF) must be accompanied by an application for annotation in the Registry, the fees established in Article 33 of D.L. N° 3.538 being payable. Consequently, together with registration in the Registry, the Commission (CMF) will grant the representative a username and password for the access and use of the system implemented by the Commission (CMF) for these purposes.
 
 In accordance with the provisions of Article 6 of Ley N° 21.521, only the registration of legal persons whose exclusive corporate purpose (giro exclusivo) is the provision of one or more of the services regulated by Ley N° 21.521 and those activities that the Commission (CMF) has authorized by regulation shall proceed, which is why those who apply for their registration must have that sole corporate purpose (objeto social). The foregoing, with the exception of those who are in the circumstances and conditions established in subparagraph C of this section, for which they must accompany their registration application with the supporting documents required in that section.
+
+> **TN:** NCG 524 inserted text mid-sentence here (an intercalación). The consolidated Spanish is faithful to NCG 502 as amended by NCG 524 (verified against the 524 source PDF), but its spliced wording does not appear as a contiguous passage in either single source PDF, so the automated dual-PDF round-trip cannot score it above threshold. This section is on the round-trip `--exclude` list and was verified manually.
 
 ### Original Spanish
 
@@ -95,13 +103,15 @@ In accordance with the provisions of Article 6 of Ley N° 21.521, only the regis
 >
 > Para prestar los servicios regulados por la Ley N°21.521 en Chile, se deberá solicitar la previa inscripción en el Registro de Prestadores de Servicios Financieros al que se refiere el artículo 5 de la Ley N° 21.521. Se entenderá que prestan servicios en Chile quienes materialmente los realicen en el país, a través de la habilitación o contratación de medios físicos o electrónicos para prestar sus servicios en el país, así como quienes empleen cualquier medio de comunicación para dirigir la oferta de sus servicios a personas residentes en Chile, independiente del país de origen de dichos medios.
 >
-> A efectos de solicitar la inscripción en el Registro, se deberá ingresar una solicitud a través del sitio web de la Comisión, la que deberá ser presentada por el representante legal o convencional del solicitante, quien será el responsable de la veracidad e integridad de toda la información proporcionada a la Comisión.
+> A efectos de solicitar la inscripción en el Registro, se deberá ingresar una solicitud a través de la aplicación especialmente habilitada en el sitio web de la Comisión, la que deberá ser presentada por el representante legal o convencional del solicitante, quien será el responsable de la veracidad e integridad de toda la información proporcionada a la Comisión.
+>
+> No requieren de inscripción ni autorización para la prestación del servicio de asesoría de inversión, las personas naturales que realicen dicha actividad por cuenta y en representación de (i) una persona jurídica inscrita en el Registro de Prestadores de Servicios Financieros y autorizada para prestar el servicio de asesoría de inversión, (ii) de un banco, (iii) de una compañía de seguros, (iv) de un intermediario de valores, (v) de un corredor de bolsa de productos de la Ley N°19.220, o (vi) de una administradora general de fondos o administradores de carteras de la ley N°20.712. Tampoco las personas jurídicas que realicen dicha actividad por cuenta y en representación de esas entidades y siempre que las personas naturales de las cuales emanen las recomendaciones que emitan esas personas jurídicas cumplan con las condiciones establecidas en la Norma de Carácter General N°503.
 >
 > La referida solicitud de inscripción deberá contener la siguiente información:
 >
-> a) Nombre o Razón social de la persona o entidad y nombre de fantasía o comercial en caso de contar con uno. En el caso entidades extranjeras que pretendan prestar los servicios del título II de la Ley N°21.521 sin constituir una sociedad en Chile, estos antecedentes estarán referidos a la agencia en Chile.
+> a) Nombre o razón social de la persona o entidad y nombre de fantasía o comercial en caso de contar con uno.
 >
-> b) Número de cédula de identidad o pasaporte, o Rol Único Tributario o Legal Entity Identifier, si tuviere, en el caso de entidades extranjeras.
+> b) Número de cédula de identidad o pasaporte, o Rol Único Tributario.
 >
 > c) Identificación de la persona natural con poder para actuar en representación convencional o legal en Chile de la persona o entidad: nombre completo y cédula nacional de identidad o pasaporte.
 >
@@ -109,19 +119,25 @@ In accordance with the provisions of Article 6 of Ley N° 21.521, only the regis
 >
 > e) Dirección de correo electrónico para efectos de las notificaciones y comunicaciones que practique esta Comisión.
 >
-> f) URL del sitio web al que se refiere el inciso primero del artículo 5 de la Ley N°21.521.
+> f) Domicilio en Chile, salvo que se haya exceptuada al efecto mediante esta norma.
+>
+> g) URL del sitio web al que se refiere el inciso primero del artículo 5 de la Ley N°21.521.
 >
 > Además, junto a la solicitud, se deberán acompañar los siguientes antecedentes:
 >
 > 1. Tratándose de personas jurídicas constituidas en Chile (sean o no de propiedad de extranjeros):
 >
 > i. En el caso de sociedades que no estén sometidas al régimen simplificado establecido en la Ley N°20.659 e inscritas en el Registro de Empresas y Sociedades del Ministerio de Economía, Fomento y Turismo, copia de la escritura de constitución y de las escrituras modificatorias de los últimos 10 años, de las inscripciones de los extractos de cada una de éstas, y de la publicación de éstos en el Diario Oficial, junto con el certificado de vigencia de la sociedad y una copia de la inscripción social con constancia de las anotaciones marginales practicadas, ambos de una antigüedad inferior a 15 días contados desde la fecha de la solicitud.
+> En caso de sociedades cuya constitución sea menor a 5 años y en que los accionistas constituyentes sean personas jurídicas, deberán remitirse los antecedentes en que conste su vigencia, objeto, y capacidad para formar dicha sociedad. Para el caso en que el documento hubiese sido otorgado en el extranjero, y si este fuese extendido en un idioma distinto al español, el solicitante deberá acompañar una traducción debidamente certificada por el representante legal o convencional.
+> Para el caso en que la sociedad solicitante hubiese sido constituida en virtud de un mandato otorgado por los socios o accionistas constituyentes, deberá acompañar copia del instrumento público o privado en que consten las facultades del o los mandatarios para actuar en representación de los primeros, y si este hubiese sido otorgado en el extranjero, en un idioma distinto al español, el solicitante deberá acompañar una traducción debidamente certificada por el representante legal o convencional.
 >
 > ii. En el caso de sociedades sometidas al régimen simplificado de la Ley N°20.659, no será necesario acompañar otros antecedentes.
+> No obstante, en caso de sociedades cuya constitución sea menor a 5 años y en que los accionistas constituyentes sean personas jurídicas, deberán remitirse los antecedentes en que conste su vigencia, objeto, y capacidad para formar dicha sociedad. Para el caso en que el documento hubiese sido otorgado en el extranjero, y si este fuese extendido en un idioma distinto al español, el solicitante deberá acompañar una traducción debidamente certificada por el representante legal o convencional.
+> Para el caso en que la sociedad solicitante hubiese sido constituida en virtud de un mandato otorgado por los socios o accionistas constituyentes, deberá acompañar copia del instrumento público o privado en que consten las facultades del o los mandatarios para actuar en representación de los primeros, y si este hubiese sido otorgado en el extranjero, en un idioma distinto al español, el solicitante deberá acompañar una traducción debidamente certificada por el representante legal o convencional.
 >
-> 2. Las entidades constituidas en el extranjero y que prestarán los servicios de la Ley N°21.521 sin constituir una sociedad en Chile, deberán establecer una agencia y adjuntar a la solicitud copia del extracto a que se refiere el artículo 123 de la Ley N°18.046 o el artículo 449 del Código de Comercio según corresponda. No obstante, en el caso de acogerse a la excepción contenida en la letra C.3 siguiente, bastará con la declaración a la que se refiere esa letra.
+> 2. Las entidades constituidas en el extranjero y que prestarán los servicios de la Ley N°21.521 sin constituir una sociedad en Chile, deberán establecer una agencia y adjuntar a la solicitud copia de la legalización, declaración y extracto a que se refieren los artículos 121, 122 y 123 de la Ley N°18.046 o los artículos 447, 448 y 449 del Código de Comercio según corresponda. No obstante, en el caso de acogerse a la excepción contenida en la letra C.3 siguiente, bastará con la declaración a la que se refiere esa letra.
 >
-> 3. En caso de que la solicitud la presente una persona natural en calidad de representante convencional de la persona o entidad que motiva la solicitud, deberá acompañar copia del documento público o privado en el que consta el poder correspondiente.
+> 3. En caso de que la solicitud la presente una persona natural en calidad de representante convencional de la persona o entidad que motiva la solicitud, deberá acompañar copia del documento público o privado en el que consta el poder correspondiente. Para el caso en que el documento hubiese sido otorgado en el extranjero, y si este fuese extendido en un idioma distinto al español, el solicitante deberá acompañar una traducción debidamente certificada por el representante legal o convencional.
 >
 > 4. Declaración de no estar afecto a las inhabilidades a que se refiere el inciso segundo del artículo 6 de la Ley N°21.521:
 >
@@ -137,7 +153,9 @@ In accordance with the provisions of Article 6 of Ley N° 21.521, only the regis
 >
 > ii. Estructura de propiedad del grupo empresarial al que pertenece, indicando los principales negocios que realizan las empresas de ese grupo. Para estos efectos, debe estarse a lo establecido en el artículo 96 de la Ley N°18.045.
 >
-> 7. Síntesis del plan estratégico (misión, visión y objetivos) y del plan de negocios, indicando las principales líneas de negocios, las actividades que pretende realizar, refiriéndose expresamente los servicios del Título II de la Ley N°21.521 que llevará a cabo, los ingresos y egresos esperados, tipo de clientes a los cuales se encuentran dirigidos los servicios que prestarán y el organigrama con una descripción de las principales funciones de sus áreas, cargos claves, comités y estructura de responsabilidades.
+> 7. Síntesis del plan de negocios, refiriéndose expresamente a los servicios del Título II de la Ley N°21.521, las actividades inherentes y las actividades autorizadas por normativa de la Comisión que pretende llevar a cabo, los ingresos y egresos esperados y tipo de clientes a los cuales se encuentran dirigidos los servicios que prestará.
+>
+> 8. Organigrama, acompañado con una descripción de las principales funciones de sus áreas, cargos claves, comités y estructura de responsabilidades.
 >
 > Ingresada la solicitud y verificada la completitud de los antecedentes requeridos en la presente sección, se procederá a la inscripción de la entidad en el Registro, previo pago por parte del solicitante de los derechos establecidos en el artículo 33 del D.L. N°3.538. Cabe señalar que lo anterior no habilita a las entidades a acompañar material gráfico de propiedad de la Comisión en la divulgación de información, propaganda o publicidad que efectuaren por cualquier medio, por cuanto esta Comisión ha registrado la marca comercial correspondiente y cuenta con la protección de la Ley N°19.039, en especial lo dispuesto en el artículo 19 bis D, que la faculta para oponerse al uso que puedan hacer terceros de la mencionada marca comercial.
 >
@@ -147,7 +165,7 @@ In accordance with the provisions of Article 6 of Ley N° 21.521, only the regis
 >
 > En el evento de que por la inactividad del solicitante se produzca por más de treinta días la paralización del procedimiento y se proceda conforme a lo dispuesto en el artículo 43 de la Ley N°19.880 que Establece Bases de los Procedimientos Administrativos que rigen los actos de los órganos de la Administración del Estado, se entenderá por no presentada la solicitud de inscripción.
 >
-> Desde la fecha de la solicitud de inscripción y mientras la persona esté inscrita en el Registro, se deberá informar, a través del canal oficial de comunicación y envío de información entre la Comisión y sus fiscalizados, cualquier modificación que haya sufrido la información proporcionada con motivo de la solicitud, dentro del plazo de cinco días hábiles de ocurrido el hecho respectivo o tomado conocimiento de este. Lo anterior, sin perjuicio que, tratándose de cambios a la información de identificación del solicitante a que se refieren las letras a) y b) anteriores, dicha comunicación deberá ser acompañada de una solicitud de anotación en el Registro, debiéndose pagar los derechos establecidos en el artículo 33 del D.L. N°3.538. Por consiguiente, junto con la inscripción en el Registro, la Comisión otorgará al representante un nombre de usuario y contraseña para el acceso y utilización del sistema implementado por la Comisión para estos efectos.
+> En caso de que se efectúen cambios a la información de identificación del solicitante a que se refieren las letras a) y b) anteriores, la comunicación mediante la cual éstos se informen a la Comisión deberá ser acompañada de una solicitud de anotación en el Registro, debiéndose pagar los derechos establecidos en el artículo 33 del D.L. N°3.538. Por consiguiente, junto con la inscripción en el Registro, la Comisión otorgará al representante un nombre de usuario y contraseña para el acceso y utilización del sistema implementado por la Comisión para estos efectos.
 >
 > De conformidad con lo establecido en el artículo 6 de la Ley N°21.521, sólo procederá la inscripción de personas jurídicas cuyo giro exclusivo sea la prestación de uno o más los servicios regulados por la Ley N°21.521 y aquellas actividades que la Comisión haya autorizado por normativa, razón por la que quienes soliciten su inscripción deberán tener ese sólo objeto social. Lo anterior, con la excepción de quienes se encuentren en las circunstancias y condiciones establecidas en la letra C de esta sección, para lo cual deberán acompañar a su solicitud de inscripción los antecedentes exigidos en dicha sección."
 
@@ -162,7 +180,7 @@ In accordance with the provisions of Article 6 of Ley N° 21.521, only the regis
 - Ley 21.521 Art. 14–15 — serious infringements and aggravating circumstances referenced in the trademark / feigned-status paragraph.
 - NCG 502 §I.C (and §I.C.1, §I.C.2, §I.C.3) — the exceptions to the legal-person, exclusive-purpose, and Chilean-domicile requirements referenced in items 2, 4(ii), and the closing paragraph.
 
-> **Source:** NCG 502 §I.A (12-ene-2024).
+> **Source:** NCG 502 §I.A (12-ene-2024), as amended by NCG 524 items 1, 2, 3, 4, 5, 6, 7 (02-dic-2024).
 
 ---
 
@@ -205,7 +223,7 @@ Likewise, the Commission (CMF) will proceed with the cancellation of the registr
 
 ### Plain-English text
 
-This subsection sets out the exceptions, granted under Article 4 of Ley N° 21.521, to certain registration requirements. It comprises subparagraph C.1 (exception to the legal-person requirement), C.2 (exception to the exclusive-corporate-purpose requirement and the service-authorization requirement), and C.3 (exception to the Chilean-domicile requirement and the service-authorization requirement). It has no standalone body text of its own; the exceptions begin at subparagraph C.1 below.
+This subsection sets out the exceptions, granted under Article 4 of Ley N° 21.521, to certain registration requirements. It comprises subparagraph C.1 (exception to the legal-person requirement), C.2 (exception to the exclusive-corporate-purpose requirement, as amended by NCG 524), and C.3 (exception to the Chilean-domicile requirement, as amended by NCG 524). It has no standalone body text of its own; the exceptions begin at subparagraph C.1 below.
 
 ### Original Spanish
 
@@ -256,34 +274,38 @@ To evidence this circumstance, it shall suffice for the person to make the decla
 
 ---
 
-## I.C.2 — On the Exclusive Corporate Purpose and Authorization of Services
+## I.C.2 — On the Exclusive Corporate Purpose
 **NCG anchor:** N° 502, Sección I, C.2
-**Implements:** Ley 21.521 Art. 4 (CMF exception); relates to Art. 6 (exclusive corporate purpose) and Art. 7 (service authorization)
+**Implements:** Ley 21.521 Art. 4 (CMF exception); relates to Art. 6 (exclusive corporate purpose)
 **Tags:** exceptions, exclusive-corporate-purpose, qualified-investors, declaration
 
 ### Plain-English text
 
-By virtue of the provisions of Article 4 of Ley N° 21.521, those who meet the following cumulative circumstances (circunstancias copulativas) are excepted from the exclusive-corporate-purpose (giro exclusivo) requirement for the purpose of applying for their registration in the Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros), and from the requirement to apply for authorization for the provision of the services of investment advisory (asesoría de inversión), credit advisory (asesoría crediticia), alternative trading system (sistema alternativo de transacción), and crowdfunding platform (plataforma de financiamiento colectivo):
+By virtue of the provisions of Article 4 of Ley N° 21.521, those who meet the following cumulative circumstances (circunstancias copulativas) are excepted from the exclusive-corporate-purpose (giro exclusivo) requirement for the purpose of applying for their registration in the Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros):
 
-a) That, among the services regulated by Ley N° 21.521, they provide only the service of investment advisory, credit advisory, alternative trading system, and crowdfunding platform.
+a) That, among the services regulated by Ley N° 21.521, they provide only the service of investment advisory (asesoría de inversión), credit advisory (asesoría crediticia), order routing (enrutadores de órdenes), alternative trading system (sistema alternativo de transacción), and crowdfunding platform (plataforma de financiamiento colectivo).
 
 b) That the provision of the services regulated by this regulation be provided only to qualified investors (inversionistas calificados) referred to in subparagraph f) of Article 4 Bis of Ley N° 18.045.
 
 To rely on this exception, the applicant must make a declaration regarding the fact that it will comply with the circumstances described above. Such declaration must be made through the electronic mechanism provided for the submission of the registration application, on the Commission (CMF)'s website. In addition, such declaration must be updated annually through the mechanism established for that purpose on the Commission (CMF)'s website.
 
-> **TN:** The introductory clause excepts both the "giro exclusivo" requirement and the requirement "de solicitar autorización para la prestación de los servicios" listed; subparagraph a) literally names "el servicio de asesoría de inversión, asesoría crediticia, sistema alternativo de transacción y plataforma de financiamiento colectivo" — the singular "el servicio" governing a coordinated list. Rendered as written.
+Likewise, those who have availed themselves of the Chilean-domicile exception referred to in subparagraph C.3 below shall also be exempt from the exclusive-corporate-purpose requirement.
+
+> **TN:** NCG 524 inserted text mid-sentence here (an intercalación). The consolidated Spanish is faithful to NCG 502 as amended by NCG 524 (verified against the 524 source PDF), but its spliced wording does not appear as a contiguous passage in either single source PDF, so the automated dual-PDF round-trip cannot score it above threshold. This section is on the round-trip `--exclude` list and was verified manually.
 
 ### Original Spanish
 
-> "C.2. DEL GIRO EXCLUSIVO Y AUTORIZACIÓN DE SERVICIOS
+> "C.2. DEL GIRO EXCLUSIVO
 >
-> En virtud de lo establecido en el artículo 4° de la Ley N°21.521 se exceptúa del requisito de giro exclusivo a efectos de solicitar su inscripción en el Registro de Prestadores de Servicios Financieros y del requisito de solicitar autorización para la prestación de los servicios de asesoría de inversión, asesoría crediticia, sistema alternativo de transacción y plataforma de financiamiento colectivo, a quienes cumplan las siguientes circunstancias copulativas:
+> En virtud de lo establecido en el artículo 4° de la Ley N°21.521 se exceptúa del requisito de giro exclusivo a efectos de solicitar su inscripción en el Registro de Prestadores de Servicios Financieros, a quienes cumplan las siguientes circunstancias copulativas:
 >
-> a) Que, entre los servicios regulados por la Ley N°21.521, sólo presten el servicio de asesoría de inversión, asesoría crediticia, sistema alternativo de transacción y plataforma de financiamiento colectivo.
+> a) Que, entre los servicios regulados por la Ley N°21.521, sólo presten el servicio de asesoría de inversión, asesoría crediticia, enrutadores de órdenes, sistema alternativo de transacción y plataforma de financiamiento colectivo.
 >
 > b) Que la prestación de los servicios regulados por esta normativa sólo sea provista a inversionistas calificados a los que se refiere la letra f) del artículo 4 Bis de la Ley N°18.045.
 >
-> Para acogerse a esta excepción, el solicitante deberá efectuar una declaración respecto del hecho que dará cumplimiento a las circunstancias antes descritas. Dicha declaración, deberá ser efectuada a través del mecanismo electrónico dispuesto para el ingreso de la solicitud de inscripción, en el sitio en Internet de la Comisión. Además, dicha declaración deberá ser actualizada anualmente a través del mecanismo establecido para ello en el sitio en Internet de la Comisión."
+> Para acogerse a esta excepción, el solicitante deberá efectuar una declaración respecto del hecho que dará cumplimiento a las circunstancias antes descritas. Dicha declaración, deberá ser efectuada a través del mecanismo electrónico dispuesto para el ingreso de la solicitud de inscripción, en el sitio en Internet de la Comisión. Además, dicha declaración deberá ser actualizada anualmente a través del mecanismo establecido para ello en el sitio en Internet de la Comisión.
+>
+> A su vez, quedarán eximidos del requisito de giro exclusivo, quienes se hayan acogido a la excepción de domicilio en Chile a que se refiere la sección C.3 siguiente."
 
 ### Cross-references
 - Ley 21.521 Art. 4 — the exception power exercised here.
@@ -291,36 +313,36 @@ To rely on this exception, the applicant must make a declaration regarding the f
 - Ley 18.045 Art. 4 Bis(f) — the definition of qualified investor (inversionista calificado) used in condition b).
 - NCG 502 §I.C.3 — the parallel exception for foreign entities lacking Chilean domicile, on the same qualified-investor condition.
 
-> **Source:** NCG 502 §I.C.2 (12-ene-2024).
+> **Source:** NCG 502 §I.C.2 (12-ene-2024), as amended by NCG 524 items b.1, b.2, b.3 (02-dic-2024).
 
 ---
 
-## I.C.3 — On Chilean Domicile and Authorization of Services
+## I.C.3 — On Chilean Domicile
 **NCG anchor:** N° 502, Sección I, C.3
-**Implements:** Ley 21.521 Art. 4 (CMF exception); relates to Art. 6 (domicile requirement) and Art. 7 (service authorization)
+**Implements:** Ley 21.521 Art. 4 (CMF exception); relates to Art. 6 (domicile requirement)
 **Tags:** exceptions, foreign-entity, domicile, qualified-investors, declaration
 
 ### Plain-English text
 
-By virtue of the provisions of Article 4 of Ley N° 21.521, foreign entities are excepted from the requirement of having a domicile (domicilio) in Chile for the purpose of applying for their registration in the Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros), and from the requirement to apply for authorization for the provision of the services of investment advisory (asesoría de inversión), credit advisory (asesoría crediticia), alternative trading system (sistema alternativo de transacción), and crowdfunding platform (plataforma de financiamiento colectivo), in the following cumulative circumstances (circunstancias copulativas):
+By virtue of the provisions of Article 4 of Ley N° 21.521, foreign entities are excepted from the requirement of having a domicile (domicilio) in Chile for the purpose of applying for their registration in the Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros), in the following cumulative circumstances (circunstancias copulativas):
 
-a) That they provide in Chile only the services of investment advisory, credit advisory, alternative trading system, and crowdfunding platform; and
+a) That, in the last 10 years counted from the date of submission of the authorization application, those entities have not been sanctioned or do not have charges formulated against them for the serious infringements (infracciones graves) referred to in Article 14 of Ley N° 21.521, or abroad for equivalent conduct. In the case of a legal person, this requirement shall be considered with respect to the entities that form part of its business group (grupo empresarial) in the terms contemplated in Article 96 of Ley N° 18.045 on Securities Markets, as well as its controllers, principal shareholders or partners, directors, administrators, and managers, as at the date of the application; and
 
 b) That the provision in Chile of the services regulated by this regulation be provided only to qualified investors (inversionistas calificados) referred to in subparagraph f) of Article 4 Bis of Ley N° 18.045.
 
-To rely on this exception, the applicant must make a declaration regarding the fact that it will comply with the circumstances described above. Such declaration must be made through the electronic mechanism provided for the submission of the registration application, on the Commission (CMF)'s website. In addition, such declaration must be updated annually through the mechanism established for that purpose on the Commission (CMF)'s website.
+To rely on this exception, the applicant must, at the time of applying for registration in the Registry, make a declaration regarding the fact that it will comply with the circumstances described above, and that, in the face of any modification to the same, it will cease to provide the services of Ley N° 21.521 while it has not obtained the corresponding authorization from this Commission (CMF). Such declaration must be made through the electronic mechanism provided for the submission of the registration application, on the Commission (CMF)'s website. In addition, such declaration must be updated annually through the mechanism established for that purpose on the Commission (CMF)'s website.
 
 ### Original Spanish
 
-> "C.3. DEL DOMICILIO EN CHILE Y AUTORIZACIÓN DE SERVICIOS
+> "C.3. DEL DOMICILIO EN CHILE
 >
-> En virtud de lo establecido en el artículo 4° de la Ley N° 21.521 se exceptúa a las entidades extranjeras del requisito de contar con domicilio en Chile a efectos de solicitar su inscripción en el Registro de Prestadores de Servicios Financieros y del requisito de solicitar autorización para la prestación de los servicios de asesoría de inversión, asesoría crediticia, sistema alternativo de transacción y plataforma de financiamiento colectivo, en las siguientes circunstancias copulativas:
+> En virtud de lo establecido en el artículo 4° de la Ley N° 21.521 se exceptúa a las entidades extranjeras del requisito de contar con domicilio en Chile a efectos de solicitar su inscripción en el Registro de Prestadores de Servicios Financieros, en las siguientes circunstancias copulativas:
 >
-> a) Que sólo presten en Chile los servicios de asesoría de inversión, asesoría crediticia, sistema alternativo de transacción y plataforma de financiamiento colectivo; y
+> a) Que, en los últimos 10 años desde la fecha de ingreso de la solicitud de autorización, esas entidades no hayan sido sancionadas o se encuentren formulados de cargos por las infracciones graves a que se refiere el artículo 14 de la Ley N°21.521, o en el extranjero por conductas equivalentes. Tratándose de una persona jurídica, este requisito se considerará respecto de las entidades que formen parte de su grupo empresarial en los términos contemplados en el artículo 96 de la Ley N°18.045 de Mercado de Valores, así como de sus controladores, socios o accionistas mayoritarios, directores, administradores y gerentes, a la fecha de la solicitud; y
 >
 > b) Que la prestación en Chile de los servicios regulados por esta normativa sólo sea provista a inversionistas calificados a los que se refiere la letra f) del artículo 4 Bis de la Ley N°18.045.
 >
-> Para acogerse a esta excepción, el solicitante deberá efectuar una declaración respecto del hecho que dará cumplimiento a las circunstancias antes descritas. Dicha declaración deberá ser efectuada a través del mecanismo electrónico dispuesto para el ingreso de la solicitud de inscripción, en el sitio en Internet de la Comisión. Además, dicha declaración deberá ser actualizada anualmente a través del mecanismo establecido para ello en el sitio en Internet de la Comisión."
+> Para acogerse a esta excepción el solicitante, al momento de solicitar la inscripción en el Registro, deberá efectuar una declaración respecto del hecho que cumple las circunstancias antes descritas y que, frente a cualquier modificación de las mismas, dejará de prestar los servicios de la Ley N°21.521 mientras no haya obtenido la autorización respectiva por parte de esta Comisión. Dicha declaración deberá ser efectuada a través del mecanismo electrónico dispuesto para el ingreso de la solicitud de inscripción, en el sitio en Internet de la Comisión. Además, dicha declaración deberá ser actualizada anualmente a través del mecanismo establecido para ello en el sitio en Internet de la Comisión."
 
 ### Cross-references
 - Ley 21.521 Art. 4 — the exception power exercised here.
@@ -328,4 +350,4 @@ To rely on this exception, the applicant must make a declaration regarding the f
 - NCG 502 §I.A item 2 — the foreign-entity agency requirement, which this exception relieves (the C.3 declaration suffices in lieu of establishing an agency).
 - NCG 502 §I.C.2 — the parallel exception to the exclusive-corporate-purpose requirement on the same qualified-investor condition.
 
-> **Source:** NCG 502 §I.C.3 (12-ene-2024).
+> **Source:** NCG 502 §I.C.3 (12-ene-2024), as amended by NCG 524 items c.1, c.2 (02-dic-2024).

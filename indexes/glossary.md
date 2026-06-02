@@ -178,16 +178,6 @@ Any free, specific, unequivocal, and informed manifestation of will, given throu
 
 ---
 
-## counterparty risk (riesgo de contraparte)
-**Defined in:** NCG 502 Anexo N°1
-
-Exposure to potential losses as a result of a failure of a contract for differences or derivative or of the failure of a counterparty in a transaction within a settlement and clearing process. (Subcategory of credit risk; see also: credit risk.)
-
-**Spanish original:**
-> "Riesgo de contraparte: exposición a potenciales pérdidas como resultado de un incumplimiento de contrato por diferencias o derivado o del incumplimiento de una contraparte en una transacción dentro de un proceso de compensación y liquidación."
-
----
-
 ## credit advisory (asesoría crediticia)
 **Defined in:** 21.521 Art. 3
 
@@ -195,20 +185,6 @@ The provision of evaluation or recommendation services to third parties regardin
 
 **Spanish original:**
 > "Asesoría crediticia: la prestación de servicios de evaluaciones o recomendaciones a terceros respecto de la capacidad o probabilidad de pago de personas naturales y jurídicas o entidades, o de la identidad de éstas, para fines de la obtención, modificación o renegociación de un crédito o financiamiento."
-
----
-
-## credit risk (riesgo de crédito)
-**Defined in:** NCG 502 Anexo N°1
-
-Potential exposure to financial losses due to non-compliance by a third party with the terms and conditions stipulated in the respective contract, agreement, or legal act. Divided into two subcategories: counterparty risk (riesgo de contraparte) and issuer credit risk (riesgo crediticio del emisor).
-
-**Spanish original:**
-> "Riesgo de crédito: potencial exposición a pérdidas económicas debido al incumplimiento por parte de un tercero de los términos y las condiciones estipuladas en el respectivo contrato, convención o acto jurídico. Este riesgo se divide en las siguientes subcategorías:
->
-> Riesgo de contraparte: exposición a potenciales pérdidas como resultado de un incumplimiento de contrato por diferencias o derivado o del incumplimiento de una contraparte en una transacción dentro de un proceso de compensación y liquidación.
->
-> Riesgo crediticio del emisor: exposición a potenciales quiebras o deterioro de solvencia en los instrumentos financieros de una entidad."
 
 ---
 
@@ -392,13 +368,15 @@ Corresponds to the risk that by its nature cannot be separated from the process 
 
 ---
 
-## institutional client (cliente institucional)
+## institutional investor (inversionista institucional)
 **Defined in:** NCG 502 Anexo N°1
 
-Institutional investors in accordance with subparagraph e) of Article 4 bis of Ley N° 18.045 on the Securities Market and General Regulation N° 410 of this Commission (CMF).
+Those referred to in subparagraph e) of Article 4 bis of Ley N° 18.045 on the Securities Market.
+
+> **TN:** NCG 524 item H.2 renamed "Cliente institucional" to "Inversionista institucional" and replaced the prior reference to NCG 410 with a simplified reference solely to Ley N° 18.045 Art. 4 bis(e).
 
 **Spanish original:**
-> "Cliente institucional: inversionistas institucionales de acuerdo con la letra e) del artículo 4 bis de la Ley N°18.045 de Mercado de Valores y la Norma de Carácter General N°410 de esta Comisión"
+> "Inversionista institucional: aquellos de la letra e) del artículo 4 bis de la Ley N°18.045 de Mercado de Valores."
 
 ---
 
@@ -442,16 +420,6 @@ An initiative intended to generate (tiene por finalidad la generación de) inter
 
 ---
 
-## issuer credit risk (riesgo crediticio del emisor)
-**Defined in:** NCG 502 Anexo N°1
-
-Exposure to potential insolvencies or deterioration of solvency in an entity's financial instruments. (Subcategory of credit risk; see also: credit risk.)
-
-**Spanish original:**
-> "Riesgo crediticio del emisor: exposición a potenciales quiebras o deterioro de solvencia en los instrumentos financieros de una entidad."
-
----
-
 ## malware (malware)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -469,16 +437,6 @@ For the purpose of calculating the equity requirement for market risk for shares
 
 **Spanish original:**
 > "Mercado: para el cálculo del requisito de patrimonio por riesgo de mercado de acciones e índices accionarios de los instrumentos derivados y contratos por diferencias, mercado refiere a todas las acciones cotizadas en mercados de valores ubicados en la misma jurisdicción nacional."
-
----
-
-## market risk (riesgo de mercado)
-**Defined in:** NCG 502 Anexo N°1
-
-Potential loss caused by changes in market prices, which could generate adverse effects on the entity's own portfolio or the balance sheet of financial-instrument intermediation service providers. It covers interest-rate risk, exchange-rate risk, and price risk in relation to financial instruments.
-
-**Spanish original:**
-> "Riesgo de mercado: potencial pérdida causada por cambios en los precios del mercado, que podría generar efectos adversos en la cartera propia o el balance del prestador de servicios de intermediación de instrumentos financieros. Abarca el riesgo de tasas de interés, el riesgo cambiario y de precios en relación con los instrumentos financieros."
 
 ---
 
@@ -509,16 +467,6 @@ A public national registry administered by the Agency, recording certified preve
 
 **Spanish original:**
 > "Registro Nacional de Sanciones y Cumplimiento: es un registro nacional de carácter público administrado por la Agencia, que consigna los modelos certificados de prevención, los responsables de datos que los hayan adoptado y las sanciones que se hayan impuesto a los responsables de datos que hayan infringido la ley."
-
----
-
-## operational risk (riesgo operacional)
-**Defined in:** NCG 502 Anexo N°1
-
-Operational risk corresponds to the risk that deficiencies in information systems, internal processes, or personnel, or disturbances caused by external events, may reduce, deteriorate, or interrupt the services provided by the entity and eventually cause it financial losses. It includes the risk of losses arising from regulatory changes that affect the entity's operations, as well as losses derived from non-compliance with or failure to adhere to the applicable regulation.
-
-**Spanish original:**
-> "Riesgo operacional: el riesgo operacional corresponde al riesgo de que las deficiencias que puedan producirse en los sistemas de información, los procesos internos o el personal, o las perturbaciones ocasionadas por acontecimientos externos provoquen la reducción, el deterioro o la interrupción de los servicios que presta la entidad y eventualmente le originen pérdidas financieras. Incluye el riesgo de pérdidas ante cambios regulatorios que afecten las operaciones de la entidad, como también pérdidas derivadas de incumplimiento o falta de apego a la regulación vigente."
 
 ---
 

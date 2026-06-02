@@ -180,22 +180,22 @@ the special financial-data rules of Título III.
   (See `corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-23`.)
 
 - [ ] Submit the SFA registration application with all required antecedents (corporate documents, exclusive-purpose evidence, conformity declaration) — NCG 502 §I.A.
-  (See `corpus/ncg/502-psf-obligations/seccion-01-registro.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-01-registro.md`.)
 
 - [ ] Implement documented information-security and cybersecurity procedures before accessing any SFA data in production — NCG 502 §IV.C.3.1.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md`.)
 
 - [ ] Establish and test a business continuity plan and disaster recovery plan covering the SFA aggregation platform — NCG 502 §IV.C.3.2.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md`.)
 
 - [ ] Apply outsourcing controls (provider due diligence, written contracts with continuity and audit clauses) to any third-party infrastructure supporting the aggregation service — NCG 502 §IV.C.3.3.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md`.)
 
 - [ ] Establish the operational-incident reporting procedure and report any incident to CMF using the Anexo N°2 form within the prescribed deadlines — NCG 502 §IV.C.7 / Anexo N°2.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md` and `corpus/ncg/502-psf-obligations/anexo-02-reporte-incidentes.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md` and `corpus/ncg/502-psf-obligations-consolidated/anexo-02-reporte-incidentes.md`.)
 
 - [ ] Maintain an operational-loss register and submit periodic loss reports to CMF using the Anexo N°3 form — NCG 502 Anexo N°3.
-  (See `corpus/ncg/502-psf-obligations/anexo-03-reporte-perdidas.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/anexo-03-reporte-perdidas.md`.)
 
 ### Watch-outs
 
@@ -288,22 +288,22 @@ personal data and processing it triggers full Ley 19.628 obligations.
   (See `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-14-quáter`.)
 
 - [ ] Submit the SFA registration application with all required antecedents (corporate documents, exclusive-purpose evidence, conformity declaration) — NCG 502 §I.A.
-  (See `corpus/ncg/502-psf-obligations/seccion-01-registro.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-01-registro.md`.)
 
 - [ ] Implement documented information-security and cybersecurity procedures before accessing any SFA investment data in production — NCG 502 §IV.C.3.1.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md`.)
 
 - [ ] Establish and test a business continuity plan and disaster recovery plan covering the investment tracker platform — NCG 502 §IV.C.3.2.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md`.)
 
 - [ ] Apply outsourcing controls to any third-party infrastructure used for data aggregation or storage — NCG 502 §IV.C.3.3.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md`.)
 
 - [ ] Establish the CMF operational-incident reporting procedure; report incidents using the Anexo N°2 form within prescribed deadlines — NCG 502 §IV.C.7 / Anexo N°2.
-  (See `corpus/ncg/502-psf-obligations/seccion-04c-gobierno-plataformas-sat.md` and `corpus/ncg/502-psf-obligations/anexo-02-reporte-incidentes.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04c-gobierno-plataformas-sat.md` and `corpus/ncg/502-psf-obligations-consolidated/anexo-02-reporte-incidentes.md`.)
 
 - [ ] Maintain an operational-loss register and submit periodic loss reports to CMF using the Anexo N°3 form — NCG 502 Anexo N°3.
-  (See `corpus/ncg/502-psf-obligations/anexo-03-reporte-perdidas.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/anexo-03-reporte-perdidas.md`.)
 
 ### Watch-outs
 
@@ -409,34 +409,34 @@ rules.
   (See `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-14-ter`.)
 
 - [ ] Submit the CMF registration application with all required antecedents (corporate documents, exclusive-purpose evidence, shareholder information, conformity declaration) — NCG 502 §I.A.
-  (See `corpus/ncg/502-psf-obligations/seccion-01-registro.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-01-registro.md`.)
 
 - [ ] Obtain NCG 502 §II authorisation: submit governance documentation, systems evidence, and capital confirmation as required for the investment advisory and/or intermediation service category — NCG 502 §II.
-  (See `corpus/ncg/502-psf-obligations/seccion-02-autorizacion.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-02-autorizacion.md`.)
 
 - [ ] Board approves governance, risk-management, compliance, and conflict-of-interest policies before commencing services — NCG 502 §IV.A (investment advisory) or §IV.E (intermediation/custody).
-  (See `corpus/ncg/502-psf-obligations/seccion-04a-gobierno-asesoria-inversion.md` and `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04a-gobierno-asesoria-inversion.md` and `corpus/ncg/502-psf-obligations-consolidated/seccion-04e-gobierno-intermediacion-custodia.md`.)
 
 - [ ] Implement information-security and cybersecurity controls per NCG 502 §IV.A.2.2 (advisory) / §IV.E.4.1 (intermediation/custody).
-  (See `corpus/ncg/502-psf-obligations/seccion-04a-gobierno-asesoria-inversion.md` and `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04a-gobierno-asesoria-inversion.md` and `corpus/ncg/502-psf-obligations-consolidated/seccion-04e-gobierno-intermediacion-custodia.md`.)
 
 - [ ] Establish and test a business continuity plan and disaster recovery plan — NCG 502 §IV.E.4.2 (intermediation/custody); apply equivalent BCP standards for advisory per §IV.A.
-  (See `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04e-gobierno-intermediacion-custodia.md`.)
 
 - [ ] Apply outsourcing controls (due diligence, written contracts, audit rights, concentration-risk limits) to all third-party service providers — NCG 502 §IV.E.4.3 (intermediation/custody) / §IV.A.
-  (See `corpus/ncg/502-psf-obligations/seccion-04e-gobierno-intermediacion-custodia.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04e-gobierno-intermediacion-custodia.md`.)
 
 - [ ] Establish the CMF operational-incident reporting procedure and report incidents using the Anexo N°2 form — NCG 502 §IV.A.5 / §IV.E.8 / Anexo N°2.
-  (See `corpus/ncg/502-psf-obligations/seccion-04a-gobierno-asesoria-inversion.md` and `corpus/ncg/502-psf-obligations/anexo-02-reporte-incidentes.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-04a-gobierno-asesoria-inversion.md` and `corpus/ncg/502-psf-obligations-consolidated/anexo-02-reporte-incidentes.md`.)
 
 - [ ] Maintain an operational-loss register and submit periodic loss reports to CMF using the Anexo N°3 form — NCG 502 Anexo N°3.
-  (See `corpus/ncg/502-psf-obligations/anexo-03-reporte-perdidas.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/anexo-03-reporte-perdidas.md`.)
 
 - [ ] Meet minimum-equity and guarantee requirements per NCG 502 §V.B; maintain capital above the floor throughout operation and constitute bank guarantees or insurance once volume thresholds are reached — NCG 502 §V.B.
-  (See `corpus/ncg/502-psf-obligations/seccion-05-capital-garantias.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-05-capital-garantias.md`.)
 
 - [ ] Deliver pre-contractual key-information sheets, fee schedules, and conflict-of-interest disclosures per NCG 502 §III disclosure obligations for the applicable service type — NCG 502 §III.
-  (See `corpus/ncg/502-psf-obligations/seccion-03-divulgacion.md`.)
+  (See `corpus/ncg/502-psf-obligations-consolidated/seccion-03-divulgacion.md`.)
 
 ### Watch-outs
 

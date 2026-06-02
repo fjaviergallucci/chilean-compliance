@@ -6,7 +6,7 @@ If you're building software that handles Chilean users' financial or personal da
 
 - **Ley 21.521** (*Ley Fintec*, 2023) — financial-services innovation, crowdfunding, investment advisory, open finance, custody, intermediation.
 - **Ley 19.628** as amended by **Ley 21.719** (*data protection*, in force **2026-12-01**) — consent, lawful basis, data-subject rights, sensitive data, breach notification, the new APDP regulator and sanctions framework.
-- **NCG 502** (CMF *Norma de Carácter General*, 2024) — the implementing regulation for Ley 21.521 Título II: how financial-service providers actually register, get authorized, govern risk, secure systems, hold capital, and report. The operational layer beneath the Fintech law.
+- **NCG 502** (CMF *Norma de Carácter General*, 2024) — the implementing regulation for Ley 21.521 Título II: how financial-service providers actually register, get authorized, govern risk, secure systems, hold capital, and report. The operational layer beneath the Fintech law. Consolidated with NCG 524 (116 amendments applied).
 
 These texts are all published in Spanish. Without help, an AI session about Chilean compliance spends most of its tokens translating, re-translating, and searching the same legal text from scratch every time. This plugin makes that knowledge available as a structured corpus with topical indexes, a glossary, scenario checklists, and a query-decision-tree skill — so your AI agent can answer compliance questions in seconds, with verifiable citations.
 
@@ -35,7 +35,7 @@ These texts are all published in Spanish. Without help, an AI session about Chil
 
 ### Estado actual
 
-El corpus incluye el texto base de la NCG 502 (117 secciones, 12-ene-2024); las 116 modificaciones de la NCG 524 están catalogadas y la consolidación queda pendiente para v1.1.1.
+El corpus incluye la NCG 502 consolidada con NCG 524 (116 modificaciones aplicadas, 02-dic-2024).
 
 El corpus principal está en inglés, ya que ese es el idioma operativo de los agentes de IA. Las citas verbatim del texto original en español siempre están disponibles dentro de cada artículo (bloque `### Original Spanish`). Todo el articulado cuenta con traducciones literales lexicon-conformes; las notas del traductor (`> **TN:** ...`) explican los renderings que no calzan exactamente con el léxico (por ejemplo, instituciones procesales chilenas sin equivalente directo en inglés).
 
@@ -61,7 +61,7 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | Ley 19.628 consolidated — Preliminar through Título V (Arts. 1-29) | **Stable** | Core data-protection regime |
 | Ley 19.628 consolidated — Títulos VI-VIII (Arts. 30-55, Agency + sanctions framework) | **Stable** | Literal translations complete (Phase H4 closed all 44 REVIEW markers) |
 | Ley 21.719 amendments changelog | **Stable** | Reference only — quote consolidated 19.628 as operative law |
-| NCG 502 — PSF obligations (Ley 21.521 implementing reg, baseline) | **Stable** | 117 sections; NCG 524's 116 amendments catalogued, consolidation pending |
+| NCG 502 — PSF obligations (Ley 21.521 implementing reg) | **Stable** | consolidated with NCG 524 (116 amendments applied) |
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 149 topical · 82 glossary · 7 scenarios/100 items · 338 cross-refs |
 | Tooling + tests | **Stable** | 32/32 pytest passing |
 
@@ -140,7 +140,7 @@ To enable, disable, or uninstall later:
 To install at a tagged version rather than `main`:
 
 ```text
-/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.1.0
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.1.1
 /plugin install chile-compliance@chile-compliance
 ```
 
@@ -173,7 +173,7 @@ chile-compliance/
 │   ├── 19628-data-protection-consolidated/  # Ley 19.628 (post-21.719) by Título
 │   ├── 21719-amendments-changelog/     # Reference: which 21.719 item changed what
 │   └── ncg/                            # CMF NCG regulations
-│       ├── 502-psf-obligations/        # NCG 502 baseline (12-ene-2024), 117 sections
+│       ├── 502-psf-obligations-consolidated/  # NCG 502 consolidated (baseline + NCG 524)
 │       └── 524-amendments-changelog/   # NCG 524 amendments catalogue (116 items)
 ├── indexes/
 │   ├── by-topic.md                     # Topical lookup, 149 citations
