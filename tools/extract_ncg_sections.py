@@ -17,6 +17,25 @@ TOC_LINE_RE = re.compile(
     r"(?P<title>.+?)\s*\.{2,}\s*(?P<page>\d+)\s*$"
 )
 INDICE_RE = re.compile(r"^\s*[ÍI]NDICE\s*$", re.MULTILINE | re.IGNORECASE)
+# Matches structurally valid Roman numeral strings (non-empty).
+# NOTE: this is necessary but not sufficient — C, D, L are valid Roman
+# characters but are also letter subsection labels in NCG documents.
+# Sequential validation (_roman_to_int + strict increment) is used to
+# disambiguate them at parse time.
+_ROMAN_RE = re.compile(
+    r"^M{0,3}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})$"
+)
+_ROMAN_VALS = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+
+
+def _roman_to_int(s: str) -> int:
+    result = 0
+    prev = 0
+    for ch in reversed(s):
+        v = _ROMAN_VALS.get(ch, 0)
+        result += v if v >= prev else -v
+        prev = v
+    return result
 
 
 class TocEntry(TypedDict):
@@ -36,10 +55,21 @@ def _read_pages(pdf_path: Path) -> list[str]:
         return [p.extract_text() or "" for p in pdf.pages]
 
 
-def _parse_toc_from_text(full: str) -> list[TocEntry]:
+def _parse_toc_from_text(full: str) -> list[dict]:
+    """Return ToC entries as dicts with keys: number (full path), title, page,
+    and _local (the raw token from the índice, used internally for heading
+    matching in body text).
+
+    Full-path rule:
+    - Pure Roman tokens (I, II, ...) → full path == token; update current Roman.
+    - All other tokens (letter, letter-rooted dotted, numeric dotted) →
+      full path == "<current_roman>.<token>".
+    """
     start = INDICE_RE.search(full)
     region = full[start.end():] if start else full
-    entries: list[TocEntry] = []
+    entries: list[dict] = []
+    current_roman: str | None = None
+    current_roman_int: int = 0
     for line in region.splitlines():
         m = TOC_LINE_RE.match(line)
         if not m:
@@ -47,25 +77,52 @@ def _parse_toc_from_text(full: str) -> list[TocEntry]:
             # numbers, body headings); body headings never carry dots+page so
             # they will not match TOC_LINE_RE — no early break needed.
             continue
+        # M-2: TOC_LINE_RE's \.?? is outside the number group so the
+        # capture never contains a trailing dot — .strip() suffices.
+        local = m.group("number").strip()
+        # A token is a top-level Roman section only if:
+        # 1. It matches the Roman numeral character pattern (non-empty), AND
+        # 2. Its integer value is exactly one more than the previous Roman
+        #    section (strict sequence). This disambiguates letter subsection
+        #    labels like 'C', 'D', 'L' which are also valid Roman characters
+        #    but would jump discontinuously in value (e.g. C=100 after I=1).
+        is_roman_section = False
+        if _ROMAN_RE.match(local) and local:
+            val = _roman_to_int(local)
+            if val == current_roman_int + 1:
+                is_roman_section = True
+        if is_roman_section:
+            # Top-level Roman section: full path == the token itself.
+            current_roman = local
+            current_roman_int = _roman_to_int(local)
+            full_number = local
+        else:
+            # Sub-section: prefix with current Roman section if available.
+            full_number = f"{current_roman}.{local}" if current_roman else local
         entries.append(
-            TocEntry(
-                # M-2: TOC_LINE_RE's \.?? is outside the number group so the
-                # capture never contains a trailing dot — .strip() suffices.
-                number=m.group("number").strip(),
-                title=m.group("title").strip(),
-                page=int(m.group("page")),
-            )
+            {
+                "number": full_number,
+                "title": m.group("title").strip(),
+                "page": int(m.group("page")),
+                "_local": local,
+            }
         )
     return entries
 
 
 def parse_toc(pdf_path: Path) -> list[TocEntry]:
     full = "\n".join(_read_pages(pdf_path))
-    return _parse_toc_from_text(full)
+    raw = _parse_toc_from_text(full)
+    return [TocEntry(number=e["number"], title=e["title"], page=e["page"]) for e in raw]
 
 
-def _heading_regex(number: str, title: str) -> re.Pattern:
-    num = re.escape(number)
+def _heading_regex(local_token: str, title: str) -> re.Pattern:
+    """Build a body-heading pattern using the LOCAL token (not the full path).
+
+    Body headings use the local token (e.g. "A. Sub A"), not the full
+    hierarchical path (e.g. "I.A. Sub A"), so we match on `local_token`.
+    """
+    num = re.escape(local_token)
     words = [re.escape(w) for w in title.split()[:3]]
     title_pat = r"\s+".join(words)
     return re.compile(rf"^\s*{num}\.?\s+{title_pat}", re.IGNORECASE | re.MULTILINE)
@@ -99,10 +156,13 @@ def _extract_sections_from_text(full: str) -> list[SectionBlock]:
     indice = INDICE_RE.search(full)
     toc_region_start = indice.end() if indice else 0
     body_start = _find_body_start(full, toc_region_start)
-    positions: list[tuple[int, TocEntry]] = []
+    positions: list[tuple[int, dict]] = []
     search_from = body_start
     for entry in toc:
-        pat = _heading_regex(entry["number"], entry["title"])
+        # Use the LOCAL token for body-heading matching (body says "A. Sub A",
+        # not "I.A. Sub A"), but the full path is stored in entry["number"].
+        local_token = entry.get("_local", entry["number"])
+        pat = _heading_regex(local_token, entry["title"])
         m = pat.search(full, search_from)
         if m:
             positions.append((m.start(), entry))

@@ -9,7 +9,7 @@ NCG502 = Path(__file__).parent.parent.parent / "sources" / "NCG 502.pdf"
 def test_parse_toc_finds_all_entries():
     toc = parse_toc(FIXTURE)
     numbers = [e["number"] for e in toc]
-    assert numbers == ["I", "A", "B", "II", "A"], f"got {numbers}"
+    assert numbers == ["I", "I.A", "I.B", "II", "II.A"], f"got {numbers}"
 
 
 def test_parse_toc_captures_titles_and_pages():
@@ -22,10 +22,20 @@ def test_parse_toc_captures_titles_and_pages():
 
 def test_extract_sections_returns_body_blocks():
     sections = extract_sections(FIXTURE)
-    a_blocks = [s for s in sections if s["number"] == "A"]
+    a_blocks = [s for s in sections if s["number"] == "I.A"]
     assert any("primera subseccion" in s["spanish_text"] for s in a_blocks)
     assert all("segunda subseccion" not in s["spanish_text"]
                for s in a_blocks if "primera subseccion" in s["spanish_text"])
+
+
+def test_full_paths_prefix_roman_section():
+    toc = parse_toc(FIXTURE)
+    by_num = {e["number"]: e for e in toc}
+    assert "I.A" in by_num and "I.B" in by_num
+    assert "II.A" in by_num
+    # The two 'A' subsections are now distinct, not collapsed.
+    assert by_num["I.A"]["title"].startswith("Sub A")
+    assert by_num["II.A"]["title"].startswith("Otra Sub")
 
 
 # Regression test: long ToC (multi-page) must not break early when a wrapped
