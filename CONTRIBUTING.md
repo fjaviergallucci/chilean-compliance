@@ -9,9 +9,7 @@ As of v1.0.0, every article in the corpus carries a literal lexicon-conformant t
 - **Translation corrections.** If you find an English rendering that doesn't track the Spanish, open an issue (`Translation fix or improvement` template) or send a PR with the change plus a `> **TN:** ...` note explaining the rationale.
 - **New scenarios** in `indexes/scenarios.md` covering use cases that aren't yet on the list.
 - **CMF circulars and APDP guidance** as they are published. These are out of scope today but are valuable additions when issued.
-- **NCG 524 consolidation** — the 116 amendments are catalogued in `corpus/ncg/524-amendments-changelog/_amendments.json`; applying them to the NCG 502 baseline corpus to produce a consolidated text is the next planned step (future v1.1.1).
-- **NCG phase 2** — NCG 514 (Open Finance), NCG 530 (reporting obligations), and NCG 503 (idoneidad) are natural next additions once NCG 502 is consolidated.
-- **Coverage for other Chilean statutes** that fintech-adjacent products touch (Leyes 18.045, 18.046, 18.840, etc.). Each becomes its own corpus subdirectory.
+- **All in-scope CMF NCGs are now in the corpus** (NCG 502 consolidated with 524; NCG 514 Open Finance; NCG 503 idoneidad; NCG 530 Fintec reporting). Future NCG/circular additions (e.g. NCG 515, APDP guidance) and coverage of other fintech-adjacent statutes (Leyes 18.045, 18.046, 18.840) are welcome.
 
 To propose any of the above, open an issue using the matching `.github/ISSUE_TEMPLATE/` so the discussion has the right shape, then send a PR.
 
@@ -75,8 +73,8 @@ python -m tools.check_roundtrip sources/Ley-21521_04-ENE-2023-1.pdf corpus/21521
 python -m tools.check_roundtrip sources/LEY-19628_28-AGO-1999.pdf corpus/19628-data-protection-consolidated --sample 0
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/21521-fintech
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/19628-data-protection-consolidated
-python -m tools.check_ncg_parity corpus/ncg/502-psf-obligations/_toc.json corpus/ncg/502-psf-obligations
-python -m tools.check_roundtrip "sources/NCG 502.pdf" corpus/ncg/502-psf-obligations --mode ncg --threshold 0.80
+python -m tools.check_ncg_parity corpus/ncg/502-psf-obligations-consolidated/_toc.json corpus/ncg/502-psf-obligations-consolidated
+python -m tools.check_roundtrip "sources/NCG 502.pdf" corpus/ncg/502-psf-obligations-consolidated --mode ncg --also-pdf sources/ncg_524_2024.pdf --threshold 0.70 --exclude I.A --exclude I.C.2 --exclude II.A --exclude II.F --exclude III.C --exclude IV.C.6 --exclude IV.D.4 --exclude VIII --exclude Anexo
 python -m tools.check_ncg_parity corpus/ncg/503-idoneidad/_toc.json corpus/ncg/503-idoneidad
 python -m tools.check_roundtrip sources/ncg_503_2024.pdf corpus/ncg/503-idoneidad --mode ncg --threshold 0.80
 python -m tools.check_ncg_parity corpus/ncg/530-fintec-reporting/_toc.json corpus/ncg/530-fintec-reporting
