@@ -2,11 +2,15 @@
 
 > A structured, AI-queryable knowledge base of Chilean fintech and personal-data law — built for use by AI agents, not humans.
 
-If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws — and the CMF regulation that implements them:
+If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws — and the CMF regulations that implement them:
 
 - **Ley 21.521** (*Ley Fintec*, 2023) — financial-services innovation, crowdfunding, investment advisory, open finance, custody, intermediation.
 - **Ley 19.628** as amended by **Ley 21.719** (*data protection*, in force **2026-12-01**) — consent, lawful basis, data-subject rights, sensitive data, breach notification, the new APDP regulator and sanctions framework.
-- **NCG 502** (CMF *Norma de Carácter General*, 2024) — the implementing regulation for Ley 21.521 Título II: how financial-service providers actually register, get authorized, govern risk, secure systems, hold capital, and report. The operational layer beneath the Fintech law. Consolidated with NCG 524 (116 amendments applied).
+- **CMF implementing regulations** (*Normas de Carácter General*) — the operational layer beneath the Fintech law, telling financial-service providers how to actually comply:
+  - **NCG 502** (consolidated with NCG 524, 116 amendments applied) — registration, authorization, disclosure, risk governance, security, capital, and reporting for Ley 21.521 Título II.
+  - **NCG 514** — the Sistema de Finanzas Abiertas (open finance) regime under Título III: participant registration, APIs, consent, data sets, security.
+  - **NCG 503** — knowledge-accreditation (fit-and-proper / *idoneidad*) requirements for personnel performing defined functions.
+  - **NCG 530** — the MSI Fintec periodic-reporting obligations (the sixteen FINTEC01–16 reporting files).
 
 These texts are all published in Spanish. Without help, an AI session about Chilean compliance spends most of its tokens translating, re-translating, and searching the same legal text from scratch every time. This plugin makes that knowledge available as a structured corpus with topical indexes, a glossary, scenario checklists, and a query-decision-tree skill — so your AI agent can answer compliance questions in seconds, with verifiable citations.
 
@@ -23,7 +27,8 @@ These texts are all published in Spanish. Without help, an AI session about Chil
 
 - **Ley N° 21.521 (Ley Fintec)** — promueve la competencia e inclusión financiera mediante la innovación y tecnología en la prestación de servicios financieros. Cubre plataformas de financiamiento colectivo (*crowdfunding*), asesoría crediticia y de inversión, custodia de instrumentos financieros, enrutamiento de órdenes, intermediación, sistemas alternativos de transacción y el Sistema de Finanzas Abiertas (SFA). En vigor desde el **3 de febrero de 2023**.
 - **Ley N° 19.628 sobre Protección de Datos Personales** (consolidada con las modificaciones de la **Ley N° 21.719**) — regula el tratamiento de datos personales, el consentimiento del titular, los derechos del titular (acceso, rectificación, supresión, oposición, portabilidad), los datos personales sensibles, la transferencia internacional, las obligaciones del responsable y del mandatario, y crea la **Agencia de Protección de Datos Personales (APDP)** con su régimen sancionatorio. Entra en vigor el **1 de diciembre de 2026**.
-- **NCG N°502 (CMF)** — norma de carácter general que implementa el Título II de la Ley 21.521: registro, autorización, obligaciones de divulgación, gobierno corporativo y gestión de riesgos, capital y garantías, y reportes de los prestadores de servicios financieros. Es la capa operativa ("cómo cumplir en la práctica"). Texto base del 12-ene-2024; las 116 modificaciones de la NCG 524 están catalogadas, consolidación pendiente.
+- **NCG N°502 (CMF)** — norma de carácter general que implementa el Título II de la Ley 21.521: registro, autorización, obligaciones de divulgación, gobierno corporativo y gestión de riesgos, capital y garantías, y reportes de los prestadores de servicios financieros. Es la capa operativa ("cómo cumplir en la práctica"). Texto base del 12-ene-2024, consolidada con las 116 modificaciones de la NCG 524 (02-dic-2024).
+- **NCG N°514 (CMF) — Sistema de Finanzas Abiertas (SFA)** — implementa el Título III de la Ley 21.521: perímetro del SFA, registro de participantes, operación de APIs, consentimiento, conjuntos de datos, seguridad y resguardos. 6 Secciones, 80 secciones traducidas. Sus reglas de consentimiento (§III.D) y protección de datos (§IV.D) se vinculan a la Ley 19.628.
 - **NCG N°503 (CMF) — Exigencias de Idoneidad** — requisitos de acreditación de conocimientos para el personal que ejerce funciones definidas; Secciones I–IV traducidas; vinculada a Ley 21.521 arts. 7 y 9. Deroga la NCG 412.
 - **NCG N°530 (CMF) — Reportes MSI Fintec (capa de obligaciones)** — cuerpo normativo (lista FINTEC01–16, creación de MSI Fintec, vigencia) + Instrucciones Generales (Anexo N°1) + catálogo derivado FINTEC01–16. Los formatos de registro (Anexo N°2/N°3) están fuera del alcance de este corpus.
 
@@ -43,7 +48,7 @@ El corpus principal está en inglés, ya que ese es el idioma operativo de los a
 
 ### Documentación completa y contribuciones
 
-La documentación principal (instalación, uso desde Claude Code y otros hosts de IA, arquitectura, convenciones de contribución) está en inglés más abajo en este mismo archivo y en [CONTRIBUTING.md](CONTRIBUTING.md). Las contribuciones son bienvenidas, especialmente para finalizar las traducciones literales de los Títulos VI-VIII de la Ley 19.628 consolidada.
+La documentación principal (instalación, uso desde Claude Code y otros hosts de IA, arquitectura, convenciones de contribución) está en inglés más abajo en este mismo archivo y en [CONTRIBUTING.md](CONTRIBUTING.md). Las contribuciones son bienvenidas, especialmente la revisión legal humana de las traducciones (hechas con asistencia de IA, sin revisión jurídica), nuevos escenarios de cumplimiento, y la cobertura de otras normas a medida que se publiquen (circulares de la CMF, guías de la APDP).
 
 ### Licencia y procedencia
 
@@ -67,8 +72,8 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | NCG 514 — Open Finance / SFA (Ley 21.521 Título III implementing reg) | **Stable** | 80 sections across 6 Secciones |
 | NCG 503 — Exigencias de Idoneidad / fit-and-proper | **Stable** | Secciones I–IV; bridged to Ley 21.521 arts. 7 & 9; derogates NCG 412 |
 | NCG 530 — MSI Fintec reporting (obligations layer) | **Stable** | Body + Anexo N°1 + FINTEC01–16 catalog; record layouts (Anexo N°2/N°3) out of scope |
-| Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 149 topical · 82 glossary · 7 scenarios/100 items · 338 cross-refs |
-| Tooling + tests | **Stable** | 32/32 pytest passing |
+| Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 198 topical · 109 glossary · 7 scenarios/122 items · 392 cross-refs |
+| Tooling + tests | **Stable** | 41/41 pytest passing |
 
 The `corpus_status` field in `.claude-plugin/plugin.json` is the canonical source of truth for an AI consumer.
 
@@ -82,7 +87,7 @@ A consuming AI gets five kinds of lookup:
 2. **Definition lookup** — *"Define 'datos personales sensibles'."*
 3. **Scenario checklists** — *"What do I need to comply with if my feature aggregates bank statements?"*
 4. **Topical search** — *"What rules cover AI-based recommendations?"*
-5. **Operational/how-to lookup** — *"What does the CMF actually require us to do to register / report an incident / hold capital?"* — follows the law→regulation bridge into NCG 502.
+5. **Operational/how-to lookup** — *"What does the CMF actually require us to do to register / report an incident / hold capital / accredit staff?"* — follows the law→regulation bridge into the NCG layer (502 Título II, 514 open finance, 503 idoneidad, 530 reporting).
 
 Every answer cites a specific article in the corpus, so a human reviewer can click through and verify. Spanish original text is one hop away whenever a verbatim quote is needed.
 
@@ -221,7 +226,7 @@ Translation conventions live in `corpus/_lexicon.md`. When a translator deviated
 
 Be explicit with your users about the corpus's limits:
 
-- **CMF general regulations: NCG 502 only.** The corpus now includes NCG 502 (the core implementing regulation for Ley 21.521 Título II). Other CMF circulars and normas issued under Ley 21.521 Art. 4 remain out of scope until added separately.
+- **CMF general regulations: NCG 502, 514, 503, and 530.** The corpus includes the four in-scope implementing NCGs (502 Título II obligations, 514 open finance, 503 idoneidad, 530 MSI Fintec reporting). NCG 530's field-level record layouts (Anexo N°2/N°3) and other CMF circulars/normas issued under Ley 21.521 Art. 4 remain out of scope until added separately.
 - **No APDP guidance.** The Agencia de Protección de Datos Personales becomes operational with Ley 21.719 in force; its guidance and enforcement decisions are out of scope.
 - **No case law.** Chilean Supreme Court and Court of Appeals decisions interpreting these laws aren't in the corpus.
 - **No other laws.** Ley 21.521 amends Leyes 18.045 (capital markets), 18.046 (corporations), 18.840 (Central Bank), 19.220, 20.712, 20.950, and 21.000 — those amendments live in 21.521 Título V, which is documented as out-of-scope here. If your use case touches one of those statutes, you need a separate corpus.
@@ -319,7 +324,7 @@ python -m tools.check_glossary_completeness indexes/glossary.md corpus/21521-fin
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/19628-data-protection-consolidated
 ```
 
-All eight commands must exit `0` with their "OK" message.
+These cover the two laws. The NCG 502/514/503/530 parity and round-trip gates are listed in full in [CONTRIBUTING.md](CONTRIBUTING.md). Every gate command must exit `0` with its "OK" message, and `pytest` must be fully green (41 tests).
 
 ### Development setup
 
@@ -345,6 +350,9 @@ Original Spanish source text is from the **Biblioteca del Congreso Nacional de C
 | Ley 21.719 | `sources/Ley-21719_13-DIC-2024.pdf` |
 | NCG 502 (PSF obligations, baseline) | `sources/NCG 502.pdf` |
 | NCG 524 (amends NCG 502) | `sources/ncg_524_2024.pdf` |
+| NCG 514 (Open Finance / SFA) | `sources/ncg_514_2024.pdf` |
+| NCG 503 (Exigencias de Idoneidad) | `sources/ncg_503_2024.pdf` |
+| NCG 530 (MSI Fintec reporting) | `sources/ncg_530_2025-2.pdf` |
 
 ---
 
