@@ -216,6 +216,9 @@ the special financial-data rules of Título III.
 - [ ] Identify the data sets and variables you must consume (data sets, variables, availability deadlines) and the exact field specifications in the annexes (terms and conditions, service channels/ATM, enrollment, historical financial positions, transactional information) — NCG 514 §IV.A / §VI annexes.
   (See `corpus/ncg/514-open-finance/seccion-04-informacion.md` and `corpus/ncg/514-open-finance/seccion-06-anexos.md`.)
 
+- [ ] File the applicable FINTEC reporting files with the CMF on the prescribed periodicity once authorised as an RPSF provider; as an information-based service provider (PSBI), FINTEC01 (business volume/clients) is the primary obligation — NCG 530 §I.
+  (See `corpus/ncg/530-fintec-reporting/seccion-01-obligations.md`.)
+
 ### Watch-outs
 
 - **Read-only does not exempt from SFA registration.** Even if you only display
@@ -495,6 +498,12 @@ rules.
 - [ ] Identify the SFA data sets, variables, and the exact field specifications in the annexes that your application must consume — NCG 514 §IV.A / §VI annexes.
   (See `corpus/ncg/514-open-finance/seccion-04-informacion.md` and `corpus/ncg/514-open-finance/seccion-06-anexos.md`.)
 
+- [ ] File the applicable FINTEC reporting files with the CMF on the prescribed periodicity; investment advisory providers must file FINTEC01 (business volume/clients) and FINTEC10 (income and information — investment advisory); intermediation providers must file FINTEC01–FINTEC08 as applicable; custody providers must file FINTEC01, FINTEC11–FINTEC13, and FINTEC15 (blocks 2–3) — NCG 530 §I.
+  (See `corpus/ncg/530-fintec-reporting/seccion-01-obligations.md`.)
+
+- [ ] Ensure personnel performing defined functions (issuing investment recommendations, direct client contact for contracting/distribution, portfolio management, order execution, and supervision of the foregoing) hold the required knowledge accreditation through the CMF-designated accreditation mechanism before they commence those functions — NCG 503 §I.
+  (See `corpus/ncg/503-idoneidad/seccion-01-idoneidad.md`.)
+
 ### Watch-outs
 
 - **Registration and authorisation are separate sequential steps.** You may not
@@ -597,6 +606,9 @@ requirements.
 - [ ] If the recommendation model uses financial obligation data as input,
   apply Título III rules and the five-year limit — Ley 19.628 Art. 17.
   (See `corpus/19628-data-protection-consolidated/titulo-03-datos-financieros.md#article-17`.)
+
+- [ ] If the AI recommendation system constitutes a computer algorithm performing a defined functional category (e.g., issuing investment recommendations), designate an accredited responsible person to verify that the algorithm delivers results consistent with the function for which it was created — NCG 503 §II.
+  (See `corpus/ncg/503-idoneidad/seccion-01-idoneidad.md`.)
 
 ### Watch-outs
 
