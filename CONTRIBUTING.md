@@ -77,6 +77,10 @@ python -m tools.check_glossary_completeness indexes/glossary.md corpus/21521-fin
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/19628-data-protection-consolidated
 python -m tools.check_ncg_parity corpus/ncg/502-psf-obligations/_toc.json corpus/ncg/502-psf-obligations
 python -m tools.check_roundtrip "sources/NCG 502.pdf" corpus/ncg/502-psf-obligations --mode ncg --threshold 0.80
+python -m tools.check_ncg_parity corpus/ncg/503-idoneidad/_toc.json corpus/ncg/503-idoneidad
+python -m tools.check_roundtrip sources/ncg_503_2024.pdf corpus/ncg/503-idoneidad --mode ncg --threshold 0.80
+python -m tools.check_ncg_parity corpus/ncg/530-fintec-reporting/_toc.json corpus/ncg/530-fintec-reporting
+python -m tools.check_roundtrip sources/ncg_530_2025-2.pdf corpus/ncg/530-fintec-reporting --mode ncg --threshold 0.80
 ```
 
 Note: the NCG round-trip runs at threshold 0.80 due to one known pdfplumber page-break artifact; the law round-trips above use the default threshold.
