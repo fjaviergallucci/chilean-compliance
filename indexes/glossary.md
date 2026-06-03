@@ -84,6 +84,16 @@ The irreversible procedure by which personal data can no longer be linked or ass
 
 ---
 
+## archivo normativo (archivo normativo)
+**Defined in:** NCG 530 §II
+
+A normative (reporting) file: one of the fixed-format files that a supervised financial-service provider (PSF) must submit to the CMF under the FINTEC reporting framework.
+
+**Spanish original:**
+> "Archivo normativo."
+
+---
+
 ## API Specification (Especificación de una API)
 **Defined in:** NCG 514 §I.A
 
@@ -165,6 +175,26 @@ An entity or organization providing certification and trust services, charged wi
 
 **Spanish original:**
 > "Autoridad Certificadora – Certificate Authority. Entidad u organización prestadora de servicios de certificación y confianza, encargada de la emisión, manejo, validación y revocación de Certificados Digitales para su uso en el SFA, conforme con los requerimientos dispuestos en la presente Norma."
+
+---
+
+## Carátula de Cuadratura (Carátula de Cuadratura)
+**Defined in:** NCG 530 §2
+
+The squaring/control cover-sheet record included in each FINTEC normative file. It summarises and cross-checks the totals reported in the file and must record "0" for any record for which the entity has no data in the period.
+
+**Spanish original:**
+> "Carátula de Cuadratura."
+
+---
+
+## categoría funcional (categoría funcional)
+**Defined in:** NCG 503 §I
+
+A functional category: a grouping of roles or positions within a financial-service provider that share equivalent duties and for which a common suitability (idoneidad) standard applies.
+
+**Spanish original:**
+> "Categoría funcional."
 
 ---
 
@@ -396,6 +426,16 @@ Activities that involve the use and application of innovation and technological 
 
 ---
 
+## FINTEC files (FINTEC01–FINTEC16) (archivos FINTEC01–FINTEC16)
+**Defined in:** NCG 530 §I
+
+The sixteen normative reporting files that financial-service providers (PSFs) registered in the RPSF must submit to the CMF under the FINTEC reporting framework. Each file covers a distinct activity or portfolio type; applicable files vary by the provider's authorised activity.
+
+**Spanish original:**
+> "Archivos FINTEC01 a FINTEC16."
+
+---
+
 ## Functional Tests (Pruebas Funcionales)
 **Defined in:** NCG 514 §I.A
 
@@ -427,6 +467,16 @@ An inactive client is also defined as one who meets the following conditions joi
 > • No disponen de saldos (activos o pasivo) en cuentas provistas por la entidad.
 >
 > • No tienen posiciones vigentes en instrumentos financieros, proyectos de inversión o necesidades de financiamiento ofertados a través de la entidad."
+
+---
+
+## idoneidad (idoneidad)
+**Defined in:** NCG 503 §I
+
+Suitability (fit-and-proper): the requirement that natural persons performing defined functions within a financial-service provider possess and maintain the knowledge, skills, and ethical standing established by the CMF.
+
+**Spanish original:**
+> "Idoneidad."
 
 ---
 
@@ -562,6 +612,16 @@ The maximum tolerable time during which a process could be interrupted without c
 
 ---
 
+## mecanismo de acreditación (mecanismo de acreditación)
+**Defined in:** NCG 503 §I
+
+Accreditation mechanism: a CMF-designated body or process through which financial-service-provider personnel demonstrate that they meet the suitability (idoneidad) standard for their functional category.
+
+**Spanish original:**
+> "Mecanismo de acreditación."
+
+---
+
 ## minimum acceptable operating levels (niveles mínimos aceptables de operación)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -569,6 +629,16 @@ Corresponds to the minimum level of services or products that are considered acc
 
 **Spanish original:**
 > "Niveles mínimos aceptables de operación: corresponde al mínimo nivel de servicios o productos que se consideran aceptables para que la entidad cumpla con sus objetivos durante una interrupción."
+
+---
+
+## MSI Fintec (Manual del Sistema de Información de Fintec)
+**Defined in:** NCG 530 §II
+
+The Fintec Information System Manual (Manual del Sistema de Información de Fintec): the CMF-issued technical manual that specifies the data structures, formats, and submission rules for the FINTEC normative reporting files.
+
+**Spanish original:**
+> "Manual del Sistema de Información de Fintec (MSI Fintec)."
 
 ---
 
@@ -717,6 +787,16 @@ Any form of automated processing of personal data that consists in using such da
 
 ---
 
+## programa de capacitación continua (programa de capacitación continua)
+**Defined in:** NCG 503 §I
+
+Continuous-training program: a structured program that financial-service-provider personnel must complete periodically to maintain their suitability (idoneidad) accreditation under NCG 503.
+
+**Spanish original:**
+> "Programa de capacitación continua."
+
+---
+
 ## PSBI (Proveedor de Servicios Basados en Información)
 **Defined in:** NCG 514 §I.A
 
@@ -787,10 +867,10 @@ The period of time following an incident within which: a) a product, service, or
 
 ---
 
-## Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros)
+## Registry of Financial-Service Providers / RPSF (Registro de Prestadores de Servicios Financieros)
 **Defined in:** 21.521 Art. 3
 
-The Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros), administered by the Commission (CMF).
+The Registry of Financial-Service Providers (Registro de Prestadores de Servicios Financieros), administered by the Commission (CMF). The acronym "RPSF" is also used in NCG 530 §I to refer to this same registry when discussing reporting obligations of registered providers.
 
 **Spanish original:**
 > "Registro: Registro de Prestadores de Servicios Financieros."
