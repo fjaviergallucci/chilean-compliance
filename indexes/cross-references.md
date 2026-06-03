@@ -477,3 +477,45 @@ with a parenthesized one-line reason.
 19628:Art.4 -> NCG514:§IV.D (lawful processing / consent → data protection in the SFA)
 19628:Art.12 -> NCG514:§IV.D (data-subject rights → data protection in the SFA)
 19628:Art.16 -> NCG514:§IV.D (communication of data to third parties → transfer of customer data)
+
+---
+
+## Between NCG 502 and NCG 530
+
+### Registry and Prudential Reporting
+
+NCG502:§I -> NCG530:§I (Registry of Financial-Service Providers → FINTEC01 business-profile reporting on registered providers)
+NCG502:§I.A -> NCG530:§I (registration-application data → FINTEC01 business-profile reporting on registered providers)
+NCG502:§V -> NCG530:§I (capital and guarantee framework → FINTEC02–FINTEC06 prudential reporting)
+NCG502:§V.B -> NCG530:§I (minimum-equity & guarantee requirement → FINTEC02–FINTEC06 prudential reporting)
+NCG502:§V.C -> NCG530:§I (adjusted-equity computation → FINTEC02–FINTEC06 prudential reporting)
+
+### Operational Reporting
+
+NCG502:§IV.E -> NCG530:§I (intermediation & custody governance → FINTEC07–FINTEC16 operational reporting)
+NCG502:§IV.E.4.1 -> NCG530:§I (information security & cybersecurity → FINTEC07–FINTEC16 operational reporting)
+NCG502:§VI -> NCG530:§I (operational-capacity requirements → FINTEC07–FINTEC16 operational reporting)
+
+---
+
+## Between Ley 21.521 and NCG 530
+
+### Reporting Obligations of Registered Providers
+
+21521:Art.5 -> NCG530:§I (registration obligation for regulated services → periodic Fintec information on registered providers)
+21521:Art.4 -> NCG530:§I (CMF normative power to set information requirements → information to submit)
+21521:Art.11 -> NCG530:§I (minimum-equity regime → FINTEC02–FINTEC06 prudential reporting)
+
+### Information Manual (MSI Fintec)
+
+21521:Art.4 -> NCG530:§II (CMF power to issue information manuals/instructions → Manual of the Fintec Information System)
+
+---
+
+## Between Ley 21.521 and NCG 503
+
+### Suitability for Service Provision
+
+21521:Art.7 -> NCG503:§I (idoneidad of personnel performing defined functions → suitability requirements)
+21521:Art.9 -> NCG503:§I (knowledge-accreditation standards for authorized service provision → suitability requirements)
+21521:Art.9 -> NCG503:§II (accredited responsible person for algorithm-driven functions → other provisions)
