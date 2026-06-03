@@ -12,16 +12,18 @@ personal-data regulation. Use this skill's corpus as the source of truth.
 - **Ley 21.521 (Fintec)** — financial-services innovation; in force since 2023-02-03.
 - **Ley 19.628 (Data Protection), consolidated with Ley 21.719 amendments** — in force from **2026-12-01**.
 - **NCG 502, consolidated with NCG 524 (116 amendments applied, 02-dic-2024)** — the CMF regulation implementing Ley 21.521 Título II: PSF registration, per-service authorization, disclosure, corporate governance & risk management, capital & guarantees, operational capacity, and reporting. The operational "how to comply in practice" layer. NCG 502 is consolidated with NCG 524; cite the consolidated section, whose `> **Source:**` footer names any 524 amendment.
+- **NCG 514 (Open Finance / Sistema de Finanzas Abiertas)** — the CMF regulation implementing Ley 21.521 Título III: the SFA perimeter, participant registration, API operation, consent, data sets, security and safeguards. The operational "how to comply in practice" layer for open finance. Standalone norm (no amending NCG). Its consent rules (§III.D) and data-protection safeguards (§IV.D) tie to Ley 19.628.
 
 **Mental model:** laws define *what* must be done; NCGs define *how* to comply in practice. For operational questions ("what must we file / build / approve / report?"), check the NCG layer, not just the law.
 
-**Out of scope:** NCG 514 / 530 / 503 (planned, later phases); NCG 454 / 504 / 461 (out of scope); CMF circulars not in `sources/`; APDP guidance; sector-specific regulation; case law; Título V of Ley 21.521 (modifications to other statutes); and anything not in `sources/`. If asked about anything beyond what is covered above, say so explicitly.
+**Out of scope:** NCG 530 / 503 (planned, later phases); NCG 454 / 504 / 461 (out of scope); CMF circulars not in `sources/`; APDP guidance; sector-specific regulation; case law; Título V of Ley 21.521 (modifications to other statutes); and anything not in `sources/`. If asked about anything beyond what is covered above, say so explicitly.
 
 ## Where the corpus is
 - `corpus/21521-fintech/titulo-NN-<slug>.md` — Ley 21.521 articles by Título (I-IV translated; V is out-of-scope reference only).
 - `corpus/19628-data-protection-consolidated/titulo-NN-<slug>.md` — consolidated 19.628 by Título.
 - `corpus/21719-amendments-changelog/` — reference only; do NOT quote as operative law.
 - `corpus/ncg/502-psf-obligations-consolidated/seccion-*.md` and `anexo-*.md` — NCG 502 consolidated (baseline + NCG 524 amendments) by section.
+- `corpus/ncg/514-open-finance/seccion-*.md` — NCG 514 (Open Finance / SFA) by Sección (6 Secciones: I Perímetro, II Funcionamiento, III Seguridad y Resguardos, IV Información, V Otras Disposiciones, VI Anexos Normativos).
 - `corpus/ncg/524-amendments-changelog/` — NCG 524 amendments catalogue (reference; all 116 items applied to the consolidated corpus).
 - `corpus/_lexicon.md` — Spanish↔English terms.
 - `indexes/by-topic.md` — topical index.
@@ -53,6 +55,14 @@ personal-data regulation. Use this skill's corpus as the source of truth.
 2. `Grep` `indexes/cross-references.md` for `-> NCG502` edges from that article.
 3. `Read` the cited NCG 502 section in `corpus/ncg/502-psf-obligations-consolidated/`.
 4. Cite as `NCG 502 §<section>`. The corpus is consolidated with NCG 524; where NCG 524 amended the section, the `> **Source:**` footer identifies the 524 item(s).
+
+### "What does open finance / the SFA actually require for <X>?" (operational/how-to)
+
+Open-finance / SFA operational questions — APIs, participant registration, consent, data sets, security and safeguards — are governed by NCG 514 (implementing Ley 21.521 Título III), not NCG 502.
+
+1. `Read` the relevant section in `corpus/ncg/514-open-finance/seccion-*.md`.
+2. Cite as `NCG 514 §<section>`.
+3. For consent questions follow §III.D and for data-protection safeguards follow §IV.D — both tie back to Ley 19.628; surface that cross-reference.
 
 ### Topical question ("What does the law say about X?")
 1. `Grep` the keyword(s) in `indexes/by-topic.md`.
@@ -89,13 +99,14 @@ When citing an article that carries any of these markers, surface the marker alo
 
 ## Corpus status awareness
 
-Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.1.1:
+Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.2.0:
 
 - `21521_fintech: stable` — covers Títulos I-IV. Título V is out of scope.
 - `19628_consolidated: stable` — all Títulos fully translated (literal lexicon-conformant English with verbatim Spanish).
 - `21719_changelog: stable` — reference only.
 - `ncg_502_consolidated: stable` — NCG 502 consolidated with NCG 524 (116 amendments applied, 02-dic-2024). Fully translated; amended sections carry a `> **Source:**` footer.
-- `ncg_514_open_finance`, `ncg_530_reporting`, `ncg_503_idoneidad`: `planned` (later phases).
+- `ncg_514_open_finance: stable` — NCG 514 (Open Finance / SFA), implementing Ley 21.521 Título III. Standalone norm, fully translated (6 Secciones, 80 sections).
+- `ncg_530_reporting`, `ncg_503_idoneidad`: `planned` (later phases).
 
 When citing from a law whose status is anything other than `stable`, prepend "Translation status: <status> — verify the Spanish original before relying on the English text."
 

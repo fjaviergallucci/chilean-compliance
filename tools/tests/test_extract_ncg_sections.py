@@ -46,3 +46,21 @@ def test_parse_toc_ncg502_captures_all_roman_sections():
     numbers = [e["number"] for e in toc]
     for roman in ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]:
         assert roman in numbers, f"Roman section {roman!r} missing from ToC (got {numbers})"
+
+
+def test_seccion_style_full_paths():
+    from pathlib import Path
+    from tools.extract_ncg_sections import parse_toc
+    fx = Path(__file__).parent / "fixtures" / "mini_ncg_seccion.pdf"
+    nums = [e["number"] for e in parse_toc(fx)]
+    assert nums == ["I", "I.A", "I.B", "II", "II.A"], f"got {nums}"
+
+
+def test_seccion_style_titles():
+    from pathlib import Path
+    from tools.extract_ncg_sections import parse_toc
+    fx = Path(__file__).parent / "fixtures" / "mini_ncg_seccion.pdf"
+    by = {e["number"]: e for e in parse_toc(fx)}
+    assert "Primera" in by["I"]["title"]
+    assert by["I.A"]["title"].startswith("Sub Alfa")
+    assert by["II.A"]["title"].startswith("Otra Alfa")

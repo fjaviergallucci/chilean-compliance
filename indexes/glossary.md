@@ -21,6 +21,16 @@ Corresponds to the level of risk that the entity is willing to accept in accorda
 
 ---
 
+## Account-Providing Institution / IPC (Institución Proveedora de Cuentas)
+**Defined in:** NCG 514 §I.A
+
+One of the participant entities of the Open Finance System (SFA). The acronym "IPC" stands for "Institución Proveedora de Cuentas" (Account-Providing Institution).
+
+**Spanish original:**
+> "IPC : Institución Proveedora de Cuentas."
+
+---
+
 ## active client (cliente activo)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -74,6 +84,26 @@ The irreversible procedure by which personal data can no longer be linked or ass
 
 ---
 
+## API Specification (Especificación de una API)
+**Defined in:** NCG 514 §I.A
+
+A document that contains the detailed technical information about how to effectively use and integrate a given API.
+
+**Spanish original:**
+> "Especificación de una API. Documento que contiene la información técnica detallada sobre cómo usar e integrar de forma efectiva una determinada API."
+
+---
+
+## Application Programming Interfaces / APIs (Interfaz de Programación de Aplicaciones)
+**Defined in:** NCG 514 §I.A
+
+A technological mechanism by means of which two or more programs or computer systems can communicate with one another. A fundamental part of such communication depends on the characteristics of the technical documentation describing the available connection methods, and on the elements and attributes of the information exchange detailed in the API Specification.
+
+**Spanish original:**
+> "Application Programming Interfaces (APIs). En español, “Interfaz de Programación de Aplicaciones”. Mecanismo tecnológico por medio del cual dos o más programas o sistemas computacionales pueden comunicarse entre sí. Parte fundamental de dicha comunicación depende de las características de la documentación técnica que describe los métodos de conexión disponibles, y los elementos y atributos del intercambio de información que se detallan en la Especificación de la API."
+
+---
+
 ## attack (ataque)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -81,6 +111,16 @@ In the context of cybersecurity, refers to an event that has the intention to de
 
 **Spanish original:**
 > "Ataque: en el contexto de ciberseguridad, se refiere a un evento que tuviera como intención destruir, exponer, alterar, deshabilitar, robar, u obtener acceso o hacer un uso no autorizado de un activo de información."
+
+---
+
+## authentication (autenticación)
+**Defined in:** NCG 514 §I.A
+
+A process or mechanism designed to confirm that someone is who they claim to be (identity declaration). In relational terms, it translates into the interaction of a person who wishes to report and declare their identity (the declarant) and one who verifies or confirms it (the confirmer or verifier). In the field of the SFA, two types of authentication are regulated: the authentication of the customer and the authentication of the PSBI or PSIP that intends to make use of the respective API.
+
+**Spanish original:**
+> "Autenticación. Proceso o mecanismo diseñado para confirmar que alguien es quien dice ser (declaración de identidad). En términos relacionales, se traduce en la interacción de una persona que quiere informar y declarar su identidad (el declarante) y quien la verifica o confirma (el confirmador o verificador). En el ámbito del SFA se regulan dos tipos de autenticaciones: la autenticación del cliente y la autenticación del PSBI o PSIP que pretende hacer uso de la respectiva API."
 
 ---
 
@@ -115,6 +155,16 @@ The procedure for analysing the effects that a business interruption may have on
 
 **Spanish original:**
 > "Análisis de impacto del negocio o BIA: es el procedimiento de análisis de los efectos que puede tener en los procesos de la entidad una interrupción del negocio."
+
+---
+
+## Certification Authority / CA (Autoridad Certificadora)
+**Defined in:** NCG 514 §I.A
+
+An entity or organization providing certification and trust services, charged with the issuance, handling, validation, and revocation of Digital Certificates for their use in the SFA, in accordance with the requirements set out in this regulation.
+
+**Spanish original:**
+> "Autoridad Certificadora – Certificate Authority. Entidad u organización prestadora de servicios de certificación y confianza, encargada de la emisión, manejo, validación y revocación de Certificados Digitales para su uso en el SFA, conforme con los requerimientos dispuestos en la presente Norma."
 
 ---
 
@@ -208,6 +258,18 @@ Holding in one's own name on behalf of third parties, or in the name of those th
 
 ---
 
+## Customer(s) (Cliente(s))
+**Defined in:** NCG 514 §I.A
+
+Natural or legal persons who have contracted a financial service or product.
+
+> **Note:** This is the open-finance-specific notion of "Cliente(s)" used throughout NCG 514. It is narrower than, and distinct from, the activity-based "active client" / "inactive client" definitions of NCG 502 Anexo N°1, which classify clients by recency of use of specific financial services.
+
+**Spanish original:**
+> "Cliente(s). Personas naturales o jurídicas que hayan contratado un servicio o producto financiero."
+
+---
+
 ## cybersecurity (ciberseguridad)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -250,6 +312,16 @@ A natural person, identified or identifiable, to whom the personal data concern 
 
 ---
 
+## Digital Certificates (Certificados Digitales)
+**Defined in:** NCG 514 §I.A
+
+Cryptographic certificates designed under public-key infrastructure and which comply, among others, with the x509 standard — defined by the Internet Engineering Task Force — in its version 3 or higher, which are issued by a Certification Authority for their use by the respective Participant holding them in authentication processes, digital signature, or encryption of data in various processes and operations within the framework of the SFA, especially for the establishment of secure channels of communication between entities, on the basis of mutual authentication (mTLS), and for the signing and encryption of messages between them.
+
+**Spanish original:**
+> "Certificados Digitales. Certificados criptográficos diseñados bajo infraestructura de claves públicas y que cumplan, entre otros, el estándar x509 -definido por el Grupo de Trabajo de Ingeniería de Internet- en su versión 3 o superior, que son emitidos por una Autoridad Certificadora para su uso por parte del respectivo Participante titular en procesos de autenticación, firma digital o cifrado de datos en diversos procesos y operaciones en el marco de SFA, especialmente para el establecimiento de canales seguros de comunicación entre entidades, sobre la base de la autenticación mutua (mTLS), y para el firmado y cifrado de mensajes entre éstas."
+
+---
+
 ## downtime (downtime)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -259,6 +331,16 @@ The amount of time that a process or business is interrupted.
 
 **Spanish original:**
 > "Downtime: la cantidad de tiempo que el proceso o negocio es interrumpido."
+
+---
+
+## Endpoint (Endpoint)
+**Defined in:** NCG 514 §I.A
+
+In the context of an API implementation, it consists of the location of a resource, duly documented in the respective specification, intended to receive queries about a given type of information and to send responses to them, as requested.
+
+**Spanish original:**
+> "Endpoint. En el contexto de una implementación de API, consiste en la ubicación de un recurso, debidamente documentado en la especificación respectiva, destinado a recibir consultas sobre un determinado tipo de información y enviar respuestas a las misma, según le fuera solicitado."
 
 ---
 
@@ -314,6 +396,16 @@ Activities that involve the use and application of innovation and technological 
 
 ---
 
+## Functional Tests (Pruebas Funcionales)
+**Defined in:** NCG 514 §I.A
+
+A type of test designed to attest that the various components of an application operate in accordance with what is declared in the software or in a given standard or technical specification.
+
+**Spanish original:**
+> "Pruebas Funcionales. Tipo de prueba diseñada para acreditar que los diversos componentes de una aplicación operan conforme a lo declarado en el software o en un estándar o especificación técnica determinada."
+
+---
+
 ## inactive client (cliente inactivo)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -355,6 +447,16 @@ Corresponds to information resources or elements related to the processing of in
 
 **Spanish original:**
 > "Activos de información: corresponde a los recursos de información o elementos relacionados con el tratamiento de la información, los cuales pueden ser primarios como la información (física y lógica) y los procesos y actividades de negocio, o de soporte como hardware; software; redes de comunicación; personal; entre otros."
+
+---
+
+## Information-Providing Institution / IPI (Institución Proveedora de Información)
+**Defined in:** NCG 514 §I.A
+
+One of the participant entities of the Open Finance System (SFA). The acronym "IPI" stands for "Institución Proveedora de Información" (Information-Providing Institution).
+
+**Spanish original:**
+> "IPI : Institución Proveedora de Información."
 
 ---
 
@@ -420,6 +522,16 @@ An initiative intended to generate (tiene por finalidad la generación de) inter
 
 ---
 
+## ISO 20.022 (ISO 20.022)
+**Defined in:** NCG 514 §I.A
+
+A technical standard prepared by the International Organization for Standardization (ISO) for the design of data-messaging schemes for the financial industry. The standard describes a number of relevant data, metadata, and processes associated with the financial industry, particularly as regards payment operations. In the context of the SFA, the standard provides a dictionary of payment variables and states that enable the use of common nomenclature in the API specifications, especially those related to payment initiation and account data.
+
+**Spanish original:**
+> "ISO 20.022. Es un estándar técnico preparado por la Organización Internacional de Normalización (ISO) para el diseño de esquemas de mensajería de datos para la industria financiera. El estándar describe un número relevante de datos, metadatos y procesos asociados a la industria financiera, particularmente en lo que respecta a operaciones de pago. En el contexto del SFA, el estándar proporciona un diccionario de variables y estados de pago que habilitan el uso de nomenclatura común en las especificaciones de las APIs, en especial, las relacionadas con iniciación de pagos y datos de cuentas."
+
+---
+
 ## malware (malware)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -470,6 +582,16 @@ A public national registry administered by the Agency, recording certified preve
 
 ---
 
+## OpenAPI (OpenAPI)
+**Defined in:** NCG 514 §I.A
+
+Corresponds to a technical specification of an open nature, designed for the description and development of APIs and RESTful services.
+
+**Spanish original:**
+> "OpenAPI (especificación). Corresponde a una especificación técnica de carácter abierto, diseñada para la descripción y desarrollo de APIs y servicios RESTFul."
+
+---
+
 ## order routing (enrutamiento de órdenes)
 **Defined in:** 21.521 Art. 3
 
@@ -497,6 +619,36 @@ The continuous or occasional execution by an external provider of services or ac
 
 **Spanish original:**
 > "Externalización de servicios: es la ejecución por un proveedor externo de servicios o actividades en forma continua u ocasional, las que normalmente podrían ser realizadas por la entidad contratante"
+
+---
+
+## Pagination (Paginación)
+**Defined in:** NCG 514 §I.A
+
+An API-management technique intended for the efficient handling of requests to an endpoint that involve the retrieval of a significant number of records, by means of the division of the respective response into a series of bounded sets of such records, called pages.
+
+**Spanish original:**
+> "Paginación. Técnica de gestión de APIs destinada al manejo eficiente de solicitudes a un endpoint, que impliquen la recuperación de un número significativo de registros, mediante la división de la respectiva respuesta en una serie de conjuntos acotados de tales registros, denominadas páginas."
+
+---
+
+## Participant(s) (Participante(s))
+**Defined in:** NCG 514 §I.A
+
+A collective notion that encompasses the IPI, IPC, PSBI, and PSIP enabled to operate within the SFA.
+
+**Spanish original:**
+> "Participante(s). Noción colectiva que engloba a las IPI, IPC, PSBI y PSIP habilitados para operar dentro del SFA."
+
+---
+
+## Participants Directory (Directorio de Participantes)
+**Defined in:** NCG 514 §I.A
+
+A technological development that allows the search, query, and updating of the Participants enabled in the SFA, including their registration or authorization data, roles and profiles, API resources, and digital certificates, among others.
+
+**Spanish original:**
+> "Directorio de Participantes. Desarrollo tecnológico que permite la búsqueda, consulta y actualización de los participantes habilitados en el SFA, incluyendo sus datos de registro o autorización, roles y perfiles, recursos de API y certificados digitales, entre otros."
 
 ---
 
@@ -565,6 +717,16 @@ Any form of automated processing of personal data that consists in using such da
 
 ---
 
+## PSBI (Proveedor de Servicios Basados en Información)
+**Defined in:** NCG 514 §I.A
+
+One of the participant entities of the Open Finance System (SFA): an Information-Based Service Provider. The acronym "PSBI" stands for "Proveedor de Servicios Basados en Información".
+
+**Spanish original:**
+> "PSBI : Proveedor de Servicios Basados en Información."
+
+---
+
 ## pseudonymization (seudonimización)
 **Defined in:** 19.628 Art. 2
 
@@ -572,6 +734,16 @@ The processing of personal data carried out in such a way that the data can no l
 
 **Spanish original:**
 > "Seudonimización: tratamiento de datos personales que se efectúa de manera tal que ya no puedan atribuirse a un titular sin utilizar información adicional, siempre que dicha información adicional figure por separado y esté sujeta a medidas técnicas y organizativas destinadas a garantizar que los datos personales no se atribuyan a una persona natural identificada o identificable."
+
+---
+
+## PSIP (Proveedor de Servicios de Iniciación de Pagos)
+**Defined in:** NCG 514 §I.A
+
+One of the participant entities of the Open Finance System (SFA): a Payment-Initiation Service Provider. The acronym "PSIP" stands for "Proveedor de Servicios de Iniciación de Pagos".
+
+**Spanish original:**
+> "PSIP : Proveedor de Servicios de Iniciación de Pagos."
 
 ---
 
@@ -625,6 +797,16 @@ The Registry of Financial-Service Providers (Registro de Prestadores de Servicio
 
 ---
 
+## Representational State Transfer / REST (Representational State Transfer)
+**Defined in:** NCG 514 §I.A
+
+A style or approach to software architecture for distributed systems implemented on the web. It considers design principles such as the existence of a client-server architecture, stateless operations, well-defined request operations, use of universal syntax, and caching capability, among others.
+
+**Spanish original:**
+> "Representational State Transfer (REST). Estilo o aproximación de arquitectura de software para sistemas distribuidos e implementados en la web. Considera principios de diseño tales como la existencia de arquitectura cliente-servidor sin estado, operaciones de peticiones bien definidas, uso de sintaxis universal, capacidad de caché, entre otros."
+
+---
+
 ## residual risk (riesgo residual)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -632,6 +814,26 @@ The risk that persists after the entity adopts control and mitigation measures.
 
 **Spanish original:**
 > "Riesgo residual: aquel riesgo que persiste luego de adoptar las medidas de control y mitigación por parte de la entidad."
+
+---
+
+## Resource (of an API) (Recurso (de una API))
+**Defined in:** NCG 514 §I.A
+
+Refers to an object or piece of information or representation of a situation or circumstance that is accessible through an API.
+
+**Spanish original:**
+> "Recurso (de una API). Refiere a un objeto o pieza de información o representación de una situación o circunstancia, que es accesible a través de una API."
+
+---
+
+## RESTful (RESTful)
+**Defined in:** NCG 514 §I.A
+
+That service which adheres to and effectively complies with the principles of the REST style, emphasizing its incorporation in applications and APIs.
+
+**Spanish original:**
+> "RESTful. Es aquel servicio que adhiere y cumple de manera efectiva los principios del estilo REST, enfatizando su incorporación en aplicaciones y APIs."
 
 ---
 
@@ -723,6 +925,16 @@ An entity related or unrelated to the contracting institution that provides serv
 
 ---
 
+## SFA — Open Finance System (Sistema de Finanzas Abiertas)
+**Defined in:** NCG 514 §I.A
+
+The Open Finance System established by Title III of Ley 21.521. The acronym "SFA" stands for "Sistema de Finanzas Abiertas" (Open Finance System), the framework within which the Participants (IPI, IPC, PSBI, and PSIP) operate.
+
+**Spanish original:**
+> "SFA : Sistema de Finanzas Abiertas."
+
+---
+
 ## statistical data (dato estadístico)
 **Defined in:** 19.628 Art. 2
 
@@ -743,6 +955,18 @@ The conservation or custody of data in a registry or database.
 
 ---
 
+## Strong Customer Authentication (Autenticación Reforzada de Cliente)
+**Defined in:** NCG 514 §I.A
+
+A type of customer authentication designed for scenarios that require a higher level of robustness in terms of security and safeguarding of data protection, based on the use or conjunction of two or more elements independent of one another, categorized as knowledge (something the user knows), possession (something that is possessed), and inherence (something that one is). In technological terms, it is frequently related to multi-factor authorization mechanisms.
+
+> **Note:** The Siglas list of NCG 514 §I.A abbreviates this term as "ARC" (Autenticación Reforzada de Clientes).
+
+**Spanish original:**
+> "Autenticación Reforzada de Cliente. Tipo de autenticación de Clientes diseñada para escenarios que requieren un mayor nivel de robustez en términos de seguridad y resguardo de la protección de datos, basada en el uso o conjunción de dos o más elementos independientes entre sí, categorizados como conocimiento (algo que el usuario sabe), posesión (algo que se posee), e inherencia (algo que se es). En términos tecnológicos, con frecuencia se relaciona a los mecanismos de autorización de múltiples factores."
+
+---
+
 ## subcontracting chain of outsourced services (subcontratación en cadena de servicios externalizados)
 **Defined in:** NCG 502 Anexo N°1
 
@@ -750,6 +974,16 @@ Those formed by third parties subcontracted by the initial service provider to c
 
 **Spanish original:**
 > "Subcontratación en cadena de servicios externalizados: las formadas por terceros subcontratados por el proveedor inicial de servicios para realizar parte importante de las actividades contratadas con éste (subcontrato de otros proveedores)."
+
+---
+
+## Test Area (Área de Pruebas)
+**Defined in:** NCG 514 §I.A
+
+Corresponds to an environment of computer components (that is, servers, applications, and databases, among others) where it is possible to test, without altering production systems, the changes or developments of code and computer programs. In the field of open finance, these constitute environments that allow testing with fictitious data of the APIs and their various implementation and consumption mechanisms, as well as other elements associated with their use, for testing or conformity-certification purposes.
+
+**Spanish original:**
+> "Área de Pruebas. Corresponde a un entorno de componentes informáticos (esto es, servidores, aplicativos y bases de datos, entre otros) donde es posible probar, sin alterar los sistemas productivos, los cambios o desarrollos de códigos y programas computacionales. En el ámbito de las finanzas abiertas, constituyen ambientes que permiten probar con data ficticia las APIs y sus diversos mecanismos de implementación y consumo, así como otros elementos asociados al uso de éstas, para fines de pruebas o de certificación de conformidad."
 
 ---
 
@@ -770,6 +1004,16 @@ Refers to any circumstance or event that could exploit a vulnerability.
 
 **Spanish original:**
 > "Amenaza: se refiere a cualquiera circunstancia o evento que pudiera explotar una vulnerabilidad."
+
+---
+
+## Time to Last Byte / TTLB (Time to Last Byte / Tiempo al Último Byte)
+**Defined in:** NCG 514 §I.A
+
+A metric used to measure the time it takes for a recipient to receive the last byte of a requested packet or group of data.
+
+**Spanish original:**
+> "Time to Last Byte (TTLB). Métrica empleada para medir el tiempo que demora en recibirse por parte de un destinatario el último byte de un paquete o grupo de datos solicitado."
 
 ---
 

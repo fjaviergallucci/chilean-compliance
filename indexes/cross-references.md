@@ -412,3 +412,68 @@ with a parenthesized one-line reason.
 21521:Art.5 -> NCG502:§VI (registration obligation → operational-readiness requirements)
 21521:Art.7 -> NCG502:§VI (per-service authorization → operational-capacity requirements)
 21521:Art.5 -> NCG502:§VII (registration scope → inherent permitted activities)
+
+---
+
+## Between Ley 21.521 and NCG 514
+
+### Title III (Open Finance) Perimeter and Participants
+
+21521:Art.17 -> NCG514:§I.A (SFA scope and defined terms → definitions and nomenclature)
+21521:Art.17 -> NCG514:§I (open-finance perimeter → perimeter of the SFA)
+21521:Art.18 -> NCG514:§I.B (information-providing and account-providing institutions → participating entities)
+21521:Art.18 -> NCG514:§I.E (mandatory roster incorporation → IPI/IPC roster)
+21521:Art.18 -> NCG514:§I.E.1 (IPI/IPC roster incorporation → incorporation requirements)
+21521:Art.18 -> NCG514:§I.E.2 (gradual incorporation → IPI/IPC incorporation periods)
+21521:Art.19 -> NCG514:§I.C (information-based service providers → PSBI registry)
+21521:Art.19 -> NCG514:§I.C.1 (PSBI registration → registration in the PSBI Registry)
+21521:Art.19 -> NCG514:§I.F (voluntary PSBI participation → Nómina PSBI)
+21521:Art.20 -> NCG514:§I.D (payment-initiation service providers → PSIP registry)
+21521:Art.20 -> NCG514:§I.D.1 (PSIP registration → registration in the PSIP Registry)
+21521:Art.20 -> NCG514:§I.D.5 (payment-initiation conditions → specific payment-initiation conditions)
+
+### Interfaces and System Functioning
+
+21521:Art.21 -> NCG514:§II (interface/API mandate → system functioning)
+21521:Art.21 -> NCG514:§II.A (information exchange via interfaces/APIs → exchange mechanisms)
+21521:Art.21 -> NCG514:§II.A.2 (API standards → technical API standards)
+21521:Art.21 -> NCG514:§II.A.3 (availability/performance → availability and performance requirements)
+21521:Art.21 -> NCG514:§II.C (Participants Directory → participants directory)
+21521:Art.21 -> NCG514:§III.E.1 (interoperability → interoperability standards)
+
+### Security and Safeguards
+
+21521:Art.22 -> NCG514:§III (security/risk mandate → security and safeguards)
+21521:Art.22 -> NCG514:§III.A (risk management → risk management and internal control)
+21521:Art.22 -> NCG514:§III.B (information security/cybersecurity → security, cybersecurity and continuity)
+21521:Art.22 -> NCG514:§III.B.3 (interface security standards → API security and contingency standards)
+21521:Art.22 -> NCG514:§III.C (authentication standards → authentication and verification)
+21521:Art.23 -> NCG514:§III.D (open-finance consent → consent granting and management)
+21521:Art.23 -> NCG514:§III.D.1 (consent granting → granting of open-finance consent)
+21521:Art.23 -> NCG514:§III.D.2 (consent management → consent management and information duties)
+
+### Information Shared and Cost Distribution
+
+21521:Art.24 -> NCG514:§IV.A (data to be shared → SFA data sets)
+21521:Art.24 -> NCG514:§IV.C (variables shared → variables shared in the SFA)
+21521:Art.25 -> NCG514:§III.E.2 (cost distribution → reimbursable incremental costs)
+21521:Art.25 -> NCG514:§VI.7 (payment-initiation cost/data → payment-initiation data set)
+21521:Art.26 -> NCG514:§V.D (information shared with the Commission → information requirements)
+21521:Art.27 -> NCG514:§V.A (CMF suspension power → temporary suspensions)
+21521:Art.27 -> NCG514:§V.B (sanction power → sanctions)
+
+---
+
+## Between Ley 19.628 and NCG 514
+
+### Consent in the Open Finance System
+
+19628:Art.12 -> NCG514:§III.D (data-subject consent → open-finance consent)
+19628:Art.12 -> NCG514:§III.D.1 (free, informed, specific consent → granting of open-finance consent)
+19628:Art.12 -> NCG514:§III.D.2 (data-subject control over consent → consent management and revocation)
+
+### Data Protection in the SFA
+
+19628:Art.4 -> NCG514:§IV.D (lawful processing / consent → data protection in the SFA)
+19628:Art.12 -> NCG514:§IV.D (data-subject rights → data protection in the SFA)
+19628:Art.16 -> NCG514:§IV.D (communication of data to third parties → transfer of customer data)

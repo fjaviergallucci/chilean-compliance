@@ -62,6 +62,7 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | Ley 19.628 consolidated — Títulos VI-VIII (Arts. 30-55, Agency + sanctions framework) | **Stable** | Literal translations complete (Phase H4 closed all 44 REVIEW markers) |
 | Ley 21.719 amendments changelog | **Stable** | Reference only — quote consolidated 19.628 as operative law |
 | NCG 502 — PSF obligations (Ley 21.521 implementing reg) | **Stable** | consolidated with NCG 524 (116 amendments applied) |
+| NCG 514 — Open Finance / SFA (Ley 21.521 Título III implementing reg) | **Stable** | 80 sections across 6 Secciones |
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 149 topical · 82 glossary · 7 scenarios/100 items · 338 cross-refs |
 | Tooling + tests | **Stable** | 32/32 pytest passing |
 
@@ -140,7 +141,7 @@ To enable, disable, or uninstall later:
 To install at a tagged version rather than `main`:
 
 ```text
-/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.1.1
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.2.0
 /plugin install chile-compliance@chile-compliance
 ```
 
@@ -174,6 +175,7 @@ chile-compliance/
 │   ├── 21719-amendments-changelog/     # Reference: which 21.719 item changed what
 │   └── ncg/                            # CMF NCG regulations
 │       ├── 502-psf-obligations-consolidated/  # NCG 502 consolidated (baseline + NCG 524)
+│       ├── 514-open-finance/           # NCG 514 (Open Finance / SFA), Ley 21.521 Título III
 │       └── 524-amendments-changelog/   # NCG 524 amendments catalogue (116 items)
 ├── indexes/
 │   ├── by-topic.md                     # Topical lookup, 149 citations

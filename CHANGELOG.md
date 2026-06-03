@@ -12,6 +12,16 @@ Planned for later releases:
 - Sample agent integrations for OpenAI SDK and LangChain.
 - Coverage for CMF circulars and APDP guidance once issued (separate corpus directories).
 
+## [1.2.0] — 2026-06-02
+
+### Added
+
+- **NCG 514 (Sistema de Finanzas Abiertas / open finance) corpus** — implementing regulation for Ley 21.521 Título III. 6 Secciones (I Perímetro, II Funcionamiento, III Seguridad y Resguardos, IV Información, V Otras Disposiciones, VI Anexos Normativos), 80 sections, section-level literal English + verbatim Spanish, round-trip verified at 0.80. Extractor extended to recognize `SECCIÓN <Roman>` structure. Dual-law cross-reference bridge: Ley 21.521 Título III ↔ NCG 514 AND Ley 19.628 ↔ NCG 514 (consent §III.D, data-protection §IV.D). NCG 514 open-finance citations integrated into by-topic, scenarios, and glossary (24 SFA terms). SKILL teaches the open-finance query path.
+
+### Notes
+
+- AI translation, no legal review, Spanish is authority. NCG 514 is standalone (no amending norm).
+
 ## [1.1.1] — 2026-06-02
 
 ### Changed
@@ -146,7 +156,8 @@ The literal-translation pass surfaced real corrections that the prior summaries 
 - CMF circulars, APDP guidance, and case law are not included. The skill instructs consuming AIs to say so when asked.
 - Pre-effective-date Ley 19.628 (1999 baseline) is not in the active corpus — for pre-2026-12-01 questions, consult the source PDF directly.
 
-[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.1.0
 [1.0.2]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.0.2
