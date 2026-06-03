@@ -36,9 +36,9 @@ a) The definition of the particular functional categories (categorías funcional
 
 b) The creation, maintenance, and administration of a question-and-answer bank, which shall have a confidential character and shall serve as the basis for the generation of the knowledge and suitability exams.
 
-c) The establishment of mechanisms that give guarantees with respect to the fact that those who have contributed to the question-and-answer bank will maintain the confidentiality of the information to which they have access and, in the event that they are persons who must take the accreditation exam, that the questions provided by them will not form part of the exam to be taken by those persons.
+c) The establishment of mechanisms that give guarantees with respect to the fact that those who have contributed to the question-and-answer bank shall maintain the confidentiality of the information to which they have access and, in the event that they are persons who must take the accreditation exam, that the questions provided by them shall not form part of the exam to be taken by those persons.
 
-d) The administration of the exam-taking process, as well as of the selection and tender of the entity or entities that will be contracted, if applicable.
+d) The administration of the exam-taking process, as well as of the selection and tender of the entity or entities that shall be contracted, if applicable.
 
 e) The administration of the process of design, elaboration, and implementation of a continuous-training program (programa de formación continua) for all those natural persons who have obtained the knowledge accreditation.
 
@@ -52,11 +52,13 @@ f) The elaboration and dissemination of:
 
 4) bibliography that may serve as a basis for the learning of the knowledge to be evaluated in the accreditation process and during the continuous-training process.
 
-g) To establish and publicly disseminate the rules that will guide the conduct of its members, the accreditation process, and the rights and obligations of those who participate in that process.
+g) To establish and publicly disseminate the rules that shall guide the conduct of its members, the accreditation process, and the rights and obligations of those who participate in that process.
 
 The accreditation mechanism must require the initial passing of one or more exams that allow the evaluation of technical knowledge and of the commercial-ethics rules of those who must be accredited, and of a continuous-training program (programa de capacitación continua) that must be periodically approved in order to keep the accreditation in force, in accordance with the time periods that the mechanism itself defines. In the case of functions that present a high risk of commission of conduct contrary to the law, both the exam and the program must contemplate the education and evaluation of rules that address conduct prohibited by law, as is the case of use of privileged information, price manipulation, undue use of custody, and conduct typical of what is known internationally as "green washing," prevention of money laundering, financing of terrorism and of weapons of mass destruction, bribery, among others.
 
-The content to be evaluated by the exam, and to be updated through the continuous-training program, must be relevant both to the functional categories defined by the body in charge of the accreditation process and to the instruments or products with which the person who performs that function will be related.
+> **TN:** NCG 503 uses both "programa de formación continua" and "programa de capacitación continua"; both are rendered here as "continuous-training program."
+
+The content to be evaluated by the exam, and to be updated through the continuous-training program, must be relevant both to the functional categories defined by the body in charge of the accreditation process and to the instruments or products with which the person who performs that function shall be related.
 
 Notwithstanding what is indicated in the preceding paragraphs, those persons who meet any of the following conditions may exceptionally perform their functions in a temporary manner, without having passed the knowledge-accreditation exam, and provided that such persons communicate that fact to the accreditation mechanism prior to the commencement of their functions:
 
@@ -176,7 +178,7 @@ The registry must be available on the internet site that the accreditation mecha
 
 ### Plain-English text
 
-In the event that the functions defined by the accreditation mechanism emanate from a computer algorithm, the corresponding entity must designate a person responsible for verifying that the algorithm delivers results consistent with the function for which it was created, who must be accredited under the terms defined in this regulation.
+In the event that the functions defined by the accreditation mechanism emanate from a computer algorithm, the corresponding entity must designate a person responsible for verifying that the algorithm delivers expected results consistent with the function for which it was created, who must be accredited under the terms defined in this regulation.
 
 ### Original Spanish
 
