@@ -38,11 +38,11 @@ The entities registered in the Registry of Financial-Service Providers (Registro
 
 **FINTEC13: Registry of reconciled cash in custody and registry of transfers to recover:** must be submitted by the providers of the custody-of-financial-instruments services, regulated by Ley N° 21.521 and authorized by this Commission.
 
-**FINTEC14: Disaggregated registry of executed transactions:** must be submitted by the providers of the block-3 alternative-transaction-systems services, regulated by Ley N° 21.521 and authorized by this Commission.
+**FINTEC14: Disaggregated registry of executed transactions:** must be submitted by the providers of the block 3 alternative trading systems services, regulated by Ley N° 21.521 and authorized by this Commission.
 
-**FINTEC15: General information on technological infrastructure and cybersecurity:** must be submitted by the providers of the alternative-transaction-systems services and custody-of-financial-instruments services, both classified in block 2 and 3, regulated by Ley N° 21.521 and authorized by this Commission.
+**FINTEC15: General information on technological infrastructure and cybersecurity:** must be submitted by the providers of the alternative trading systems services and custody-of-financial-instruments services, both classified in blocks 2 and 3, regulated by Ley N° 21.521 and authorized by this Commission.
 
-**FINTEC16: Own-portfolio balance - SAT:** must be submitted by the providers of the alternative-transaction-systems services classified in block 3, regulated by Ley N° 21.521 and authorized by this Commission.
+**FINTEC16: Own-portfolio balance - SAT:** must be submitted by the providers of the alternative trading systems services classified in block 3, regulated by Ley N° 21.521 and authorized by this Commission.
 
 The entities that provide services regulated by Title II of Ley 21.521 that are not required to be registered in the Registry of Financial-Service Providers, pursuant to the provisions of Article 5 of Ley N° 21.521, or that are exempted from applying for authorization and from complying with the provisions of NCG N°502, shall not submit to this Commission the normative files established in Anexo N°2.
 

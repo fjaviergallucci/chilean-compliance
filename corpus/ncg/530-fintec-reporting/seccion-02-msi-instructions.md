@@ -37,7 +37,7 @@ The information must be submitted through the respective application of the offi
 
 ### Plain-English text
 
-The supervised entity must submit the requested information within the deadline indicated for each file. The file must contain the individualization of each of the requested records and fields. In the event that the supervised entity does not have information for a specific record for a period to be reported, it shall not send that record and, in its place, must report the value "0" in the row of the record corresponding to the Squaring Cover Sheet (Carátula de Cuadratura) of the respective Fintec file.
+The supervised entity must submit the requested information within the deadline indicated for each file. The file must contain the individualization of each of the requested records and fields. In the event that the supervised entity does not have information for a specific record for a period to be reported, it must not send that record and, in its place, must report the value "0" in the row of the record corresponding to the Squaring Cover Sheet (Carátula de Cuadratura) of the respective Fintec file.
 
 The deadline for the delivery of the normative files is specified in each one of them and must be counted as from the last day of the period that will be reported.
 
