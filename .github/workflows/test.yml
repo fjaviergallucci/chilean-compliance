@@ -96,6 +96,30 @@ jobs:
             sources/ncg_514_2024.pdf corpus/ncg/514-open-finance \
             --mode ncg --threshold 0.80
 
+      - name: Quality gate — NCG 503 section parity
+        run: |
+          python -m tools.check_ncg_parity \
+            corpus/ncg/503-idoneidad/_toc.json \
+            corpus/ncg/503-idoneidad
+
+      - name: Quality gate — NCG 503 round-trip
+        run: |
+          python -m tools.check_roundtrip \
+            sources/ncg_503_2024.pdf corpus/ncg/503-idoneidad \
+            --mode ncg --threshold 0.80
+
+      - name: Quality gate — NCG 530 section parity
+        run: |
+          python -m tools.check_ncg_parity \
+            corpus/ncg/530-fintec-reporting/_toc.json \
+            corpus/ncg/530-fintec-reporting
+
+      - name: Quality gate — NCG 530 round-trip
+        run: |
+          python -m tools.check_roundtrip \
+            sources/ncg_530_2025-2.pdf corpus/ncg/530-fintec-reporting \
+            --mode ncg --threshold 0.80
+
   validate-plugin:
     name: claude plugin validate
     runs-on: ubuntu-latest

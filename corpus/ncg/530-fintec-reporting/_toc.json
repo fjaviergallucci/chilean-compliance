@@ -1,0 +1,9 @@
+[
+  { "number": "I", "title": "Información a Remitir", "page": 1 },
+  { "number": "II", "title": "Manual de Sistema de Información Fintec (MSI Fintec)", "page": 3 },
+  { "number": "III", "title": "Vigencia", "page": 4 },
+  { "number": "1", "title": "Canal Oficial de Comunicación y Envío de Información", "page": 5 },
+  { "number": "2", "title": "Reporte de Información de Fiscalización", "page": 5 },
+  { "number": "3", "title": "Especificaciones del Contenido de los Archivos", "page": 5 },
+  { "number": "4", "title": "Requerimiento de Información", "page": 6 }
+]

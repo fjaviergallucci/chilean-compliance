@@ -12,6 +12,22 @@ Planned for later releases:
 - Sample agent integrations for OpenAI SDK and LangChain.
 - Coverage for CMF circulars and APDP guidance once issued (separate corpus directories).
 
+## [1.3.0] — 2026-06-03
+
+### Added
+- **NCG 503 (Exigencias de Idoneidad / fit-and-proper).** Knowledge-accreditation
+  requirements for personnel performing defined functions; full prose translation
+  (Secciones I–IV), bridged to Ley 21.521 arts. 7 & 9. Derogates NCG 412.
+- **NCG 530 (MSI Fintec reporting), obligations layer.** Body (FINTEC01–16 list,
+  MSI Fintec creation, vigencia) + Anexo N°1 general instructions + a derived
+  FINTEC01–16 catalog. Record layouts (Anexo N°2/N°3) intentionally out of scope.
+- Cross-reference bridges: NCG 530 ↔ NCG 502 (first intra-NCG bridge), NCG 530 ↔
+  Ley 21.521, NCG 503 ↔ Ley 21.521. Glossary, by-topic, and scenario integration.
+- CI gates for NCG 503 and NCG 530 parity + round-trip; FINTEC-catalog spot-check.
+
+### Changed
+- `corpus_status`: `ncg_503_idoneidad` and `ncg_530_reporting` → `stable`.
+
 ## [1.2.0] — 2026-06-02
 
 ### Added
@@ -156,7 +172,8 @@ The literal-translation pass surfaced real corrections that the prior summaries 
 - CMF circulars, APDP guidance, and case law are not included. The skill instructs consuming AIs to say so when asked.
 - Pre-effective-date Ley 19.628 (1999 baseline) is not in the active corpus — for pre-2026-12-01 questions, consult the source PDF directly.
 
-[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/fjaviergallucci/chilean-compliance/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/fjaviergallucci/chilean-compliance/releases/tag/v1.1.0

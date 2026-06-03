@@ -571,3 +571,29 @@ are flagged inline.
 
 - *Operational capacity and final provisions (in practice)* — NCG 502 §VI–IX cover the operational-capacity self-assessment obligations PSFs must perform before commencing services, the CMF's ongoing reporting requirements, transitional provisions, and the entry-into-force rules.
   NCG 502 §VI–IX — see `corpus/ncg/502-psf-obligations-consolidated/seccion-06-09-disposiciones-finales.md`.
+
+---
+
+## Topic: Regulatory Reporting (MSI Fintec)
+
+- *FINTEC01–16 reporting obligations by service type* — Entities registered in the Registry of Financial-Service Providers (RPSF) that hold CMF authorisation to provide one or more Title II services must submit the applicable normative FINTEC files to the CMF through the "CMF Supervisa" channel. FINTEC01 (business volume/clients) covers all seven service types; FINTEC02–16 apply to narrower subsets (intermediation, custody, order routing, crowdfunding, ATS, credit advisory, and/or investment advisory). Entities exempt from registration or NCG 502 authorisation are not obliged to report.
+  NCG 530 §I — see `corpus/ncg/530-fintec-reporting/seccion-01-obligations.md`.
+
+- *Submission deadlines and "report 0" when no data* — Each FINTEC file carries its own submission deadline counted from the last day of the reporting period. Where a supervised entity has no data for a specific record in a period, it must not send that record and must instead report the value "0" in the corresponding row of the Squaring Cover Sheet (Carátula de Cuadratura) of that file.
+  NCG 530 §2 (Anexo N°1, Sección I, N° 2) — see `corpus/ncg/530-fintec-reporting/seccion-02-msi-instructions.md`.
+
+- *Data-type and format rules for FINTEC files* — FINTEC files are fixed-length plain-text records. Defined data types include RUT, Dates (AAAAMMDD), Periods (AAAAMM), Numeric (right-aligned, zero-padded), Character (left-aligned, space-padded), Numeric-with-sign, and Numeric-with-decimal. Numeric values are submitted without thousands or decimal separators; dates follow the format in each field's description.
+  NCG 530 §3 (Anexo N°1, Sección I, N° 3) — see `corpus/ncg/530-fintec-reporting/seccion-02-msi-instructions.md`.
+
+- *Padding and information-requirement rules* — Fields shorter than the specified length must be padded: spaces at the end for alphanumeric fields; leading zeros for numeric fields. Decimal integer parts are zero-padded left; decimal parts are zero-padded right. The same padding rule applies when no data exists for a field.
+  NCG 530 §4 (Anexo N°1, Sección I, N° 4) — see `corpus/ncg/530-fintec-reporting/seccion-02-msi-instructions.md`.
+
+---
+
+## Topic: Fit-and-Proper / Personnel Accreditation
+
+- *Functional categories and the accreditation mechanism* — Stockbrokers, securities agents, commodity-exchange brokers, general fund managers, fund-quota distribution agents, portfolio managers, and investment advisory providers must ensure that all persons performing defined functions (issuing investment recommendations, direct client contact for contracting/distribution/offer, portfolio management, order execution, supervision of the foregoing, and director/general-manager/CEO roles in fund managers or portfolio managers) obtain knowledge accreditation through the CMF-designated accreditation mechanism. That mechanism must reconcile a high and homogeneous standard of demand, efficient market cost, and continuous functioning. It maintains a public registry of accredited persons (identity, functional category, accreditation dates), administers the exam and continuous-training program, and publishes conduct rules.
+  NCG 503 §I — see `corpus/ncg/503-idoneidad/seccion-01-idoneidad.md`.
+
+- *Accredited responsible person for algorithm-driven functions* — Where a defined functional category is performed by a computer algorithm rather than a natural person, the entity must designate an accredited responsible person to verify that the algorithm delivers results consistent with the function for which it was created. That person must hold accreditation under the same terms as those performing the function manually.
+  NCG 503 §II — see `corpus/ncg/503-idoneidad/seccion-01-idoneidad.md`.

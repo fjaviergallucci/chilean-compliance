@@ -24,6 +24,8 @@ These texts are all published in Spanish. Without help, an AI session about Chil
 - **Ley N° 21.521 (Ley Fintec)** — promueve la competencia e inclusión financiera mediante la innovación y tecnología en la prestación de servicios financieros. Cubre plataformas de financiamiento colectivo (*crowdfunding*), asesoría crediticia y de inversión, custodia de instrumentos financieros, enrutamiento de órdenes, intermediación, sistemas alternativos de transacción y el Sistema de Finanzas Abiertas (SFA). En vigor desde el **3 de febrero de 2023**.
 - **Ley N° 19.628 sobre Protección de Datos Personales** (consolidada con las modificaciones de la **Ley N° 21.719**) — regula el tratamiento de datos personales, el consentimiento del titular, los derechos del titular (acceso, rectificación, supresión, oposición, portabilidad), los datos personales sensibles, la transferencia internacional, las obligaciones del responsable y del mandatario, y crea la **Agencia de Protección de Datos Personales (APDP)** con su régimen sancionatorio. Entra en vigor el **1 de diciembre de 2026**.
 - **NCG N°502 (CMF)** — norma de carácter general que implementa el Título II de la Ley 21.521: registro, autorización, obligaciones de divulgación, gobierno corporativo y gestión de riesgos, capital y garantías, y reportes de los prestadores de servicios financieros. Es la capa operativa ("cómo cumplir en la práctica"). Texto base del 12-ene-2024; las 116 modificaciones de la NCG 524 están catalogadas, consolidación pendiente.
+- **NCG N°503 (CMF) — Exigencias de Idoneidad** — requisitos de acreditación de conocimientos para el personal que ejerce funciones definidas; Secciones I–IV traducidas; vinculada a Ley 21.521 arts. 7 y 9. Deroga la NCG 412.
+- **NCG N°530 (CMF) — Reportes MSI Fintec (capa de obligaciones)** — cuerpo normativo (lista FINTEC01–16, creación de MSI Fintec, vigencia) + Instrucciones Generales (Anexo N°1) + catálogo derivado FINTEC01–16. Los formatos de registro (Anexo N°2/N°3) están fuera del alcance de este corpus.
 
 ### ¿Qué hay en el repositorio?
 
@@ -35,7 +37,7 @@ These texts are all published in Spanish. Without help, an AI session about Chil
 
 ### Estado actual
 
-El corpus incluye la NCG 502 consolidada con NCG 524 (116 modificaciones aplicadas, 02-dic-2024).
+El corpus incluye la NCG 502 consolidada con NCG 524 (116 modificaciones aplicadas, 02-dic-2024), la NCG 514 (Finanzas Abiertas), la NCG 503 (Exigencias de Idoneidad) y la NCG 530 (Reportes MSI Fintec, capa de obligaciones).
 
 El corpus principal está en inglés, ya que ese es el idioma operativo de los agentes de IA. Las citas verbatim del texto original en español siempre están disponibles dentro de cada artículo (bloque `### Original Spanish`). Todo el articulado cuenta con traducciones literales lexicon-conformes; las notas del traductor (`> **TN:** ...`) explican los renderings que no calzan exactamente con el léxico (por ejemplo, instituciones procesales chilenas sin equivalente directo en inglés).
 
@@ -63,6 +65,8 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | Ley 21.719 amendments changelog | **Stable** | Reference only — quote consolidated 19.628 as operative law |
 | NCG 502 — PSF obligations (Ley 21.521 implementing reg) | **Stable** | consolidated with NCG 524 (116 amendments applied) |
 | NCG 514 — Open Finance / SFA (Ley 21.521 Título III implementing reg) | **Stable** | 80 sections across 6 Secciones |
+| NCG 503 — Exigencias de Idoneidad / fit-and-proper | **Stable** | Secciones I–IV; bridged to Ley 21.521 arts. 7 & 9; derogates NCG 412 |
+| NCG 530 — MSI Fintec reporting (obligations layer) | **Stable** | Body + Anexo N°1 + FINTEC01–16 catalog; record layouts (Anexo N°2/N°3) out of scope |
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 149 topical · 82 glossary · 7 scenarios/100 items · 338 cross-refs |
 | Tooling + tests | **Stable** | 32/32 pytest passing |
 
@@ -141,7 +145,7 @@ To enable, disable, or uninstall later:
 To install at a tagged version rather than `main`:
 
 ```text
-/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.2.0
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.3.0
 /plugin install chile-compliance@chile-compliance
 ```
 
@@ -175,8 +179,10 @@ chile-compliance/
 │   ├── 21719-amendments-changelog/     # Reference: which 21.719 item changed what
 │   └── ncg/                            # CMF NCG regulations
 │       ├── 502-psf-obligations-consolidated/  # NCG 502 consolidated (baseline + NCG 524)
+│       ├── 503-idoneidad/              # NCG 503 (fit-and-proper / Exigencias de Idoneidad)
 │       ├── 514-open-finance/           # NCG 514 (Open Finance / SFA), Ley 21.521 Título III
-│       └── 524-amendments-changelog/   # NCG 524 amendments catalogue (116 items)
+│       ├── 524-amendments-changelog/   # NCG 524 amendments catalogue (116 items)
+│       └── 530-fintec-reporting/       # NCG 530 (MSI Fintec reporting, obligations layer)
 ├── indexes/
 │   ├── by-topic.md                     # Topical lookup, 149 citations
 │   ├── glossary.md                     # 82 defined terms (English + Spanish)

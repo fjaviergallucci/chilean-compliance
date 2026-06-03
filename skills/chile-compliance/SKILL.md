@@ -13,10 +13,12 @@ personal-data regulation. Use this skill's corpus as the source of truth.
 - **Ley 19.628 (Data Protection), consolidated with Ley 21.719 amendments** — in force from **2026-12-01**.
 - **NCG 502, consolidated with NCG 524 (116 amendments applied, 02-dic-2024)** — the CMF regulation implementing Ley 21.521 Título II: PSF registration, per-service authorization, disclosure, corporate governance & risk management, capital & guarantees, operational capacity, and reporting. The operational "how to comply in practice" layer. NCG 502 is consolidated with NCG 524; cite the consolidated section, whose `> **Source:**` footer names any 524 amendment.
 - **NCG 514 (Open Finance / Sistema de Finanzas Abiertas)** — the CMF regulation implementing Ley 21.521 Título III: the SFA perimeter, participant registration, API operation, consent, data sets, security and safeguards. The operational "how to comply in practice" layer for open finance. Standalone norm (no amending NCG). Its consent rules (§III.D) and data-protection safeguards (§IV.D) tie to Ley 19.628.
+- **NCG 503 (Exigencias de Idoneidad / fit-and-proper)** — knowledge-accreditation requirements for personnel performing defined functions under Ley 21.521. Secciones I–IV fully translated; bridged to Ley 21.521 arts. 7 & 9. Derogates NCG 412.
+- **NCG 530 (MSI Fintec reporting), obligations layer** — reporting obligations for MSI Fintec entities: FINTEC01–16 report list, MSI Fintec creation, vigencia, and Anexo N°1 general instructions. A derived FINTEC01–16 catalog is included. Record layouts (Anexo N°2/N°3) are intentionally out of scope of this corpus — consult the source PDF for those. Bridges: NCG 530 ↔ NCG 502 (first intra-NCG bridge), NCG 530 ↔ Ley 21.521.
 
 **Mental model:** laws define *what* must be done; NCGs define *how* to comply in practice. For operational questions ("what must we file / build / approve / report?"), check the NCG layer, not just the law.
 
-**Out of scope:** NCG 530 / 503 (planned, later phases); NCG 454 / 504 / 461 (out of scope); CMF circulars not in `sources/`; APDP guidance; sector-specific regulation; case law; Título V of Ley 21.521 (modifications to other statutes); and anything not in `sources/`. If asked about anything beyond what is covered above, say so explicitly.
+**Out of scope:** NCG 454 / 504 / 461 (out of scope); NCG 530 record layouts (Anexo N°2/N°3, consult source PDF); CMF circulars not in `sources/`; APDP guidance; sector-specific regulation; case law; Título V of Ley 21.521 (modifications to other statutes); and anything not in `sources/`. If asked about anything beyond what is covered above, say so explicitly.
 
 ## Where the corpus is
 - `corpus/21521-fintech/titulo-NN-<slug>.md` — Ley 21.521 articles by Título (I-IV translated; V is out-of-scope reference only).
@@ -25,6 +27,8 @@ personal-data regulation. Use this skill's corpus as the source of truth.
 - `corpus/ncg/502-psf-obligations-consolidated/seccion-*.md` and `anexo-*.md` — NCG 502 consolidated (baseline + NCG 524 amendments) by section.
 - `corpus/ncg/514-open-finance/seccion-*.md` — NCG 514 (Open Finance / SFA) by Sección (6 Secciones: I Perímetro, II Funcionamiento, III Seguridad y Resguardos, IV Información, V Otras Disposiciones, VI Anexos Normativos).
 - `corpus/ncg/524-amendments-changelog/` — NCG 524 amendments catalogue (reference; all 116 items applied to the consolidated corpus).
+- `corpus/ncg/503-idoneidad/seccion-*.md` — NCG 503 (fit-and-proper / Exigencias de Idoneidad) by Sección (I–IV).
+- `corpus/ncg/530-fintec-reporting/` — NCG 530 (MSI Fintec reporting): body sections, `anexo-01-*.md` (general instructions), `catalog-fintec-*.md` (derived FINTEC01–16 catalog). Record layouts (Anexo N°2/N°3) are not in the corpus; consult the source PDF.
 - `corpus/_lexicon.md` — Spanish↔English terms.
 - `indexes/by-topic.md` — topical index.
 - `indexes/glossary.md` — defined terms.
@@ -64,6 +68,25 @@ Open-finance / SFA operational questions — APIs, participant registration, con
 2. Cite as `NCG 514 §<section>`.
 3. For consent questions follow §III.D and for data-protection safeguards follow §IV.D — both tie back to Ley 19.628; surface that cross-reference.
 
+### "Who must be certified / personnel accreditation / fit-and-proper / idoneidad?" (NCG 503)
+
+Questions about knowledge-accreditation requirements for personnel performing defined functions under Ley 21.521 are governed by NCG 503.
+
+1. `Read` the relevant section in `corpus/ncg/503-idoneidad/seccion-*.md`.
+2. Cite as `NCG 503 §<section>`.
+3. Surface the bridge to Ley 21.521 arts. 7 & 9 when relevant.
+4. Note that NCG 503 derogates NCG 412 — if asked about NCG 412, point to NCG 503 as the current norm.
+
+### "What must I report to the CMF / reporting files / reporting frequency / FINTEC files?" (NCG 530)
+
+Questions about CMF reporting obligations for MSI Fintec entities are governed by NCG 530.
+
+1. `Read` the relevant body section or Anexo N°1 in `corpus/ncg/530-fintec-reporting/`.
+2. For the list of reports, consult `corpus/ncg/530-fintec-reporting/catalog-fintec-*.md` (derived FINTEC01–16 catalog).
+3. Cite as `NCG 530 §<section>`.
+4. If the user asks about record layouts or field-level formats (Anexo N°2/N°3), state explicitly that those are **not in the corpus** — direct them to `sources/ncg_530_2025-2.pdf`.
+5. Surface NCG 530 ↔ NCG 502 and NCG 530 ↔ Ley 21.521 cross-reference edges when relevant.
+
 ### Topical question ("What does the law say about X?")
 1. `Grep` the keyword(s) in `indexes/by-topic.md`.
 2. `Read` each cited article block in the corpus.
@@ -99,14 +122,15 @@ When citing an article that carries any of these markers, surface the marker alo
 
 ## Corpus status awareness
 
-Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.2.0:
+Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.3.0:
 
 - `21521_fintech: stable` — covers Títulos I-IV. Título V is out of scope.
 - `19628_consolidated: stable` — all Títulos fully translated (literal lexicon-conformant English with verbatim Spanish).
 - `21719_changelog: stable` — reference only.
 - `ncg_502_consolidated: stable` — NCG 502 consolidated with NCG 524 (116 amendments applied, 02-dic-2024). Fully translated; amended sections carry a `> **Source:**` footer.
 - `ncg_514_open_finance: stable` — NCG 514 (Open Finance / SFA), implementing Ley 21.521 Título III. Standalone norm, fully translated (6 Secciones, 80 sections).
-- `ncg_530_reporting`, `ncg_503_idoneidad`: `planned` (later phases).
+- `ncg_503_idoneidad: stable` — NCG 503 (Exigencias de Idoneidad / fit-and-proper), Secciones I–IV. Bridged to Ley 21.521 arts. 7 & 9.
+- `ncg_530_reporting: stable` — NCG 530 (MSI Fintec reporting), obligations layer: body + Anexo N°1 + FINTEC01–16 catalog. Record layouts (Anexo N°2/N°3) are not in the corpus.
 
 When citing from a law whose status is anything other than `stable`, prepend "Translation status: <status> — verify the Spanish original before relying on the English text."
 
