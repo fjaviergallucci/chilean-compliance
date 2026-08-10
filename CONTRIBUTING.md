@@ -90,6 +90,17 @@ The pytest suite also enforces two corpus-policy invariants, so no extra gate co
 
 CI runs these on every PR. Tests must be green to merge.
 
+### If you change the corpus or index *structure*
+
+`tools/corpus_api.py` parses the article block format and all four index formats at runtime to serve the MCP server, so a structural change breaks retrieval for every MCP client even when the corpus gates stay green. After touching heading shapes, `###` subsection names, adjacency-list edge syntax, glossary entry layout, or scenario checklist markers:
+
+```bash
+python -m pip install -r tools/mcp/requirements.txt
+python -m pytest tools/tests/test_corpus_api.py tools/tests/test_mcp_server.py -v
+```
+
+CI runs these in a separate `mcp-server` job. Keep the MCP SDK out of `tools/requirements.txt` — the verification gates must stay runnable without it.
+
 ## Development setup
 
 ```bash

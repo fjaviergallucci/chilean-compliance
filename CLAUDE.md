@@ -4,17 +4,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-**chile-compliance** — an AI-queryable corpus of Chilean fintech and data-protection law, distributed as a Claude Code plugin (this repo is its own single-plugin marketplace via `.claude-plugin/marketplace.json`). The deliverable is structured markdown, not running software: literal English translations of Ley 21.521 (Fintec), Ley 19.628 consolidated with Ley 21.719 amendments, and four CMF implementing regulations (NCG 502+524 consolidated, 514, 503, 530). Python in `tools/` exists only to verify the corpus against the source PDFs — no servers, no databases.
+**chile-compliance** — an AI-queryable corpus of Chilean fintech and data-protection law, distributed as a Claude Code plugin (this repo is its own single-plugin marketplace via `.claude-plugin/marketplace.json`) and as an MCP server for every other host. The deliverable is structured markdown: literal English translations of Ley 21.521 (Fintec), Ley 19.628 consolidated with Ley 21.719 amendments, and four CMF implementing regulations (NCG 502+524 consolidated, 514, 503, 530). Python in `tools/` verifies the corpus against the source PDFs and serves it; there are no embeddings and no database.
 
 `.claude-plugin/plugin.json` (`corpus_status`) is the canonical machine-readable statement of what's covered. `corpus/_agent-policy.md` is the host-neutral behavioural contract consuming AIs follow; `skills/chile-compliance/SKILL.md` is the Claude Code binding over it.
 
 ## Commands
 
 ```bash
-python -m pip install -r tools/requirements.txt   # Python 3.11+
-python -m pytest tools/tests/ -v                  # all tests (must be fully green)
+python -m pip install -r tools/requirements.txt       # Python 3.11+, verification tooling
+python -m pip install -r tools/mcp/requirements.txt   # only if working on the MCP server
+python -m pytest tools/tests/ -v                      # all tests (must be fully green)
 python -m pytest tools/tests/test_check_roundtrip.py -v          # one test file
 python -m pytest tools/tests/test_check_roundtrip.py -k <name>   # one test
+python -m tools.mcp.server                            # run the MCP server over stdio
 ```
 
 Quality gates (CI runs all of these on every PR — see `.github/workflows/test.yml` for the authoritative list and exact flags):
@@ -40,7 +42,7 @@ CI also runs `claude plugin validate` on both `.claude-plugin/*.json` manifests.
 
 - **`corpus/`** — source of truth. One directory per law (`21521-fintech/`, `19628-data-protection-consolidated/`) split by Título, and `corpus/ncg/<num>-<slug>/` per CMF regulation split by Sección. `*-amendments-changelog/` dirs are reference-only — never cite them as operative law. Leading-underscore files are meta, not articles: `corpus/_lexicon.md` is the authoritative Spanish↔English term mapping, `corpus/_agent-policy.md` is the agent policy (below).
 - **`indexes/`** — derived lookup layers: `by-topic.md`, `glossary.md`, `scenarios.md` (compliance checklists), `cross-references.md` (article-to-article edges, including law→NCG bridges like `-> NCG502`).
-- **`tools/`** — one single-purpose verification script each, with pytest coverage. Law-format PDFs (BCN `Artículo N.-` structure) use `extract_articles.py` / `check_extraction_parity.py`; NCG-format PDFs (hierarchical ToC) use `extract_ncg_sections.py` / `check_ncg_parity.py` driven by a per-corpus `_toc.json`.
+- **`tools/`** — one single-purpose verification script each, with pytest coverage. Law-format PDFs (BCN `Artículo N.-` structure) use `extract_articles.py` / `check_extraction_parity.py`; NCG-format PDFs (hierarchical ToC) use `extract_ncg_sections.py` / `check_ncg_parity.py` driven by a per-corpus `_toc.json`. Separately, `corpus_api.py` resolves citations and parses the indexes for runtime consumers, and `mcp/` is the MCP server over it.
 - **`sources/`** — unmodified BCN/CMF PDFs. The round-trip checker enforces that corpus Spanish tracks them exactly.
 - **`docs/superpowers/`** — design specs and implementation plans from past corpus-expansion phases; useful as patterns when adding a new NCG.
 
@@ -48,11 +50,17 @@ CI also runs `claude plugin validate` on both `.claude-plugin/*.json` manifests.
 
 `corpus/_agent-policy.md` (marked `<!-- AGENT-POLICY v1 -->`) is the single source of truth for how a consuming AI should behave: scope, the seven operations (LOCATE, RETRIEVE, DEFINE, SCENARIO, TRAVERSE, ORIGINAL, STATUS), citation format, caveat surfacing, honesty about gaps, and the law→NCG routing table. It is deliberately host-neutral — `tools/tests/test_agent_policy.py` fails the build if it names any host's tooling.
 
-Everything else is a *binding* that maps those operations onto one host's retrieval mechanism and defers to the policy for the rest. `SKILL.md` is the Claude Code binding. **Add behaviour to the policy, not to a binding** — a rule written into a binding is invisible to every other consumer.
+Everything else is a *binding* that maps those operations onto one host's retrieval mechanism and defers to the policy for the rest. There are two: `skills/chile-compliance/SKILL.md` (Claude Code tools) and `tools/mcp/server.py` (MCP tools, which delegate to `tools/corpus_api.py`). **Add behaviour to the policy, not to a binding** — a rule written into a binding is invisible to every other consumer.
+
+The MCP server passes the policy file verbatim to clients as its MCP `instructions`, so connecting models inherit it with no second copy. `tools/tests/test_mcp_server.py` asserts the tool surface is exactly the seven operations and that the policy plus date banner reach the client.
+
+**Dependency boundary:** `tools/corpus_api.py` is pure stdlib and the MCP SDK lives only in `tools/mcp/requirements.txt`, so the corpus verification gates never need it. The MCP tests `importorskip` when the SDK is absent, and CI runs them in a separate `mcp-server` job. Keep it that way — don't add `mcp` to `tools/requirements.txt`.
 
 ### Corpus article format
 
-Each article/section is a self-contained block: `## Article N — <title>`, `**Spanish anchor:**`, `**Tags:**`, `### Plain-English text`, `### Original Spanish` (blockquoted verbatim), `### Cross-references`, and a `> **Source:**` footer naming the amending provision and effective date. The verification tooling parses this structure — preserve it exactly.
+Each article/section is a self-contained block: `## Article N — <title>`, `**Spanish anchor:**`, `**Tags:**`, `### Plain-English text`, `### Original Spanish` (blockquoted verbatim), `### Cross-references`, and a `> **Source:**` footer naming the amending provision and effective date. NCG sections use the same shape with a hierarchical anchor (`## I.C.1 — <title>`).
+
+**This structure is now load-bearing at runtime, not just in CI.** `tools/corpus_api.py` parses these headings and `###` subsections, and the index formats too: `cross-references.md` edges as `LAW:Art.N -> LAW:Art.M (reason)`, glossary entries as `## term (término)` plus `**Defined in:**`, `by-topic.md` as `## Topic:` headings with indented child bullets carrying the citations, and `scenarios.md` as `## Scenario N:` with `- [ ]` items. Changing any of those shapes breaks retrieval for every MCP client — run `pytest tools/tests/test_corpus_api.py` after touching index structure.
 
 ## Hard rules
 
