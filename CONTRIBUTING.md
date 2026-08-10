@@ -83,6 +83,11 @@ python -m tools.check_roundtrip sources/ncg_530_2025-2.pdf corpus/ncg/530-fintec
 
 Note: the NCG round-trip runs at threshold 0.80 due to one known pdfplumber page-break artifact; the law round-trips above use the default threshold.
 
+The pytest suite also enforces two corpus-policy invariants, so no extra gate command is needed for them:
+
+- **Effective-date discipline** (`tools/tests/test_effective_date_discipline.py`) — the `<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->` banner must be present in all four `indexes/*.md`, in `corpus/19628-data-protection-consolidated/README.md`, and in `SKILL.md`. The banner frames 2026-12-01 as a compliance deadline; the test also bans phrasings that defer a present-tense answer or point a non-git consumer at git history. Any consumer reading the corpus without the Claude Code skill inherits the rule from these files, so keep the banner text identical across them.
+- **Translation-status honesty** (`tools/tests/test_no_stale_review_markers.py`) — status claims in the indexes and `SKILL.md` must match `.claude-plugin/plugin.json` `corpus_status`. If you mark a corpus non-stable, update both together.
+
 CI runs these on every PR. Tests must be green to merge.
 
 ## Development setup
