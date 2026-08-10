@@ -1,6 +1,10 @@
 # chile-compliance
 
-> A structured, AI-queryable knowledge base of Chilean fintech and personal-data law — built for use by AI agents, not humans.
+> A structured, AI-queryable knowledge base of Chilean fintech and personal-data law. Written to be read by AI assistants, so that people can get straight, citable answers about what the law actually requires.
+
+> [!TIP]
+> **¿No eres programador/a y solo quieres saber cómo te afecta la ley?**
+> No necesitas instalar nada. → **[Empieza aquí](#empieza-aquí--usar-esto-con-chatgpt-sin-instalar-nada)**
 
 If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws — and the CMF regulation that implements them:
 
@@ -15,9 +19,63 @@ These texts are all published in Spanish. Without help, an AI session about Chil
 
 ---
 
+## Empieza aquí — usar esto con ChatGPT (sin instalar nada)
+
+Si tienes un negocio en Chile y quieres entender qué te exige la ley de protección de datos personales, esto te toma unos dos minutos. No necesitas saber programar ni instalar nada.
+
+### 1. Descarga un archivo
+
+Elige el que corresponda a tu caso, abre el enlace y presiona el botón de descarga (**Download raw file**, arriba a la derecha):
+
+| Tu situación | Archivo |
+|---|---|
+| Manejo datos de personas: nombres, RUT, correos, datos de salud, historial de compras… | **[proteccion-datos.md](dist/single/proteccion-datos.md)** (486 KB) |
+| Ofrezco servicios financieros: inversiones, crowdfunding, asesoría, custodia, pagos… | **[fintech.md](dist/single/fintech.md)** (296 KB) |
+
+Cada archivo trae la ley completa, listas de verificación organizadas por tipo de negocio y un glosario de términos legales.
+
+### 2. Adjúntalo a una conversación en ChatGPT
+
+Abre ChatGPT, presiona el clip 📎 y sube el archivo que descargaste.
+
+### 3. Copia y pega este mensaje
+
+```text
+Adjunté un archivo con legislación chilena estructurada. Léelo y sigue las
+instrucciones que trae al inicio.
+
+Actúa como asistente de cumplimiento normativo. Antes de darme recomendaciones:
+
+1. Pregúntame qué hace mi negocio y qué datos de personas manejo.
+2. Busca en el archivo la lista de verificación que corresponda a mi caso.
+3. Explícame en español, sin tecnicismos, qué debo hacer y para cuándo.
+4. Cita siempre el artículo específico en el que te basas.
+
+Importante: la fiscalización empieza el 1 de diciembre de 2026, pero las
+obligaciones ya están definidas y debo prepararme desde ahora. No me digas que
+"todavía no entra en vigencia": dime qué tengo que hacer y cuál es el plazo.
+
+Empecemos: ¿qué necesitas saber sobre mi negocio?
+```
+
+Eso es todo. ChatGPT te preguntará por tu negocio y te irá indicando las obligaciones que aplican, citando los artículos para que puedas verificarlos o mostrárselos a un abogado.
+
+### Preguntas frecuentes
+
+**¿Sirve con la versión gratuita de ChatGPT?** Adjuntar un archivo a una conversación normal es la vía más disponible. Si tu plan no te deja subirlo, prueba con el archivo más pequeño (`fintech.md`) o consulta la sección para Custom GPTs más abajo.
+
+**¿Funciona con Claude, Gemini u otro asistente?** Sí. El archivo es texto plano y las instrucciones van dentro, así que el procedimiento es el mismo.
+
+**¿Tengo que volver a descargarlo?** Solo si quieres la versión más reciente. Los archivos se regeneran automáticamente cuando cambia el corpus.
+
+> [!IMPORTANT]
+> Esto **no es asesoría legal**. Es una ayuda para encontrar y citar los artículos que te aplican. Para decisiones con riesgo legal o financiero relevante, consulta a un abogado o abogada en Chile.
+
+---
+
 ## En español
 
-**chile-compliance** es una base de conocimiento estructurada y consultable por agentes de inteligencia artificial sobre la regulación chilena de servicios financieros y protección de datos personales. Está pensada para asistentes y agentes de IA (no para uso humano directo) que necesitan razonar sobre el cumplimiento normativo aplicable a software desarrollado para usuarios en Chile.
+**chile-compliance** es una base de conocimiento estructurada y consultable por agentes de inteligencia artificial sobre la regulación chilena de servicios financieros y protección de datos personales. Está escrita para que la lea un asistente de IA, de modo que las personas obtengan respuestas directas y citables sobre lo que exige la ley. Si solo quieres consultarla con ChatGPT, ve a [Empieza aquí](#empieza-aquí--usar-esto-con-chatgpt-sin-instalar-nada); el resto de esta sección describe el contenido y está dirigido a quienes desarrollan software.
 
 ### Leyes incluidas
 
@@ -169,6 +227,7 @@ Other options, in descending fidelity:
 - **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer). Include `corpus/_agent-policy.md` in the system prompt, or the effective-date discipline is lost.
 - **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — import `tools/corpus_api.py` directly; it is pure stdlib and implements the same seven operations the MCP server exposes.
 - **Uploaded knowledge files** (Custom GPTs, Projects) — ready to use, no build step. Upload the 13 files in [`dist/knowledge/`](dist/knowledge/) (under the usual 20-file cap) and paste [`dist/instructions-gpt.md`](dist/instructions-gpt.md) into the instructions field. Both are generated from the corpus and CI fails if they drift, so they are never out of date. Accept the fidelity caveat above.
+- **A single attached file** — for one-off questions, or for a non-technical user, [`dist/single/`](dist/single/) holds two self-contained documents that carry their own instructions in Spanish, so attaching one to a chat is enough. See [Empieza aquí](#empieza-aquí--usar-esto-con-chatgpt-sin-instalar-nada).
 - **Manual reading** — humans can read it, though it was not optimised for that.
 
 ---
@@ -289,7 +348,7 @@ As of v1.0.0, all article-level REVIEW markers in the corpus are resolved. The m
 
 - **Translation corrections.** If you find an English rendering that doesn't track the Spanish, or a Chilean legal term that deserves a clearer treatment, open an issue (use the `Translation fix or improvement` template) or send a PR with the change plus a `> **TN:** ...` note explaining the rationale.
 - **New scenarios.** If your real-world use case isn't covered by the seven scenarios in `indexes/scenarios.md`, add one (see [Adding a new scenario](#adding-a-new-scenario) below).
-- **CMF circulars and APDP guidance.** These are out of scope today but valuable additions as they're published. See [Adding new amendments, circulars, or laws](#adding-new-amendments-circulars-or-laws) below.
+- **CMF circulars and APDP guidance.** These are out of scope today but valuable additions as they're published. See [Adding new amendments or sources](#adding-new-amendments-or-sources) below.
 - **Coverage for other Chilean statutes** that fintech-adjacent products touch — Leyes 18.045, 18.046, 18.840, etc. Each becomes its own corpus subdirectory.
 
 ### Adding a new scenario
