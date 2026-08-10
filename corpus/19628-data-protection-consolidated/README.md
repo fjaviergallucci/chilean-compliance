@@ -1,14 +1,34 @@
 # Ley 19.628 — Protection of Personal Data (consolidated, post-21.719)
 
-**Status:** In force from **2026-12-01**.
+**Status:** Operative compliance target now; enforcement begins **2026-12-01**. See *Effective-date discipline* below.
 **Sources:**
 - Baseline: `sources/LEY-19628_28-AGO-1999.pdf`
 - Amendments: `sources/Ley-21719_13-DIC-2024.pdf` Art. 1°
 
 This is the primary data-protection artifact in this plugin. Every article carries a footer noting which 21.719 numbered amendment(s) shaped its current wording. Amendments are tracked in `corpus/21719-amendments-changelog/changes.md`.
 
-## Pre/post-effective-date discipline
-Until 2026-12-01, the operative law is the **pre-amendment** Ley 19.628 (1999 baseline). For pre-effective-date questions, the baseline working dir is preserved in git history at the pre-F2 commits.
+## Effective-date discipline
+
+<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->
+> **Effective-date discipline — Ley 19.628 as amended by Ley 21.719.**
+>
+> The consolidated Ley 19.628 in this corpus is the authoritative statement of the
+> data-protection obligations Chilean organisations must meet, and is the correct
+> basis for answering any present-tense compliance question — *"what must we do?"*,
+> *"how should we build this?"*, *"what do we need before launch?"*
+>
+> Enforcement begins **2026-12-01**. That date is a **compliance deadline**, not the
+> date from which these obligations become relevant. Organisations are expected to be
+> designing, remediating, and budgeting against this text now.
+>
+> **Never answer a compliance question by saying the law has not taken effect.** State
+> the obligation, cite the article, then give 2026-12-01 as the date by which it must
+> be met.
+>
+> Only genuinely retrospective questions — *"was this lawful in 2024?"*, *"can we be
+> sanctioned for last year's processing?"* — turn on the pre-amendment 1999 baseline,
+> which is **not** in this corpus. Say so and point to the official BCN source rather
+> than answering from the consolidated text.
 
 ## Law title note
 Ley 21.719 Art. 1° item 1 substituted, in the name of the law, the phrase "LA VIDA PRIVADA" with "LOS DATOS PERSONALES". The consolidated short title of the law is now "Sobre Protección de los Datos Personales" / "On the Protection of Personal Data".
@@ -33,4 +53,4 @@ All articles in this consolidated corpus carry literal lexicon-conformant Englis
 Translator's notes (`> **TN:** ...`) are present where the lexicon does not directly map a Chilean legal-drafting term, where a paragraph reflects a pre-21.719 amendment layer (Título III), or where the rendering preserves a constitutional-law or administrative-law nuance.
 
 ## Audit trail
-Each article in this corpus carries a "Source" footer naming the Ley 21.719 amendment item(s) that produced its current wording (where amended). The complete change index lives at `corpus/21719-amendments-changelog/changes.md`. The pre-21.719 baseline content is preserved in git history at the commits prior to the Phase F2 consolidation.
+Each article in this corpus carries a "Source" footer naming the Ley 21.719 amendment item(s) that produced its current wording (where amended). The complete change index lives at `corpus/21719-amendments-changelog/changes.md`. The pre-21.719 baseline content is not carried in this corpus. Retrospective questions about the pre-amendment regime should be answered from the official BCN source, not from this consolidated text.
