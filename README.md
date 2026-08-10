@@ -153,14 +153,23 @@ To install at a tagged version rather than `main`:
 
 ## Quick start — other AI hosts
 
-The corpus is plain markdown — it doesn't depend on Claude Code. You can use it from:
+The corpus does not depend on Claude Code. **The recommended path for every other host is the bundled MCP server** — ChatGPT connectors, Cursor, Continue, and anything else that speaks MCP:
 
-- **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — load relevant files at session start, or use a tool-call that reads `corpus/`, `indexes/`, and `.claude-plugin/plugin.json` paths.
-- **MCP server** — wrap the corpus with a thin MCP layer exposing `search`, `get_article`, `get_definition`, and `find_obligations` tools. The folder structure was designed to make this straightforward; no rework needed.
-- **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer).
-- **Manual reading** — yes, humans can read it too, though it wasn't optimized for that.
+```bash
+python -m pip install -r tools/mcp/requirements.txt
+python -m tools.mcp.server
+```
 
-The `SKILL.md` file documents the query decision tree the corpus expects — port it to your platform's agent prompt format.
+Full setup, per-client configuration, and the tool reference are in [`tools/mcp/README.md`](tools/mcp/README.md). The server exposes seven tools — `search_topics`, `get_article`, `get_definition`, `get_scenario`, `get_cross_references`, `get_spanish_original`, `get_corpus_status` — and hands the connecting model the full text of `corpus/_agent-policy.md` as its MCP instructions, so it inherits the behavioural policy without a second copy existing anywhere.
+
+**Why MCP rather than uploading the corpus as knowledge files.** This corpus exists to produce *verifiable citations*. That depends on retrieving an exact citation in full and traversing the cross-reference graph from a law article into the CMF regulation implementing it. Semantic retrieval over uploaded documents returns plausible-looking fragments and will silently miss the law → NCG bridge — the step that turns "what does the law say?" into "what must we actually file, build, and report?" Exact retrieval is the point, so prefer the server wherever the host supports it.
+
+Other options, in descending fidelity:
+
+- **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer). Include `corpus/_agent-policy.md` in the system prompt, or the effective-date discipline is lost.
+- **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — import `tools/corpus_api.py` directly; it is pure stdlib and implements the same seven operations the MCP server exposes.
+- **Uploaded knowledge files** (Custom GPTs, Projects) — workable for casual use. Use `corpus/_agent-policy.md` as the instruction text and accept the fidelity caveat above.
+- **Manual reading** — humans can read it, though it was not optimised for that.
 
 ---
 
@@ -171,8 +180,9 @@ chile-compliance/
 ├── .claude-plugin/
 │   ├── marketplace.json                # Marketplace catalog (this repo as marketplace)
 │   └── plugin.json                     # Plugin manifest with corpus_status
-├── skills/chile-compliance/SKILL.md    # Query decision tree for consuming AIs
+├── skills/chile-compliance/SKILL.md    # Claude Code binding over the agent policy
 ├── corpus/
+│   ├── _agent-policy.md                # Host-neutral agent policy (source of truth)
 │   ├── _lexicon.md                     # Spanish ↔ English legal-term mapping
 │   ├── 21521-fintech/                  # Ley 21.521 by Título
 │   ├── 19628-data-protection-consolidated/  # Ley 19.628 (post-21.719) by Título
@@ -189,7 +199,10 @@ chile-compliance/
 │   ├── scenarios.md                    # 7 compliance scenarios, 100 checklist items
 │   └── cross-references.md             # 338 article-to-article edges
 ├── sources/                            # Original PDF sources (BCN, public)
-└── tools/                              # Python QC scripts + pytest tests
+└── tools/
+    ├── corpus_api.py                   # Resolver for the seven operations (stdlib only)
+    ├── mcp/                            # MCP server — the binding for non-Claude hosts
+    └── tests/                          # pytest coverage for QC scripts and resolver
 ```
 
 ### Corpus file format
@@ -248,7 +261,8 @@ The pre-amendment baseline is in git history (search for the `19628-baseline/` d
 The build philosophy is **markdown-first, tooling-light**:
 
 - **Source of truth**: a small set of structured markdown files in `corpus/` and `indexes/`. Editable by humans, greppable by AIs.
-- **Tooling** (`tools/`): verification scripts only — no runtime servers, no embeddings, no databases. Each script is single-purpose with pytest coverage:
+- **Policy vs. bindings**: `corpus/_agent-policy.md` is the host-neutral behavioural contract — scope, the seven operations (LOCATE, RETRIEVE, DEFINE, SCENARIO, TRAVERSE, ORIGINAL, STATUS), citation format, effective-date discipline, caveat surfacing. Everything that consumes the corpus is a thin *binding* that maps those operations onto one host's retrieval mechanism: `skills/chile-compliance/SKILL.md` for Claude Code, `tools/mcp/` for MCP clients. Behaviour is changed in the policy, never in a binding, so hosts cannot drift apart. A test rejects host-specific tooling names in the policy file.
+- **Tooling** (`tools/`): verification scripts plus a resolver and an MCP server. No embeddings and no databases — `tools/corpus_api.py` parses the indexes into memory on first use and is pure stdlib, and the MCP SDK is isolated in `tools/mcp/requirements.txt` so the verification gates never depend on it. Each verification script is single-purpose with pytest coverage:
   - `extract_articles.py` — parses Chilean BCN-formatted PDFs into article blocks.
   - `check_extraction_parity.py` — verifies every article in a PDF appears once in the corpus.
   - `check_glossary_completeness.py` — verifies every glossary term cites a real article.
