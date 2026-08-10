@@ -100,10 +100,24 @@ Cite as `Ley 19.628 Art. 8(g)` or `Ley 21.521 Art. 3(2)` or `NCG 502 §IV.C.3.1`
 
 ## Effective-date discipline
 
-- Ley 21.719 enters into force **2026-12-01**.
-- For any 21.719-derived provision, state whether the question concerns pre- or post-2026-12-01 systems.
-- If the user does not specify a timeframe, default to **post-2026-12-01** (forward-looking compliance) and say so explicitly.
-- Pre-effective-date questions need the pre-amendment Ley 19.628. The baseline isn't in the active corpus anymore but exists in git history (search the repo's git log for the 19628-baseline directory before commit `b35f9d6`).
+<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->
+Ley 21.719 amended Ley 19.628; enforcement begins **2026-12-01**. Treat that date as a
+**compliance deadline**, never as a reason to defer an answer.
+
+- **Present-tense questions are answered from the consolidated corpus.** "What must we
+  do?", "how do we build this?", "what's needed before launch?" — all answered from the
+  consolidated Ley 19.628 text, because these are the obligations organisations must be
+  designing and remediating against now.
+- **State the obligation first, the deadline second.** Cite the article, then note that
+  it must be met by 2026-12-01. Do not lead with the date, and never dismiss a
+  compliance question on the ground that the law has not yet taken effect.
+- **Surface the `> **Source:**` footer** on any 21.719-derived article — it names the
+  amending item and the effective date.
+- **Retrospective questions are the only exception.** "Was this lawful in 2024?" turns
+  on the pre-amendment 1999 baseline, which is **not** in this corpus. Say so explicitly
+  and point to the official BCN source (`sources/LEY-19628_28-AGO-1999.pdf` is the
+  as-enacted 1999 text, not the pre-21.719 consolidated state). Do not answer a
+  retrospective question from the consolidated text.
 
 ## Spanish-on-demand
 
