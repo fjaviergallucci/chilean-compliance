@@ -101,6 +101,17 @@ python -m pytest tools/tests/test_corpus_api.py tools/tests/test_mcp_server.py -
 
 CI runs these in a separate `mcp-server` job. Keep the MCP SDK out of `tools/requirements.txt` — the verification gates must stay runnable without it.
 
+### If you change corpus content or the agent policy
+
+`dist/` holds generated knowledge bundles and ChatGPT instructions for hosts that cannot run the MCP server. It is committed, and CI fails when it drifts:
+
+```bash
+python -m tools.build_dist          # regenerate, then commit dist/
+python -m tools.build_dist --check  # what CI runs
+```
+
+Never hand-edit anything under `dist/`. If the builder warns that the instruction file is within 5% of the 8,000-character limit, trim the projection in `tools/build_dist.py` — do not truncate legal guidance.
+
 ## Development setup
 
 ```bash

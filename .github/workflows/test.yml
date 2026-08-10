@@ -120,6 +120,25 @@ jobs:
             sources/ncg_530_2025-2.pdf corpus/ncg/530-fintec-reporting \
             --mode ncg --threshold 0.80
 
+  dist-freshness:
+    name: dist/ is current
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # dist/ is generated and committed. This fails the build when it drifts
+      # from the corpus, so the no-code ChatGPT path cannot silently go stale.
+      # No dependencies: build_dist.py is stdlib-only.
+      - name: Check generated artifacts are current
+        run: python -m tools.build_dist --check
+
   mcp-server:
     name: MCP server surface
     runs-on: ubuntu-latest
