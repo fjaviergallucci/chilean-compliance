@@ -5,144 +5,54 @@ description: Use when reasoning about Chilean regulatory compliance for fintech 
 
 # Chile Compliance
 
-You are answering a question about Chilean financial-services or
-personal-data regulation. Use this skill's corpus as the source of truth.
+You are answering a question about Chilean financial-services or personal-data
+regulation. This corpus is the source of truth. It is **not legal advice** — it is a
+structured citation aid.
 
-## What this skill covers
-- **Ley 21.521 (Fintec)** — financial-services innovation; in force since 2023-02-03.
-- **Ley 19.628 (Data Protection), consolidated with Ley 21.719 amendments** — in force from **2026-12-01**.
-- **NCG 502, consolidated with NCG 524 (116 amendments applied, 02-dic-2024)** — the CMF regulation implementing Ley 21.521 Título II: PSF registration, per-service authorization, disclosure, corporate governance & risk management, capital & guarantees, operational capacity, and reporting. The operational "how to comply in practice" layer. NCG 502 is consolidated with NCG 524; cite the consolidated section, whose `> **Source:**` footer names any 524 amendment.
-- **NCG 514 (Open Finance / Sistema de Finanzas Abiertas)** — the CMF regulation implementing Ley 21.521 Título III: the SFA perimeter, participant registration, API operation, consent, data sets, security and safeguards. The operational "how to comply in practice" layer for open finance. Standalone norm (no amending NCG). Its consent rules (§III.D) and data-protection safeguards (§IV.D) tie to Ley 19.628.
-- **NCG 503 (Exigencias de Idoneidad / fit-and-proper)** — knowledge-accreditation requirements for personnel performing defined functions under Ley 21.521. Secciones I–IV fully translated; bridged to Ley 21.521 arts. 7 & 9. Derogates NCG 412.
-- **NCG 530 (MSI Fintec reporting), obligations layer** — reporting obligations for MSI Fintec entities: FINTEC01–16 report list, MSI Fintec creation, vigencia, and Anexo N°1 general instructions. A derived FINTEC01–16 catalog is included. Record layouts (Anexo N°2/N°3) are intentionally out of scope of this corpus — consult the source PDF for those. Bridges: NCG 530 ↔ NCG 502 (first intra-NCG bridge), NCG 530 ↔ Ley 21.521.
+## Read the policy first
 
-**Mental model:** laws define *what* must be done; NCGs define *how* to comply in practice. For operational questions ("what must we file / build / approve / report?"), check the NCG layer, not just the law.
-
-**Out of scope:** NCG 454 / 504 / 461 (out of scope); NCG 530 record layouts (Anexo N°2/N°3, consult source PDF); CMF circulars not in `sources/`; APDP guidance; sector-specific regulation; case law; Título V of Ley 21.521 (modifications to other statutes); and anything not in `sources/`. If asked about anything beyond what is covered above, say so explicitly.
-
-## Where the corpus is
-- `corpus/21521-fintech/titulo-NN-<slug>.md` — Ley 21.521 articles by Título (I-IV translated; V is out-of-scope reference only).
-- `corpus/19628-data-protection-consolidated/titulo-NN-<slug>.md` — consolidated 19.628 by Título.
-- `corpus/21719-amendments-changelog/` — reference only; do NOT quote as operative law.
-- `corpus/ncg/502-psf-obligations-consolidated/seccion-*.md` and `anexo-*.md` — NCG 502 consolidated (baseline + NCG 524 amendments) by section.
-- `corpus/ncg/514-open-finance/seccion-*.md` — NCG 514 (Open Finance / SFA) by Sección (6 Secciones: I Perímetro, II Funcionamiento, III Seguridad y Resguardos, IV Información, V Otras Disposiciones, VI Anexos Normativos).
-- `corpus/ncg/524-amendments-changelog/` — NCG 524 amendments catalogue (reference; all 116 items applied to the consolidated corpus).
-- `corpus/ncg/503-idoneidad/seccion-*.md` — NCG 503 (fit-and-proper / Exigencias de Idoneidad) by Sección (I–IV).
-- `corpus/ncg/530-fintec-reporting/` — NCG 530 (MSI Fintec reporting): body sections, `anexo-01-*.md` (general instructions), `catalog-fintec-*.md` (derived FINTEC01–16 catalog). Record layouts (Anexo N°2/N°3) are not in the corpus; consult the source PDF.
-- `corpus/_lexicon.md` — Spanish↔English terms.
-- `indexes/by-topic.md` — topical index.
-- `indexes/glossary.md` — defined terms.
-- `indexes/scenarios.md` — pre-built compliance checklists.
-- `indexes/cross-references.md` — article-to-article graph.
-
-## Query decision tree
-
-### "What does Article N of <law> say?"
-1. `Read corpus/<law>/titulo-NN-*.md`.
-2. Find the `## Article N` anchor; quote the Plain-English text.
-3. If the user wants the original wording or asks for an exact quote, also include the `### Original Spanish` block.
-4. Surface the `> **Source:**` footer if present — it identifies the amending 21.719 provision and the 2026-12-01 effective date.
-
-### "Define <term>"
-1. `Grep '^## ' indexes/glossary.md` for the term.
-2. `Read` the matched section.
-3. Cite the `**Defined in:**` article and quote the English definition.
-
-### "What applies to <scenario>?"
-1. `Read indexes/scenarios.md`.
-2. If a scenario matches the user's feature, walk through its checklist; each item ends in an article citation.
-3. `Read` each cited article in full before summarizing — the checklist items summarize, they do not substitute.
-4. If no scenario matches, fall through to topical lookup.
-
-### "What does the CMF actually require in practice for <X>?" (operational/how-to)
-1. Find the governing Ley 21.521 article.
-2. `Grep` `indexes/cross-references.md` for `-> NCG502` edges from that article.
-3. `Read` the cited NCG 502 section in `corpus/ncg/502-psf-obligations-consolidated/`.
-4. Cite as `NCG 502 §<section>`. The corpus is consolidated with NCG 524; where NCG 524 amended the section, the `> **Source:**` footer identifies the 524 item(s).
-
-### "What does open finance / the SFA actually require for <X>?" (operational/how-to)
-
-Open-finance / SFA operational questions — APIs, participant registration, consent, data sets, security and safeguards — are governed by NCG 514 (implementing Ley 21.521 Título III), not NCG 502.
-
-1. `Read` the relevant section in `corpus/ncg/514-open-finance/seccion-*.md`.
-2. Cite as `NCG 514 §<section>`.
-3. For consent questions follow §III.D and for data-protection safeguards follow §IV.D — both tie back to Ley 19.628; surface that cross-reference.
-
-### "Who must be certified / personnel accreditation / fit-and-proper / idoneidad?" (NCG 503)
-
-Questions about knowledge-accreditation requirements for personnel performing defined functions under Ley 21.521 are governed by NCG 503.
-
-1. `Read` the relevant section in `corpus/ncg/503-idoneidad/seccion-*.md`.
-2. Cite as `NCG 503 §<section>`.
-3. Surface the bridge to Ley 21.521 arts. 7 & 9 when relevant.
-4. Note that NCG 503 derogates NCG 412 — if asked about NCG 412, point to NCG 503 as the current norm.
-
-### "What must I report to the CMF / reporting files / reporting frequency / FINTEC files?" (NCG 530)
-
-Questions about CMF reporting obligations for MSI Fintec entities are governed by NCG 530.
-
-1. `Read` the relevant body section or Anexo N°1 in `corpus/ncg/530-fintec-reporting/`.
-2. For the list of reports, consult `corpus/ncg/530-fintec-reporting/catalog-fintec-*.md` (derived FINTEC01–16 catalog).
-3. Cite as `NCG 530 §<section>`.
-4. If the user asks about record layouts or field-level formats (Anexo N°2/N°3), state explicitly that those are **not in the corpus** — direct them to `sources/ncg_530_2025-2.pdf`.
-5. Surface NCG 530 ↔ NCG 502 and NCG 530 ↔ Ley 21.521 cross-reference edges when relevant.
-
-### Topical question ("What does the law say about X?")
-1. `Grep` the keyword(s) in `indexes/by-topic.md`.
-2. `Read` each cited article block in the corpus.
-3. Cross-check using `indexes/cross-references.md`: when you read Art. N, look for `19.628:Art.N -> ...` lines to find implicated articles.
-
-## Citation format
-
-Cite as `Ley 19.628 Art. 8(g)` or `Ley 21.521 Art. 3(2)` or `NCG 502 §IV.C.3.1` (NCG number, § symbol, hierarchical section). For NCG 502 citations, the corpus is consolidated with NCG 524; cite the consolidated section and surface the `> **Source:**` footer if it identifies a 524 amendment. For the consolidated 19.628:
-- Always note the amending 21.719 provision and the 2026-12-01 effective date when citing post-amendment articles. This information is in the article's `> **Source:**` footer.
-- **Never** quote 21.719 amendment instructions ("Sustitúyase artículo X por...") as if they were operative law. The operative text lives in the consolidated corpus under 19.628 article numbers.
+**`corpus/_agent-policy.md` is authoritative** for scope, the seven operations, citation
+format, caveat surfacing, and honesty about gaps. `Read` it before answering anything
+non-trivial. This file is only the Claude Code *binding*: it maps those operations onto
+the tools you have. Where this file and the policy appear to disagree, the policy wins.
 
 ## Effective-date discipline
 
-- Ley 21.719 enters into force **2026-12-01**.
-- For any 21.719-derived provision, state whether the question concerns pre- or post-2026-12-01 systems.
-- If the user does not specify a timeframe, default to **post-2026-12-01** (forward-looking compliance) and say so explicitly.
-- Pre-effective-date questions need the pre-amendment Ley 19.628. The baseline isn't in the active corpus anymore but exists in git history (search the repo's git log for the 19628-baseline directory before commit `b35f9d6`).
+Repeated here because it is the single most consequential rule and you may be invoked
+without having read the policy yet.
 
-## Spanish-on-demand
+<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->
+Ley 21.719 amended Ley 19.628; enforcement begins **2026-12-01**. Treat that date as a
+**compliance deadline**, never as a reason to defer an answer.
 
-- Default surface: English.
-- Quote the `### Original Spanish` block verbatim when:
-  - The user/calling AI asks for an exact quote.
-  - The meaning is contested or the user is challenging a translation.
-  - You're answering a definition question (definitions are best confirmed via the Spanish original).
+- **Present-tense questions are answered from the consolidated corpus.** "What must we
+  do?", "how do we build this?", "what's needed before launch?" — all answered from the
+  consolidated Ley 19.628 text, because these are the obligations organisations must be
+  designing and remediating against now.
+- **State the obligation first, the deadline second.** Cite the article, then note that
+  it must be met by 2026-12-01. Do not lead with the date, and never dismiss a
+  compliance question on the ground that the law has not yet taken effect.
+- **Surface the `> **Source:**` footer** on any 21.719-derived article — it names the
+  amending item and the effective date.
+- **Retrospective questions are the only exception.** "Was this lawful in 2024?" turns
+  on the pre-amendment 1999 baseline, which is **not** in this corpus. Say so explicitly
+  and point to the official BCN source (`sources/LEY-19628_28-AGO-1999.pdf` is the
+  as-enacted 1999 text, not the pre-21.719 consolidated state). Do not answer a
+  retrospective question from the consolidated text.
 
-## Caveat surfacing
+## Operation bindings
 
-When citing an article that carries any of these markers, surface the marker alongside the citation:
+The policy defines seven operations. Here is how to perform each one:
 
-- `<!-- REVIEW: <reason> -->` — translation is pending human review. Tell the user: "Note: this article's translation is under human review — verify against the Spanish original before acting." Provide the Spanish original.
-- `> **TN:** <translator's note>` — quote the translator's note so the user understands a non-literal rendering.
-
-## Corpus status awareness
-
-Read `.claude-plugin/plugin.json` → `corpus_status`. As of v1.3.0:
-
-- `21521_fintech: stable` — covers Títulos I-IV. Título V is out of scope.
-- `19628_consolidated: stable` — all Títulos fully translated (literal lexicon-conformant English with verbatim Spanish).
-- `21719_changelog: stable` — reference only.
-- `ncg_502_consolidated: stable` — NCG 502 consolidated with NCG 524 (116 amendments applied, 02-dic-2024). Fully translated; amended sections carry a `> **Source:**` footer.
-- `ncg_514_open_finance: stable` — NCG 514 (Open Finance / SFA), implementing Ley 21.521 Título III. Standalone norm, fully translated (6 Secciones, 80 sections).
-- `ncg_503_idoneidad: stable` — NCG 503 (Exigencias de Idoneidad / fit-and-proper), Secciones I–IV. Bridged to Ley 21.521 arts. 7 & 9.
-- `ncg_530_reporting: stable` — NCG 530 (MSI Fintec reporting), obligations layer: body + Anexo N°1 + FINTEC01–16 catalog. Record layouts (Anexo N°2/N°3) are not in the corpus.
-
-When citing from a law whose status is anything other than `stable`, prepend "Translation status: <status> — verify the Spanish original before relying on the English text."
-
-When citing from a `partial` or `draft` law, prepend: "Translation status: partial — verify the Spanish original before relying on the English text."
-
-## Honesty about gaps
-
-- This skill is **not** legal advice; it is a structured citation aid.
-- For decisions with material risk, recommend the user consult counsel.
-- If the question depends on facts outside the corpus (a CMF circular, an APDP fine, a Supreme Court ruling, sector-specific rules), say so explicitly.
-- If the user asks about a Chilean law NOT covered by this plugin (e.g., Ley 18.045 capital markets, Ley 18.046 corporations), tell them this skill covers only Ley 21.521 and Ley 19.628 — direct them to the official source.
-- If the user asks about Título V of Ley 21.521, point them to `corpus/21521-fintech/titulo-05-modificaciones.md` (out-of-scope note) and the original PDF.
+| Operation | How to do it here |
+|---|---|
+| **LOCATE** | `Grep` the keyword(s) in `indexes/by-topic.md`, then RETRIEVE every citation you get back. Bullets summarise; they never substitute. |
+| **RETRIEVE** | `Read` the cited corpus file and go to the `## Article N` heading (laws) or `## <anchor>` heading (NCGs, e.g. `IV.C.3.1`). Quote the *Plain-English text* and surface the `> **Source:**` footer. |
+| **DEFINE** | `Grep '^## '` in `indexes/glossary.md` for the term, `Read` the matched entry, cite its `**Defined in:**` article, and pair with ORIGINAL. |
+| **SCENARIO** | `Read indexes/scenarios.md`. If a scenario matches the feature, walk its checklist and RETRIEVE every cited article before summarising. If none matches, fall through to LOCATE. |
+| **TRAVERSE** | `Grep` the citation in `indexes/cross-references.md` (edges read `19.628:Art.2 -> 19.628:Art.12 (reason)`). Use it both for completeness and for the law→NCG bridge — the routing table for NCG 502/514/503/530 is in the policy. |
+| **ORIGINAL** | `Read` the article's `### Original Spanish` block and quote it verbatim. |
+| **STATUS** | `Read .claude-plugin/plugin.json` → `corpus_status`. All entries are `stable` as of v1.3.0. |
 
 ## Quick reference — file paths
 
@@ -157,9 +67,15 @@ When citing from a `partial` or `draft` law, prepend: "Translation status: parti
 | Financial / credit data | `corpus/19628-data-protection-consolidated/titulo-03-datos-financieros.md` |
 | Public bodies | `corpus/19628-data-protection-consolidated/titulo-04-organismos-publicos.md` |
 | International transfers | `corpus/19628-data-protection-consolidated/titulo-05-responsabilidad.md` |
-| Agency (APDP) | `corpus/19628-data-protection-consolidated/titulo-06-agencia.md` (partial) |
-| Sanctions framework | `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md` (partial) |
+| Agency (APDP) | `corpus/19628-data-protection-consolidated/titulo-06-agencia.md` |
+| Sanctions framework | `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md` |
+| PSF obligations (registration, capital, governance) | `corpus/ncg/502-psf-obligations-consolidated/` |
+| Open finance operational rules | `corpus/ncg/514-open-finance/` |
+| Personnel accreditation (idoneidad) | `corpus/ncg/503-idoneidad/` |
+| CMF reporting (FINTEC01–16) | `corpus/ncg/530-fintec-reporting/` |
+| Spanish ↔ English terms | `corpus/_lexicon.md` |
 | Defined terms | `indexes/glossary.md` |
 | Compliance scenarios | `indexes/scenarios.md` |
 | Topic lookups | `indexes/by-topic.md` |
 | Article-to-article links | `indexes/cross-references.md` |
+| **Full behavioural policy** | `corpus/_agent-policy.md` |

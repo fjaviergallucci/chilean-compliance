@@ -1,0 +1,573 @@
+<!-- GENERATED — do not edit by hand. Source: corpus/_agent-policy.md + corpus/. Regenerate: python -m tools.build_dist -->
+# index-cross-references
+
+<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->
+> **Effective-date discipline — Ley 19.628 as amended by Ley 21.719.**
+>
+> The consolidated Ley 19.628 in this corpus is the authoritative statement of the
+> data-protection obligations Chilean organisations must meet, and is the correct
+> basis for answering any present-tense compliance question — *"what must we do?"*,
+> *"how should we build this?"*, *"what do we need before launch?"*
+>
+> Enforcement begins **2026-12-01**. That date is a **compliance deadline**, not the
+> date from which these obligations become relevant. Organisations are expected to be
+> designing, remediating, and budgeting against this text now.
+>
+> **Never answer a compliance question by saying the law has not taken effect.** State
+> the obligation, cite the article, then give 2026-12-01 as the date by which it must
+> be met.
+>
+> Only genuinely retrospective questions — *"was this lawful in 2024?"*, *"can we be
+> sanctioned for last year's processing?"* — turn on the pre-amendment 1999 baseline,
+> which is **not** in this corpus. Say so and point to the official BCN source rather
+> than answering from the consolidated text.
+
+---
+
+<!-- source: indexes/cross-references.md -->
+## FILE: indexes/cross-references.md
+
+# Cross-references
+
+Flat adjacency list of article-to-article relationships. Each edge line
+follows the pattern `LAW:Art.N [->] LAW:Art.M (reason)` (replace `[->]`
+with the actual two-char arrow). AIs can grep this file to find related
+articles when reading any given article. The format is intentionally rigid:
+law number, colon, "Art." prefix, article number on both sides of the arrow,
+with a parenthesized one-line reason.
+
+<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->
+> **Effective-date discipline — Ley 19.628 as amended by Ley 21.719.**
+>
+> The consolidated Ley 19.628 in this corpus is the authoritative statement of the
+> data-protection obligations Chilean organisations must meet, and is the correct
+> basis for answering any present-tense compliance question — *"what must we do?"*,
+> *"how should we build this?"*, *"what do we need before launch?"*
+>
+> Enforcement begins **2026-12-01**. That date is a **compliance deadline**, not the
+> date from which these obligations become relevant. Organisations are expected to be
+> designing, remediating, and budgeting against this text now.
+>
+> **Never answer a compliance question by saying the law has not taken effect.** State
+> the obligation, cite the article, then give 2026-12-01 as the date by which it must
+> be met.
+>
+> Only genuinely retrospective questions — *"was this lawful in 2024?"*, *"can we be
+> sanctioned for last year's processing?"* — turn on the pre-amendment 1999 baseline,
+> which is **not** in this corpus. Say so and point to the official BCN source rather
+> than answering from the consolidated text.
+
+---
+
+## Within Ley 19.628 (consolidated, as amended by Ley 21.719)
+
+### Preliminary Title — Scope and Definitions
+
+19.628:Art.1 -> 19.628:Art.1bis (territorial scope of application supplements general scope)
+19.628:Art.1 -> 19.628:Art.12 (lawful bases for processing derive from scope article)
+19.628:Art.1 -> 19.628:Art.13 (lawful bases for processing derive from scope article)
+19.628:Art.1bis -> 19.628:Art.1 (purpose and scope of application — parent article)
+19.628:Art.1bis -> 19.628:Art.2 (definitions of responsable/mandatario/titular apply)
+19.628:Art.2 -> 19.628:Art.1 (general scope governs definition applicability)
+19.628:Art.2 -> 19.628:Art.1bis (territorial scope governs definition applicability)
+19.628:Art.2 -> 19.628:Art.4 (rights of data subjects exercised over defined data categories)
+19.628:Art.2 -> 19.628:Art.8bis (automated decisions and profiling use these definitions)
+19.628:Art.2 -> 19.628:Art.12 (lawful bases apply to defined processing activities)
+19.628:Art.2 -> 19.628:Art.13 (lawful bases apply to defined processing activities)
+19.628:Art.2 -> 19.628:Art.15 (cession of personal data uses Art.2 definitions)
+19.628:Art.2 -> 19.628:Art.15bis (processing through mandatary uses Art.2 definitions)
+19.628:Art.2 -> 19.628:Art.16 (sensitive personal data defined in this article)
+19.628:Art.2 -> 19.628:Art.16bis (health data defined here as sensitive subcategory)
+19.628:Art.3 -> 19.628:Art.1 (principles apply within scope defined by Art.1)
+19.628:Art.3 -> 19.628:Art.1bis (principles apply within territorial scope)
+19.628:Art.3 -> 19.628:Art.12 (lawful bases operationalise the lawfulness principle)
+19.628:Art.3 -> 19.628:Art.13 (lawful bases operationalise the lawfulness principle)
+19.628:Art.3 -> 19.628:Art.14 (controller obligations operationalise accountability and security)
+19.628:Art.3 -> 19.628:Art.14ter (information duty operationalises transparency principle)
+19.628:Art.3 -> 19.628:Art.14quinquies (security measures operationalise security principle)
+19.628:Art.3 -> 19.628:Art.14sexies (breach notification operationalises security principle)
+
+### Title I — Data Subject Rights
+
+19.628:Art.4 -> 19.628:Art.5 (right of access — substantive content)
+19.628:Art.4 -> 19.628:Art.6 (right of rectification)
+19.628:Art.4 -> 19.628:Art.7 (right of erasure)
+19.628:Art.4 -> 19.628:Art.8 (right of opposition)
+19.628:Art.4 -> 19.628:Art.8bis (automated decisions)
+19.628:Art.4 -> 19.628:Art.8ter (right of blocking)
+19.628:Art.4 -> 19.628:Art.9 (right of portability)
+19.628:Art.4 -> 19.628:Art.10 (form and means of exercising rights)
+19.628:Art.4 -> 19.628:Art.11 (procedure before the controller)
+19.628:Art.5 -> 19.628:Art.4 (rights of the data subject — parent catalogue)
+19.628:Art.5 -> 19.628:Art.8bis (access must include information on automated processing logic)
+19.628:Art.5 -> 19.628:Art.11 (procedure for exercising the right)
+19.628:Art.5 -> 19.628:Art.13 (legitimate-interests lawful basis interacts with access right)
+19.628:Art.6 -> 19.628:Art.4 (rights of the data subject — parent catalogue)
+19.628:Art.6 -> 19.628:Art.11 (procedure for exercising the right)
+19.628:Art.7 -> 19.628:Art.4 (rights of the data subject — parent catalogue)
+19.628:Art.7 -> 19.628:Art.8 (right of opposition — related ground for removal)
+19.628:Art.7 -> 19.628:Art.8ter (right of blocking as alternative to erasure)
+19.628:Art.7 -> 19.628:Art.11 (procedure for exercising the right)
+19.628:Art.7 -> 19.628:Art.16quinquies (historical/statistical/scientific purposes can override erasure)
+19.628:Art.8 -> 19.628:Art.4 (rights of the data subject — parent catalogue)
+19.628:Art.8 -> 19.628:Art.8bis (automated decisions including profiling — related right)
+19.628:Art.8 -> 19.628:Art.11 (procedure for exercising the right)
+19.628:Art.8 -> 19.628:Art.13 (legitimate-interests lawful basis subject to opposition)
+19.628:Art.8bis -> 19.628:Art.4 (rights of the data subject — parent catalogue)
+19.628:Art.8bis -> 19.628:Art.5 (access right covers logic of automated processing)
+19.628:Art.8bis -> 19.628:Art.8 (right of opposition applies to automated decisions)
+19.628:Art.8bis -> 19.628:Art.12 (consent as lawful basis for automated decisions)
+19.628:Art.8ter -> 19.628:Art.4 (rights of the data subject — parent catalogue)
+19.628:Art.8ter -> 19.628:Art.7 (right of erasure — blocking as alternative)
+19.628:Art.8ter -> 19.628:Art.11 (procedure for exercising rights)
+19.628:Art.9 -> 19.628:Art.4 (rights of the data subject — parent catalogue)
+19.628:Art.9 -> 19.628:Art.11 (procedure for exercising rights)
+19.628:Art.9 -> 19.628:Art.12 (consent may ground portability requests)
+19.628:Art.10 -> 19.628:Art.4 (substantive rights whose form/means this article governs)
+19.628:Art.10 -> 19.628:Art.11 (procedure before the controller)
+19.628:Art.10 -> 19.628:Art.28 (international transfer referenced for fee-waiver context)
+19.628:Art.11 -> 19.628:Art.4 (substantive rights whose procedure this article governs)
+19.628:Art.11 -> 19.628:Art.10 (form and means of exercising rights)
+19.628:Art.11 -> 19.628:Art.41 (procedure before the Agency — escalation from Art.11)
+
+### Title II — Lawful Bases and Controller Obligations
+
+19.628:Art.12 -> 19.628:Art.2 (definition of consent used here)
+19.628:Art.12 -> 19.628:Art.8bis (consent as lawful basis for automated decisions)
+19.628:Art.12 -> 19.628:Art.13 (consent is one lawful basis among others)
+19.628:Art.13 -> 19.628:Art.8 (legitimate-interests basis subject to right of opposition)
+19.628:Art.13 -> 19.628:Art.12 (consent — the first lawful basis, complemented here)
+19.628:Art.14 -> 19.628:Art.3 (principles underpin controller obligations)
+19.628:Art.14 -> 19.628:Art.12 (lawful bases controller must comply with)
+19.628:Art.14 -> 19.628:Art.13 (lawful bases controller must comply with)
+19.628:Art.14 -> 19.628:Art.14bis (confidentiality duty — specific sub-obligation)
+19.628:Art.14 -> 19.628:Art.14ter (information duty — specific sub-obligation)
+19.628:Art.14 -> 19.628:Art.14quater (privacy by design — specific sub-obligation)
+19.628:Art.14 -> 19.628:Art.14quinquies (security measures — specific sub-obligation)
+19.628:Art.14 -> 19.628:Art.14sexies (breach notification — specific sub-obligation)
+19.628:Art.14 -> 19.628:Art.14septies (SME differentiation — specific sub-obligation)
+19.628:Art.14bis -> 19.628:Art.3 (confidentiality operationalises Art.3(h) principle)
+19.628:Art.14bis -> 19.628:Art.24 (special application to criminal/security data)
+19.628:Art.14ter -> 19.628:Art.3 (transparency operationalises Art.3(g) principle)
+19.628:Art.14ter -> 19.628:Art.5 (information duty supports right of access)
+19.628:Art.14ter -> 19.628:Art.8bis (information on automated decisions must be disclosed)
+19.628:Art.14ter -> 19.628:Art.27 (information duties extend to international transfers)
+19.628:Art.14quater -> 19.628:Art.3 (privacy by design operationalises proportionality and security)
+19.628:Art.14quater -> 19.628:Art.14quinquies (security measures complement privacy by design)
+19.628:Art.14quinquies -> 19.628:Art.3 (security measures operationalise Art.3(f) principle)
+19.628:Art.14quinquies -> 19.628:Art.14quater (privacy by design — complementary obligation)
+19.628:Art.14quinquies -> 19.628:Art.14sexies (breach reporting triggered by security failures)
+19.628:Art.14quinquies -> 19.628:Art.15bis (processor security obligations mirror controller obligations)
+19.628:Art.14sexies -> 19.628:Art.14quinquies (breach reporting triggered by security failures)
+19.628:Art.14sexies -> 19.628:Art.16 (sensitive data breaches subject to notification)
+19.628:Art.14sexies -> 19.628:Art.16quater (children's data breaches require notification)
+19.628:Art.14septies -> 19.628:Art.14ter (SME differentiation applied to information duty)
+19.628:Art.14septies -> 19.628:Art.14quinquies (SME differentiation applied to security measures)
+19.628:Art.15 -> 19.628:Art.2 (definition of cession used here)
+19.628:Art.15 -> 19.628:Art.12 (consent as lawful basis for data cession)
+19.628:Art.15 -> 19.628:Art.13 (legitimate interests as alternative basis for cession)
+19.628:Art.15 -> 19.628:Art.15bis (processor relationship distinguished from cession)
+19.628:Art.15bis -> 19.628:Art.2 (definition of third-party mandatary/processor)
+19.628:Art.15bis -> 19.628:Art.14bis (confidentiality obligation binds processor)
+19.628:Art.15bis -> 19.628:Art.14quinquies (security obligation binds processor)
+19.628:Art.15bis -> 19.628:Art.14septies (SME compliance differentiation applies to processor)
+19.628:Art.15bis -> 19.628:Art.15 (cession distinguished from processor relationship)
+19.628:Art.15ter -> 19.628:Art.8bis (automated decisions — DPIAs required)
+19.628:Art.15ter -> 19.628:Art.14quater (privacy by design — DPIAs complement this obligation)
+19.628:Art.15ter -> 19.628:Art.16 (sensitive data — DPIAs mandatory)
+19.628:Art.16 -> 19.628:Art.2 (definition of sensitive personal data)
+19.628:Art.16 -> 19.628:Art.16bis (health data — subcategory of sensitive data)
+19.628:Art.16 -> 19.628:Art.16ter (biometric data — subcategory of sensitive data)
+19.628:Art.16 -> 19.628:Art.16quater (children and adolescents — subcategory)
+19.628:Art.16bis -> 19.628:Art.16 (general sensitive-data rule applies to health data)
+19.628:Art.16bis -> 19.628:Art.16quinquies (historical/statistical/scientific research exception)
+19.628:Art.16ter -> 19.628:Art.2 (definition of sensitive personal data)
+19.628:Art.16ter -> 19.628:Art.16 (general sensitive-data rule applies to biometric data)
+19.628:Art.16ter -> 19.628:Art.16bis (health-data exceptions cross-referenced)
+19.628:Art.16quater -> 19.628:Art.12 (consent requirements for children's data)
+19.628:Art.16quater -> 19.628:Art.14sexies (breach reporting for children's data)
+19.628:Art.16quater -> 19.628:Art.16 (sensitive data — children's data is a subcategory)
+19.628:Art.16quinquies -> 19.628:Art.13 (legitimate interest as lawful basis for research)
+19.628:Art.16quinquies -> 19.628:Art.16 (sensitive data — research exception applies here)
+19.628:Art.16sexies -> 19.628:Art.12 (lawful bases for cross-border processing)
+19.628:Art.16sexies -> 19.628:Art.13 (lawful bases for cross-border processing)
+19.628:Art.16sexies -> 19.628:Art.14ter (information duty applies to cross-border processing)
+
+### Title III — Financial Obligation Data
+
+19.628:Art.17 -> 19.628:Art.4 (data subjects' rights apply to financial obligation data)
+19.628:Art.17 -> 19.628:Art.9 (purpose-limitation; prohibition on non-objective risk assessments)
+19.628:Art.17 -> 19.628:Art.18 (five-year limit on communicating financial obligation data)
+19.628:Art.17 -> 19.628:Art.19 (update obligations upon payment or extinction)
+19.628:Art.18 -> 19.628:Art.2 (expired data definition — five-year expiry creates expired data)
+19.628:Art.18 -> 19.628:Art.17 (types of financial obligation data subject to this rule)
+19.628:Art.18 -> 19.628:Art.19 (duty to update data upon payment interacts with this article)
+19.628:Art.19 -> 19.628:Art.2 (definition of blocking applies to update obligation)
+19.628:Art.19 -> 19.628:Art.4 (rights of the data subject persist while Art.18 periods run)
+19.628:Art.19 -> 19.628:Art.17 (types of financial obligation data subject to update duty)
+19.628:Art.19 -> 19.628:Art.18 (five-year time limit and post-payment prohibition)
+
+### Title IV — Public Bodies
+
+19.628:Art.20 -> 19.628:Art.2 (definition of public bodies used here)
+19.628:Art.20 -> 19.628:Art.21 (applicable principles for public body processing)
+19.628:Art.20 -> 19.628:Art.22 (communication or cession between public bodies)
+19.628:Art.20 -> 19.628:Art.23 (exercise of rights against public bodies)
+19.628:Art.21 -> 19.628:Art.3 (principles apply to public body processing)
+19.628:Art.21 -> 19.628:Art.23 (exercise of rights against public bodies)
+19.628:Art.22 -> 19.628:Art.20 (general rule for public body processing)
+19.628:Art.22 -> 19.628:Art.25 (criminal/disciplinary infringement data — interaction)
+19.628:Art.23 -> 19.628:Art.4 (substantive rights exercisable against public bodies)
+19.628:Art.23 -> 19.628:Art.11 (procedure before the controller — applies to public bodies)
+19.628:Art.23 -> 19.628:Art.41 (procedure before the Agency for public body complaints)
+19.628:Art.24 -> 19.628:Art.3 (principles apply to police/security data processing)
+19.628:Art.24 -> 19.628:Art.14bis (confidentiality — special application to Art.24 data)
+19.628:Art.24 -> 19.628:Art.25 (criminal/disciplinary infringement data — interaction)
+19.628:Art.25 -> 19.628:Art.24 (special regimes — criminal-prosecution data carved out)
+19.628:Art.26 -> 19.628:Art.22 (inter-agency communication — exclusion rule)
+
+### Title V — International Transfers
+
+19.628:Art.27 -> 19.628:Art.12 (consent as lawful basis for international transfers)
+19.628:Art.27 -> 19.628:Art.28 (adequacy determination and contractual guarantees)
+19.628:Art.27 -> 19.628:Art.29 (Agency supervision of international transfers)
+19.628:Art.28 -> 19.628:Art.27 (general rule for international transfers)
+19.628:Art.28 -> 19.628:Art.29 (Agency supervision applies to adequacy determinations)
+19.628:Art.29 -> 19.628:Art.27 (international transfer framework — general rule)
+19.628:Art.29 -> 19.628:Art.28 (international transfer framework — adequacy/guarantees)
+
+### Transitional Provisions
+
+19.628:Art.T1 -> 19.628:Art.22 (transitional provision 1: inter-agency cession now covers what it addressed)
+19.628:Art.T1 -> 19.628:Art.T3 (transitional provision 1 triggers Commercial Bulletin regulations)
+19.628:Art.T2 -> 19.628:Art.12 (transitional provision 2: access/erasure/blocking rights for pre-existing data)
+19.628:Art.T2 -> 19.628:Art.13 (transitional provision 2: non-waiver of data subject rights confirmed)
+19.628:Art.T2 -> 19.628:Art.T1 (transitional provision 2 depends on entry-into-force rule)
+19.628:Art.T3 -> 19.628:Art.17 (transitional provision 3: types of data the Commercial Bulletin may communicate)
+19.628:Art.T3 -> 19.628:Art.18 (transitional provision 3: five-year time limit applicable to Bulletin)
+19.628:Art.T3 -> 19.628:Art.19 (transitional provision 3: update obligations applicable to Bulletin)
+19.628:Art.T3 -> 19.628:Art.T1 (transitional provision 3: general entry-into-force rule applies)
+
+---
+
+## Within Ley 21.521 (Fintech Law)
+
+### Title I — General Provisions
+
+21.521:Art.1 -> 21.521:Art.4 (CMF normativa rests on the law's principles and scope)
+21.521:Art.1 -> 21.521:Art.16 (Open Finance System — founding principles apply)
+21.521:Art.1 -> 21.521:Art.27 (CMF supervision must observe proportionality principle)
+
+### Title II — Financial Service Providers
+
+21.521:Art.2 -> 21.521:Art.3 (enumerated services rely on defined terms)
+21.521:Art.2 -> 21.521:Art.4 (general regulation powers govern all services listed here)
+21.521:Art.3 -> 21.521:Art.2 (services regulated and supervised — defined terms apply)
+21.521:Art.3 -> 21.521:Art.5 (registration obligation references Registry definition)
+21.521:Art.3 -> 21.521:Art.8 (information obligations reference financial-instrument definition)
+21.521:Art.4 -> 21.521:Art.5 (registration obligation cannot be excepted under Art.4 normativa)
+21.521:Art.5 -> 21.521:Art.3 (definition of Registry used here)
+21.521:Art.5 -> 21.521:Art.4 (normative powers; registration cannot be excepted)
+21.521:Art.5 -> 21.521:Art.6 (registration requirements — detailed in Art.6)
+21.521:Art.5 -> 21.521:Art.7 (authorisation for service provision follows registration)
+21.521:Art.6 -> 21.521:Art.5 (services requiring registration — registration process)
+21.521:Art.6 -> 21.521:Art.14 (serious infractions that bar registration)
+21.521:Art.7 -> 21.521:Art.8 (information and disclosure obligations — condition of authorisation)
+21.521:Art.7 -> 21.521:Art.9 (suitability requirements for advisory services)
+21.521:Art.7 -> 21.521:Art.10 (guarantee requirements — condition of authorisation)
+21.521:Art.7 -> 21.521:Art.11 (minimum equity requirements — condition of authorisation)
+21.521:Art.7 -> 21.521:Art.12 (corporate governance and risk management — condition of authorisation)
+21.521:Art.7 -> 21.521:Art.13 (cancellation of registration linked to Art.7 compliance)
+21.521:Art.8 -> 21.521:Art.2 (services regulated — information obligations apply to all)
+21.521:Art.8 -> 21.521:Art.3 (definition of financial instrument for tax reporting)
+21.521:Art.8 -> 21.521:Art.4 (CMF normative powers govern information obligation standards)
+21.521:Art.8 -> 21.521:Art.7 (authorisation requirements include Art.8 compliance)
+21.521:Art.9 -> 21.521:Art.3 (definitions of credit advisory and investment advisory)
+21.521:Art.9 -> 21.521:Art.7 (authorisation requirements for advisory services include Art.9 compliance)
+21.521:Art.10 -> 21.521:Art.7 (authorisation requirements include Art.10 compliance)
+21.521:Art.10 -> 21.521:Art.11 (minimum equity requirements — related capital-adequacy regime)
+21.521:Art.10 -> 21.521:Art.12 (corporate governance quality affects guarantee amount)
+21.521:Art.11 -> 21.521:Art.7 (authorisation requirements include Art.11 compliance)
+21.521:Art.11 -> 21.521:Art.10 (guarantee requirements — complementary capital-adequacy regime)
+21.521:Art.11 -> 21.521:Art.12 (risk management quality affects minimum equity percentage)
+21.521:Art.11 -> 21.521:Art.14 (failure to comply with regularisation plan is serious infraction)
+21.521:Art.12 -> 21.521:Art.7 (authorisation requirements include Art.12 compliance)
+21.521:Art.12 -> 21.521:Art.10 (guarantee amounts depend on governance quality per Art.12)
+21.521:Art.12 -> 21.521:Art.11 (equity percentage depends on risk management quality per Art.12)
+21.521:Art.13 -> 21.521:Art.6 (prior sanctions bar re-registration for 10 years)
+21.521:Art.13 -> 21.521:Art.7 (failure to obtain authorisation triggers cancellation power)
+21.521:Art.13 -> 21.521:Art.14 (serious infractions that trigger cancellation)
+21.521:Art.14 -> 21.521:Art.6 (serious infractions bar re-registration for 10 years)
+21.521:Art.14 -> 21.521:Art.8 (information obligations — Art.14(e) directly references Art.8)
+21.521:Art.14 -> 21.521:Art.10 (guarantee obligation — Art.14(c) directly references Art.10)
+21.521:Art.14 -> 21.521:Art.11 (regularisation plan — Art.14(b) directly references Art.11)
+21.521:Art.14 -> 21.521:Art.13 (cancellation of registration triggered by serious infractions)
+21.521:Art.15 -> 21.521:Art.13 (cancellation of registration as ancillary sanction)
+21.521:Art.15 -> 21.521:Art.14 (serious infractions — Art.15 covers criminal aggravation)
+
+### Title III — Open Finance System
+
+21.521:Art.16 -> 21.521:Art.1 (general principles of the law — proportionality, innovation, competition)
+21.521:Art.16 -> 21.521:Art.17 (perimeter and scope — types of data subject to system)
+21.521:Art.16 -> 21.521:Art.27 (supervision by the CMF)
+21.521:Art.17 -> 21.521:Art.18 (information-providing institutions — definition and list)
+21.521:Art.17 -> 21.521:Art.19 (information-based service-providing institutions)
+21.521:Art.17 -> 21.521:Art.20 (payment initiation service providers)
+21.521:Art.17 -> 21.521:Art.23 (customer consent requirements)
+21.521:Art.18 -> 21.521:Art.17 (data categories that information-providing institutions must share)
+21.521:Art.18 -> 21.521:Art.19 (information-based service providers request data from Art.18 entities)
+21.521:Art.18 -> 21.521:Art.27 (CMF supervision and rulemaking over System participants)
+21.521:Art.18 -> 21.521:Art.5 (entities must be registered in Registry of Financial-Service Providers)
+21.521:Art.19 -> 21.521:Art.18 (information-providing institutions — the data source side)
+21.521:Art.19 -> 21.521:Art.21 (interfaces that Information-Based Service Providers access)
+21.521:Art.19 -> 21.521:Art.22 (security standards that applicants must comply with)
+21.521:Art.19 -> 21.521:Art.23 (customer consent requirements for information queries)
+21.521:Art.19 -> 21.521:Art.27 (CMF supervision including power to suspend authorisation)
+21.521:Art.20 -> 21.521:Art.17 (payment initiation data within Open Finance scope)
+21.521:Art.20 -> 21.521:Art.19 (payment initiation providers participate as Information-Based Service Providers)
+21.521:Art.20 -> 21.521:Art.23 (customer consent requirements for payment initiation)
+21.521:Art.20 -> 21.521:Art.24 (liability of participating institutions)
+21.521:Art.21 -> 21.521:Art.19 (Information-Based Service Providers access these interfaces)
+21.521:Art.21 -> 21.521:Art.22 (security standards applicable to same participants)
+21.521:Art.21 -> 21.521:Art.25 (cost allocation excludes interface development costs)
+21.521:Art.21 -> 21.521:Art.27 (CMF pilot testing of interfaces)
+21.521:Art.22 -> 21.521:Art.19 (applicants must demonstrate Art.22 compliance for registry)
+21.521:Art.22 -> 21.521:Art.21 (interface security mechanisms — design and development)
+21.521:Art.22 -> 21.521:Art.24 (responsibility for data integrity and confidentiality)
+21.521:Art.23 -> 21.521:Art.17 (data categories subject to customer consent)
+21.521:Art.23 -> 21.521:Art.19 (Information-Based Service Providers must hold consent)
+21.521:Art.23 -> 21.521:Art.20 (payment initiation — consent elements for payment orders)
+21.521:Art.23 -> 21.521:Art.24 (responsibility of participants tied to consent-compliant data use)
+21.521:Art.24 -> 21.521:Art.22 (security standards underpin obligations in this article)
+21.521:Art.24 -> 21.521:Art.23 (consent revocation triggers obligation to interrupt data access)
+21.521:Art.25 -> 21.521:Art.21 (interface development excluded from cost reimbursement)
+21.521:Art.25 -> 21.521:Art.26 (non-discriminatory treatment — corollary to non-discriminatory cost conditions)
+21.521:Art.26 -> 21.521:Art.16 (interoperability and non-discrimination as founding principles)
+21.521:Art.26 -> 21.521:Art.21 (interface standards — technical means for interoperability)
+21.521:Art.26 -> 21.521:Art.25 (non-discriminatory cost conditions — related commercial dimension)
+21.521:Art.26 -> 21.521:Art.27 (CMF supervision and enforcement for violations)
+21.521:Art.27 -> 21.521:Art.1 (general principles the CMF must observe)
+21.521:Art.27 -> 21.521:Art.16 (founding principles of Open Finance System)
+21.521:Art.27 -> 21.521:Art.19 (CMF power to suspend Information-Based Service Provider authorisation)
+
+### Title IV — Other Provisions
+
+21.521:Art.28 -> 21.521:Art.2 (financial service providers regulated under Title II)
+21.521:Art.28 -> 21.521:Art.27 (CMF supervisory powers — Art.28 grants equivalent powers)
+21.521:Art.29 -> 21.521:Art.18 (entities in Registry of Financial-Service Providers — Art.29 obligees)
+21.521:Art.29 -> 21.521:Art.26 (non-discriminatory treatment — analogous principle for banking access)
+21.521:Art.29 -> 21.521:Art.27 (CMF power to define additional institutions within Art.29 scope)
+
+---
+
+## Between Ley 21.521 and Ley 19.628
+
+21.521:Art.22 -> 19.628:Art.2 (security standards must protect sensitive personal data as defined in Art.2(g))
+21.521:Art.22 -> 19.628:Art.16 (definition of sensitive personal data applies to Open Finance data security)
+21.521:Art.23 -> 19.628:Art.12 (Open Finance customer consent is parallel but distinct from personal-data consent)
+21.521:Art.24 -> 19.628:Art.14 (personal data processing obligations applicable to all Open Finance participants)
+21.521:Art.27 -> 19.628:Art.14 (personal data protection — para.1 cross-reference in CMF supervision)
+
+---
+
+## Between Ley 21.521 and NCG 502
+
+### Title I — Registration
+
+21521:Art.5 -> NCG502:§I (registration obligation → Registry of Financial-Service Providers framework)
+21521:Art.5 -> NCG502:§I.A (registration obligation → registration-application requirements and eligibility)
+21521:Art.6 -> NCG502:§I.A (eligibility and ineligibility grounds → registration-application requirements)
+21521:Art.5 -> NCG502:§I.B (registration obligation → cancellation-of-registration procedure)
+21521:Art.13 -> NCG502:§I.B (cancellation of registration → cancellation-of-registration procedure)
+21521:Art.4 -> NCG502:§I.C (CMF exception power → exception-granting framework)
+21521:Art.6 -> NCG502:§I.C (requirements subject to exception → exception-granting framework)
+21521:Art.4 -> NCG502:§I.C.1 (CMF exception → legal-person requirement exception)
+21521:Art.4 -> NCG502:§I.C.2 (CMF exception → exclusive-corporate-purpose exception)
+21521:Art.7 -> NCG502:§I.C.2 (per-service authorization → service-authorization exception scope)
+21521:Art.4 -> NCG502:§I.C.3 (CMF exception → Chile-domicile exception)
+21521:Art.7 -> NCG502:§I.C.3 (per-service authorization → service-authorization exception scope)
+
+### Title II — Per-Service Authorization
+
+21521:Art.7 -> NCG502:§II (per-service authorization requirement → authorization framework)
+21521:Art.7 -> NCG502:§II.A (per-service authorization → investment-advisory authorization requirements)
+21521:Art.7 -> NCG502:§II.B (per-service authorization → credit-advisory authorization requirements)
+21521:Art.7 -> NCG502:§II.C (per-service authorization → crowdfunding-platform authorization requirements)
+21521:Art.7 -> NCG502:§II.D (per-service authorization → alternative-trading-system authorization requirements)
+21521:Art.7 -> NCG502:§II.E (per-service authorization → order-routing authorization requirements)
+21521:Art.7 -> NCG502:§II.F (per-service authorization → intermediation-and-custody authorization requirements)
+
+### Title III — Disclosure Obligations
+
+21521:Art.12 -> NCG502:§III (disclosure mandate → disclosure and information-delivery framework)
+21521:Art.12 -> NCG502:§III.A (disclosure mandate → investment-advisory disclosure obligations)
+21521:Art.12 -> NCG502:§III.B (disclosure mandate → credit-advisory disclosure obligations)
+21521:Art.12 -> NCG502:§III.C (disclosure mandate → crowdfunding-platform disclosure obligations)
+21521:Art.12 -> NCG502:§III.D (disclosure mandate → alternative-trading-system disclosure obligations)
+21521:Art.12 -> NCG502:§III.E (disclosure mandate → order-routing disclosure obligations)
+21521:Art.12 -> NCG502:§III.F (disclosure mandate → intermediation disclosure obligations)
+21521:Art.12 -> NCG502:§III.G (disclosure mandate → custody disclosure obligations)
+
+### Title IV — Governance and Risk Management
+
+21521:Art.8 -> NCG502:§IV (governance & risk-management mandate → corporate-governance framework)
+21521:Art.8 -> NCG502:§IV.A (governance mandate → investment-advisory governance & risk)
+21521:Art.8 -> NCG502:§IV.A.1 (governance mandate → investment-advisory board responsibility)
+21521:Art.8 -> NCG502:§IV.A.2.2 (governance mandate → investment-advisory information-security & cybersecurity policies)
+21521:Art.8 -> NCG502:§IV.A.3.1 (governance mandate → investment-advisory risk-management function)
+21521:Art.8 -> NCG502:§IV.A.3.2 (governance mandate → investment-advisory risk-management plan)
+21521:Art.1 -> NCG502:§IV.A.4 (proportionality principle → investment-advisory proportionality rule)
+21521:Art.12 -> NCG502:§IV.A.4 (disclosure proportionality → investment-advisory proportionality rule)
+21521:Art.8 -> NCG502:§IV.A.5 (governance mandate → investment-advisory operational-incident reporting)
+21521:Art.8 -> NCG502:§IV.B (governance mandate → credit-advisory governance & risk)
+21521:Art.8 -> NCG502:§IV.B.2.2 (governance mandate → credit-advisory operational-risk policies)
+21521:Art.8 -> NCG502:§IV.B.3.1 (governance mandate → credit-advisory risk-management function)
+21521:Art.1 -> NCG502:§IV.B.4 (proportionality principle → credit-advisory proportionality rule)
+21521:Art.12 -> NCG502:§IV.B.4 (disclosure proportionality → credit-advisory proportionality rule)
+21521:Art.8 -> NCG502:§IV.C (governance mandate → crowdfunding-platform & ATS governance & risk)
+21521:Art.8 -> NCG502:§IV.C.1 (governance mandate → crowdfunding-platform board role)
+21521:Art.8 -> NCG502:§IV.C.3.1 (cybersecurity mandate → information-security & cybersecurity procedures)
+21521:Art.8 -> NCG502:§IV.C.3.2 (governance mandate → business-continuity procedures)
+21521:Art.8 -> NCG502:§IV.C.3.3 (governance mandate → outsourcing-risk management)
+21521:Art.8 -> NCG502:§IV.C.4 (governance mandate → crowdfunding-platform risk-management function)
+21521:Art.8 -> NCG502:§IV.C.5 (governance mandate → crowdfunding-platform internal-audit function)
+21521:Art.1 -> NCG502:§IV.C.6 (proportionality principle → crowdfunding-platform proportionality rule)
+21521:Art.12 -> NCG502:§IV.C.6 (disclosure proportionality → crowdfunding-platform proportionality rule)
+21521:Art.8 -> NCG502:§IV.C.7 (governance mandate → crowdfunding-platform incident & loss reporting)
+21521:Art.8 -> NCG502:§IV.D (governance mandate → order-routing governance & risk)
+21521:Art.1 -> NCG502:§IV.D.4 (proportionality principle → order-routing proportionality rule)
+21521:Art.12 -> NCG502:§IV.D.4 (disclosure proportionality → order-routing proportionality rule)
+21521:Art.8 -> NCG502:§IV.E (governance mandate → intermediation & custody governance & risk)
+21521:Art.8 -> NCG502:§IV.E.4.1 (cybersecurity mandate → intermediation & custody information-security & cybersecurity)
+21521:Art.8 -> NCG502:§IV.E.4.2 (governance mandate → intermediation & custody business-continuity)
+21521:Art.8 -> NCG502:§IV.E.4.3 (governance mandate → intermediation & custody outsourcing risk)
+21521:Art.1 -> NCG502:§IV.E.6 (proportionality principle → intermediation & custody proportionality rule)
+21521:Art.12 -> NCG502:§IV.E.6 (disclosure proportionality → intermediation & custody proportionality rule)
+21521:Art.8 -> NCG502:§IV.E.8 (governance mandate → intermediation & custody incident & loss reporting)
+
+### Title V — Capital and Guarantee Requirements
+
+21521:Art.11 -> NCG502:§V (capital/guarantee requirement → capital and guarantee framework)
+21521:Art.11 -> NCG502:§V.A (capital/guarantee requirement → business-volume classification)
+21521:Art.11 -> NCG502:§V.B (capital/guarantee requirement → minimum-equity & guarantee rules)
+21521:Art.11 -> NCG502:§V.C (capital/guarantee requirement → adjusted-equity computation)
+21521:Art.11 -> NCG502:§V.D (capital/guarantee requirement → risk-weighted-assets methodology)
+21521:Art.11 -> NCG502:§V.D.1 (capital/guarantee requirement → operational-risk capital charge)
+21521:Art.11 -> NCG502:§V.D.2 (capital/guarantee requirement → market-risk capital charge)
+21521:Art.11 -> NCG502:§V.D.3 (capital/guarantee requirement → credit-risk capital charge)
+21521:Art.11 -> NCG502:§V.D.5 (capital/guarantee requirement → general capital-computation provisions)
+
+### Titles VI–VII — Operational Capacity and Inherent Activities
+
+21521:Art.5 -> NCG502:§VI (registration obligation → operational-readiness requirements)
+21521:Art.7 -> NCG502:§VI (per-service authorization → operational-capacity requirements)
+21521:Art.5 -> NCG502:§VII (registration scope → inherent permitted activities)
+
+---
+
+## Between Ley 21.521 and NCG 514
+
+### Title III (Open Finance) Perimeter and Participants
+
+21521:Art.17 -> NCG514:§I.A (SFA scope and defined terms → definitions and nomenclature)
+21521:Art.17 -> NCG514:§I (open-finance perimeter → perimeter of the SFA)
+21521:Art.18 -> NCG514:§I.B (information-providing and account-providing institutions → participating entities)
+21521:Art.18 -> NCG514:§I.E (mandatory roster incorporation → IPI/IPC roster)
+21521:Art.18 -> NCG514:§I.E.1 (IPI/IPC roster incorporation → incorporation requirements)
+21521:Art.18 -> NCG514:§I.E.2 (gradual incorporation → IPI/IPC incorporation periods)
+21521:Art.19 -> NCG514:§I.C (information-based service providers → PSBI registry)
+21521:Art.19 -> NCG514:§I.C.1 (PSBI registration → registration in the PSBI Registry)
+21521:Art.19 -> NCG514:§I.F (voluntary PSBI participation → Nómina PSBI)
+21521:Art.20 -> NCG514:§I.D (payment-initiation service providers → PSIP registry)
+21521:Art.20 -> NCG514:§I.D.1 (PSIP registration → registration in the PSIP Registry)
+21521:Art.20 -> NCG514:§I.D.5 (payment-initiation conditions → specific payment-initiation conditions)
+
+### Interfaces and System Functioning
+
+21521:Art.21 -> NCG514:§II (interface/API mandate → system functioning)
+21521:Art.21 -> NCG514:§II.A (information exchange via interfaces/APIs → exchange mechanisms)
+21521:Art.21 -> NCG514:§II.A.2 (API standards → technical API standards)
+21521:Art.21 -> NCG514:§II.A.3 (availability/performance → availability and performance requirements)
+21521:Art.21 -> NCG514:§II.C (Participants Directory → participants directory)
+21521:Art.21 -> NCG514:§III.E.1 (interoperability → interoperability standards)
+
+### Security and Safeguards
+
+21521:Art.22 -> NCG514:§III (security/risk mandate → security and safeguards)
+21521:Art.22 -> NCG514:§III.A (risk management → risk management and internal control)
+21521:Art.22 -> NCG514:§III.B (information security/cybersecurity → security, cybersecurity and continuity)
+21521:Art.22 -> NCG514:§III.B.3 (interface security standards → API security and contingency standards)
+21521:Art.22 -> NCG514:§III.C (authentication standards → authentication and verification)
+21521:Art.23 -> NCG514:§III.D (open-finance consent → consent granting and management)
+21521:Art.23 -> NCG514:§III.D.1 (consent granting → granting of open-finance consent)
+21521:Art.23 -> NCG514:§III.D.2 (consent management → consent management and information duties)
+
+### Information Shared and Cost Distribution
+
+21521:Art.24 -> NCG514:§IV.A (data to be shared → SFA data sets)
+21521:Art.24 -> NCG514:§IV.C (variables shared → variables shared in the SFA)
+21521:Art.25 -> NCG514:§III.E.2 (cost distribution → reimbursable incremental costs)
+21521:Art.25 -> NCG514:§VI.7 (payment-initiation cost/data → payment-initiation data set)
+21521:Art.26 -> NCG514:§V.D (information shared with the Commission → information requirements)
+21521:Art.27 -> NCG514:§V.A (CMF suspension power → temporary suspensions)
+21521:Art.27 -> NCG514:§V.B (sanction power → sanctions)
+
+---
+
+## Between Ley 19.628 and NCG 514
+
+### Consent in the Open Finance System
+
+19628:Art.12 -> NCG514:§III.D (data-subject consent → open-finance consent)
+19628:Art.12 -> NCG514:§III.D.1 (free, informed, specific consent → granting of open-finance consent)
+19628:Art.12 -> NCG514:§III.D.2 (data-subject control over consent → consent management and revocation)
+
+### Data Protection in the SFA
+
+19628:Art.4 -> NCG514:§IV.D (lawful processing / consent → data protection in the SFA)
+19628:Art.12 -> NCG514:§IV.D (data-subject rights → data protection in the SFA)
+19628:Art.16 -> NCG514:§IV.D (communication of data to third parties → transfer of customer data)
+
+---
+
+## Between NCG 502 and NCG 530
+
+### Registry and Prudential Reporting
+
+NCG502:§I -> NCG530:§I (Registry of Financial-Service Providers → FINTEC01 business-profile reporting on registered providers)
+NCG502:§I.A -> NCG530:§I (registration-application data → FINTEC01 business-profile reporting on registered providers)
+NCG502:§V -> NCG530:§I (capital and guarantee framework → FINTEC02–FINTEC06 prudential reporting)
+NCG502:§V.B -> NCG530:§I (minimum-equity & guarantee requirement → FINTEC02–FINTEC06 prudential reporting)
+NCG502:§V.C -> NCG530:§I (adjusted-equity computation → FINTEC02–FINTEC06 prudential reporting)
+
+### Operational Reporting
+
+NCG502:§IV.E -> NCG530:§I (intermediation & custody governance → FINTEC07–FINTEC16 operational reporting)
+NCG502:§IV.E.4.1 -> NCG530:§I (information security & cybersecurity → FINTEC07–FINTEC16 operational reporting)
+NCG502:§VI -> NCG530:§I (operational-capacity requirements → FINTEC07–FINTEC16 operational reporting)
+
+---
+
+## Between Ley 21.521 and NCG 530
+
+### Reporting Obligations of Registered Providers
+
+21521:Art.5 -> NCG530:§I (registration obligation for regulated services → periodic Fintec information on registered providers)
+21521:Art.4 -> NCG530:§I (CMF normative power to set information requirements → information to submit)
+21521:Art.11 -> NCG530:§I (minimum-equity regime → FINTEC02–FINTEC06 prudential reporting)
+
+### Information Manual (MSI Fintec)
+
+21521:Art.4 -> NCG530:§II (CMF power to issue information manuals/instructions → Manual of the Fintec Information System)
+
+---
+
+## Between Ley 21.521 and NCG 503
+
+### Suitability for Service Provision
+
+21521:Art.7 -> NCG503:§I (idoneidad of personnel performing defined functions → suitability requirements)
+21521:Art.9 -> NCG503:§I (knowledge-accreditation standards for authorized service provision → suitability requirements)
+21521:Art.9 -> NCG503:§II (accredited responsible person for algorithm-driven functions → other provisions)
+
+---

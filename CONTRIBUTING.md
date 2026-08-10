@@ -83,7 +83,34 @@ python -m tools.check_roundtrip sources/ncg_530_2025-2.pdf corpus/ncg/530-fintec
 
 Note: the NCG round-trip runs at threshold 0.80 due to one known pdfplumber page-break artifact; the law round-trips above use the default threshold.
 
+The pytest suite also enforces two corpus-policy invariants, so no extra gate command is needed for them:
+
+- **Effective-date discipline** (`tools/tests/test_effective_date_discipline.py`) — the `<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->` banner must be present in all four `indexes/*.md`, in `corpus/19628-data-protection-consolidated/README.md`, and in `SKILL.md`. The banner frames 2026-12-01 as a compliance deadline; the test also bans phrasings that defer a present-tense answer or point a non-git consumer at git history. Any consumer reading the corpus without the Claude Code skill inherits the rule from these files, so keep the banner text identical across them.
+- **Translation-status honesty** (`tools/tests/test_no_stale_review_markers.py`) — status claims in the indexes and `SKILL.md` must match `.claude-plugin/plugin.json` `corpus_status`. If you mark a corpus non-stable, update both together.
+
 CI runs these on every PR. Tests must be green to merge.
+
+### If you change the corpus or index *structure*
+
+`tools/corpus_api.py` parses the article block format and all four index formats at runtime to serve the MCP server, so a structural change breaks retrieval for every MCP client even when the corpus gates stay green. After touching heading shapes, `###` subsection names, adjacency-list edge syntax, glossary entry layout, or scenario checklist markers:
+
+```bash
+python -m pip install -r tools/mcp/requirements.txt
+python -m pytest tools/tests/test_corpus_api.py tools/tests/test_mcp_server.py -v
+```
+
+CI runs these in a separate `mcp-server` job. Keep the MCP SDK out of `tools/requirements.txt` — the verification gates must stay runnable without it.
+
+### If you change corpus content or the agent policy
+
+`dist/` holds generated knowledge bundles and ChatGPT instructions for hosts that cannot run the MCP server. It is committed, and CI fails when it drifts:
+
+```bash
+python -m tools.build_dist          # regenerate, then commit dist/
+python -m tools.build_dist --check  # what CI runs
+```
+
+Never hand-edit anything under `dist/`. If the builder warns that the instruction file is within 5% of the 8,000-character limit, trim the projection in `tools/build_dist.py` — do not truncate legal guidance.
 
 ## Development setup
 

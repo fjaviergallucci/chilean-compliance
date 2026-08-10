@@ -5,9 +5,26 @@ protection work. Every bullet ends with one or more article citations into
 the corpus. AIs querying this index should `Read` the cited articles in
 full before reasoning — bullets summarize, they do not substitute.
 
-Topics VI–VIII sourced from `titulo-06-agencia.md` and `titulo-07-sanciones.md`
-contain English summaries pending literal H4 translation. Those citations
-are flagged inline.
+<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->
+> **Effective-date discipline — Ley 19.628 as amended by Ley 21.719.**
+>
+> The consolidated Ley 19.628 in this corpus is the authoritative statement of the
+> data-protection obligations Chilean organisations must meet, and is the correct
+> basis for answering any present-tense compliance question — *"what must we do?"*,
+> *"how should we build this?"*, *"what do we need before launch?"*
+>
+> Enforcement begins **2026-12-01**. That date is a **compliance deadline**, not the
+> date from which these obligations become relevant. Organisations are expected to be
+> designing, remediating, and budgeting against this text now.
+>
+> **Never answer a compliance question by saying the law has not taken effect.** State
+> the obligation, cite the article, then give 2026-12-01 as the date by which it must
+> be met.
+>
+> Only genuinely retrospective questions — *"was this lawful in 2024?"*, *"can we be
+> sanctioned for last year's processing?"* — turn on the pre-amendment 1999 baseline,
+> which is **not** in this corpus. Say so and point to the official BCN source rather
+> than answering from the consolidated text.
 
 ---
 
@@ -209,7 +226,7 @@ are flagged inline.
 - *Purpose limitation in the Open Finance System* — Information-based service providers and payment initiation service providers may not use, store, or access customer data for purposes not covered by the customer's authorisation. **See:**
   - `corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-24` — Ley 21.521 Art. 24 (purpose limitation enforced on SFA participants; access must stop when consent expires or is revoked).
 
-- *Processing financial obligation data for a different purpose is a serious infringement* — currently summarized; await H4 for literal translation: **See:**
+- *Processing financial obligation data for a different purpose is a serious infringement* — **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34-ter` — Ley 19.628 Art. 34 ter(a) (serious infringement: processing for a purpose different from that for which data was collected).
 
 ---
@@ -282,7 +299,7 @@ are flagged inline.
 - *SFA security incident reporting* — Participants in the Open Finance System must report security incidents to the CMF without delay, and adopt risk-mitigation measures. **See:**
   - `corpus/21521-fintech/titulo-03-finanzas-abiertas.md#article-22` — Ley 21.521 Art. 22 (paragraph 2) (SFA security breach reporting to CMF; risk-mitigation measures required).
 
-- *Omitting breach notification is a serious infringement* — currently summarized; await H4 for literal translation: **See:**
+- *Omitting breach notification is a serious infringement* — **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34-ter` — Ley 19.628 Art. 34 ter(k) (serious infringement: omitting communications or records required for security breaches under Art. 14 quinquies).
 
 - *Operational incident reporting to CMF for investment advisers (in practice)* — Investment advisory PSFs must report operational incidents to CMF using the standard Anexo N°2 form; escalation thresholds and deadlines are set out in §IV.A.5.
@@ -335,32 +352,32 @@ are flagged inline.
 - *Breach notification: sensitive data triggers subject-level notification* — Security breaches affecting sensitive personal data require mandatory direct notification to affected data subjects. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-02-derechos.md#article-14-sexies` — Ley 19.628 Art. 14 sexies (paragraph 3: breach affecting sensitive data triggers subject-level notification obligation).
 
-- *Processing sensitive data without basis is a very serious infringement* — currently summarized; await H4 for literal translation: **See:**
+- *Processing sensitive data without basis is a very serious infringement* — **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34-quáter` — Ley 19.628 Art. 34 quáter(e) (very serious infringement: knowingly processing or ceding sensitive data in violation of the law).
 
 ---
 
 ## Topic: Sanctions and Penalties
 
-- *General liability regime* — Data controllers (natural or legal persons, public or private) are liable for infringements of this law; liability is administrative without prejudice to civil and other legal liability. Currently summarized; await H4 for literal translation: **See:**
+- *General liability regime* — Data controllers (natural or legal persons, public or private) are liable for infringements of this law; liability is administrative without prejudice to civil and other legal liability. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-33` — Ley 19.628 Art. 33 (general liability regime).
 
-- *Infringement tiers* — Infringements are classified as minor (leves), serious (graves), and very serious (gravísimas). Currently summarized; await H4 for literal translation: **See:**
+- *Infringement tiers* — Infringements are classified as minor (leves), serious (graves), and very serious (gravísimas). **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34` — Ley 19.628 Art. 34 (three-tier classification of infringements).
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34-bis` — Ley 19.628 Art. 34 bis (minor infringements: transparency failures, missing contact information, failure to respond to requests).
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34-ter` — Ley 19.628 Art. 34 ter (serious infringements: unlawful processing, purpose deviation, security failures, breach of processor obligations, obstruction of rights, unlawful international transfers).
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-34-quáter` — Ley 19.628 Art. 34 quáter (very serious infringements: fraudulent processing, malicious purpose deviation, sensitive-data confidentiality breach, children's data violations, deliberate concealment of breaches, knowing unlawful international transfers, non-compliance with Agency orders).
 
-- *Fines* — Minor: up to 5,000 UTM (or written warning). Serious: up to 10,000 UTM. Very serious: up to 20,000 UTM. Reincidence and percentage-of-turnover rules apply for large enterprises. Currently summarized; await H4 for literal translation: **See:**
+- *Fines* — Minor: up to 5,000 UTM (or written warning). Serious: up to 10,000 UTM. Very serious: up to 20,000 UTM. Reincidence and percentage-of-turnover rules apply for large enterprises. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-35` — Ley 19.628 Art. 35 (sanction scales; reincidence multiplier; turnover-percentage cap for large-enterprise recidivists).
 
-- *Civil liability* — The controller must indemnify patrimonial and extra-patrimonial damage caused by unlawful processing. Civil action accrues once the Agency resolution or judicial sentence is final; five-year prescription. Currently summarized; await H4 for literal translation: **See:**
+- *Civil liability* — The controller must indemnify patrimonial and extra-patrimonial damage caused by unlawful processing. Civil action accrues once the Agency resolution or judicial sentence is final; five-year prescription. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-47` — Ley 19.628 Art. 47 (civil liability: patrimonial and extra-patrimonial damages; procedural pathway; five-year prescription).
 
-- *Accessory sanction: suspension of operations* — For repeated very serious infringements within 24 months, the Agency may suspend processing operations for up to 30 days. Currently summarized; await H4 for literal translation: **See:**
+- *Accessory sanction: suspension of operations* — For repeated very serious infringements within 24 months, the Agency may suspend processing operations for up to 30 days. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-38` — Ley 19.628 Art. 38 (accessory sanctions: suspension of operations; partial or total; cannot affect data subjects' rights).
 
-- *Prescription* — Sanctions actions prescribe in four years from the infringement; three years from the final sanction resolution for execution. Currently summarized; await H4 for literal translation: **See:**
+- *Prescription* — Sanctions actions prescribe in four years from the infringement; three years from the final sanction resolution for execution. **See:**
   - `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md#article-40` — Ley 19.628 Art. 40 (prescription: four years for action; three years for execution; interrupted by notification of administrative procedure).
 
 ---

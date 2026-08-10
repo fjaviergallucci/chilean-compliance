@@ -1,6 +1,10 @@
 # chile-compliance
 
-> A structured, AI-queryable knowledge base of Chilean fintech and personal-data law — built for use by AI agents, not humans.
+> A structured, AI-queryable knowledge base of Chilean fintech and personal-data law. Written to be read by AI assistants, so that people can get straight, citable answers about what the law actually requires.
+
+> [!TIP]
+> **¿No eres programador/a y solo quieres saber cómo te afecta la ley?**
+> No necesitas instalar nada. → **[Empieza aquí](#1-solo-quiero-saber-cómo-me-afecta-la-ley)**
 
 If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws — and the CMF regulations that implement them:
 
@@ -19,9 +23,169 @@ These texts are all published in Spanish. Without help, an AI session about Chil
 
 ---
 
+## How to use this — pick your path
+
+Three ways in, by what you're trying to do. They differ in setup cost and in answer quality; the table says how.
+
+| | **1. I want answers about my situation** | **2. I'm building software** | **3. I'm integrating the corpus** |
+|---|---|---|---|
+| **Who** | Business owner, lawyer, anyone non-technical | Developer using an AI coding assistant | Developer embedding this in a product or pipeline |
+| **Setup** | None — download one file | Two commands (Claude Code) or one `pip install` (MCP) | Import a module, or run your own retrieval |
+| **You get** | [`dist/single/`](dist/single/) — one self-contained file per law, instructions included | The Claude Code plugin, or the MCP server's seven tools | [`tools/corpus_api.py`](tools/corpus_api.py), or the raw markdown |
+| **Retrieval** | Semantic — the assistant searches inside the file | **Exact** — retrieves a cited article whole, follows the cross-reference graph | Yours to choose |
+| **Cross-references** | Not traversed | **Traversed**, including the 119 law→regulation bridges | Available via `get_cross_references` |
+| **Stays current** | Re-download when you want the latest | Automatically | Automatically |
+| **Best for** | "What does this law require of my business?" | "What must we file, build, and report?" | Custom agents, RAG, internal tools |
+
+**Which fidelity actually matters to you.** Paths 2 and 3 retrieve exact citations and follow the graph; path 1 does not. That gap is largest for **fintech questions**, where answering "what must we actually do?" means crossing from Ley 21.521 into the CMF regulation that implements it. It is much smaller for **data-protection questions**: Ley 19.628 is standalone, with no NCG layer beneath it, so path 1 gives up very little there.
+
+All three produce citations you can verify. None of them is legal advice.
+
+---
+
+## 1. Solo quiero saber cómo me afecta la ley
+
+*(Esta sección está en español porque está dirigida a quienes consultan la ley, no a quienes programan.)*
+
+Si tienes un negocio en Chile y quieres entender qué te exige la ley, esto toma unos dos minutos. No necesitas saber programar ni instalar nada. Funciona con ChatGPT, Claude, Gemini o cualquier asistente que permita adjuntar un archivo.
+
+### 1. Descarga un archivo
+
+Elige el que corresponda a tu caso, abre el enlace y presiona el botón de descarga (**Download raw file**, arriba a la derecha):
+
+| Tu situación | Archivo |
+|---|---|
+| Manejo datos de personas: nombres, RUT, correos, datos de salud, historial de compras… | **[proteccion-datos.md](dist/single/proteccion-datos.md)** (486 KB) |
+| Ofrezco servicios financieros: inversiones, crowdfunding, asesoría, custodia, pagos… | **[fintech.md](dist/single/fintech.md)** (296 KB) |
+
+Cada archivo trae la ley completa, listas de verificación organizadas por tipo de negocio y un glosario de términos legales.
+
+### 2. Adjúntalo a una conversación
+
+Abre tu asistente de IA (ChatGPT, Claude, Gemini…), presiona el clip 📎 y sube el archivo que descargaste.
+
+### 3. Copia y pega este mensaje
+
+```text
+Adjunté un archivo con legislación chilena estructurada. Léelo y sigue las
+instrucciones que trae al inicio.
+
+Actúa como asistente de cumplimiento normativo. Antes de darme recomendaciones:
+
+1. Pregúntame qué hace mi negocio y qué datos de personas manejo.
+2. Busca en el archivo la lista de verificación que corresponda a mi caso.
+3. Explícame en español, sin tecnicismos, qué debo hacer y para cuándo.
+4. Cita siempre el artículo específico en el que te basas.
+
+Importante: la fiscalización empieza el 1 de diciembre de 2026, pero las
+obligaciones ya están definidas y debo prepararme desde ahora. No me digas que
+"todavía no entra en vigencia": dime qué tengo que hacer y cuál es el plazo.
+
+Empecemos: ¿qué necesitas saber sobre mi negocio?
+```
+
+Eso es todo. El asistente te preguntará por tu negocio y te irá indicando las obligaciones que aplican, citando los artículos para que puedas verificarlos o mostrárselos a un abogado.
+
+### Cómo obtener mejores respuestas
+
+- **Describe tu negocio en concreto.** «Tengo una tienda online, guardo nombre, RUT, dirección e historial de compras, y uso un servicio de correos masivos» sirve mucho más que «¿qué dice la ley?». El archivo trae listas de verificación organizadas por lo que hace una empresa en la práctica, y con esa descripción el asistente puede encontrar la que te corresponde.
+- **Pide el texto original en español** cuando algo importe de verdad: *«muéstrame el texto original en español de ese artículo»*. El corpus está en inglés con el español textual incluido, así que tu respuesta pasa por una traducción de ida y vuelta; el original elimina esa duda.
+- **Un tema por conversación.** Las conversaciones largas se desvían y el asistente pierde de vista las instrucciones del archivo.
+- **Pregunta qué te falta.** *«¿Qué otras obligaciones aplican a mi caso que no hayamos revisado?»* suele sacar puntos que la primera respuesta omitió.
+
+### Preguntas frecuentes
+
+**¿Sirve con la versión gratuita?** Adjuntar un archivo a una conversación normal es la vía más disponible. Si tu plan no te deja subirlo, prueba con el archivo más pequeño (`fintech.md`).
+
+**¿Funciona con Claude, Gemini u otro asistente?** Sí. El archivo es texto plano y las instrucciones van dentro, así que el procedimiento es el mismo.
+
+**¿Tengo que volver a descargarlo?** Solo si quieres la versión más reciente. Los archivos se regeneran automáticamente cuando cambia el corpus.
+
+**¿Y si uso esto todos los días?** Si tu plan permite crear un Proyecto o un GPT personalizado, sube los 13 archivos de [`dist/knowledge/`](dist/knowledge/) y pega [`dist/instructions-gpt.md`](dist/instructions-gpt.md) en el campo de instrucciones. Las instrucciones quedan siempre presentes en lugar de depender de que el asistente las encuentre dentro del archivo.
+
+**¿Hay algo mejor todavía?** Sí: las rutas 2 y 3, que recuperan el artículo exacto y siguen el grafo de referencias cruzadas. Requieren instalar algo. Si tienes cerca a alguien que programe, pídele que consulte por ti las preguntas de mayor riesgo — obtendrá las citas exactas y tú te ahorras la instalación.
+
+> [!IMPORTANT]
+> Esto **no es asesoría legal**. Es una ayuda para encontrar y citar los artículos que te aplican. Para decisiones con riesgo legal o financiero relevante, consulta a un abogado o abogada en Chile.
+
+---
+
+## 2. I'm building software
+
+You want exact citations and real cross-reference traversal, inside the tool you already work in. Two options depending on your assistant.
+
+**Pros:** retrieves the cited article whole rather than a similar-looking fragment; follows the 119 law→regulation bridges, so "what must we file and report?" reaches the CMF regulation instead of stopping at the statute; always current with the repo; all laws and regulations available at once, not one file per question.
+**Cons:** requires an install. The MCP route needs Python 3.11+ and a server process running locally.
+
+### Claude Code — install the plugin
+
+The plugin is published as a Claude Code plugin marketplace at this repository. Install it with two commands from any Claude Code session:
+
+```text
+/plugin marketplace add fjaviergallucci/chilean-compliance
+/plugin install chile-compliance@chile-compliance
+```
+
+The first command registers this repo as a marketplace named `chile-compliance` (per `.claude-plugin/marketplace.json`). The second installs the `chile-compliance` plugin from that marketplace.
+
+By default, plugins install at user scope (available across all your projects). To scope to one project instead:
+
+```text
+/plugin install chile-compliance@chile-compliance --scope project
+```
+
+After install, the skill activates automatically when Claude sees Chilean fintech or data-protection contexts (see `skills/chile-compliance/SKILL.md` for triggers). You can also invoke it explicitly with `/chile-compliance:chile-compliance`.
+
+To enable, disable, or uninstall later:
+
+```text
+/plugin disable chile-compliance@chile-compliance
+/plugin enable chile-compliance@chile-compliance
+/plugin uninstall chile-compliance@chile-compliance
+```
+
+### Pin to a specific release
+
+To install at a tagged version rather than `main`:
+
+```text
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.3.0
+/plugin install chile-compliance@chile-compliance
+```
+
+---
+
+### Cursor, ChatGPT connectors, Claude Desktop — run the MCP server
+
+The corpus does not depend on Claude Code. For every other host, the bundled MCP server is the way in:
+
+```bash
+python -m pip install -r tools/mcp/requirements.txt
+python -m tools.mcp.server
+```
+
+Full setup, per-client configuration, and the tool reference are in [`tools/mcp/README.md`](tools/mcp/README.md). The server exposes seven tools — `search_topics`, `get_article`, `get_definition`, `get_scenario`, `get_cross_references`, `get_spanish_original`, `get_corpus_status` — and hands the connecting model the full text of `corpus/_agent-policy.md` as its MCP instructions, so it inherits the behavioural policy without a second copy existing anywhere.
+
+---
+
+## 3. I'm integrating the corpus
+
+You're building your own agent, pipeline, or internal tool and want the corpus underneath it.
+
+**Pros:** full control over retrieval and presentation; no server process if you don't want one; the resolver is pure stdlib with no dependency to adopt.
+**Cons:** you become responsible for delivering the agent policy. If `corpus/_agent-policy.md` doesn't reach your model, the effective-date discipline goes with it — and that is the rule most likely to produce a confidently wrong answer.
+
+- **Import the resolver.** [`tools/corpus_api.py`](tools/corpus_api.py) implements the same seven operations the MCP server exposes — `parse_citation`, `get_article`, `get_definition`, `search_topics`, `get_scenario`, `get_cross_references`, `get_corpus_status`. Pure stdlib; it parses the indexes into memory on first use, with no database.
+- **RAG pipelines.** Embed `corpus/**/*.md` with your preferred model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer). Put `corpus/_agent-policy.md` in your system prompt.
+- **Uploaded knowledge files** (Custom GPTs, Projects). Upload the 13 files in [`dist/knowledge/`](dist/knowledge/) — under the usual 20-file cap — and paste [`dist/instructions-gpt.md`](dist/instructions-gpt.md) into the instructions field. Both are generated from the corpus and CI fails if they drift, so they are never stale. Retrieval is semantic, so the fidelity note in the table applies.
+- **Reading it directly.** The corpus is plain markdown. It was not optimised for human reading, but nothing stops you.
+- **Manual reading** — humans can read it, though it was not optimised for that.
+
+---
+
 ## En español
 
-**chile-compliance** es una base de conocimiento estructurada y consultable por agentes de inteligencia artificial sobre la regulación chilena de servicios financieros y protección de datos personales. Está pensada para asistentes y agentes de IA (no para uso humano directo) que necesitan razonar sobre el cumplimiento normativo aplicable a software desarrollado para usuarios en Chile.
+**chile-compliance** es una base de conocimiento estructurada y consultable por agentes de inteligencia artificial sobre la regulación chilena de servicios financieros y protección de datos personales. Está escrita para que la lea un asistente de IA, de modo que las personas obtengan respuestas directas y citables sobre lo que exige la ley. Si solo quieres consultarla con un asistente de IA, ve a [Solo quiero saber cómo me afecta la ley](#1-solo-quiero-saber-cómo-me-afecta-la-ley); el resto de esta sección describe el contenido y está dirigido a quienes desarrollan software.
 
 ### Leyes incluidas
 
@@ -73,7 +237,8 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | NCG 503 — Exigencias de Idoneidad / fit-and-proper | **Stable** | Secciones I–IV; bridged to Ley 21.521 arts. 7 & 9; derogates NCG 412 |
 | NCG 530 — MSI Fintec reporting (obligations layer) | **Stable** | Body + Anexo N°1 + FINTEC01–16 catalog; record layouts (Anexo N°2/N°3) out of scope |
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 198 topical · 109 glossary · 7 scenarios/122 items · 392 cross-refs |
-| Tooling + tests | **Stable** | 41/41 pytest passing |
+| Tooling + tests | **Stable** | 98/98 pytest passing |
+| Consumption paths | **Stable** | Claude Code plugin · MCP server (7 tools) · generated `dist/` bundles |
 
 The `corpus_status` field in `.claude-plugin/plugin.json` is the canonical source of truth for an AI consumer.
 
@@ -118,57 +283,6 @@ The AI didn't translate anything from scratch. It read curated, vetted English w
 
 ---
 
-## Quick start — Claude Code
-
-The plugin is published as a Claude Code plugin marketplace at this repository. Install it with two commands from any Claude Code session:
-
-```text
-/plugin marketplace add fjaviergallucci/chilean-compliance
-/plugin install chile-compliance@chile-compliance
-```
-
-The first command registers this repo as a marketplace named `chile-compliance` (per `.claude-plugin/marketplace.json`). The second installs the `chile-compliance` plugin from that marketplace.
-
-By default, plugins install at user scope (available across all your projects). To scope to one project instead:
-
-```text
-/plugin install chile-compliance@chile-compliance --scope project
-```
-
-After install, the skill activates automatically when Claude sees Chilean fintech or data-protection contexts (see `skills/chile-compliance/SKILL.md` for triggers). You can also invoke it explicitly with `/chile-compliance:chile-compliance`.
-
-To enable, disable, or uninstall later:
-
-```text
-/plugin disable chile-compliance@chile-compliance
-/plugin enable chile-compliance@chile-compliance
-/plugin uninstall chile-compliance@chile-compliance
-```
-
-### Pin to a specific release
-
-To install at a tagged version rather than `main`:
-
-```text
-/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.3.0
-/plugin install chile-compliance@chile-compliance
-```
-
----
-
-## Quick start — other AI hosts
-
-The corpus is plain markdown — it doesn't depend on Claude Code. You can use it from:
-
-- **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — load relevant files at session start, or use a tool-call that reads `corpus/`, `indexes/`, and `.claude-plugin/plugin.json` paths.
-- **MCP server** — wrap the corpus with a thin MCP layer exposing `search`, `get_article`, `get_definition`, and `find_obligations` tools. The folder structure was designed to make this straightforward; no rework needed.
-- **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer).
-- **Manual reading** — yes, humans can read it too, though it wasn't optimized for that.
-
-The `SKILL.md` file documents the query decision tree the corpus expects — port it to your platform's agent prompt format.
-
----
-
 ## What's in the box
 
 ```
@@ -176,8 +290,9 @@ chile-compliance/
 ├── .claude-plugin/
 │   ├── marketplace.json                # Marketplace catalog (this repo as marketplace)
 │   └── plugin.json                     # Plugin manifest with corpus_status
-├── skills/chile-compliance/SKILL.md    # Query decision tree for consuming AIs
+├── skills/chile-compliance/SKILL.md    # Claude Code binding over the agent policy
 ├── corpus/
+│   ├── _agent-policy.md                # Host-neutral agent policy (source of truth)
 │   ├── _lexicon.md                     # Spanish ↔ English legal-term mapping
 │   ├── 21521-fintech/                  # Ley 21.521 by Título
 │   ├── 19628-data-protection-consolidated/  # Ley 19.628 (post-21.719) by Título
@@ -193,8 +308,15 @@ chile-compliance/
 │   ├── glossary.md                     # 82 defined terms (English + Spanish)
 │   ├── scenarios.md                    # 7 compliance scenarios, 100 checklist items
 │   └── cross-references.md             # 338 article-to-article edges
+├── dist/                               # GENERATED — regenerate, never hand-edit
+│   ├── instructions-gpt.md             # Instruction text for hosted assistants
+│   └── knowledge/                      # Corpus merged into 13 upload-ready files
 ├── sources/                            # Original PDF sources (BCN, public)
-└── tools/                              # Python QC scripts + pytest tests
+└── tools/
+    ├── corpus_api.py                   # Resolver for the seven operations (stdlib only)
+    ├── build_dist.py                   # Generates dist/ (CI fails if it is stale)
+    ├── mcp/                            # MCP server — the binding for non-Claude hosts
+    └── tests/                          # pytest coverage for QC scripts and resolver
 ```
 
 ### Corpus file format
@@ -253,7 +375,8 @@ The pre-amendment baseline is in git history (search for the `19628-baseline/` d
 The build philosophy is **markdown-first, tooling-light**:
 
 - **Source of truth**: a small set of structured markdown files in `corpus/` and `indexes/`. Editable by humans, greppable by AIs.
-- **Tooling** (`tools/`): verification scripts only — no runtime servers, no embeddings, no databases. Each script is single-purpose with pytest coverage:
+- **Policy vs. bindings**: `corpus/_agent-policy.md` is the host-neutral behavioural contract — scope, the seven operations (LOCATE, RETRIEVE, DEFINE, SCENARIO, TRAVERSE, ORIGINAL, STATUS), citation format, effective-date discipline, caveat surfacing. Everything that consumes the corpus is a thin *binding* that maps those operations onto one host's retrieval mechanism: `skills/chile-compliance/SKILL.md` for Claude Code, `tools/mcp/` for MCP clients. Behaviour is changed in the policy, never in a binding, so hosts cannot drift apart. A test rejects host-specific tooling names in the policy file.
+- **Tooling** (`tools/`): verification scripts plus a resolver and an MCP server. No embeddings and no databases — `tools/corpus_api.py` parses the indexes into memory on first use and is pure stdlib, and the MCP SDK is isolated in `tools/mcp/requirements.txt` so the verification gates never depend on it. Each verification script is single-purpose with pytest coverage:
   - `extract_articles.py` — parses Chilean BCN-formatted PDFs into article blocks.
   - `check_extraction_parity.py` — verifies every article in a PDF appears once in the corpus.
   - `check_glossary_completeness.py` — verifies every glossary term cites a real article.
@@ -276,7 +399,7 @@ As of v1.0.0, all article-level REVIEW markers in the corpus are resolved. The m
 
 - **Translation corrections.** If you find an English rendering that doesn't track the Spanish, or a Chilean legal term that deserves a clearer treatment, open an issue (use the `Translation fix or improvement` template) or send a PR with the change plus a `> **TN:** ...` note explaining the rationale.
 - **New scenarios.** If your real-world use case isn't covered by the seven scenarios in `indexes/scenarios.md`, add one (see [Adding a new scenario](#adding-a-new-scenario) below).
-- **CMF circulars and APDP guidance.** These are out of scope today but valuable additions as they're published. See [Adding new amendments, circulars, or laws](#adding-new-amendments-circulars-or-laws) below.
+- **CMF circulars and APDP guidance.** These are out of scope today but valuable additions as they're published. See [Adding new amendments or sources](#adding-new-amendments-or-sources) below.
 - **Coverage for other Chilean statutes** that fintech-adjacent products touch — Leyes 18.045, 18.046, 18.840, etc. Each becomes its own corpus subdirectory.
 
 ### Adding a new scenario
@@ -324,7 +447,7 @@ python -m tools.check_glossary_completeness indexes/glossary.md corpus/21521-fin
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/19628-data-protection-consolidated
 ```
 
-These cover the two laws. The NCG 502/514/503/530 parity and round-trip gates are listed in full in [CONTRIBUTING.md](CONTRIBUTING.md). Every gate command must exit `0` with its "OK" message, and `pytest` must be fully green (41 tests).
+These cover the two laws. The NCG 502/514/503/530 parity and round-trip gates are listed in full in [CONTRIBUTING.md](CONTRIBUTING.md). Every gate command must exit `0` with its "OK" message, and `pytest` must be fully green (98 tests).
 
 ### Development setup
 
