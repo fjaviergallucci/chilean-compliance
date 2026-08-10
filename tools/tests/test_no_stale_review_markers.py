@@ -29,11 +29,20 @@ STALE_PATTERNS = [
 ]
 
 
+def _is_corpus_article(path: Path) -> bool:
+    """Translated article files only.
+
+    READMEs and leading-underscore meta files (_lexicon.md, _agent-policy.md)
+    document the REVIEW convention rather than carrying unresolved markers.
+    """
+    return path.name != "README.md" and not path.name.startswith("_")
+
+
 def test_corpus_has_no_review_markers():
     hits = [
         p.relative_to(ROOT).as_posix()
         for p in (ROOT / "corpus").rglob("*.md")
-        if p.name != "README.md" and "<!-- REVIEW:" in p.read_text(encoding="utf-8")
+        if _is_corpus_article(p) and "<!-- REVIEW:" in p.read_text(encoding="utf-8")
     ]
     assert not hits, f"unresolved REVIEW markers in corpus: {hits}"
 
