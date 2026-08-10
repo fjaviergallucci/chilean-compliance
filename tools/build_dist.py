@@ -119,15 +119,26 @@ def _banner() -> str:
 # Knowledge bundles
 # ---------------------------------------------------------------------------
 
+def _sorted_md(directory: Path) -> list[Path]:
+    """Sort by filename as a plain string, identically on every platform.
+
+    sorted() on Path objects compares Path._str_normcase, which is lowercased on
+    Windows and case-sensitive on POSIX. So `README.md` sorts before `changes.md`
+    on Linux and after it on Windows, and the same corpus produces two different
+    bundles. Sorting on the raw name removes the platform from the output.
+    """
+    return sorted(directory.glob("*.md"), key=lambda p: p.name)
+
+
 def _bundle_sources(rel: str | None) -> list[Path]:
     if rel is None:
         # Loose files not owned by a per-law bundle: corpus/_lexicon.md,
         # corpus/_agent-policy.md, and the corpus/ncg/ overview README.
-        return sorted(CORPUS.glob("*.md")) + sorted((CORPUS / "ncg").glob("*.md"))
+        return _sorted_md(CORPUS) + _sorted_md(CORPUS / "ncg")
     target = ROOT / rel
     if target.is_file():
         return [target]
-    return sorted(target.glob("*.md"))
+    return _sorted_md(target)
 
 
 def build_knowledge_bundles(out_dir: Path) -> list[Path]:

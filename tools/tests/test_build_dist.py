@@ -5,6 +5,7 @@ path costs no ongoing maintenance — it is never hand-edited.
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
@@ -140,6 +141,33 @@ def test_fintech_bundle_scoped_to_21521(single_files):
     text = next(p for p in single_files if p.stem == "fintech").read_text(encoding="utf-8")
     assert "<!-- incluye: corpus/21521-fintech/titulo-02-servicios.md -->" in text
     assert "19628-data-protection-consolidated" not in text.split("## FUENTE:")[1][:200]
+
+
+def test_bundle_order_is_platform_independent(bundles):
+    """Windows sorts Paths case-insensitively, POSIX does not.
+
+    Left alone, that makes `README.md` precede `changes.md` on Linux and follow it
+    on Windows, so the same corpus generates two different bundles and the
+    staleness gate fails for whoever did not build it. Assert byte-for-byte
+    equality against an explicitly name-sorted rebuild.
+    """
+    for path in bundles:
+        order = re.findall(r"<!-- source: (.+?) -->", path.read_text(encoding="utf-8"))
+        # Group consecutive entries by source directory. corpus-meta deliberately
+        # concatenates two directories, so only within-directory order is fixed.
+        groups: list[list[str]] = []
+        for rel in order:
+            parent = rel.rsplit("/", 1)[0]
+            if groups and groups[-1][0].rsplit("/", 1)[0] == parent:
+                groups[-1].append(rel)
+            else:
+                groups.append([rel])
+        for group in groups:
+            names = [rel.rsplit("/", 1)[-1] for rel in group]
+            assert names == sorted(names), (
+                f"{path.name}: {group[0].rsplit('/', 1)[0]} is not name-sorted "
+                f"(platform-dependent Path ordering?): {names}"
+            )
 
 
 def test_committed_dist_is_current(tmp_path):

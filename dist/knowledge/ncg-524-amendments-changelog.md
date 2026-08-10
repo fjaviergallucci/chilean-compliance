@@ -24,6 +24,30 @@
 
 ---
 
+<!-- source: corpus/ncg/524-amendments-changelog/README.md -->
+## FILE: corpus/ncg/524-amendments-changelog/README.md
+
+# NCG 524 — Amendments to NCG 502 (applied)
+
+**Issued:** 2024-12-02 by the CMF.
+**Amends:** NCG 502 (2024-01-12).
+**Source PDF:** `sources/ncg_524_2024.pdf`.
+
+NCG 524 makes 116 modifications to NCG 502. They have been **applied**; the
+consolidated operative text lives in `../502-psf-obligations-consolidated/`.
+`changes.md` maps each of the 116 amendments to its section. For any amendment,
+consult `_amendments.json` for the parsed source and `changes.md` for its
+landing section in the consolidated corpus.
+
+- `_amendments.json` — 116 machine-parsed amendment items (item number, verb, target section context, text).
+- `changes.md` — index mapping all 116 amendments to their consolidated NCG 502 section.
+
+## Do not cite NCG 524 as operative text.
+When the consolidation is done, cite the consolidated NCG 502 section. For now,
+cite the baseline NCG 502 and note any pending 524 amendment from this catalogue.
+
+---
+
 <!-- source: corpus/ncg/524-amendments-changelog/changes.md -->
 ## FILE: corpus/ncg/524-amendments-changelog/changes.md
 
@@ -149,29 +173,5 @@ Every NCG 524 amendment (02-dic-2024) mapped to the NCG 502 section it modified 
 | 114 | Anexo N°1 | Reemplázase | Anexo N°1 | 502-psf-obligations-consolidated/anexo-01-definiciones.md |
 | 115 | Anexo N°1 | Elimínase | Anexo N°1 | 502-psf-obligations-consolidated/anexo-01-definiciones.md |
 | 116 | Índice | Reemplázase | Índice | 502-psf-obligations-consolidated/_toc.json |
-
----
-
-<!-- source: corpus/ncg/524-amendments-changelog/README.md -->
-## FILE: corpus/ncg/524-amendments-changelog/README.md
-
-# NCG 524 — Amendments to NCG 502 (applied)
-
-**Issued:** 2024-12-02 by the CMF.
-**Amends:** NCG 502 (2024-01-12).
-**Source PDF:** `sources/ncg_524_2024.pdf`.
-
-NCG 524 makes 116 modifications to NCG 502. They have been **applied**; the
-consolidated operative text lives in `../502-psf-obligations-consolidated/`.
-`changes.md` maps each of the 116 amendments to its section. For any amendment,
-consult `_amendments.json` for the parsed source and `changes.md` for its
-landing section in the consolidated corpus.
-
-- `_amendments.json` — 116 machine-parsed amendment items (item number, verb, target section context, text).
-- `changes.md` — index mapping all 116 amendments to their consolidated NCG 502 section.
-
-## Do not cite NCG 524 as operative text.
-When the consolidation is done, cite the consolidated NCG 502 section. For now,
-cite the baseline NCG 502 and note any pending 524 amendment from this catalogue.
 
 ---
