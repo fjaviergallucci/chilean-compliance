@@ -4,7 +4,7 @@
 
 > [!TIP]
 > **¿No eres programador/a y solo quieres saber cómo te afecta la ley?**
-> No necesitas instalar nada. → **[Empieza aquí](#empieza-aquí--usar-esto-con-chatgpt-sin-instalar-nada)**
+> No necesitas instalar nada. → **[Empieza aquí](#1-solo-quiero-saber-cómo-me-afecta-la-ley)**
 
 If you're building software that handles Chilean users' financial or personal data, your AI assistant probably needs to reason about two laws — and the CMF regulation that implements them:
 
@@ -19,9 +19,31 @@ These texts are all published in Spanish. Without help, an AI session about Chil
 
 ---
 
-## Empieza aquí — usar esto con ChatGPT (sin instalar nada)
+## How to use this — pick your path
 
-Si tienes un negocio en Chile y quieres entender qué te exige la ley de protección de datos personales, esto te toma unos dos minutos. No necesitas saber programar ni instalar nada.
+Three ways in, by what you're trying to do. They differ in setup cost and in answer quality; the table says how.
+
+| | **1. I want answers about my situation** | **2. I'm building software** | **3. I'm integrating the corpus** |
+|---|---|---|---|
+| **Who** | Business owner, lawyer, anyone non-technical | Developer using an AI coding assistant | Developer embedding this in a product or pipeline |
+| **Setup** | None — download one file | Two commands (Claude Code) or one `pip install` (MCP) | Import a module, or run your own retrieval |
+| **You get** | [`dist/single/`](dist/single/) — one self-contained file per law, instructions included | The Claude Code plugin, or the MCP server's seven tools | [`tools/corpus_api.py`](tools/corpus_api.py), or the raw markdown |
+| **Retrieval** | Semantic — the assistant searches inside the file | **Exact** — retrieves a cited article whole, follows the cross-reference graph | Yours to choose |
+| **Cross-references** | Not traversed | **Traversed**, including the 119 law→regulation bridges | Available via `get_cross_references` |
+| **Stays current** | Re-download when you want the latest | Automatically | Automatically |
+| **Best for** | "What does this law require of my business?" | "What must we file, build, and report?" | Custom agents, RAG, internal tools |
+
+**Which fidelity actually matters to you.** Paths 2 and 3 retrieve exact citations and follow the graph; path 1 does not. That gap is largest for **fintech questions**, where answering "what must we actually do?" means crossing from Ley 21.521 into the CMF regulation that implements it. It is much smaller for **data-protection questions**: Ley 19.628 is standalone, with no NCG layer beneath it, so path 1 gives up very little there.
+
+All three produce citations you can verify. None of them is legal advice.
+
+---
+
+## 1. Solo quiero saber cómo me afecta la ley
+
+*(Esta sección está en español porque está dirigida a quienes consultan la ley, no a quienes programan.)*
+
+Si tienes un negocio en Chile y quieres entender qué te exige la ley, esto toma unos dos minutos. No necesitas saber programar ni instalar nada. Funciona con ChatGPT, Claude, Gemini o cualquier asistente que permita adjuntar un archivo.
 
 ### 1. Descarga un archivo
 
@@ -34,9 +56,9 @@ Elige el que corresponda a tu caso, abre el enlace y presiona el botón de desca
 
 Cada archivo trae la ley completa, listas de verificación organizadas por tipo de negocio y un glosario de términos legales.
 
-### 2. Adjúntalo a una conversación en ChatGPT
+### 2. Adjúntalo a una conversación
 
-Abre ChatGPT, presiona el clip 📎 y sube el archivo que descargaste.
+Abre tu asistente de IA (ChatGPT, Claude, Gemini…), presiona el clip 📎 y sube el archivo que descargaste.
 
 ### 3. Copia y pega este mensaje
 
@@ -58,24 +80,108 @@ obligaciones ya están definidas y debo prepararme desde ahora. No me digas que
 Empecemos: ¿qué necesitas saber sobre mi negocio?
 ```
 
-Eso es todo. ChatGPT te preguntará por tu negocio y te irá indicando las obligaciones que aplican, citando los artículos para que puedas verificarlos o mostrárselos a un abogado.
+Eso es todo. El asistente te preguntará por tu negocio y te irá indicando las obligaciones que aplican, citando los artículos para que puedas verificarlos o mostrárselos a un abogado.
+
+### Cómo obtener mejores respuestas
+
+- **Describe tu negocio en concreto.** «Tengo una tienda online, guardo nombre, RUT, dirección e historial de compras, y uso un servicio de correos masivos» sirve mucho más que «¿qué dice la ley?». El archivo trae listas de verificación organizadas por lo que hace una empresa en la práctica, y con esa descripción el asistente puede encontrar la que te corresponde.
+- **Pide el texto original en español** cuando algo importe de verdad: *«muéstrame el texto original en español de ese artículo»*. El corpus está en inglés con el español textual incluido, así que tu respuesta pasa por una traducción de ida y vuelta; el original elimina esa duda.
+- **Un tema por conversación.** Las conversaciones largas se desvían y el asistente pierde de vista las instrucciones del archivo.
+- **Pregunta qué te falta.** *«¿Qué otras obligaciones aplican a mi caso que no hayamos revisado?»* suele sacar puntos que la primera respuesta omitió.
 
 ### Preguntas frecuentes
 
-**¿Sirve con la versión gratuita de ChatGPT?** Adjuntar un archivo a una conversación normal es la vía más disponible. Si tu plan no te deja subirlo, prueba con el archivo más pequeño (`fintech.md`) o consulta la sección para Custom GPTs más abajo.
+**¿Sirve con la versión gratuita?** Adjuntar un archivo a una conversación normal es la vía más disponible. Si tu plan no te deja subirlo, prueba con el archivo más pequeño (`fintech.md`).
 
 **¿Funciona con Claude, Gemini u otro asistente?** Sí. El archivo es texto plano y las instrucciones van dentro, así que el procedimiento es el mismo.
 
 **¿Tengo que volver a descargarlo?** Solo si quieres la versión más reciente. Los archivos se regeneran automáticamente cuando cambia el corpus.
+
+**¿Y si uso esto todos los días?** Si tu plan permite crear un Proyecto o un GPT personalizado, sube los 13 archivos de [`dist/knowledge/`](dist/knowledge/) y pega [`dist/instructions-gpt.md`](dist/instructions-gpt.md) en el campo de instrucciones. Las instrucciones quedan siempre presentes en lugar de depender de que el asistente las encuentre dentro del archivo.
+
+**¿Hay algo mejor todavía?** Sí: las rutas 2 y 3, que recuperan el artículo exacto y siguen el grafo de referencias cruzadas. Requieren instalar algo. Si tienes cerca a alguien que programe, pídele que consulte por ti las preguntas de mayor riesgo — obtendrá las citas exactas y tú te ahorras la instalación.
 
 > [!IMPORTANT]
 > Esto **no es asesoría legal**. Es una ayuda para encontrar y citar los artículos que te aplican. Para decisiones con riesgo legal o financiero relevante, consulta a un abogado o abogada en Chile.
 
 ---
 
+## 2. I'm building software
+
+You want exact citations and real cross-reference traversal, inside the tool you already work in. Two options depending on your assistant.
+
+**Pros:** retrieves the cited article whole rather than a similar-looking fragment; follows the 119 law→regulation bridges, so "what must we file and report?" reaches the CMF regulation instead of stopping at the statute; always current with the repo; all laws and regulations available at once, not one file per question.
+**Cons:** requires an install. The MCP route needs Python 3.11+ and a server process running locally.
+
+### Claude Code — install the plugin
+
+The plugin is published as a Claude Code plugin marketplace at this repository. Install it with two commands from any Claude Code session:
+
+```text
+/plugin marketplace add fjaviergallucci/chilean-compliance
+/plugin install chile-compliance@chile-compliance
+```
+
+The first command registers this repo as a marketplace named `chile-compliance` (per `.claude-plugin/marketplace.json`). The second installs the `chile-compliance` plugin from that marketplace.
+
+By default, plugins install at user scope (available across all your projects). To scope to one project instead:
+
+```text
+/plugin install chile-compliance@chile-compliance --scope project
+```
+
+After install, the skill activates automatically when Claude sees Chilean fintech or data-protection contexts (see `skills/chile-compliance/SKILL.md` for triggers). You can also invoke it explicitly with `/chile-compliance:chile-compliance`.
+
+To enable, disable, or uninstall later:
+
+```text
+/plugin disable chile-compliance@chile-compliance
+/plugin enable chile-compliance@chile-compliance
+/plugin uninstall chile-compliance@chile-compliance
+```
+
+### Pin to a specific release
+
+To install at a tagged version rather than `main`:
+
+```text
+/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.3.0
+/plugin install chile-compliance@chile-compliance
+```
+
+---
+
+### Cursor, ChatGPT connectors, Claude Desktop — run the MCP server
+
+The corpus does not depend on Claude Code. For every other host, the bundled MCP server is the way in:
+
+```bash
+python -m pip install -r tools/mcp/requirements.txt
+python -m tools.mcp.server
+```
+
+Full setup, per-client configuration, and the tool reference are in [`tools/mcp/README.md`](tools/mcp/README.md). The server exposes seven tools — `search_topics`, `get_article`, `get_definition`, `get_scenario`, `get_cross_references`, `get_spanish_original`, `get_corpus_status` — and hands the connecting model the full text of `corpus/_agent-policy.md` as its MCP instructions, so it inherits the behavioural policy without a second copy existing anywhere.
+
+---
+
+## 3. I'm integrating the corpus
+
+You're building your own agent, pipeline, or internal tool and want the corpus underneath it.
+
+**Pros:** full control over retrieval and presentation; no server process if you don't want one; the resolver is pure stdlib with no dependency to adopt.
+**Cons:** you become responsible for delivering the agent policy. If `corpus/_agent-policy.md` doesn't reach your model, the effective-date discipline goes with it — and that is the rule most likely to produce a confidently wrong answer.
+
+- **Import the resolver.** [`tools/corpus_api.py`](tools/corpus_api.py) implements the same seven operations the MCP server exposes — `parse_citation`, `get_article`, `get_definition`, `search_topics`, `get_scenario`, `get_cross_references`, `get_corpus_status`. Pure stdlib; it parses the indexes into memory on first use, with no database.
+- **RAG pipelines.** Embed `corpus/**/*.md` with your preferred model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer). Put `corpus/_agent-policy.md` in your system prompt.
+- **Uploaded knowledge files** (Custom GPTs, Projects). Upload the 13 files in [`dist/knowledge/`](dist/knowledge/) — under the usual 20-file cap — and paste [`dist/instructions-gpt.md`](dist/instructions-gpt.md) into the instructions field. Both are generated from the corpus and CI fails if they drift, so they are never stale. Retrieval is semantic, so the fidelity note in the table applies.
+- **Reading it directly.** The corpus is plain markdown. It was not optimised for human reading, but nothing stops you.
+- **Manual reading** — humans can read it, though it was not optimised for that.
+
+---
+
 ## En español
 
-**chile-compliance** es una base de conocimiento estructurada y consultable por agentes de inteligencia artificial sobre la regulación chilena de servicios financieros y protección de datos personales. Está escrita para que la lea un asistente de IA, de modo que las personas obtengan respuestas directas y citables sobre lo que exige la ley. Si solo quieres consultarla con ChatGPT, ve a [Empieza aquí](#empieza-aquí--usar-esto-con-chatgpt-sin-instalar-nada); el resto de esta sección describe el contenido y está dirigido a quienes desarrollan software.
+**chile-compliance** es una base de conocimiento estructurada y consultable por agentes de inteligencia artificial sobre la regulación chilena de servicios financieros y protección de datos personales. Está escrita para que la lea un asistente de IA, de modo que las personas obtengan respuestas directas y citables sobre lo que exige la ley. Si solo quieres consultarla con un asistente de IA, ve a [Solo quiero saber cómo me afecta la ley](#1-solo-quiero-saber-cómo-me-afecta-la-ley); el resto de esta sección describe el contenido y está dirigido a quienes desarrollan software.
 
 ### Leyes incluidas
 
@@ -168,67 +274,6 @@ AI:   [reads corpus/21521-fintech/titulo-02-servicios.md#article-2,
 ```
 
 The AI didn't translate anything from scratch. It read curated, vetted English with Spanish on demand.
-
----
-
-## Quick start — Claude Code
-
-The plugin is published as a Claude Code plugin marketplace at this repository. Install it with two commands from any Claude Code session:
-
-```text
-/plugin marketplace add fjaviergallucci/chilean-compliance
-/plugin install chile-compliance@chile-compliance
-```
-
-The first command registers this repo as a marketplace named `chile-compliance` (per `.claude-plugin/marketplace.json`). The second installs the `chile-compliance` plugin from that marketplace.
-
-By default, plugins install at user scope (available across all your projects). To scope to one project instead:
-
-```text
-/plugin install chile-compliance@chile-compliance --scope project
-```
-
-After install, the skill activates automatically when Claude sees Chilean fintech or data-protection contexts (see `skills/chile-compliance/SKILL.md` for triggers). You can also invoke it explicitly with `/chile-compliance:chile-compliance`.
-
-To enable, disable, or uninstall later:
-
-```text
-/plugin disable chile-compliance@chile-compliance
-/plugin enable chile-compliance@chile-compliance
-/plugin uninstall chile-compliance@chile-compliance
-```
-
-### Pin to a specific release
-
-To install at a tagged version rather than `main`:
-
-```text
-/plugin marketplace add https://github.com/fjaviergallucci/chilean-compliance.git#v1.3.0
-/plugin install chile-compliance@chile-compliance
-```
-
----
-
-## Quick start — other AI hosts
-
-The corpus does not depend on Claude Code. **The recommended path for every other host is the bundled MCP server** — ChatGPT connectors, Cursor, Continue, and anything else that speaks MCP:
-
-```bash
-python -m pip install -r tools/mcp/requirements.txt
-python -m tools.mcp.server
-```
-
-Full setup, per-client configuration, and the tool reference are in [`tools/mcp/README.md`](tools/mcp/README.md). The server exposes seven tools — `search_topics`, `get_article`, `get_definition`, `get_scenario`, `get_cross_references`, `get_spanish_original`, `get_corpus_status` — and hands the connecting model the full text of `corpus/_agent-policy.md` as its MCP instructions, so it inherits the behavioural policy without a second copy existing anywhere.
-
-**Why MCP rather than uploading the corpus as knowledge files.** This corpus exists to produce *verifiable citations*. That depends on retrieving an exact citation in full and traversing the cross-reference graph from a law article into the CMF regulation implementing it. Semantic retrieval over uploaded documents returns plausible-looking fragments and will silently miss the law → NCG bridge — the step that turns "what does the law say?" into "what must we actually file, build, and report?" Exact retrieval is the point, so prefer the server wherever the host supports it.
-
-Other options, in descending fidelity:
-
-- **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer). Include `corpus/_agent-policy.md` in the system prompt, or the effective-date discipline is lost.
-- **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — import `tools/corpus_api.py` directly; it is pure stdlib and implements the same seven operations the MCP server exposes.
-- **Uploaded knowledge files** (Custom GPTs, Projects) — ready to use, no build step. Upload the 13 files in [`dist/knowledge/`](dist/knowledge/) (under the usual 20-file cap) and paste [`dist/instructions-gpt.md`](dist/instructions-gpt.md) into the instructions field. Both are generated from the corpus and CI fails if they drift, so they are never out of date. Accept the fidelity caveat above.
-- **A single attached file** — for one-off questions, or for a non-technical user, [`dist/single/`](dist/single/) holds two self-contained documents that carry their own instructions in Spanish, so attaching one to a chat is enough. See [Empieza aquí](#empieza-aquí--usar-esto-con-chatgpt-sin-instalar-nada).
-- **Manual reading** — humans can read it, though it was not optimised for that.
 
 ---
 
