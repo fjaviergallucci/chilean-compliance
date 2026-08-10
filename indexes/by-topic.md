@@ -9,6 +9,27 @@ Topics VI–VIII sourced from `titulo-06-agencia.md` and `titulo-07-sanciones.md
 contain English summaries pending literal H4 translation. Those citations
 are flagged inline.
 
+<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->
+> **Effective-date discipline — Ley 19.628 as amended by Ley 21.719.**
+>
+> The consolidated Ley 19.628 in this corpus is the authoritative statement of the
+> data-protection obligations Chilean organisations must meet, and is the correct
+> basis for answering any present-tense compliance question — *"what must we do?"*,
+> *"how should we build this?"*, *"what do we need before launch?"*
+>
+> Enforcement begins **2026-12-01**. That date is a **compliance deadline**, not the
+> date from which these obligations become relevant. Organisations are expected to be
+> designing, remediating, and budgeting against this text now.
+>
+> **Never answer a compliance question by saying the law has not taken effect.** State
+> the obligation, cite the article, then give 2026-12-01 as the date by which it must
+> be met.
+>
+> Only genuinely retrospective questions — *"was this lawful in 2024?"*, *"can we be
+> sanctioned for last year's processing?"* — turn on the pre-amendment 1999 baseline,
+> which is **not** in this corpus. Say so and point to the official BCN source rather
+> than answering from the consolidated text.
+
 ---
 
 ## Topic: Storing National IDs (cédula / RUT)
