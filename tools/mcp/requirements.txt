@@ -1,0 +1,3 @@
+# MCP server only. Kept separate from tools/requirements.txt so the corpus
+# verification suite (parity, round-trip, glossary) stays dependency-light.
+mcp>=2.0
