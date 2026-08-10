@@ -214,10 +214,31 @@ def get_article(c: Citation) -> Article:
 # TRAVERSE
 # ---------------------------------------------------------------------------
 
+# The adjacency list uses two dialects. Within a law:
+#     19.628:Art.1 -> 19.628:Art.12 (reason)
+# Across the law -> regulation bridge, and between NCGs:
+#     21521:Art.5   -> NCG502:§I.A  (reason)
+#     NCG502:§IV.E  -> NCG530:§I    (reason)
+# The law body loses its dot in the bridge sections and endpoints switch to §.
+# Accepting only the first dialect silently drops ~a third of the graph, and the
+# dropped third is the operational bridge that makes this corpus worth querying.
 _EDGE_RE = re.compile(
-    r"^(?P<src_body>[\d.]+|NCG\d+):Art\.(?P<src>\S+)\s*->\s*"
-    r"(?P<dst_body>[\d.]+|NCG\d+):Art\.(?P<dst>\S+)\s*\((?P<reason>[^)]*)\)"
+    r"^(?P<src_body>NCG\d+|[\d.]+):(?:Art\.|§)(?P<src>\S+)\s*->\s*"
+    r"(?P<dst_body>NCG\d+|[\d.]+):(?:Art\.|§)(?P<dst>\S+)\s*\((?P<reason>[^)]*)\)"
 )
+
+
+def _canonical_body(raw: str) -> str:
+    """Normalise an endpoint body so both dialects key alike.
+
+    ``21521`` and ``21.521`` are the same law; ``NCG502`` keeps its prefix.
+    """
+    if raw.upper().startswith("NCG"):
+        return f"NCG{raw[3:]}"
+    digits = raw.replace(".", "")
+    if len(digits) == 5 and digits.isdigit():
+        return f"{digits[:2]}.{digits[2:]}"
+    return raw
 
 
 @functools.lru_cache(maxsize=1)
@@ -227,7 +248,7 @@ def _edges() -> dict[tuple[str, str], list[tuple[str, str]]]:
     for line in text.splitlines():
         if not (m := _EDGE_RE.match(line.strip())):
             continue
-        src = (m.group("src_body"), _normalise_anchor(m.group("src")))
+        src = (_canonical_body(m.group("src_body")), _normalise_anchor(m.group("src")))
         target = _format_edge_target(m.group("dst_body"), m.group("dst"))
         graph.setdefault(src, []).append((target, m.group("reason")))
     return graph
@@ -235,20 +256,32 @@ def _edges() -> dict[tuple[str, str], list[tuple[str, str]]]:
 
 def _format_edge_target(body: str, anchor: str) -> str:
     """Render an adjacency-list endpoint back into citation form."""
+    canonical = _canonical_body(body)
+    if canonical.startswith("NCG"):
+        return f"NCG {canonical[3:]} §{anchor}"
     spaced = anchor
     for ordinal in ORDINALS:
         if anchor.lower().endswith(ordinal) and len(anchor) > len(ordinal):
             spaced = f"{anchor[: -len(ordinal)]} {ordinal}"
             break
-    if body.upper().startswith("NCG"):
-        return f"NCG {body[3:]} §{spaced}"
-    return f"{body} Art. {spaced}"
+    return f"{canonical} Art. {spaced}"
 
 
 def get_cross_references(c: Citation) -> list[tuple[str, str]]:
     """TRAVERSE — outbound edges as ``(target citation, reason)``."""
     body = c.body if c.kind == "law" else f"NCG{c.body}"
-    return list(_edges().get((body, _normalise_anchor(c.anchor)), []))
+    return list(_edges().get((_canonical_body(body), _normalise_anchor(c.anchor)), []))
+
+
+def edge_count(bridges_only: bool = False) -> int:
+    """Total parsed edges, or only those crossing a law/regulation boundary."""
+    total = 0
+    for (src_body, _), targets in _edges().items():
+        for target, _reason in targets:
+            crosses = target.startswith("NCG") != src_body.startswith("NCG")
+            if not bridges_only or crosses:
+                total += 1
+    return total
 
 
 # ---------------------------------------------------------------------------

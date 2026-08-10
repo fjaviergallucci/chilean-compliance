@@ -93,6 +93,31 @@ def test_cross_references_empty_for_unlinked_citation():
     assert api.get_cross_references(api.parse_citation("19.628 Art. 9999")) == []
 
 
+def test_law_to_ncg_bridge_resolves():
+    """The operational bridge — the reason exact retrieval beats semantic search.
+
+    These edges are written `21521:Art.5 -> NCG502:§I` — undotted law body and a
+    § target — unlike the dotted `Art.`-on-both-sides form used within a law.
+    """
+    edges = api.get_cross_references(api.parse_citation("21.521 Art. 5"))
+    ncg = [t for t, _ in edges if t.startswith("NCG")]
+    assert ncg, "Ley 21.521 Art. 5 must bridge into NCG 502"
+    assert "NCG 502 §I.A" in ncg
+
+
+def test_ncg_to_ncg_bridge_resolves():
+    edges = api.get_cross_references(api.parse_citation("NCG 502 §I"))
+    assert any(t.startswith("NCG 530") for t, _ in edges), edges
+
+
+def test_bridge_edges_are_a_substantial_share_of_the_graph():
+    """Guards against a parser that silently drops a whole edge dialect."""
+    total = api.edge_count()
+    bridges = api.edge_count(bridges_only=True)
+    assert total > 350, f"only {total} edges parsed — a dialect is being dropped"
+    assert bridges > 100, f"only {bridges} law/NCG bridge edges parsed"
+
+
 # --------------------------------------------------------------------------
 # DEFINE / LOCATE / SCENARIO / STATUS
 # --------------------------------------------------------------------------
