@@ -44,7 +44,8 @@ CI also runs `claude plugin validate` on both `.claude-plugin/*.json` manifests.
 - **`indexes/`** — derived lookup layers: `by-topic.md`, `glossary.md`, `scenarios.md` (compliance checklists), `cross-references.md` (article-to-article edges, including law→NCG bridges like `-> NCG502`).
 - **`tools/`** — one single-purpose verification script each, with pytest coverage. Law-format PDFs (BCN `Artículo N.-` structure) use `extract_articles.py` / `check_extraction_parity.py`; NCG-format PDFs (hierarchical ToC) use `extract_ncg_sections.py` / `check_ncg_parity.py` driven by a per-corpus `_toc.json`. Separately, `corpus_api.py` resolves citations and parses the indexes for runtime consumers, and `mcp/` is the MCP server over it.
 - **`sources/`** — unmodified BCN/CMF PDFs. The round-trip checker enforces that corpus Spanish tracks them exactly.
-- **`docs/superpowers/`** — design specs and implementation plans from past corpus-expansion phases; useful as patterns when adding a new NCG.
+- **`dist/`** — **generated, committed, never hand-edited.** Knowledge bundles and ChatGPT instruction text for hosts that can't run the MCP server. Regenerate with `python -m tools.build_dist`; CI's `dist-freshness` job runs `--check` and fails on drift. The instruction file is a *projection* of the policy: the effective-date rule, citation format, and caveat surfacing are carried verbatim, and only host-specific parts are rewritten. It sits near the 8,000-character field limit, so if the builder warns, trim the projection in `build_dist.py` rather than truncating legal guidance.
+- **`docs/superpowers/`** — design specs and implementation plans from past corpus-expansion phases; useful as patterns when adding a new NCG. Gitignored.
 
 ### Policy vs. bindings
 
@@ -73,7 +74,9 @@ Each article/section is a self-contained block: `## Article N — <title>`, `**S
 
 ## Adding content — files that must move together
 
-Adding a new law/NCG/circular touches all of: the PDF in `sources/`, a new `corpus/` subdirectory (never intermix with existing law dirs), `corpus_status` + `sources` in `.claude-plugin/plugin.json`, the **Scope** and **Corpus layout** sections of `corpus/_agent-policy.md` (not `SKILL.md` — the binding no longer carries scope), the `SKILL.md` quick-reference path table, the README status table, and new gate steps in `.github/workflows/test.yml` (plus CONTRIBUTING's gate list). NCG corpora also need a `_toc.json` for the parity checker.
+Adding a new law/NCG/circular touches all of: the PDF in `sources/`, a new `corpus/` subdirectory (never intermix with existing law dirs), `corpus_status` + `sources` in `.claude-plugin/plugin.json`, the **Scope** and **Corpus layout** sections of `corpus/_agent-policy.md` (not `SKILL.md` — the binding no longer carries scope), the `SKILL.md` quick-reference path table, the `_BUNDLES` list and `_SCOPE` text in `tools/build_dist.py` plus a regenerated `dist/`, the README status table, and new gate steps in `.github/workflows/test.yml` (plus CONTRIBUTING's gate list). NCG corpora also need a `_toc.json` for the parity checker.
+
+`tools/tests/test_build_dist.py` catches the `_BUNDLES` omission — it asserts every corpus file lands in exactly one bundle — but nothing catches a stale `_SCOPE`, so update it deliberately.
 
 If the new source has its own in-force date, decide explicitly whether it needs deadline framing like the 19.628 banner, and say so in its corpus README either way.
 

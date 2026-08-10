@@ -168,7 +168,7 @@ Other options, in descending fidelity:
 
 - **RAG pipelines** — embed `corpus/**/*.md` with your preferred embedding model. Each article is a self-contained chunk (English + Spanish + cross-references + source footer). Include `corpus/_agent-policy.md` in the system prompt, or the effective-date discipline is lost.
 - **Custom agents (OpenAI SDK, Claude API, LangChain, etc.)** — import `tools/corpus_api.py` directly; it is pure stdlib and implements the same seven operations the MCP server exposes.
-- **Uploaded knowledge files** (Custom GPTs, Projects) — workable for casual use. Use `corpus/_agent-policy.md` as the instruction text and accept the fidelity caveat above.
+- **Uploaded knowledge files** (Custom GPTs, Projects) — ready to use, no build step. Upload the 13 files in [`dist/knowledge/`](dist/knowledge/) (under the usual 20-file cap) and paste [`dist/instructions-gpt.md`](dist/instructions-gpt.md) into the instructions field. Both are generated from the corpus and CI fails if they drift, so they are never out of date. Accept the fidelity caveat above.
 - **Manual reading** — humans can read it, though it was not optimised for that.
 
 ---
@@ -198,9 +198,13 @@ chile-compliance/
 │   ├── glossary.md                     # 82 defined terms (English + Spanish)
 │   ├── scenarios.md                    # 7 compliance scenarios, 100 checklist items
 │   └── cross-references.md             # 338 article-to-article edges
+├── dist/                               # GENERATED — regenerate, never hand-edit
+│   ├── instructions-gpt.md             # Instruction text for hosted assistants
+│   └── knowledge/                      # Corpus merged into 13 upload-ready files
 ├── sources/                            # Original PDF sources (BCN, public)
 └── tools/
     ├── corpus_api.py                   # Resolver for the seven operations (stdlib only)
+    ├── build_dist.py                   # Generates dist/ (CI fails if it is stale)
     ├── mcp/                            # MCP server — the binding for non-Claude hosts
     └── tests/                          # pytest coverage for QC scripts and resolver
 ```
