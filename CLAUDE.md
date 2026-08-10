@@ -76,7 +76,9 @@ Each article/section is a self-contained block: `## Article N — <title>`, `**S
 
 Adding a new law/NCG/circular touches all of: the PDF in `sources/`, a new `corpus/` subdirectory (never intermix with existing law dirs), `corpus_status` + `sources` in `.claude-plugin/plugin.json`, the **Scope** and **Corpus layout** sections of `corpus/_agent-policy.md` (not `SKILL.md` — the binding no longer carries scope), the `SKILL.md` quick-reference path table, the `_BUNDLES` list and `_SCOPE` text in `tools/build_dist.py` plus a regenerated `dist/`, the README status table, and new gate steps in `.github/workflows/test.yml` (plus CONTRIBUTING's gate list). NCG corpora also need a `_toc.json` for the parity checker.
 
-`tools/tests/test_build_dist.py` catches the `_BUNDLES` omission — it asserts every corpus file lands in exactly one bundle — but nothing catches a stale `_SCOPE`, so update it deliberately.
+`tools/tests/test_build_dist.py` catches the `_BUNDLES` omission — it asserts every corpus file lands in exactly one bundle — but nothing catches a stale `_SCOPE` or `_SINGLE_BUNDLES`, so update those deliberately.
+
+`dist/single/` is the non-technical entry point: two self-contained Spanish-instructed files (`proteccion-datos.md`, `fintech.md`) that a user attaches to one chat, reached from the README's **Empieza aquí** section. They must stay under ~1 MB to remain attachable, and their Spanish header — not just the English banner — carries the effective-date rule, because that audience is asking what to do *now*. If you add a law that a business owner would plausibly ask about, consider whether it needs its own single-file bundle rather than only appearing in `dist/knowledge/`.
 
 If the new source has its own in-force date, decide explicitly whether it needs deadline framing like the 19.628 banner, and say so in its corpus README either way.
 
