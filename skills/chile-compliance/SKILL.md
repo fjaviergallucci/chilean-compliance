@@ -171,8 +171,8 @@ When citing from a `partial` or `draft` law, prepend: "Translation status: parti
 | Financial / credit data | `corpus/19628-data-protection-consolidated/titulo-03-datos-financieros.md` |
 | Public bodies | `corpus/19628-data-protection-consolidated/titulo-04-organismos-publicos.md` |
 | International transfers | `corpus/19628-data-protection-consolidated/titulo-05-responsabilidad.md` |
-| Agency (APDP) | `corpus/19628-data-protection-consolidated/titulo-06-agencia.md` (partial) |
-| Sanctions framework | `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md` (partial) |
+| Agency (APDP) | `corpus/19628-data-protection-consolidated/titulo-06-agencia.md` |
+| Sanctions framework | `corpus/19628-data-protection-consolidated/titulo-07-sanciones.md` |
 | Defined terms | `indexes/glossary.md` |
 | Compliance scenarios | `indexes/scenarios.md` |
 | Topic lookups | `indexes/by-topic.md` |

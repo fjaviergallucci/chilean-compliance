@@ -2,8 +2,8 @@
 
 Defined terms from Ley 21.521 (Fintec), Ley 19.628 (consolidated, post-21.719),
 and NCG 502 Anexo N°1 (operational/risk definitions for financial-service providers).
-Every entry resolves to the defining article in the corpus. Where 19.628's
-definitions are summarized pending H4 review, the entry is marked.
+Every entry resolves to the defining article in the corpus. All entries carry
+literal lexicon-conformant translations with the verbatim Spanish original.
 
 Each entry: H2 heading with English term (Spanish term), **Defined in:** line
 citing the law number and article (or NCG and Annex), English definition text,
