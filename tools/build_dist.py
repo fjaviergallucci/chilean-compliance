@@ -56,6 +56,34 @@ _BUNDLES: list[tuple[str, str]] = [
     ("index-cross-references", "indexes/cross-references.md"),
 ]
 
+# Purpose-built single files for people who just want to attach one document to a
+# chat. "Upload this folder" is not an instruction a non-technical user can follow
+# on GitHub, and nobody needs all 2.2 MB to ask what a specific law requires.
+_SINGLE_BUNDLES: list[tuple[str, str, str, list[str]]] = [
+    (
+        "proteccion-datos",
+        "Ley 19.628 — Protección de Datos Personales (Chile)",
+        "Ley 19.628 consolidada con la Ley 21.719, listas de verificación de "
+        "cumplimiento por tipo de negocio, y glosario de términos legales.",
+        [
+            "corpus/19628-data-protection-consolidated",
+            "indexes/scenarios.md",
+            "indexes/glossary.md",
+        ],
+    ),
+    (
+        "fintech",
+        "Ley 21.521 — Ley Fintec (Chile)",
+        "Ley 21.521 completa, listas de verificación de cumplimiento por tipo de "
+        "producto, y glosario de términos legales.",
+        [
+            "corpus/21521-fintech",
+            "indexes/scenarios.md",
+            "indexes/glossary.md",
+        ],
+    ),
+]
+
 
 # ---------------------------------------------------------------------------
 # Effective-date banner
@@ -130,6 +158,84 @@ def build_knowledge_bundles(out_dir: Path) -> list[Path]:
             parts.append("")
             parts.append("---")
             parts.append("")
+        path = out_dir / f"{name}.md"
+        _write(path, "\n".join(parts).rstrip() + "\n")
+        written.append(path)
+
+    return written
+
+
+# ---------------------------------------------------------------------------
+# Single-file bundles
+# ---------------------------------------------------------------------------
+
+# Spanish because the audience is Chilean and may not read English. This block
+# instructs the *assistant*, so attaching the file is enough on its own — the
+# user does not have to know to paste anything.
+_SPANISH_HEADER = """\
+## Instrucciones para el asistente de IA
+
+Este archivo contiene texto legal chileno estructurado. Úsalo como única fuente de
+verdad para responder. Sigue estas reglas:
+
+1. **Responde siempre en español**, aunque el texto del archivo esté en inglés. Cada
+   artículo incluye además su **texto original en español** (bloque
+   `### Original Spanish`); cítalo textualmente cuando la persona pida la redacción
+   exacta o cuestione una traducción.
+2. **Cita siempre el artículo específico** en el que se basa tu respuesta (por
+   ejemplo, «Ley 19.628 Art. 12»). Nunca respondas de memoria ni sólo a partir de un
+   resumen. Si el archivo no respalda la respuesta, dilo en lugar de suponer.
+3. **Usa las listas de verificación** de la sección de escenarios (`scenarios`) cuando
+   la persona describa su negocio o producto: están organizadas por lo que hace una
+   empresa en la práctica y cada punto termina en una cita.
+4. **Plazo de cumplimiento.** La fiscalización de la Ley 19.628 reformada por la Ley
+   21.719 comienza el **2026-12-01**. Esa fecha es un **plazo**, no una excusa: las
+   obligaciones ya están definidas y las organizaciones deben estar preparándose
+   ahora. Nunca respondas que «la ley todavía no entra en vigencia». Indica la
+   obligación, cita el artículo y luego señala el 2026-12-01 como fecha límite.
+5. **Esto no es asesoría legal**, es una ayuda de citas. Dilo cuando corresponda y
+   recomienda consultar a un abogado o abogada en Chile para decisiones de riesgo
+   material.
+6. **Si te preguntan algo fuera de este archivo** (otra ley, una circular de la CMF,
+   jurisprudencia), dilo explícitamente y remite a la fuente oficial.
+
+Si la persona no sabe por dónde empezar, pregúntale qué hace su negocio y qué datos
+de personas maneja, y a partir de eso busca la lista de verificación que corresponda.
+"""
+
+
+def build_single_file_bundles(out_dir: Path) -> list[Path]:
+    """One self-contained file per audience, for attaching to a chat."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    banner = _banner()
+    written: list[Path] = []
+
+    for name, title, description, rels in _SINGLE_BUNDLES:
+        parts = [
+            GENERATED_MARKER,
+            f"# {title}",
+            "",
+            description,
+            "",
+            _SPANISH_HEADER.strip(),
+            "",
+            "---",
+            "",
+            banner,
+            "",
+            "---",
+            "",
+        ]
+        for rel in rels:
+            for src in _bundle_sources(rel):
+                src_rel = src.relative_to(ROOT).as_posix()
+                parts.append(f"<!-- incluye: {src_rel} -->")
+                parts.append(f"## FUENTE: {src_rel}")
+                parts.append("")
+                parts.append(src.read_text(encoding="utf-8").strip())
+                parts.append("")
+                parts.append("---")
+                parts.append("")
         path = out_dir / f"{name}.md"
         _write(path, "\n".join(parts).rstrip() + "\n")
         written.append(path)
@@ -276,6 +382,12 @@ def build_all(out_dir: Path) -> list[Path]:
     if knowledge.exists():
         shutil.rmtree(knowledge)
     written = build_knowledge_bundles(knowledge)
+
+    single = out_dir / "single"
+    if single.exists():
+        shutil.rmtree(single)
+    written += build_single_file_bundles(single)
+
     out_dir.mkdir(parents=True, exist_ok=True)
     instructions = out_dir / "instructions-gpt.md"
     _write(instructions, build_gpt_instructions())
@@ -326,7 +438,9 @@ def main() -> int:
 
     written = build_all(DIST)
     size = len((DIST / "instructions-gpt.md").read_text(encoding="utf-8"))
-    print(f"OK: wrote {len(written) - 1} knowledge bundles + instructions")
+    for path in sorted((DIST / "single").glob("*.md")):
+        print(f"    single/{path.name}: {path.stat().st_size / 1024:,.0f} KB")
+    print(f"OK: wrote {len(written) - 1} bundles + instructions")
     print(f"    instructions: {size:,} chars ({INSTRUCTIONS_LIMIT - size:,} under the limit)")
     if size > INSTRUCTIONS_LIMIT * 0.95:
         print("    WARNING: within 5% of the instruction-field limit — trim before adding more")

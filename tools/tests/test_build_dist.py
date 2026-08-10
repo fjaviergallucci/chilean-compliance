@@ -84,6 +84,64 @@ def test_instructions_name_every_operation():
         assert op in text, f"instructions dropped operation {op}"
 
 
+# --------------------------------------------------------------------------
+# Single-file bundles — the path for someone who just attaches one document
+# --------------------------------------------------------------------------
+
+@pytest.fixture(scope="module")
+def single_files(tmp_path_factory) -> list[Path]:
+    out = tmp_path_factory.mktemp("single")
+    return build_dist.build_single_file_bundles(out)
+
+
+def test_single_bundles_exist_for_both_audiences(single_files):
+    names = {p.stem for p in single_files}
+    assert names == {"proteccion-datos", "fintech"}, names
+
+
+def test_single_bundles_stay_attachable(single_files):
+    """One chat attachment. Past ~1 MB, hosts start rejecting or truncating."""
+    for path in single_files:
+        size_kb = path.stat().st_size / 1024
+        assert size_kb < 1024, f"{path.name} is {size_kb:,.0f} KB — too big to attach"
+
+
+def test_single_bundles_instruct_the_assistant_in_spanish(single_files):
+    for path in single_files:
+        text = path.read_text(encoding="utf-8")
+        assert "## Instrucciones para el asistente de IA" in text
+        assert "Responde siempre en español" in text
+        # The effective-date rule must be stated in Spanish, not only in the
+        # English banner — this is the rule most likely to be answered wrongly.
+        assert "2026-12-01" in text
+        assert "plazo" in text
+        assert "todavía no entra en vigencia" in text, (
+            f"{path.name} must explicitly forbid the deferral answer"
+        )
+
+
+def test_single_bundles_carry_the_canonical_banner(single_files):
+    for path in single_files:
+        assert "<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->" in path.read_text(encoding="utf-8")
+
+
+def test_data_protection_bundle_has_law_scenarios_and_glossary(single_files):
+    text = next(p for p in single_files if p.stem == "proteccion-datos").read_text(
+        encoding="utf-8"
+    )
+    assert "<!-- incluye: indexes/scenarios.md -->" in text
+    assert "<!-- incluye: indexes/glossary.md -->" in text
+    assert "<!-- incluye: corpus/19628-data-protection-consolidated/titulo-02-derechos.md -->" in text
+    # Spanish original must survive so exact quotes stay available.
+    assert "Artículo 1°.- Objeto y ámbito de aplicación" in text
+
+
+def test_fintech_bundle_scoped_to_21521(single_files):
+    text = next(p for p in single_files if p.stem == "fintech").read_text(encoding="utf-8")
+    assert "<!-- incluye: corpus/21521-fintech/titulo-02-servicios.md -->" in text
+    assert "19628-data-protection-consolidated" not in text.split("## FUENTE:")[1][:200]
+
+
 def test_committed_dist_is_current(tmp_path):
     """The staleness gate, run as a test so contributors catch it before CI."""
     stale = build_dist.diff_against(ROOT / "dist", tmp_path)
