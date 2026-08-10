@@ -120,6 +120,47 @@ jobs:
             sources/ncg_530_2025-2.pdf corpus/ncg/530-fintec-reporting \
             --mode ncg --threshold 0.80
 
+  mcp-server:
+    name: MCP server surface
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: tools/mcp/requirements.txt
+
+      # Separate job so the corpus-verification job above stays dependency-light:
+      # the parity/round-trip gates must never need the MCP SDK to run.
+      - name: Install MCP dependencies
+        run: |
+          python -m pip install -r tools/requirements.txt
+          python -m pip install -r tools/mcp/requirements.txt
+
+      - name: Run MCP server tests
+        run: python -m pytest tools/tests/test_mcp_server.py tools/tests/test_corpus_api.py -v
+
+      - name: Smoke-test the tool surface
+        run: |
+          python - <<'PY'
+          import asyncio
+          from tools.mcp.server import EXPECTED_TOOLS, build_server
+
+          server = build_server()
+          names = {t.name for t in asyncio.run(server.list_tools())}
+          assert names == set(EXPECTED_TOOLS), f"tool surface drifted: {sorted(names)}"
+
+          instructions = server.instructions or ""
+          assert "<!-- AGENT-POLICY v1 -->" in instructions
+          assert "<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->" in instructions
+          print(f"OK: {len(names)} tools, policy reaches the client")
+          PY
+
   validate-plugin:
     name: claude plugin validate
     runs-on: ubuntu-latest
