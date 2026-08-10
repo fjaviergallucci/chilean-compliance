@@ -237,7 +237,8 @@ El código fuente, las traducciones al inglés, los índices y la documentación
 | NCG 503 — Exigencias de Idoneidad / fit-and-proper | **Stable** | Secciones I–IV; bridged to Ley 21.521 arts. 7 & 9; derogates NCG 412 |
 | NCG 530 — MSI Fintec reporting (obligations layer) | **Stable** | Body + Anexo N°1 + FINTEC01–16 catalog; record layouts (Anexo N°2/N°3) out of scope |
 | Indexes (topical, glossary, scenarios, cross-references) | **Stable** | 198 topical · 109 glossary · 7 scenarios/122 items · 392 cross-refs |
-| Tooling + tests | **Stable** | 41/41 pytest passing |
+| Tooling + tests | **Stable** | 98/98 pytest passing |
+| Consumption paths | **Stable** | Claude Code plugin · MCP server (7 tools) · generated `dist/` bundles |
 
 The `corpus_status` field in `.claude-plugin/plugin.json` is the canonical source of truth for an AI consumer.
 
@@ -446,7 +447,7 @@ python -m tools.check_glossary_completeness indexes/glossary.md corpus/21521-fin
 python -m tools.check_glossary_completeness indexes/glossary.md corpus/19628-data-protection-consolidated
 ```
 
-These cover the two laws. The NCG 502/514/503/530 parity and round-trip gates are listed in full in [CONTRIBUTING.md](CONTRIBUTING.md). Every gate command must exit `0` with its "OK" message, and `pytest` must be fully green (41 tests).
+These cover the two laws. The NCG 502/514/503/530 parity and round-trip gates are listed in full in [CONTRIBUTING.md](CONTRIBUTING.md). Every gate command must exit `0` with its "OK" message, and `pytest` must be fully green (98 tests).
 
 ### Development setup
 
