@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BANNER_MARKER = "<!-- EFFECTIVE-DATE-DISCIPLINE v1 -->"
 
 BANNER_REQUIRED_IN = [
+    "corpus/_agent-policy.md",
     "indexes/scenarios.md",
     "indexes/by-topic.md",
     "indexes/glossary.md",
